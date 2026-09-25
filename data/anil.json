@@ -1,0 +1,532 @@
+{
+  "info": {
+    "nome": "Pokémon Anil (Pokémon Añil)",
+    "criador": "EricLostie",
+    "versao_atual": "3.06",
+    "genero": "RPG Maker XP (Fan Game)",
+    "regiao": "Kanto (reimaginado) + partes de Johto",
+    "idiomas": ["Espanhol", "Inglês", "Português-Brasil (PT-BR)"],
+    "plataformas": ["Windows", "Android (Joiplay)", "Mac (Wine)"],
+    "status": "Completo com pós-jogo",
+    "online": false,
+    "site_oficial": "https://pokemonanil.com"
+  },
+
+  "protagonistas": [
+    {
+      "id": "leaf",
+      "nome": "Leaf",
+      "descricao": "Protagonista feminina clássica, baseada em FireRed/LeafGreen."
+    },
+    {
+      "id": "red",
+      "nome": "Red",
+      "descricao": "Protagonista masculino clássico da 1ª geração."
+    },
+    {
+      "id": "yellow",
+      "nome": "Yellow",
+      "descricao": "Imigrante canônica do anime, inclusa como terceira opção jogável."
+    }
+  ],
+
+  "modos_de_jogo": [
+    {
+      "id": "classic",
+      "nome": "Modo Clássico",
+      "descricao": "Apenas Pokémon das Gerações 1 e 2 disponíveis.",
+      "restricoes": ["Somente Gen 1-2", "Equipe da Misty inspirada no anime"],
+      "dificuldade": "Normal",
+      "compativel_com_monotype": false
+    },
+    {
+      "id": "complete",
+      "nome": "Modo Completo",
+      "descricao": "Todos os Pokémon até a Geração 9 disponíveis (mais de 1000).",
+      "restricoes": [],
+      "dificuldade": "Normal",
+      "compativel_com_monotype": true
+    },
+    {
+      "id": "radical",
+      "nome": "Modo Radical",
+      "descricao": "Modo difícil: Pokémon da Gen 9, batalhas de chefes mais intensas e sem uso de itens em batalha.",
+      "restricoes": ["Sem itens durante batalhas", "Batalhas de chefes mais difíceis"],
+      "dificuldade": "Difícil",
+      "compativel_com_monotype": true
+    },
+    {
+      "id": "nuzlocke",
+      "nome": "Modo Nuzlocke",
+      "descricao": "Se um Pokémon desmaiar, ele não pode mais ser usado. Regra clássica para jogadores hardcore.",
+      "restricoes": ["Pokémon que desmaia fica permanentemente inutilizável"],
+      "dificuldade": "Muito Difícil",
+      "compativel_com_monotype": true
+    },
+    {
+      "id": "nuzlocke_assistido",
+      "nome": "Modo Nuzlocke Assistido",
+      "descricao": "Versão mais branda do Nuzlocke: é possível reviver Pokémon usando Cinzas Sagradas obtidas ao derrotar Líderes de Ginásio.",
+      "restricoes": ["Pokémon que desmaia fica inutilizável até ser revivido com Cinzas Sagradas"],
+      "dificuldade": "Difícil",
+      "compativel_com_monotype": true
+    },
+    {
+      "id": "randomizer",
+      "nome": "Modo Randomizer",
+      "descricao": "Modo progressivo: conforme avança, Pokémon mais fortes aparecem. Cada randomização é única.",
+      "detalhes": [
+        "Randomização progressiva conforme avança no jogo",
+        "Cada partida gera uma randomização diferente",
+        "Pokémon são gerados continuamente na área — sem set fixo",
+        "Pokémon, moves, habilidades e itens são randomizados",
+        "Ativar: falar com o NPC em Pallet Town"
+      ],
+      "dificuldade": "Variável",
+      "compativel_com_monotype": true
+    },
+    {
+      "id": "monotype",
+      "nome": "Modo Monotype",
+      "descricao": "Apenas Pokémon do tipo escolhido podem ser capturados.",
+      "detalhes": [
+        "Ativar: receber o Pokémon inicial do Professor Oak e falar com o cientista ao lado do laboratório em Pallet Town",
+        "Não bloqueia o aparecimento de outros Pokémon — só impede a captura de tipos errados",
+        "Pokémon cuja linha evolutiva contenha o tipo escolhido em ALGUMA fase podem ser capturados",
+        "Não disponível no Modo Clássico",
+        "Nem todos os tipos disponíveis (equilíbrio de gameplay)"
+      ],
+      "dificuldade": "Difícil",
+      "compativel_com_monotype": false
+    }
+  ],
+
+  "mecanicas_exclusivas": [
+    {
+      "id": "level_cap",
+      "nome": "Limite de Nível por Insígnia",
+      "descricao": "Existe um limite de nível baseado no número de insígnias que você possui, evitando grinding excessivo.",
+      "detalhes": "Se Pokémon atingir o cap, ganha apenas 1 EXP por batalha."
+    },
+    {
+      "id": "pokevial",
+      "nome": "PokéVial",
+      "descricao": "Item-chave dado no início do jogo. Funciona como uma Cura Total portátil.",
+      "detalhes": [
+        "Funciona como Full Restore (cura completa de todo o time)",
+        "Recarregado em cada Centro Pokémon",
+        "Cargas adicionais podem ser obtidas mais tarde no jogo"
+      ]
+    },
+    {
+      "id": "pokerider",
+      "nome": "PokéRider",
+      "descricao": "Sistema de viagem rápida disponível desde o início do jogo.",
+      "detalhes": "Permite se teletransportar para locais já visitados."
+    },
+    {
+      "id": "super_training",
+      "nome": "Super Training",
+      "descricao": "Treino de EVs disponível no Dojo de Saffron City.",
+      "detalhes": "Permite treinar os Valores de Esforço (EVs) dos Pokémon de forma focada."
+    },
+    {
+      "id": "tms_reutilizaveis",
+      "nome": "TMs Reutilizáveis",
+      "descricao": "Todas as TMs podem ser usadas infinitas vezes, como nas gerações modernas.",
+      "detalhes": "Não há mais TMs de uso único."
+    },
+    {
+      "id": "sem_hms",
+      "nome": "HMs substituídos por Itens-Chave",
+      "descricao": "Os golpes HM (Corte, Surf, Voar etc.) foram removidos como moves e substituídos por itens-chave.",
+      "detalhes": "Pokémon não precisam mais usar um slot de move para HMs."
+    },
+    {
+      "id": "evolucao_trade",
+      "nome": "Trocas → Evolução por Nível",
+      "descricao": "Pokémon que normalmente evoluem por troca agora evoluem ao subir de nível.",
+      "detalhes": "Verifique a seção 'evolution_changes' para a lista completa."
+    },
+    {
+      "id": "shiny_rate",
+      "nome": "Taxa de Shiny",
+      "descricao": "A chance de encontrar um Pokémon Shiny é de 0.1% (1 em 1.000).",
+      "taxa": "0.001",
+      "fracao": "1/1000"
+    },
+    {
+      "id": "tipos_visiveis",
+      "nome": "Tipos Visíveis em Batalha",
+      "descricao": "Durante a batalha, os tipos dos Pokémon oponentes são exibidos na tela."
+    },
+    {
+      "id": "aprendedor_de_moves",
+      "nome": "Aprendedor de Moves em Todo Centro Pokémon",
+      "descricao": "Um NPC que ensina moves esquecidos está disponível em todos os Centros Pokémon, similar à Gen 8."
+    },
+    {
+      "id": "loja_no_centro",
+      "nome": "PokéMart dentro do Centro Pokémon",
+      "descricao": "A loja está integrada ao Centro Pokémon, como nas gerações modernas (Gen 5+)."
+    },
+    {
+      "id": "fast_forward",
+      "nome": "Modo Acelerado",
+      "descricao": "Pressione Alt para acelerar o jogo.",
+      "atalho": "Alt"
+    },
+    {
+      "id": "pokeradar",
+      "nome": "PokéRadar",
+      "descricao": "Disponível no jogo. A irmã do Blue pode fornecer informações sobre seu uso.",
+      "como_obter": "Dica fornecida pelo próprio Blue durante o jogo."
+    },
+    {
+      "id": "mega_evolucoes",
+      "nome": "Mega Evoluções",
+      "descricao": "Mega Evoluções estão presentes no jogo, especialmente no pós-jogo.",
+      "detalhes": "Pedras de Mega podem ser compradas antes de entrar em Fuchsia City (dica do Red/Leaf)."
+    },
+    {
+      "id": "pokedex_bulbapedia",
+      "nome": "Pokédex Estilo Bulbapedia",
+      "descricao": "A Pokédex mostra informações detalhadas como nível dos moves por level-up, método de evolução e mais.",
+      "detalhes": "Consulte a Pokédex in-game para ver como cada Pokémon evolui."
+    },
+    {
+      "id": "rare_candy_infinito",
+      "nome": "Rare Candies Infinitos",
+      "descricao": "Fale com a xícara/caneca no Centro Pokémon e depois verifique o inventário para obter Rare Candies.",
+      "como_obter": "Interagir com a caneca em qualquer Centro Pokémon"
+    },
+    {
+      "id": "cinzas_sagradas",
+      "nome": "Cinzas Sagradas (Holy Ashes)",
+      "descricao": "Item exclusivo do Nuzlocke Assistido. Obtido ao derrotar Líderes de Ginásio. Revive Pokémon no Nuzlocke.",
+      "modo_exclusivo": "nuzlocke_assistido"
+    }
+  ],
+
+  "hm_replacements": [
+    {
+      "hm": "Corte (Cut)",
+      "substituido_por": "Item-chave de corte",
+      "descricao": "Não ocupa mais slot de move"
+    },
+    {
+      "hm": "Voar (Fly)",
+      "substituido_por": "Item-chave de voo / PokéRider",
+      "descricao": "Sistema de fast travel integrado"
+    },
+    {
+      "hm": "Surf",
+      "substituido_por": "Item-chave de natação",
+      "descricao": "Não ocupa mais slot de move"
+    },
+    {
+      "hm": "Força (Strength)",
+      "substituido_por": "Item-chave de força",
+      "descricao": "Não ocupa mais slot de move"
+    },
+    {
+      "hm": "Flash",
+      "substituido_por": "Removido",
+      "descricao": "Sem necessidade de Flash como HM"
+    },
+    {
+      "hm": "Quebra-Rocha (Rock Smash)",
+      "substituido_por": "Item-chave",
+      "descricao": "Não ocupa mais slot de move"
+    },
+    {
+      "hm": "Cachoeira (Waterfall)",
+      "substituido_por": "Item-chave",
+      "descricao": "Não ocupa mais slot de move"
+    },
+    {
+      "hm": "Mergulho (Dive)",
+      "substituido_por": "Item-chave",
+      "descricao": "Não ocupa mais slot de move"
+    }
+  ],
+
+  "starters": {
+    "total": 27,
+    "descricao": "Todos os starters oficiais das Gens 1-9 estão disponíveis como ponto de partida.",
+    "por_geracao": {
+      "gen1": [
+        { "nome": "Bulbasaur", "id": 1, "tipos": ["grass", "poison"] },
+        { "nome": "Charmander", "id": 4, "tipos": ["fire"] },
+        { "nome": "Squirtle", "id": 7, "tipos": ["water"] }
+      ],
+      "gen2": [
+        { "nome": "Chikorita", "id": 152, "tipos": ["grass"] },
+        { "nome": "Cyndaquil", "id": 155, "tipos": ["fire"] },
+        { "nome": "Totodile", "id": 158, "tipos": ["water"] }
+      ],
+      "gen3": [
+        { "nome": "Treecko", "id": 252, "tipos": ["grass"] },
+        { "nome": "Torchic", "id": 255, "tipos": ["fire"] },
+        { "nome": "Mudkip", "id": 258, "tipos": ["water", "ground"] }
+      ],
+      "gen4": [
+        { "nome": "Turtwig", "id": 387, "tipos": ["grass"] },
+        { "nome": "Chimchar", "id": 390, "tipos": ["fire"] },
+        { "nome": "Piplup", "id": 393, "tipos": ["water"] }
+      ],
+      "gen5": [
+        { "nome": "Snivy", "id": 495, "tipos": ["grass"] },
+        { "nome": "Tepig", "id": 498, "tipos": ["fire"] },
+        { "nome": "Oshawott", "id": 501, "tipos": ["water"] }
+      ],
+      "gen6": [
+        { "nome": "Chespin", "id": 650, "tipos": ["grass"] },
+        { "nome": "Fennekin", "id": 653, "tipos": ["fire"] },
+        { "nome": "Froakie", "id": 656, "tipos": ["water"] }
+      ],
+      "gen7": [
+        { "nome": "Rowlet", "id": 722, "tipos": ["grass", "flying"] },
+        { "nome": "Litten", "id": 725, "tipos": ["fire"] },
+        { "nome": "Popplio", "id": 728, "tipos": ["water"] }
+      ],
+      "gen8": [
+        { "nome": "Grookey", "id": 810, "tipos": ["grass"] },
+        { "nome": "Scorbunny", "id": 813, "tipos": ["fire"] },
+        { "nome": "Sobble", "id": 816, "tipos": ["water"] }
+      ],
+      "gen9": [
+        { "nome": "Sprigatito", "id": 906, "tipos": ["grass"] },
+        { "nome": "Fuecoco", "id": 909, "tipos": ["fire"] },
+        { "nome": "Quaxly", "id": 912, "tipos": ["water"] }
+      ]
+    }
+  },
+
+  "evolution_changes": {
+    "descricao": "Pokémon que normalmente evoluem por Troca agora evoluem ao subir de nível no Pokémon Anil.",
+    "nota": "Consulte a Pokédex in-game para o nível exato de cada evolução.",
+    "lista": [
+      { "pokemon": "Kadabra", "id": 64, "evolui_para": "Alakazam", "id_evolucao": 65, "metodo_original": "Trade", "metodo_anil": "Level Up" },
+      { "pokemon": "Haunter", "id": 93, "evolui_para": "Gengar", "id_evolucao": 94, "metodo_original": "Trade", "metodo_anil": "Level Up" },
+      { "pokemon": "Graveler", "id": 75, "evolui_para": "Golem", "id_evolucao": 76, "metodo_original": "Trade", "metodo_anil": "Level Up" },
+      { "pokemon": "Machoke", "id": 67, "evolui_para": "Machamp", "id_evolucao": 68, "metodo_original": "Trade", "metodo_anil": "Level Up" },
+      { "pokemon": "Slowpoke", "id": 79, "evolui_para": "Slowking", "id_evolucao": 199, "metodo_original": "Trade com King's Rock", "metodo_anil": "Level Up" },
+      { "pokemon": "Onix", "id": 95, "evolui_para": "Steelix", "id_evolucao": 208, "metodo_original": "Trade com Metal Coat", "metodo_anil": "Level Up" },
+      { "pokemon": "Scyther", "id": 123, "evolui_para": "Scizor", "id_evolucao": 212, "metodo_original": "Trade com Metal Coat", "metodo_anil": "Level Up" },
+      { "pokemon": "Seadra", "id": 117, "evolui_para": "Kingdra", "id_evolucao": 230, "metodo_original": "Trade com Dragon Scale", "metodo_anil": "Level Up" },
+      { "pokemon": "Poliwhirl", "id": 61, "evolui_para": "Politoed", "id_evolucao": 186, "metodo_original": "Trade com King's Rock", "metodo_anil": "Level Up" },
+      { "pokemon": "Porygon", "id": 137, "evolui_para": "Porygon2", "id_evolucao": 233, "metodo_original": "Trade com Up-Grade", "metodo_anil": "Level Up" },
+      { "pokemon": "Porygon2", "id": 233, "evolui_para": "Porygon-Z", "id_evolucao": 474, "metodo_original": "Trade com Dubious Disc", "metodo_anil": "Level Up" },
+      { "pokemon": "Rhydon", "id": 112, "evolui_para": "Rhyperior", "id_evolucao": 464, "metodo_original": "Trade com Protector", "metodo_anil": "Level Up" },
+      { "pokemon": "Electabuzz", "id": 125, "evolui_para": "Electivire", "id_evolucao": 466, "metodo_original": "Trade com Electirizer", "metodo_anil": "Level Up" },
+      { "pokemon": "Magmar", "id": 126, "evolui_para": "Magmortar", "id_evolucao": 467, "metodo_original": "Trade com Magmarizer", "metodo_anil": "Level Up" },
+      { "pokemon": "Clamperl", "id": 366, "evolui_para": "Huntail", "id_evolucao": 367, "metodo_original": "Trade com DeepSeaTooth", "metodo_anil": "Level Up" },
+      { "pokemon": "Clamperl", "id": 366, "evolui_para": "Gorebyss", "id_evolucao": 368, "metodo_original": "Trade com DeepSeaScale", "metodo_anil": "Level Up" },
+      { "pokemon": "Dusclops", "id": 356, "evolui_para": "Dusknoir", "id_evolucao": 477, "metodo_original": "Trade com Reaper Cloth", "metodo_anil": "Level Up" },
+      { "pokemon": "Boldore", "id": 525, "evolui_para": "Gigalith", "id_evolucao": 526, "metodo_original": "Trade", "metodo_anil": "Level Up" },
+      { "pokemon": "Gurdurr", "id": 533, "evolui_para": "Conkeldurr", "id_evolucao": 534, "metodo_original": "Trade", "metodo_anil": "Level Up" },
+      { "pokemon": "Karrablast", "id": 588, "evolui_para": "Escavalier", "id_evolucao": 589, "metodo_original": "Trade com Shelmet", "metodo_anil": "Level Up" },
+      { "pokemon": "Shelmet", "id": 616, "evolui_para": "Accelgor", "id_evolucao": 617, "metodo_original": "Trade com Karrablast", "metodo_anil": "Level Up" },
+      { "pokemon": "Phantump", "id": 708, "evolui_para": "Trevenant", "id_evolucao": 709, "metodo_original": "Trade", "metodo_anil": "Level Up" },
+      { "pokemon": "Pumpkaboo", "id": 710, "evolui_para": "Gourgeist", "id_evolucao": 711, "metodo_original": "Trade", "metodo_anil": "Level Up" }
+    ]
+  },
+
+  "locais": [
+    {
+      "id": "kanto",
+      "nome": "Kanto Reimaginado",
+      "descricao": "Toda a região de Kanto com novos locais, eventos, missões e gráficos atualizados.",
+      "exclusivo_anil": false
+    },
+    {
+      "id": "caverna_cerulean",
+      "nome": "Caverna Cerulean (Área Nova)",
+      "descricao": "A Caverna Cerulean recebeu uma nova área exploráveis exclusiva do Anil.",
+      "exclusivo_anil": true
+    },
+    {
+      "id": "vulcao_cinnabar",
+      "nome": "Vulcão da Ilha Cinnabar",
+      "descricao": "O interior do vulcão da Ilha Cinnabar pode ser explorado no Anil.",
+      "exclusivo_anil": true
+    },
+    {
+      "id": "johto",
+      "nome": "Partes de Johto",
+      "descricao": "Partes da região de Johto são acessíveis durante o jogo.",
+      "exclusivo_anil": true
+    },
+    {
+      "id": "plasma_islands",
+      "nome": "Ilhas Plasma (Pós-Jogo)",
+      "descricao": "Área exclusiva do pós-jogo onde Pokémon Lendários podem ser encontrados e capturados.",
+      "exclusivo_anil": true,
+      "disponivel": "Após vencer a Liga Pokémon"
+    },
+    {
+      "id": "pueblo_marengo",
+      "nome": "Pueblo Marengo",
+      "descricao": "Local onde Agatha pode ser batalha opcionalmente com um time de nível mais baixo.",
+      "exclusivo_anil": true
+    },
+    {
+      "id": "dojo_saffron",
+      "nome": "Dojo de Saffron City",
+      "descricao": "Local para treino de EVs via Super Training.",
+      "exclusivo_anil": false,
+      "funcao_anil": "Super Training / EV grinding"
+    }
+  ],
+
+  "personagens_novos": [
+    {
+      "id": "urano",
+      "nome": "Urano",
+      "papel": "Admin da Team Rocket",
+      "descricao": "Novo admin da Team Rocket. É o Líder de Ginásio de Viridian City nesta versão (substituindo Giovanni no ginásio). Após a batalha, anuncia sua aposentadoria.",
+      "tipo_ginasio": "Bug (com estética japonesa)"
+    },
+    {
+      "id": "surya",
+      "nome": "Surya",
+      "papel": "Admin da Team Rocket",
+      "descricao": "Segundo novo admin da Team Rocket introduzido no Pokémon Anil."
+    },
+    {
+      "id": "ebano_jovem",
+      "nome": "Professor Ébano (jovem)",
+      "papel": "Cameo do pós-jogo",
+      "descricao": "Uma versão jovem do Professor Ébano de Pokémon Ópalo aparece no pós-jogo.",
+      "origem": "Pokémon Ópalo (outro fan game)"
+    }
+  ],
+
+  "personagens_alterados": [
+    {
+      "id": "blue",
+      "nome": "Blue",
+      "alteracao": "Adaptação Heroica: luta contra a Team Rocket ao lado do jogador. Batalha no SS Anne foi removida por um arco de Team Rocket.",
+      "pos_jogo": "Torna-se Líder de Ginásio"
+    },
+    {
+      "id": "agatha",
+      "nome": "Agatha",
+      "alteracao": "Se aposenta após a Liga, referenciando sua ausência na Gen 2. Batalha opcional disponível em Pueblo Marengo."
+    },
+    {
+      "id": "giovanni",
+      "nome": "Giovanni",
+      "alteracao": "Boss final da Team Rocket. Batalha em Cerulean Forest junto com Blue. Tira a camisa antes da batalha final."
+    },
+    {
+      "id": "koga",
+      "nome": "Koga",
+      "alteracao": "Batalha de Ginásio agora é uma Dupla Battle com sua filha Janine."
+    },
+    {
+      "id": "archer",
+      "nome": "Archer",
+      "alteracao": "Aparece mais cedo que no canon e é batalha múltiplas vezes."
+    },
+    {
+      "id": "ariana",
+      "nome": "Ariana",
+      "alteracao": "Aparece mais cedo que no canon e é batalha múltiplas vezes."
+    }
+  ],
+
+  "chefes_opcionais": [
+    {
+      "nome": "Professor Carvalho (Professor Oak)",
+      "disponivel": "Pós-Liga",
+      "descricao": "O Professor Carvalho pode ser desafiado após vencer a Liga Pokémon."
+    },
+    {
+      "nome": "Bill",
+      "disponivel": "Pós-Jogo",
+      "descricao": "Bill pode ser desafiado no pós-jogo."
+    },
+    {
+      "nome": "Líderes de Ginásio de Hoenn",
+      "disponivel": "Pós-Jogo",
+      "descricao": "Os Líderes de Ginásio de Hoenn aparecem como chefes opcionais."
+    },
+    {
+      "nome": "Agatha",
+      "disponivel": "Pueblo Marengo",
+      "descricao": "Batalha opcional com time de nível mais baixo."
+    }
+  ],
+
+  "formas_regionais": {
+    "disponiveis": true,
+    "descricao": "Inclui todas as formas regionais do jogo principal: Alolan, Galarian, Hisuian e Paldean.",
+    "tipos": ["Alolan", "Galarian", "Hisuian", "Paldean"]
+  },
+
+  "insígnias_e_level_cap": {
+    "descricao": "O limite de nível aumenta conforme você obtém Insígnias de Ginásio.",
+    "nota": "Se o Pokémon atingir o limite, ele ganha apenas 1 EXP por batalha. Ganhe mais Insígnias para aumentar o cap.",
+    "total_insignias": 8,
+    "gyms": [
+      { "ordem": 1, "lider": "Brock", "tipo": "Rock", "cidade": "Pewter City" },
+      { "ordem": 2, "lider": "Misty", "tipo": "Water", "cidade": "Cerulean City" },
+      { "ordem": 3, "lider": "Lt. Surge", "tipo": "Electric", "cidade": "Vermilion City" },
+      { "ordem": 4, "lider": "Erika", "tipo": "Grass", "cidade": "Celadon City" },
+      { "ordem": 5, "lider": "Koga", "tipo": "Poison", "cidade": "Fuchsia City", "nota": "Dupla Battle com Janine" },
+      { "ordem": 6, "lider": "Sabrina", "tipo": "Psychic", "cidade": "Saffron City" },
+      { "ordem": 7, "lider": "Blaine", "tipo": "Fire", "cidade": "Cinnabar Island" },
+      { "ordem": 8, "lider": "Urano (Admin Rocket)", "tipo": "Bug", "cidade": "Viridian City", "nota": "Exclusivo Anil — no lugar de Giovanni" }
+    ]
+  },
+
+  "restricoes_de_rota": [
+    "Após eventos de Lavender Town, o jogador deve ir para o Sul",
+    "Saffron City só pode ser acessada após obter a Insígnia Soul em Fuchsia City"
+  ],
+
+  "faq": [
+    {
+      "pergunta": "O Pokémon Anil tem modo online?",
+      "resposta": "Não. O jogo é exclusivamente single-player e offline."
+    },
+    {
+      "pergunta": "Como evoluir Pokémon que normalmente precisam de troca?",
+      "resposta": "No Anil, esses Pokémon evoluem ao subir de nível. Consulte a Pokédex in-game para o nível exato."
+    },
+    {
+      "pergunta": "Como ativar o Randomizer?",
+      "resposta": "Fale com o NPC em Pallet Town."
+    },
+    {
+      "pergunta": "Existe uma chance de Shiny?",
+      "resposta": "Sim, 0.1% (1 em 1.000 encontros)."
+    },
+    {
+      "pergunta": "Como conseguir Rare Candies infinitos?",
+      "resposta": "Interaja com a caneca/xícara no Centro Pokémon e verifique o inventário."
+    },
+    {
+      "pergunta": "Umbreon/Espeon sem horário noturno?",
+      "resposta": "O jogo usa o relógio do PC/celular. Altere o horário do sistema para simular noite/dia."
+    },
+    {
+      "pergunta": "Posso capturar todos os Pokémon?",
+      "resposta": "Sim. Todos os Pokémon até a Gen 9 estão disponíveis (no Modo Completo)."
+    },
+    {
+      "pergunta": "Onde ficam os saves?",
+      "resposta": "Na pasta do jogo, em 'Saved Games'. Você pode fazer backup ou transferir os arquivos."
+    },
+    {
+      "pergunta": "Posso jogar com controle?",
+      "resposta": "Sim. Conecte um controle Xbox ou PC-compatível. Pressione F1 para reconfigurar os controles."
+    },
+    {
+      "pergunta": "Como ativar o Modo Monotype?",
+      "resposta": "Receba o starter do Professor Oak e fale com o cientista ao lado do laboratório em Pallet Town."
+    }
+  ]
+}
