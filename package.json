@@ -1,6 +1,6 @@
 {
   "name": "pokemon-anil-api",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "API REST + banco SQLite para Pokémon Anil (PT-BR)",
   "main": "server.js",
   "scripts": {
@@ -10,10 +10,11 @@
   },
   "dependencies": {
     "axios": "^1.7.9",
-    "better-sqlite3": "^9.6.0",
+    "better-sqlite3": "^11.10.0",
     "cors": "^2.8.5",
     "express": "^4.21.2",
-    "express-rate-limit": "^7.5.0"
+    "express-rate-limit": "^7.5.0",
+    "node-cache": "^5.1.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"

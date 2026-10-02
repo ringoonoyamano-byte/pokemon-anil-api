@@ -9,6 +9,7 @@ const anilData = require("../data/anil.json");
 router.get("/", (req, res) => {
   res.json({
     jogo: anilData.info,
+    verificacao: anilData.verificacao,
     resumo: {
       total_starters: anilData.starters.total,
       total_modos: anilData.modos_de_jogo.length,
@@ -21,6 +22,9 @@ router.get("/", (req, res) => {
     },
     endpoints: {
       info_geral: "GET /anil",
+      edicoes: "GET /anil/editions",
+      online_ptbr: "GET /anil/online",
+      fontes: "GET /anil/sources",
       modos: "GET /anil/modes",
       starters: "GET /anil/starters",
       starters_por_gen: "GET /anil/starters/:gen (ex: gen1, gen9)",
@@ -280,6 +284,18 @@ router.get("/faq/search", (req, res) => {
     total: resultados.length,
     resultados,
   });
+});
+
+router.get("/editions", (_req, res) => {
+  res.json({ total: anilData.edicoes.length, edicoes: anilData.edicoes });
+});
+
+router.get("/online", (_req, res) => {
+  res.json(anilData.online_ptbr);
+});
+
+router.get("/sources", (_req, res) => {
+  res.json({ verificacao: anilData.verificacao, fontes: anilData.fontes });
 });
 
 module.exports = router;

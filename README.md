@@ -198,7 +198,7 @@ GET /anil/faq/search?q=online
 
 - **PokeAPI:** https://pokeapi.co — Dados base de Pokémon, golpes e tipos
 - **Pokémon Anil Oficial:** https://pokemonanil.com
-- **pkmnanil.com:** https://pkmnanil.com
+- **Mod Pokémon Azul PT-BR:** https://pokemonanilbr.netlify.app/
 - **TV Tropes Anil:** https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/PokemonAnil
 
 ---
@@ -208,3 +208,17 @@ GET /anil/faq/search?q=online
 Esta é uma API **não-oficial**, criada para fins educacionais.  
 Pokémon Anil é um **fan game** desenvolvido por **EricLostie** usando RPG Maker XP + Pokémon Essentials.  
 Pokémon e todos os personagens relacionados são marcas registradas da **The Pokémon Company**.
+
+## Revisão das informações (01/10/2026)
+
+A base histórica em `data/anil.json` descrevia a versão 3.06. `versao_atual` e `online` agora são `null` quando não há confirmação para o original. As regras históricas de encontros, evoluções, taxas e ginásios ainda precisam ser conferidas na edição utilizada. Dados da PokeAPI descrevem a série principal e não confirmam alterações do fangame.
+
+A [página do mod Pokémon Azul PT-BR](https://pokemonanilbr.netlify.app/) anuncia a versão 4.0.7c e multiplayer em beta fechado. Essa numeração pertence ao mod. A [página do criador](https://lostiefangames.blogspot.com/) é a referência para a distribuição original. `pokemonanil.com` não foi confirmado como site oficial do criador.
+
+| Endpoint | Conteúdo |
+|---|---|
+| `GET /anil/editions` | Original e mod PT-BR, com escopo e fontes |
+| `GET /anil/online` | Recursos e atalhos anunciados pelo mod |
+| `GET /anil/sources` | Fontes, data e limites da revisão |
+
+A pesquisa não testa servidores nem integra esta API ao multiplayer. `data/anil.json` é a base das rotas `/anil`; o `anil.json` da raiz é um arquivo separado com outro formato. O seed atual não importa as novas seções e não foi executado nesta revisão, preservando o banco local.

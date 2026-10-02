@@ -2,16 +2,26 @@
   "info": {
     "nome": "Pokémon Anil (Pokémon Añil)",
     "criador": "EricLostie",
-    "versao_atual": "3.06",
+    "versao_atual": null,
     "genero": "RPG Maker XP (Fan Game)",
     "regiao": "Kanto (reimaginado) + partes de Johto",
-    "idiomas": ["Espanhol", "Inglês", "Português-Brasil (PT-BR)"],
-    "plataformas": ["Windows", "Android (Joiplay)", "Mac (Wine)"],
+    "idiomas": [
+      "Espanhol",
+      "Inglês",
+      "Português-Brasil (PT-BR)"
+    ],
+    "plataformas": [
+      "Windows",
+      "Android (Joiplay)",
+      "Mac (Wine)"
+    ],
     "status": "Completo com pós-jogo",
-    "online": false,
-    "site_oficial": "https://pokemonanil.com"
+    "online": null,
+    "site_oficial": "https://lostiefangames.blogspot.com/",
+    "versao_base_dados": "3.06",
+    "nota_versao": "A base histórica descreve a versão 3.06; a versão mais recente do original não foi confirmada nesta revisão. Recursos online dependem da edição.",
+    "verificado_em": "2026-10-01"
   },
-
   "protagonistas": [
     {
       "id": "leaf",
@@ -29,13 +39,15 @@
       "descricao": "Imigrante canônica do anime, inclusa como terceira opção jogável."
     }
   ],
-
   "modos_de_jogo": [
     {
       "id": "classic",
       "nome": "Modo Clássico",
       "descricao": "Apenas Pokémon das Gerações 1 e 2 disponíveis.",
-      "restricoes": ["Somente Gen 1-2", "Equipe da Misty inspirada no anime"],
+      "restricoes": [
+        "Somente Gen 1-2",
+        "Equipe da Misty inspirada no anime"
+      ],
       "dificuldade": "Normal",
       "compativel_com_monotype": false
     },
@@ -51,7 +63,10 @@
       "id": "radical",
       "nome": "Modo Radical",
       "descricao": "Modo difícil: Pokémon da Gen 9, batalhas de chefes mais intensas e sem uso de itens em batalha.",
-      "restricoes": ["Sem itens durante batalhas", "Batalhas de chefes mais difíceis"],
+      "restricoes": [
+        "Sem itens durante batalhas",
+        "Batalhas de chefes mais difíceis"
+      ],
       "dificuldade": "Difícil",
       "compativel_com_monotype": true
     },
@@ -59,7 +74,9 @@
       "id": "nuzlocke",
       "nome": "Modo Nuzlocke",
       "descricao": "Se um Pokémon desmaiar, ele não pode mais ser usado. Regra clássica para jogadores hardcore.",
-      "restricoes": ["Pokémon que desmaia fica permanentemente inutilizável"],
+      "restricoes": [
+        "Pokémon que desmaia fica permanentemente inutilizável"
+      ],
       "dificuldade": "Muito Difícil",
       "compativel_com_monotype": true
     },
@@ -67,7 +84,9 @@
       "id": "nuzlocke_assistido",
       "nome": "Modo Nuzlocke Assistido",
       "descricao": "Versão mais branda do Nuzlocke: é possível reviver Pokémon usando Cinzas Sagradas obtidas ao derrotar Líderes de Ginásio.",
-      "restricoes": ["Pokémon que desmaia fica inutilizável até ser revivido com Cinzas Sagradas"],
+      "restricoes": [
+        "Pokémon que desmaia fica inutilizável até ser revivido com Cinzas Sagradas"
+      ],
       "dificuldade": "Difícil",
       "compativel_com_monotype": true
     },
@@ -100,7 +119,6 @@
       "compativel_com_monotype": false
     }
   ],
-
   "mecanicas_exclusivas": [
     {
       "id": "level_cap",
@@ -207,7 +225,6 @@
       "modo_exclusivo": "nuzlocke_assistido"
     }
   ],
-
   "hm_replacements": [
     {
       "hm": "Corte (Cut)",
@@ -250,89 +267,412 @@
       "descricao": "Não ocupa mais slot de move"
     }
   ],
-
   "starters": {
     "total": 27,
     "descricao": "Todos os starters oficiais das Gens 1-9 estão disponíveis como ponto de partida.",
     "por_geracao": {
       "gen1": [
-        { "nome": "Bulbasaur", "id": 1, "tipos": ["grass", "poison"] },
-        { "nome": "Charmander", "id": 4, "tipos": ["fire"] },
-        { "nome": "Squirtle", "id": 7, "tipos": ["water"] }
+        {
+          "nome": "Bulbasaur",
+          "id": 1,
+          "tipos": [
+            "grass",
+            "poison"
+          ]
+        },
+        {
+          "nome": "Charmander",
+          "id": 4,
+          "tipos": [
+            "fire"
+          ]
+        },
+        {
+          "nome": "Squirtle",
+          "id": 7,
+          "tipos": [
+            "water"
+          ]
+        }
       ],
       "gen2": [
-        { "nome": "Chikorita", "id": 152, "tipos": ["grass"] },
-        { "nome": "Cyndaquil", "id": 155, "tipos": ["fire"] },
-        { "nome": "Totodile", "id": 158, "tipos": ["water"] }
+        {
+          "nome": "Chikorita",
+          "id": 152,
+          "tipos": [
+            "grass"
+          ]
+        },
+        {
+          "nome": "Cyndaquil",
+          "id": 155,
+          "tipos": [
+            "fire"
+          ]
+        },
+        {
+          "nome": "Totodile",
+          "id": 158,
+          "tipos": [
+            "water"
+          ]
+        }
       ],
       "gen3": [
-        { "nome": "Treecko", "id": 252, "tipos": ["grass"] },
-        { "nome": "Torchic", "id": 255, "tipos": ["fire"] },
-        { "nome": "Mudkip", "id": 258, "tipos": ["water", "ground"] }
+        {
+          "nome": "Treecko",
+          "id": 252,
+          "tipos": [
+            "grass"
+          ]
+        },
+        {
+          "nome": "Torchic",
+          "id": 255,
+          "tipos": [
+            "fire"
+          ]
+        },
+        {
+          "nome": "Mudkip",
+          "id": 258,
+          "tipos": [
+            "water",
+            "ground"
+          ]
+        }
       ],
       "gen4": [
-        { "nome": "Turtwig", "id": 387, "tipos": ["grass"] },
-        { "nome": "Chimchar", "id": 390, "tipos": ["fire"] },
-        { "nome": "Piplup", "id": 393, "tipos": ["water"] }
+        {
+          "nome": "Turtwig",
+          "id": 387,
+          "tipos": [
+            "grass"
+          ]
+        },
+        {
+          "nome": "Chimchar",
+          "id": 390,
+          "tipos": [
+            "fire"
+          ]
+        },
+        {
+          "nome": "Piplup",
+          "id": 393,
+          "tipos": [
+            "water"
+          ]
+        }
       ],
       "gen5": [
-        { "nome": "Snivy", "id": 495, "tipos": ["grass"] },
-        { "nome": "Tepig", "id": 498, "tipos": ["fire"] },
-        { "nome": "Oshawott", "id": 501, "tipos": ["water"] }
+        {
+          "nome": "Snivy",
+          "id": 495,
+          "tipos": [
+            "grass"
+          ]
+        },
+        {
+          "nome": "Tepig",
+          "id": 498,
+          "tipos": [
+            "fire"
+          ]
+        },
+        {
+          "nome": "Oshawott",
+          "id": 501,
+          "tipos": [
+            "water"
+          ]
+        }
       ],
       "gen6": [
-        { "nome": "Chespin", "id": 650, "tipos": ["grass"] },
-        { "nome": "Fennekin", "id": 653, "tipos": ["fire"] },
-        { "nome": "Froakie", "id": 656, "tipos": ["water"] }
+        {
+          "nome": "Chespin",
+          "id": 650,
+          "tipos": [
+            "grass"
+          ]
+        },
+        {
+          "nome": "Fennekin",
+          "id": 653,
+          "tipos": [
+            "fire"
+          ]
+        },
+        {
+          "nome": "Froakie",
+          "id": 656,
+          "tipos": [
+            "water"
+          ]
+        }
       ],
       "gen7": [
-        { "nome": "Rowlet", "id": 722, "tipos": ["grass", "flying"] },
-        { "nome": "Litten", "id": 725, "tipos": ["fire"] },
-        { "nome": "Popplio", "id": 728, "tipos": ["water"] }
+        {
+          "nome": "Rowlet",
+          "id": 722,
+          "tipos": [
+            "grass",
+            "flying"
+          ]
+        },
+        {
+          "nome": "Litten",
+          "id": 725,
+          "tipos": [
+            "fire"
+          ]
+        },
+        {
+          "nome": "Popplio",
+          "id": 728,
+          "tipos": [
+            "water"
+          ]
+        }
       ],
       "gen8": [
-        { "nome": "Grookey", "id": 810, "tipos": ["grass"] },
-        { "nome": "Scorbunny", "id": 813, "tipos": ["fire"] },
-        { "nome": "Sobble", "id": 816, "tipos": ["water"] }
+        {
+          "nome": "Grookey",
+          "id": 810,
+          "tipos": [
+            "grass"
+          ]
+        },
+        {
+          "nome": "Scorbunny",
+          "id": 813,
+          "tipos": [
+            "fire"
+          ]
+        },
+        {
+          "nome": "Sobble",
+          "id": 816,
+          "tipos": [
+            "water"
+          ]
+        }
       ],
       "gen9": [
-        { "nome": "Sprigatito", "id": 906, "tipos": ["grass"] },
-        { "nome": "Fuecoco", "id": 909, "tipos": ["fire"] },
-        { "nome": "Quaxly", "id": 912, "tipos": ["water"] }
+        {
+          "nome": "Sprigatito",
+          "id": 906,
+          "tipos": [
+            "grass"
+          ]
+        },
+        {
+          "nome": "Fuecoco",
+          "id": 909,
+          "tipos": [
+            "fire"
+          ]
+        },
+        {
+          "nome": "Quaxly",
+          "id": 912,
+          "tipos": [
+            "water"
+          ]
+        }
       ]
     }
   },
-
   "evolution_changes": {
     "descricao": "Pokémon que normalmente evoluem por Troca agora evoluem ao subir de nível no Pokémon Anil.",
     "nota": "Consulte a Pokédex in-game para o nível exato de cada evolução.",
     "lista": [
-      { "pokemon": "Kadabra", "id": 64, "evolui_para": "Alakazam", "id_evolucao": 65, "metodo_original": "Trade", "metodo_anil": "Level Up" },
-      { "pokemon": "Haunter", "id": 93, "evolui_para": "Gengar", "id_evolucao": 94, "metodo_original": "Trade", "metodo_anil": "Level Up" },
-      { "pokemon": "Graveler", "id": 75, "evolui_para": "Golem", "id_evolucao": 76, "metodo_original": "Trade", "metodo_anil": "Level Up" },
-      { "pokemon": "Machoke", "id": 67, "evolui_para": "Machamp", "id_evolucao": 68, "metodo_original": "Trade", "metodo_anil": "Level Up" },
-      { "pokemon": "Slowpoke", "id": 79, "evolui_para": "Slowking", "id_evolucao": 199, "metodo_original": "Trade com King's Rock", "metodo_anil": "Level Up" },
-      { "pokemon": "Onix", "id": 95, "evolui_para": "Steelix", "id_evolucao": 208, "metodo_original": "Trade com Metal Coat", "metodo_anil": "Level Up" },
-      { "pokemon": "Scyther", "id": 123, "evolui_para": "Scizor", "id_evolucao": 212, "metodo_original": "Trade com Metal Coat", "metodo_anil": "Level Up" },
-      { "pokemon": "Seadra", "id": 117, "evolui_para": "Kingdra", "id_evolucao": 230, "metodo_original": "Trade com Dragon Scale", "metodo_anil": "Level Up" },
-      { "pokemon": "Poliwhirl", "id": 61, "evolui_para": "Politoed", "id_evolucao": 186, "metodo_original": "Trade com King's Rock", "metodo_anil": "Level Up" },
-      { "pokemon": "Porygon", "id": 137, "evolui_para": "Porygon2", "id_evolucao": 233, "metodo_original": "Trade com Up-Grade", "metodo_anil": "Level Up" },
-      { "pokemon": "Porygon2", "id": 233, "evolui_para": "Porygon-Z", "id_evolucao": 474, "metodo_original": "Trade com Dubious Disc", "metodo_anil": "Level Up" },
-      { "pokemon": "Rhydon", "id": 112, "evolui_para": "Rhyperior", "id_evolucao": 464, "metodo_original": "Trade com Protector", "metodo_anil": "Level Up" },
-      { "pokemon": "Electabuzz", "id": 125, "evolui_para": "Electivire", "id_evolucao": 466, "metodo_original": "Trade com Electirizer", "metodo_anil": "Level Up" },
-      { "pokemon": "Magmar", "id": 126, "evolui_para": "Magmortar", "id_evolucao": 467, "metodo_original": "Trade com Magmarizer", "metodo_anil": "Level Up" },
-      { "pokemon": "Clamperl", "id": 366, "evolui_para": "Huntail", "id_evolucao": 367, "metodo_original": "Trade com DeepSeaTooth", "metodo_anil": "Level Up" },
-      { "pokemon": "Clamperl", "id": 366, "evolui_para": "Gorebyss", "id_evolucao": 368, "metodo_original": "Trade com DeepSeaScale", "metodo_anil": "Level Up" },
-      { "pokemon": "Dusclops", "id": 356, "evolui_para": "Dusknoir", "id_evolucao": 477, "metodo_original": "Trade com Reaper Cloth", "metodo_anil": "Level Up" },
-      { "pokemon": "Boldore", "id": 525, "evolui_para": "Gigalith", "id_evolucao": 526, "metodo_original": "Trade", "metodo_anil": "Level Up" },
-      { "pokemon": "Gurdurr", "id": 533, "evolui_para": "Conkeldurr", "id_evolucao": 534, "metodo_original": "Trade", "metodo_anil": "Level Up" },
-      { "pokemon": "Karrablast", "id": 588, "evolui_para": "Escavalier", "id_evolucao": 589, "metodo_original": "Trade com Shelmet", "metodo_anil": "Level Up" },
-      { "pokemon": "Shelmet", "id": 616, "evolui_para": "Accelgor", "id_evolucao": 617, "metodo_original": "Trade com Karrablast", "metodo_anil": "Level Up" },
-      { "pokemon": "Phantump", "id": 708, "evolui_para": "Trevenant", "id_evolucao": 709, "metodo_original": "Trade", "metodo_anil": "Level Up" },
-      { "pokemon": "Pumpkaboo", "id": 710, "evolui_para": "Gourgeist", "id_evolucao": 711, "metodo_original": "Trade", "metodo_anil": "Level Up" }
+      {
+        "pokemon": "Kadabra",
+        "id": 64,
+        "evolui_para": "Alakazam",
+        "id_evolucao": 65,
+        "metodo_original": "Trade",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Haunter",
+        "id": 93,
+        "evolui_para": "Gengar",
+        "id_evolucao": 94,
+        "metodo_original": "Trade",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Graveler",
+        "id": 75,
+        "evolui_para": "Golem",
+        "id_evolucao": 76,
+        "metodo_original": "Trade",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Machoke",
+        "id": 67,
+        "evolui_para": "Machamp",
+        "id_evolucao": 68,
+        "metodo_original": "Trade",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Slowpoke",
+        "id": 79,
+        "evolui_para": "Slowking",
+        "id_evolucao": 199,
+        "metodo_original": "Trade com King's Rock",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Onix",
+        "id": 95,
+        "evolui_para": "Steelix",
+        "id_evolucao": 208,
+        "metodo_original": "Trade com Metal Coat",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Scyther",
+        "id": 123,
+        "evolui_para": "Scizor",
+        "id_evolucao": 212,
+        "metodo_original": "Trade com Metal Coat",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Seadra",
+        "id": 117,
+        "evolui_para": "Kingdra",
+        "id_evolucao": 230,
+        "metodo_original": "Trade com Dragon Scale",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Poliwhirl",
+        "id": 61,
+        "evolui_para": "Politoed",
+        "id_evolucao": 186,
+        "metodo_original": "Trade com King's Rock",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Porygon",
+        "id": 137,
+        "evolui_para": "Porygon2",
+        "id_evolucao": 233,
+        "metodo_original": "Trade com Up-Grade",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Porygon2",
+        "id": 233,
+        "evolui_para": "Porygon-Z",
+        "id_evolucao": 474,
+        "metodo_original": "Trade com Dubious Disc",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Rhydon",
+        "id": 112,
+        "evolui_para": "Rhyperior",
+        "id_evolucao": 464,
+        "metodo_original": "Trade com Protector",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Electabuzz",
+        "id": 125,
+        "evolui_para": "Electivire",
+        "id_evolucao": 466,
+        "metodo_original": "Trade com Electirizer",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Magmar",
+        "id": 126,
+        "evolui_para": "Magmortar",
+        "id_evolucao": 467,
+        "metodo_original": "Trade com Magmarizer",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Clamperl",
+        "id": 366,
+        "evolui_para": "Huntail",
+        "id_evolucao": 367,
+        "metodo_original": "Trade com DeepSeaTooth",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Clamperl",
+        "id": 366,
+        "evolui_para": "Gorebyss",
+        "id_evolucao": 368,
+        "metodo_original": "Trade com DeepSeaScale",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Dusclops",
+        "id": 356,
+        "evolui_para": "Dusknoir",
+        "id_evolucao": 477,
+        "metodo_original": "Trade com Reaper Cloth",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Boldore",
+        "id": 525,
+        "evolui_para": "Gigalith",
+        "id_evolucao": 526,
+        "metodo_original": "Trade",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Gurdurr",
+        "id": 533,
+        "evolui_para": "Conkeldurr",
+        "id_evolucao": 534,
+        "metodo_original": "Trade",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Karrablast",
+        "id": 588,
+        "evolui_para": "Escavalier",
+        "id_evolucao": 589,
+        "metodo_original": "Trade com Shelmet",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Shelmet",
+        "id": 616,
+        "evolui_para": "Accelgor",
+        "id_evolucao": 617,
+        "metodo_original": "Trade com Karrablast",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Phantump",
+        "id": 708,
+        "evolui_para": "Trevenant",
+        "id_evolucao": 709,
+        "metodo_original": "Trade",
+        "metodo_anil": "Level Up"
+      },
+      {
+        "pokemon": "Pumpkaboo",
+        "id": 710,
+        "evolui_para": "Gourgeist",
+        "id_evolucao": 711,
+        "metodo_original": "Trade",
+        "metodo_anil": "Level Up"
+      }
     ]
   },
-
   "locais": [
     {
       "id": "kanto",
@@ -379,7 +719,6 @@
       "funcao_anil": "Super Training / EV grinding"
     }
   ],
-
   "personagens_novos": [
     {
       "id": "urano",
@@ -402,7 +741,6 @@
       "origem": "Pokémon Ópalo (outro fan game)"
     }
   ],
-
   "personagens_alterados": [
     {
       "id": "blue",
@@ -436,7 +774,6 @@
       "alteracao": "Aparece mais cedo que no canon e é batalha múltiplas vezes."
     }
   ],
-
   "chefes_opcionais": [
     {
       "nome": "Professor Carvalho (Professor Oak)",
@@ -459,38 +796,81 @@
       "descricao": "Batalha opcional com time de nível mais baixo."
     }
   ],
-
   "formas_regionais": {
     "disponiveis": true,
     "descricao": "Inclui todas as formas regionais do jogo principal: Alolan, Galarian, Hisuian e Paldean.",
-    "tipos": ["Alolan", "Galarian", "Hisuian", "Paldean"]
+    "tipos": [
+      "Alolan",
+      "Galarian",
+      "Hisuian",
+      "Paldean"
+    ]
   },
-
   "insígnias_e_level_cap": {
     "descricao": "O limite de nível aumenta conforme você obtém Insígnias de Ginásio.",
     "nota": "Se o Pokémon atingir o limite, ele ganha apenas 1 EXP por batalha. Ganhe mais Insígnias para aumentar o cap.",
     "total_insignias": 8,
     "gyms": [
-      { "ordem": 1, "lider": "Brock", "tipo": "Rock", "cidade": "Pewter City" },
-      { "ordem": 2, "lider": "Misty", "tipo": "Water", "cidade": "Cerulean City" },
-      { "ordem": 3, "lider": "Lt. Surge", "tipo": "Electric", "cidade": "Vermilion City" },
-      { "ordem": 4, "lider": "Erika", "tipo": "Grass", "cidade": "Celadon City" },
-      { "ordem": 5, "lider": "Koga", "tipo": "Poison", "cidade": "Fuchsia City", "nota": "Dupla Battle com Janine" },
-      { "ordem": 6, "lider": "Sabrina", "tipo": "Psychic", "cidade": "Saffron City" },
-      { "ordem": 7, "lider": "Blaine", "tipo": "Fire", "cidade": "Cinnabar Island" },
-      { "ordem": 8, "lider": "Urano (Admin Rocket)", "tipo": "Bug", "cidade": "Viridian City", "nota": "Exclusivo Anil — no lugar de Giovanni" }
+      {
+        "ordem": 1,
+        "lider": "Brock",
+        "tipo": "Rock",
+        "cidade": "Pewter City"
+      },
+      {
+        "ordem": 2,
+        "lider": "Misty",
+        "tipo": "Water",
+        "cidade": "Cerulean City"
+      },
+      {
+        "ordem": 3,
+        "lider": "Lt. Surge",
+        "tipo": "Electric",
+        "cidade": "Vermilion City"
+      },
+      {
+        "ordem": 4,
+        "lider": "Erika",
+        "tipo": "Grass",
+        "cidade": "Celadon City"
+      },
+      {
+        "ordem": 5,
+        "lider": "Koga",
+        "tipo": "Poison",
+        "cidade": "Fuchsia City",
+        "nota": "Dupla Battle com Janine"
+      },
+      {
+        "ordem": 6,
+        "lider": "Sabrina",
+        "tipo": "Psychic",
+        "cidade": "Saffron City"
+      },
+      {
+        "ordem": 7,
+        "lider": "Blaine",
+        "tipo": "Fire",
+        "cidade": "Cinnabar Island"
+      },
+      {
+        "ordem": 8,
+        "lider": "Urano (Admin Rocket)",
+        "tipo": "Bug",
+        "cidade": "Viridian City",
+        "nota": "Exclusivo Anil — no lugar de Giovanni"
+      }
     ]
   },
-
   "restricoes_de_rota": [
     "Após eventos de Lavender Town, o jogador deve ir para o Sul",
     "Saffron City só pode ser acessada após obter a Insígnia Soul em Fuchsia City"
   ],
-
   "faq": [
     {
       "pergunta": "O Pokémon Anil tem modo online?",
-      "resposta": "Não. O jogo é exclusivamente single-player e offline."
+      "resposta": "Depende da edição. Pokémon Azul PT-BR é um mod que anuncia multiplayer. Consulte /anil/editions e /anil/online; não aplique seus recursos automaticamente ao original."
     },
     {
       "pergunta": "Como evoluir Pokémon que normalmente precisam de troca?",
@@ -518,7 +898,7 @@
     },
     {
       "pergunta": "Onde ficam os saves?",
-      "resposta": "Na pasta do jogo, em 'Saved Games'. Você pode fazer backup ou transferir os arquivos."
+      "resposta": "A localização depende da edição e plataforma. Consulte as instruções da distribuição utilizada. O mod Pokémon Azul anuncia saves na nuvem; faça backup antes de mudar de versão."
     },
     {
       "pergunta": "Posso jogar com controle?",
@@ -527,6 +907,103 @@
     {
       "pergunta": "Como ativar o Modo Monotype?",
       "resposta": "Receba o starter do Professor Oak e fale com o cientista ao lado do laboratório em Pallet Town."
+    },
+    {
+      "pergunta": "Pokémon Azul PT-BR é a mesma edição do Añil original?",
+      "resposta": "A página brasileira apresenta Pokémon Azul como mod de Pokémon Añil. A versão anunciada do mod não determina a versão atual do jogo original.",
+      "fontes": [
+        "azul_ptbr"
+      ]
     }
-  ]
+  ],
+  "verificacao": {
+    "data": "2026-10-01",
+    "escopo": "Identidade do jogo, fontes e mod PT-BR online.",
+    "dados_historicos": "Modos, encontros, evoluções, ginásios, taxas e itens existentes ainda precisam de conferência por edição e versão; não representam dados extraídos dos arquivos do jogo.",
+    "pokeapi": "Dados da série principal não comprovam regras ou disponibilidade no Añil ou em seus mods."
+  },
+  "fontes": [
+    {
+      "id": "criador",
+      "nome": "Lostie Fangames - página do criador",
+      "url": "https://lostiefangames.blogspot.com/",
+      "tipo": "primaria",
+      "verificado_em": "2026-10-01"
+    },
+    {
+      "id": "azul_ptbr",
+      "nome": "Pokémon Azul PT-BR - página do mod",
+      "url": "https://pokemonanilbr.netlify.app/",
+      "tipo": "primaria_do_mod",
+      "verificado_em": "2026-10-01"
+    },
+    {
+      "id": "catalogo",
+      "nome": "Whack a Hack! - catálogo de Pokémon Añil",
+      "url": "https://whackahack.com/juegos/pokemon-anil/",
+      "tipo": "secundaria",
+      "verificado_em": "2026-10-01"
+    }
+  ],
+  "edicoes": [
+    {
+      "id": "anil_original",
+      "nome": "Pokémon Añil",
+      "criador": "EricLostie",
+      "idioma_original": "Espanhol",
+      "site": "https://lostiefangames.blogspot.com/",
+      "versao_atual": null,
+      "online": null,
+      "nota": "Consultar o criador para a distribuição atual; não confundir com o mod brasileiro.",
+      "fontes": [
+        "criador",
+        "catalogo"
+      ]
+    },
+    {
+      "id": "azul_ptbr_online",
+      "nome": "Pokémon Azul Multiplayer (mod de Pokémon Añil)",
+      "idioma": "pt-BR",
+      "versao_anunciada": "4.0.7c",
+      "status_anunciado": "Beta fechado com chaves limitadas",
+      "online": true,
+      "site": "https://pokemonanilbr.netlify.app/",
+      "fontes": [
+        "azul_ptbr"
+      ],
+      "verificado_em": "2026-10-01",
+      "nota": "Informações anunciadas pelo mod; disponibilidade dos servidores não testada."
+    }
+  ],
+  "online_ptbr": {
+    "edicao": "azul_ptbr_online",
+    "fonte": "https://pokemonanilbr.netlify.app/",
+    "verificado_em": "2026-10-01",
+    "recursos_anunciados": [
+      "Saves na nuvem",
+      "Grupos cooperativos",
+      "Mercado entre jogadores",
+      "Chat por proximidade",
+      "Canais de servidor"
+    ],
+    "atalhos": [
+      {
+        "tecla": "T",
+        "funcao": "Chat local"
+      },
+      {
+        "tecla": "F5",
+        "funcao": "Recarregar gráficos"
+      },
+      {
+        "tecla": "F7",
+        "funcao": "Consultar nome e ID"
+      }
+    ],
+    "compatibilidade_anunciada": [
+      "PC",
+      "Android com JoiPlay"
+    ],
+    "nota": "Recursos específicos do mod; não foram testados dentro do jogo."
+  }
 }

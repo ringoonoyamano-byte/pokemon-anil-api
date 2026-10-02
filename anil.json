@@ -1,0 +1,357 @@
+{
+  "jogo": {
+    "nome": "Pokémon Anil",
+    "criador": "EricLostie",
+    "engine": "RPG Maker XP",
+    "versao": "3.06",
+    "idioma": "PT-BR",
+    "single_player": true,
+    "sites": [
+      "https://pokemonanil.com",
+      "https://pkmnanil.com"
+    ],
+    "descricao": "Reimaginação de Kanto com mecânicas modernas, level cap, PokeVial e sem HMs."
+  },
+  "modos": [
+    {
+      "id": "classic",
+      "nome": "Clássico",
+      "desc": "Experiência padrão do Anil."
+    },
+    {
+      "id": "complete",
+      "nome": "Completo",
+      "desc": "Todos os Pokémon disponíveis."
+    },
+    {
+      "id": "radical",
+      "nome": "Radical",
+      "desc": "Regras mais duras e batalhas difíceis."
+    },
+    {
+      "id": "nuzlocke",
+      "nome": "Nuzlocke",
+      "desc": "Pokémon desmaiado é perdido."
+    },
+    {
+      "id": "nuzlocke_assistido",
+      "nome": "Nuzlocke Assistido",
+      "desc": "Nuzlocke com auxílios."
+    },
+    {
+      "id": "randomizer",
+      "nome": "Randomizer",
+      "desc": "Encontros aleatórios."
+    },
+    {
+      "id": "monotype",
+      "nome": "Monotype",
+      "desc": "Time de um único tipo."
+    }
+  ],
+  "mecanicas": [
+    {
+      "id": "level_cap",
+      "nome": "Level Cap",
+      "desc": "Teto de nível por insígnia."
+    },
+    {
+      "id": "pokevial",
+      "nome": "PokeVial",
+      "desc": "Cura a equipe sem ir ao Centro."
+    },
+    {
+      "id": "pokerider",
+      "nome": "PokeRider",
+      "desc": "Substitui HM de campo."
+    },
+    {
+      "id": "super_training",
+      "nome": "Super Training",
+      "desc": "Treino de EV/IV."
+    },
+    {
+      "id": "tms_reutilizaveis",
+      "nome": "TMs Reutilizáveis",
+      "desc": "TMs não são consumidas."
+    },
+    {
+      "id": "sem_hms",
+      "nome": "Sem HMs",
+      "desc": "HMs substituídos por itens-chave."
+    },
+    {
+      "id": "evolucao_trade",
+      "nome": "Evolução por Troca → Nível",
+      "desc": "Trade evolutions viraram level up."
+    },
+    {
+      "id": "shiny_rate",
+      "nome": "Taxa Shiny",
+      "desc": "1/1000 — bem mais generosa."
+    },
+    {
+      "id": "tipos_visiveis",
+      "nome": "Tipos Visíveis",
+      "desc": "Tipos mostrados na batalha."
+    },
+    {
+      "id": "aprendedor_de_moves",
+      "nome": "Move Relearner",
+      "desc": "Reaprender golpes."
+    },
+    {
+      "id": "loja_no_centro",
+      "nome": "Loja no Centro",
+      "desc": "Compra sem sair do Centro."
+    },
+    {
+      "id": "fast_forward",
+      "nome": "Fast Forward",
+      "desc": "Acelera o jogo."
+    },
+    {
+      "id": "pokeradar",
+      "nome": "PokeRadar",
+      "desc": "Encontra Pokémon raros."
+    },
+    {
+      "id": "mega_evolucoes",
+      "nome": "Mega Evoluções",
+      "desc": "Disponíveis no pós-jogo."
+    },
+    {
+      "id": "pokedex_bulbapedia",
+      "nome": "Pokédex Bulbapedia",
+      "desc": "Dados rápidos na dex."
+    },
+    {
+      "id": "rare_candy_infinito",
+      "nome": "Rare Candy Infinito",
+      "desc": "Farmável."
+    },
+    {
+      "id": "cinzas_sagradas",
+      "nome": "Cinzas Sagradas",
+      "desc": "Item exclusivo."
+    }
+  ],
+  "evolution_changes": [
+    "Kadabra",
+    "Haunter",
+    "Graveler",
+    "Machoke",
+    "Slowpoke",
+    "Onix",
+    "Scyther",
+    "Seadra",
+    "Poliwhirl",
+    "Porygon",
+    "Porygon2",
+    "Rhydon",
+    "Electabuzz",
+    "Magmar",
+    "Clamperl",
+    "Dusclops",
+    "Boldore",
+    "Gurdurr",
+    "Karrablast",
+    "Shelmet",
+    "Phantump",
+    "Pumpkaboo"
+  ],
+  "key_items": [
+    {
+      "hm": "Cut",
+      "item": "Tesoura de Poda"
+    },
+    {
+      "hm": "Fly",
+      "item": "Asa de PokeRider"
+    },
+    {
+      "hm": "Surf",
+      "item": "Prancha"
+    },
+    {
+      "hm": "Strength",
+      "item": "Cinto de Força"
+    },
+    {
+      "hm": "Flash",
+      "item": "Lanterna"
+    },
+    {
+      "hm": "Rock Smash",
+      "item": "Marreta"
+    },
+    {
+      "hm": "Waterfall",
+      "item": "Escalada"
+    },
+    {
+      "hm": "Dive",
+      "item": "Mergulho"
+    }
+  ],
+  "starters": {
+    "1": [
+      "Bulbasaur",
+      "Charmander",
+      "Squirtle"
+    ],
+    "2": [
+      "Chikorita",
+      "Cyndaquil",
+      "Totodile"
+    ],
+    "3": [
+      "Treecko",
+      "Torchic",
+      "Mudkip"
+    ],
+    "4": [
+      "Turtwig",
+      "Chimchar",
+      "Piplup"
+    ],
+    "5": [
+      "Snivy",
+      "Tepig",
+      "Oshawott"
+    ],
+    "6": [
+      "Chespin",
+      "Fennekin",
+      "Froakie"
+    ],
+    "7": [
+      "Rowlet",
+      "Litten",
+      "Popplio"
+    ],
+    "8": [
+      "Grookey",
+      "Scorbunny",
+      "Sobble"
+    ],
+    "9": [
+      "Sprigatito",
+      "Fuecoco",
+      "Quaxly"
+    ]
+  },
+  "gyms": [
+    {
+      "n": 1,
+      "nome": "Brock",
+      "cidade": "Ciudad Plateada",
+      "tipos": [
+        "rock",
+        "ground"
+      ],
+      "cap": 14
+    },
+    {
+      "n": 2,
+      "nome": "Misty",
+      "cidade": "Ciudad Celeste",
+      "tipos": [
+        "water"
+      ],
+      "cap": 23
+    },
+    {
+      "n": 3,
+      "nome": "Ten. Surge",
+      "cidade": "Ciudad Carmín",
+      "tipos": [
+        "electric"
+      ],
+      "cap": 30
+    },
+    {
+      "n": 4,
+      "nome": "Erika",
+      "cidade": "Ciudad Azulona",
+      "tipos": [
+        "grass"
+      ],
+      "cap": 39
+    },
+    {
+      "n": 5,
+      "nome": "Koga & Sachiko",
+      "cidade": "Ciudad Fucsia",
+      "tipos": [
+        "poison",
+        "bug"
+      ],
+      "cap": 49
+    },
+    {
+      "n": 6,
+      "nome": "Sabrina",
+      "cidade": "Ciudad Azafrán",
+      "tipos": [
+        "psychic"
+      ],
+      "cap": 54
+    },
+    {
+      "n": 7,
+      "nome": "Blaine",
+      "cidade": "Isla Canela",
+      "tipos": [
+        "fire"
+      ],
+      "cap": 59
+    },
+    {
+      "n": 8,
+      "nome": "Urano",
+      "cidade": "Ciudad Verde",
+      "tipos": [
+        "bug"
+      ],
+      "cap": 66
+    }
+  ],
+  "postgame": {
+    "liga": 75,
+    "pos_jogo": 85,
+    "conteudo": [
+      "Ilhas Prisma",
+      "Mega Evoluções",
+      "Lendários",
+      "Torneio Prisma"
+    ]
+  },
+  "rates": {
+    "shiny": "1/1000",
+    "exp_cap": 85,
+    "level_cap_max": 85
+  },
+  "faq": [
+    {
+      "q": "O que é o Pokémon Anil?",
+      "a": "Fan game PT-BR criado por EricLostie que reimagina Kanto com mecânicas modernas."
+    },
+    {
+      "q": "Como evoluir Pokémon que evoluíam por troca?",
+      "a": "No Anil eles evoluem por level up — não precisa trocar."
+    },
+    {
+      "q": "Onde fica o HM Fly?",
+      "a": "No Anil não existem HMs; você usa o PokeRider, obtido na história."
+    },
+    {
+      "q": "Qual a taxa de shiny?",
+      "a": "1 em 1000, bem mais generosa que nos jogos oficiais."
+    },
+    {
+      "q": "Existe level cap?",
+      "a": "Sim. Cada insígnia libera um teto, de 14 (Brock) até 66 (Urano)."
+    }
+  ]
+}

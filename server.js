@@ -4,7 +4,7 @@ const rateLimit  = require("express-rate-limit");
 const { initDb, cacheClean } = require("./database/db");
 
 // Rotas
-const pokemonRoutes    = require("./routes/pokemon");
+const pokemonRoutes    = require("./routes/routes_pokemon");
 const movesRoutes      = require("./routes/moves");
 const typesRoutes      = require("./routes/types");
 const anilRoutes       = require("./routes/anil");
@@ -30,10 +30,10 @@ app.use(express.json());
 
 const limiter = rateLimit({
   windowMs: 60 * 1000,
-  max: 100,
+  max: 600, // 600 req/min
   standardHeaders: true,
   legacyHeaders: false,
-  message: { erro: "Muitas requisições. Aguarde 1 minuto.", limite: "100 req/min" },
+  message: { erro: "Muitas requisições. Aguarde 1 minuto.", limite: "600 req/min" },
 });
 app.use(limiter);
 

@@ -1,6 +1,5 @@
 # dependências
 node_modules/
-package-lock.json
 
 # banco de dados local
 *.db
@@ -18,3 +17,7 @@ npm-debug.log*
 # sistema
 Thumbs.db
 .DS_Store
+
+# arquivos auxiliares SQLite
+*.db-wal
+*.db-shm
