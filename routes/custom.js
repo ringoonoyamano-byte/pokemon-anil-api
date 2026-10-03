@@ -7,8 +7,24 @@
 const express = require("express");
 const router  = express.Router();
 const { getDb } = require("../database/db");
+router.use(require('../middleware/validation').pagination);
 
 const CATEGORIAS = ["modo", "mecanica", "evolucao", "item_chave", "starter", "npc", "mapa", "move", "evento", "outro"];
+const { text } = require('../middleware/validation');
+router.use((req, res, next) => {
+  if (req.query.q !== undefined && typeof req.query.q !== 'string') return res.status(400).json({ erro: 'q deve ser texto.' });
+  if (req.query.categoria !== undefined && !CATEGORIAS.includes(req.query.categoria)) return res.status(400).json({ erro: 'Categoria inválida.' });
+  if (!['POST', 'PUT'].includes(req.method)) return next();
+  const b = req.body;
+  if (!b || typeof b !== 'object' || Array.isArray(b)) return res.status(400).json({ erro: 'Envie um objeto JSON.' });
+  if (['nome', 'chave'].some(k => b[k] !== undefined && !text(b[k]))
+      || (b.categoria !== undefined && !CATEGORIAS.includes(b.categoria))
+      || (b.dados !== undefined && (b.dados === null || typeof b.dados !== 'object' || Array.isArray(b.dados)))
+      || (b.fonte !== undefined && b.fonte !== null && typeof b.fonte !== 'string')) {
+    return res.status(400).json({ erro: 'Campos inválidos. dados deve ser um objeto JSON.' });
+  }
+  next();
+});
 
 function formatRow(row) {
   if (!row) return null;
@@ -135,14 +151,14 @@ router.put("/:chave", (req, res) => {
     SET
       nome          = COALESCE(?, nome),
       dados         = COALESCE(?, dados),
-      fonte         = COALESCE(?, fonte),
+      fonte         = ?,
       categoria     = COALESCE(?, categoria),
       atualizado_em = unixepoch()
     WHERE chave = ?
   `).run(
     nome || null,
     dados ? JSON.stringify(dados) : null,
-    fonte || null,
+    fonte !== undefined ? fonte : old.fonte,
     categoria || null,
     req.params.chave
   );

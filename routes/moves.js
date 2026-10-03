@@ -5,6 +5,7 @@ const NodeCache = require("node-cache");
 
 const cache = new NodeCache({ stdTTL: 3600 });
 const POKEAPI = "https://pokeapi.co/api/v2";
+const upstreamError = require("../middleware/upstream-error");
 
 /**
  * GET /moves/:name
@@ -19,11 +20,11 @@ router.get("/:name", async (req, res) => {
   }
 
   try {
-    const { data } = await axios.get(`${POKEAPI}/move/${name.toLowerCase()}`);
+    const { data } = await axios.get(`${POKEAPI}/move/${name.toLowerCase()}`, { timeout: 15000 });
 
     // Nome em português (se disponível)
     const nomePt = data.names.find(
-      (n) => n.language.name === "de" // PokeAPI não oferece PT oficial; using German as fallback
+      (n) => ["pt-BR", "pt-br", "pt"].includes(n.language.name)
     );
 
     // Efeito em inglês
@@ -36,6 +37,8 @@ router.get("/:name", async (req, res) => {
       id: data.id,
       nome: data.name,
       nome_traduzido: nomePt?.name || data.name,
+      idioma_nome: nomePt?.language.name || 'identificador',
+      traducao_disponivel: !!nomePt,
       tipo: data.type.name,
       categoria: data.damage_class.name, // physical, special, status
       poder: data.power,
@@ -44,7 +47,7 @@ router.get("/:name", async (req, res) => {
       prioridade: data.priority,
       alcance: data.target.name,
       efeito_chance: data.effect_chance,
-      efeito: efeito ? efeito.effect.replace(/\$effect_chance/g, data.effect_chance || "?") : null,
+      efeito: efeito ? efeito.effect.replace(/\$effect_chance/g, data.effect_chance ?? "?") : null,
       efeito_resumido: efeitoResumido?.flavor_text || null,
       geracao_introduzida: data.generation.name,
       meta: data.meta
@@ -71,7 +74,7 @@ router.get("/:name", async (req, res) => {
     if (err.response?.status === 404) {
       return res.status(404).json({ erro: `Move '${name}' não encontrado na PokeAPI.` });
     }
-    res.status(500).json({ erro: "Erro ao consultar a PokeAPI.", detalhe: err.message });
+    upstreamError(res, err, "Recurso não encontrado na PokeAPI.");
   }
 });
 
@@ -88,7 +91,7 @@ router.get("/type/:type", async (req, res) => {
   }
 
   try {
-    const { data } = await axios.get(`${POKEAPI}/type/${type.toLowerCase()}`);
+    const { data } = await axios.get(`${POKEAPI}/type/${type.toLowerCase()}`, { timeout: 15000 });
 
     const result = {
       tipo: type,
@@ -105,7 +108,7 @@ router.get("/type/:type", async (req, res) => {
     if (err.response?.status === 404) {
       return res.status(404).json({ erro: `Tipo '${type}' não encontrado.` });
     }
-    res.status(500).json({ erro: "Erro ao consultar a PokeAPI.", detalhe: err.message });
+    upstreamError(res, err, "Recurso não encontrado na PokeAPI.");
   }
 });
 
@@ -131,7 +134,7 @@ router.get("/category/:category", async (req, res) => {
 
   try {
     const { data } = await axios.get(
-      `${POKEAPI}/move-damage-class/${category.toLowerCase()}`
+      `${POKEAPI}/move-damage-class/${category.toLowerCase()}`, { timeout: 15000 }
     );
 
     const result = {
@@ -144,7 +147,7 @@ router.get("/category/:category", async (req, res) => {
     cache.set(cacheKey, result);
     res.json(result);
   } catch (err) {
-    res.status(500).json({ erro: "Erro ao consultar a PokeAPI.", detalhe: err.message });
+    upstreamError(res, err, "Recurso não encontrado na PokeAPI.");
   }
 });
 

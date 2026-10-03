@@ -6,6 +6,7 @@ const express = require("express");
 const router  = express.Router();
 const { pokeFetch } = require("../middleware/cache");
 const ANIL = require("../data/anil.json");
+const upstreamError = require('../middleware/upstream-error');
 
 /* evolution_changes é um OBJETO { descricao, nota, lista:[...] },
    e cada item tem { pokemon, evolui_para } — nao um array de strings.
@@ -100,41 +101,46 @@ router.get("/:id", async (req, res) => {
       anil: notasAnil(p.name)
     });
   }catch(err){
-    res.status(404).json({ erro: "Pokémon não encontrado.", detalhe: err.message });
+    upstreamError(res, err, "Pokémon não encontrado.");
   }
 });
 
 /* GET /pokemon/:id/moves */
 router.get("/:id/moves", async (req, res) => {
+  const version = req.query.version;
+  if (version !== undefined && (typeof version !== 'string' || !/^[a-z0-9-]+$/.test(version))) {
+    return res.status(400).json({ erro: 'version deve ser um identificador de versão da PokeAPI.' });
+  }
   try{
     const p = await pokeFetch("pokemon/" + req.params.id);
+    const moves = (p.moves || []).map(m => ({
+      name: m.move.name,
+      url: m.move.url,
+      metodos: (m.version_group_details || [])
+        .filter(d => !version || d.version_group.name === version)
+        .map(d => ({ metodo: d.move_learn_method.name, nivel: d.level_learned_at, jogo: d.version_group.name }))
+    })).filter(m => m.metodos.length > 0);
     res.json({
       id: p.id, name: p.name,
-      total: (p.moves || []).length,
-      moves: (p.moves || []).map(function(m){
-        return {
-          name: m.move.name,
-          url: m.move.url,
-          metodos: (m.version_group_details || []).map(function(d){
-            return { metodo: d.move_learn_method.name, nivel: d.level_learned_at };
-          })
-        };
-      })
+      fonte: 'PokeAPI', versao: version || null,
+      total: moves.length,
+      moves
     });
   }catch(err){
-    res.status(404).json({ erro: "Pokémon não encontrado.", detalhe: err.message });
+    upstreamError(res, err, "Pokémon não encontrado.");
   }
 });
 
 /* GET /pokemon/:id/evolution */
 router.get("/:id/evolution", async (req, res) => {
   try{
-    const sp = await pokeFetch("pokemon-species/" + req.params.id);
+    const pokemon = await pokeFetch("pokemon/" + req.params.id);
+    const sp = await pokeFetch(pokemon.species.url);
     const chain = await pokeFetch(sp.evolution_chain.url);
 
     function idDaUrl(u){ const m = String(u).match(/\/(\d+)\/?$/); return m ? Number(m[1]) : null; }
-    function monta(no, detalhesDoPai){
-      const d = (detalhesDoPai || [])[0] || {};
+    function monta(no){
+      const d = (no.evolution_details || [])[0] || {};
       return {
         name: no.species.name,
         id: idDaUrl(no.species.url),
@@ -142,6 +148,7 @@ router.get("/:id/evolution", async (req, res) => {
                         : d.item ? ("Usar " + d.item.name)
                         : d.trigger ? d.trigger.name : null,
         evolui_para: (no.evolves_to || []).map(function(ev){
+          const d = (ev.evolution_details || [])[0] || {};
           return {
             name: ev.species.name,
             id: idDaUrl(ev.species.url),
@@ -150,6 +157,7 @@ router.get("/:id/evolution", async (req, res) => {
                      : d.trigger ? d.trigger.name : null,
             nivel_minimo: d.min_level || null,
             item: d.item ? d.item.name : null,
+            condicoes: ev.evolution_details || [],
             troca_alterada: listaEvoAlterada().some(function(x){
               if(!x) return false;
               return String(x.evolui_para||"").toLowerCase() === String(ev.species.name).toLowerCase();
@@ -159,9 +167,9 @@ router.get("/:id/evolution", async (req, res) => {
         })
       };
     }
-    res.json({ cadeia: monta(chain.chain), anil_note: "No Anil, evoluções por troca viram level up." });
+    res.json({ cadeia: monta(chain.chain), fonte: 'PokeAPI', anil_note: "Condições da série principal. Marcações de troca alterada vêm da base histórica do Añil e precisam de conferência por edição." });
   }catch(err){
-    res.status(404).json({ erro: "Cadeia evolutiva não encontrada.", detalhe: err.message });
+    upstreamError(res, err, "Cadeia evolutiva não encontrada.");
   }
 });
 

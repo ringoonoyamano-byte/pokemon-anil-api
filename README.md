@@ -1,5 +1,43 @@
 # 🎮 Pokémon Anil API
 
+## Correções locais
+
+### Novos endpoints locais
+
+As etapas finais acrescentam `GET /pokemon` (q, type, ability, generation, min_bst), `POST /teams/import`, `GET /teams/:id/export?format=json|text`, `POST /teams/:id/validate`, `GET /anil/datasets` e `GET /anil/datasets/:id`.
+
+Consulte [docs/API.md](docs/API.md) para todos os endpoints, exemplos e limites. A documentação também está em `/docs` e a especificação OpenAPI em `/openapi.json`. Bases históricas e metadados de mods são identificados separadamente; não há tabelas verificadas para todas as versões do Añil. Importação suporta um subconjunto explícito do formato texto de times, rejeitando linhas não suportadas.
+
+| Endpoint | Descrição |
+|---|---|
+| `GET /health` | Estado do processo e versão da API |
+| `GET /ready` | Verificação do banco; retorna 503 se indisponível |
+| `GET /abilities?limit=50&offset=0` | Catálogo paginado de habilidades |
+| `GET /abilities/:id` | Habilidade por nome ou número |
+| `GET /items?limit=50&offset=0` | Catálogo paginado de itens |
+| `GET /items/:id` | Item por nome ou número |
+| `POST /stats/calculate` | Stats por Pokémon, nível, natureza, IVs e EVs |
+| `GET /teams/:id/analysis` | Fraquezas, resistências e imunidades por slot |
+
+Exemplo de stats: `{"pokemon":"pikachu","nivel":50,"natureza":"adamant","ivs":{"hp":0},"evs":{"atk":252,"spe":252}}`. IVs omitidos usam 31; EVs omitidos usam zero. A análise de times considera apenas tipos, sem habilidades, itens ou modo Inverso. Nenhum desses endpoints altera times ou grava histórico.
+
+Catálogos retornam dados da PokeAPI e não confirmam regras do Añil. O cache compartilhado usa segundos: 6 horas para Pokémon/golpes, 24 horas para tipos/espécies e 1 hora para demais recursos. A correção aplica-se a novas gravações, sem apagar entradas antigas.
+
+- Dados customizados validam campos textuais, categoria e conteúdo JSON. JSON malformado retorna 400 e corpo acima do limite retorna 413.
+- Confrontos de tipos rejeitam tipos inexistentes e Estelar, que não segue a tabela padrão.
+- Consultas de golpes e tipos têm timeout de 15 segundos e distinguem falhas externas de dados inexistentes.
+
+- Times validam IVs (0–31), EVs (0–252 e total até 510), níveis, slots e até quatro golpes distintos; IV zero é preservado nos cálculos.
+- `limit` aceita valores de 1 a 100 e `offset` aceita inteiros não negativos em consultas customizadas e histórico. Os times validam esses parâmetros, mas sua listagem ainda não é paginada.
+- Consultas de Pokémon, inclusão de membros e calculadora distinguem ausência (404), falha externa (502) e timeout (504). A calculadora e os times utilizam o cache SQLite compartilhado.
+
+- Execute `npm test` (ou `npm.cmd test` no PowerShell) para os testes de regressão sem alterar o banco local.
+- A calculadora corrige os stats físicos e a aplicação de queimadura, valida parâmetros e identifica seu modelo simplificado. Não considera habilidades, itens, danos fixos nem todas as regras especiais de golpes.
+- As evoluções retornam condições da PokeAPI em `condicoes`, preservando alternativas; alterações do Añil continuam sendo marcações históricas.
+- Golpes não usam nomes alemães como tradução. `traducao_disponivel` indica quando existe um nome em português na fonte.
+- `/pokemon/:id/moves?version=red-blue` filtra métodos por grupo de versão da PokeAPI. Essa versão não é uma edição do Añil.
+- Escritas em `/custom`, `/teams` e `/calculator` aceitam apenas conexões locais quando `API_WRITE_KEY` não está definida. Para escritas remotas, configure a variável no servidor e envie `Authorization: Bearer <chave>`. Quando definida, a chave também é exigida localmente. Consultas continuam públicas. A chave compartilhada não separa dados por usuário; conexões através de proxy local exigem configurar a chave.
+
 API REST que combina dados da **PokeAPI** com informações exclusivas do **Pokémon Anil (PT-BR)** — fan game criado por EricLostie.
 
 ---
@@ -222,3 +260,14 @@ A [página do mod Pokémon Azul PT-BR](https://pokemonanilbr.netlify.app/) anunc
 | `GET /anil/sources` | Fontes, data e limites da revisão |
 
 A pesquisa não testa servidores nem integra esta API ao multiplayer. `data/anil.json` é a base das rotas `/anil`; o `anil.json` da raiz é um arquivo separado com outro formato. O seed atual não importa as novas seções e não foi executado nesta revisão, preservando o banco local.
+
+## Melhorias de 03/10/2026
+
+- Times: `GET /teams?limit=50&offset=0&modo=complete`, com total filtrado e contagem de membros.
+- Histórico: `GET /calculator/history?limit=20&offset=0`, com ordenação estável.
+- Consultas simultâneas ao mesmo recurso compartilham a chamada à PokeAPI.
+- Naturezas inválidas na calculadora retornam HTTP 400.
+
+## Melhorias de importação e atualização
+
+Texto de times preserva apelidos no formato `Apelido (especie)` e identificadores de formas como `rotom-wash`. Stats repetidos e cabeçalhos ambíguos são rejeitados. Em `PUT /teams/:id`, `descricao: null` limpa o campo; em `PUT /custom/:chave`, `fonte: null` limpa a fonte. Campos omitidos preservam os valores anteriores.

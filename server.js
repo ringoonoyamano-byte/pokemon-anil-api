@@ -36,6 +36,8 @@ const limiter = rateLimit({
   message: { erro: "Muitas requisições. Aguarde 1 minuto.", limite: "600 req/min" },
 });
 app.use(limiter);
+app.use(require('./routes/health'));
+app.use(require('./routes/docs'));
 
 app.use((req, _res, next) => {
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.originalUrl}`);
@@ -43,19 +45,25 @@ app.use((req, _res, next) => {
 });
 
 // ─── Rotas ──────────────────────────────────────────────────────────────────
+app.use('/pokemon', require('./routes/search'));
 app.use("/pokemon",    pokemonRoutes);
 app.use("/moves",      movesRoutes);
 app.use("/types",      typesRoutes);
+app.use('/abilities', require('./routes/catalog')('ability'));
+app.use('/items', require('./routes/catalog')('item'));
+app.use('/stats', require('./routes/stats'));
 app.use("/anil",       anilRoutes);
-app.use("/custom",     customRoutes);
-app.use("/teams",      teamsRoutes);
-app.use("/calculator", calculatorRoutes);
+const writeAccess = require('./middleware/write-access');
+app.use("/custom",     writeAccess, customRoutes);
+app.use('/teams', writeAccess, require('./routes/team-tools'));
+app.use("/teams",      writeAccess, teamsRoutes);
+app.use("/calculator", writeAccess, calculatorRoutes);
 
 // ─── Root ────────────────────────────────────────────────────────────────────
 app.get("/", (_req, res) => {
   res.json({
     nome: "🎮 Pokémon Anil API",
-    versao: "2.0.0",
+    versao: require('./package.json').version,
     descricao: "API REST + banco SQLite para Pokémon Anil (PT-BR).",
     base_url: `http://localhost:${PORT}`,
     endpoints: {
@@ -116,7 +124,7 @@ app.get("/", (_req, res) => {
     seed: "Execute 'node database/seed.js' para popular o banco com dados do anil.json",
     fontes: {
       pokeapi:      "https://pokeapi.co",
-      pokemon_anil: "https://pokemonanil.com",
+      pokemon_anil: "https://lostiefangames.blogspot.com/",
     },
   });
 });
@@ -127,13 +135,7 @@ app.use((_req, res) => {
 });
 
 // ─── Error handler ───────────────────────────────────────────────────────────
-app.use((err, _req, res, _next) => {
-  console.error("[ERRO]", err.stack);
-  res.status(500).json({
-    erro: "Erro interno no servidor.",
-    detalhe: process.env.NODE_ENV === "development" ? err.message : undefined,
-  });
-});
+app.use(require('./middleware/error-handler'));
 
 // ─── Start ───────────────────────────────────────────────────────────────────
 app.listen(PORT, () => {

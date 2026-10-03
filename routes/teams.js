@@ -6,57 +6,38 @@
 
 const express = require("express");
 const router  = express.Router();
-const axios   = require("axios");
+const upstreamError = require('../middleware/upstream-error');
 const { getDb } = require("../database/db");
+const { integerIn, text, statBlock, pagination } = require('../middleware/validation');
+const { pokeFetch } = require('../middleware/cache');
 
 const MODOS   = ["classic", "complete", "radical", "randomizer", "nuzlocke", "nuzlocke_assistido", "monotype"];
-const NATUREZAS = [
-  "hardy","lonely","brave","adamant","naughty",
-  "bold","docile","relaxed","impish","lax",
-  "timid","hasty","serious","jolly","naive",
-  "modest","mild","quiet","bashful","rash",
-  "calm","gentle","sassy","careful","quirky"
-];
+const { NATUREZAS, NATURE_MODIFIERS, calcStat } = require('../lib/stats');
+
+router.use(pagination);
+router.use((req, res, next) => {
+  if (!['POST', 'PUT'].includes(req.method)) return next();
+  const b = req.body;
+  if (!b || typeof b !== 'object' || Array.isArray(b)) return res.status(400).json({ erro: 'Envie um objeto JSON.' });
+  if ((b.nome !== undefined && !text(b.nome)) || (b.descricao !== undefined && b.descricao !== null && typeof b.descricao !== 'string')
+      || (b.modo_anil !== undefined && !MODOS.includes(b.modo_anil))) {
+    return res.status(400).json({ erro: 'Nome, descrição ou modo inválido.' });
+  }
+  if (req.path.endsWith('/members')) {
+    if (!integerIn(b.slot, 1, 6) || (b.nivel !== undefined && !integerIn(b.nivel, 1, 100))
+        || (b.natureza !== undefined && (typeof b.natureza !== 'string' || !NATUREZAS.includes(b.natureza.toLowerCase())))
+        || (b.evs !== undefined && !statBlock(b.evs, 252, 510))
+        || (b.ivs !== undefined && !statBlock(b.ivs, 31))
+        || (b.moves !== undefined && (!Array.isArray(b.moves) || b.moves.length > 4 || !b.moves.every(text) || new Set(b.moves).size !== b.moves.length))
+        || ['apelido', 'habilidade', 'item'].some(key => b[key] !== undefined && !text(b[key]))) {
+      return res.status(400).json({ erro: 'Membro inválido: confira slot, nível, natureza, golpes, IVs e EVs (total máximo 510).' });
+    }
+    if (b.natureza) b.natureza = b.natureza.toLowerCase();
+  }
+  next();
+});
 
 // Bônus de natureza sobre stats
-const NATURE_MODIFIERS = {
-  lonely:  { up: "atk", down: "def"  },
-  brave:   { up: "atk", down: "spe"  },
-  adamant: { up: "atk", down: "spa"  },
-  naughty: { up: "atk", down: "spd"  },
-  bold:    { up: "def", down: "atk"  },
-  relaxed: { up: "def", down: "spe"  },
-  impish:  { up: "def", down: "spa"  },
-  lax:     { up: "def", down: "spd"  },
-  timid:   { up: "spe", down: "atk"  },
-  hasty:   { up: "spe", down: "def"  },
-  jolly:   { up: "spe", down: "spa"  },
-  naive:   { up: "spe", down: "spd"  },
-  modest:  { up: "spa", down: "atk"  },
-  mild:    { up: "spa", down: "def"  },
-  quiet:   { up: "spa", down: "spe"  },
-  rash:    { up: "spa", down: "spd"  },
-  calm:    { up: "spd", down: "atk"  },
-  gentle:  { up: "spd", down: "def"  },
-  sassy:   { up: "spd", down: "spe"  },
-  careful: { up: "spd", down: "spa"  },
-};
-
-// ─── Helpers ─────────────────────────────────────────────────────────────────
-
-function calcStat(base, iv, ev, nivel, natureza, statKey) {
-  const evBonus = Math.floor(ev / 4);
-  let stat;
-  if (statKey === "hp") {
-    stat = Math.floor(((2 * base + iv + evBonus) * nivel) / 100) + nivel + 10;
-  } else {
-    stat = Math.floor(((2 * base + iv + evBonus) * nivel) / 100) + 5;
-    const nat = NATURE_MODIFIERS[natureza];
-    if (nat?.up   === statKey) stat = Math.floor(stat * 1.1);
-    if (nat?.down === statKey) stat = Math.floor(stat * 0.9);
-  }
-  return stat;
-}
 
 function formatTeam(team, members) {
   return {
@@ -75,21 +56,24 @@ function formatTeam(team, members) {
 // ─── GET /teams ──────────────────────────────────────────────────────────────
 router.get("/", (req, res) => {
   const db   = getDb();
-  const { modo } = req.query;
+  const { modo, limit = 50, offset = 0 } = req.query;
+  if (modo !== undefined && !MODOS.includes(modo)) return res.status(400).json({ erro: 'Modo inválido.' });
 
   let sql    = "SELECT * FROM teams";
   const params = [];
   if (modo) { sql += " WHERE modo_anil = ?"; params.push(modo); }
-  sql += " ORDER BY atualizado_em DESC";
+  const total = db.prepare(sql.replace('SELECT *', 'SELECT COUNT(*) AS n')).get(...params).n;
+  sql = sql.replace('SELECT * FROM teams', 'SELECT teams.*, (SELECT COUNT(*) FROM team_members WHERE team_id = teams.id) AS total_membros FROM teams');
+  sql += " ORDER BY atualizado_em DESC, id DESC LIMIT ? OFFSET ?";
+  params.push(Number(limit), Number(offset));
 
   const teams = db.prepare(sql).all(...params).map((t) => ({
     ...t,
     criado_em:     new Date(t.criado_em * 1000).toISOString(),
     atualizado_em: new Date(t.atualizado_em * 1000).toISOString(),
-    total_membros: db.prepare("SELECT COUNT(*) AS n FROM team_members WHERE team_id = ?").get(t.id).n,
   }));
 
-  res.json({ total: teams.length, times: teams });
+  res.json({ total, total_pagina: teams.length, limit: Number(limit), offset: Number(offset), times: teams });
 });
 
 // ─── GET /teams/:id ──────────────────────────────────────────────────────────
@@ -113,9 +97,9 @@ router.get("/:id/stats", async (req, res) => {
 
   const statsPromises = members.map(async (m) => {
     try {
-      const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon/${m.pokemon_id}`);
+      const data = await pokeFetch(`pokemon/${m.pokemon_id}`);
       const baseStats = {};
-      data.stats.forEach((s) => { baseStats[s.stat.name.replace("special-attack","spa").replace("special-defense","spd")] = s.base_stat; });
+      data.stats.forEach((s) => { baseStats[({ attack: 'atk', defense: 'def', 'special-attack': 'spa', 'special-defense': 'spd', speed: 'spe' })[s.stat.name] || s.stat.name] = s.base_stat; });
 
       const ivs  = JSON.parse(m.ivs  || "{}");
       const evs  = JSON.parse(m.evs  || "{}");
@@ -125,7 +109,7 @@ router.get("/:id/stats", async (req, res) => {
       const statKeys = ["hp","atk","def","spa","spd","spe"];
       const statsReais = {};
       for (const key of statKeys) {
-        statsReais[key] = calcStat(baseStats[key] || 0, ivs[key] || 31, evs[key] || 0, lvl, nat, key);
+        statsReais[key] = key === 'hp' && data.name === 'shedinja' ? 1 : calcStat(baseStats[key] ?? 0, ivs[key] ?? 31, evs[key] ?? 0, lvl, nat, key);
       }
 
       return {
@@ -148,6 +132,27 @@ router.get("/:id/stats", async (req, res) => {
 
   const stats = await Promise.all(statsPromises);
   res.json({ time: team.nome, modo: team.modo_anil, membros: stats });
+});
+
+router.get('/:id/analysis', async (req, res) => {
+  const db = getDb();
+  const team = db.prepare('SELECT * FROM teams WHERE id = ?').get(req.params.id);
+  if (!team) return res.status(404).json({ erro: 'Time não encontrado.' });
+  const members = db.prepare('SELECT * FROM team_members WHERE team_id = ? ORDER BY slot').all(team.id);
+  const { TYPE_CHART, getEffectiveness } = require('../lib/types');
+  try {
+    const pokemon = await Promise.all(members.map(async member => {
+      const data = await pokeFetch(`pokemon/${member.pokemon_id}`);
+      const tipos = data.types.map(t => t.type.name);
+      return { slot: member.slot, pokemon: data.name, tipos, defesa: Object.fromEntries(Object.keys(TYPE_CHART).map(type => [type, getEffectiveness(type, tipos)])) };
+    }));
+    const defesa = Object.fromEntries(Object.keys(TYPE_CHART).map(type => [type, {
+      fracos: pokemon.filter(p => p.defesa[type] > 1).map(p => p.slot),
+      resistentes: pokemon.filter(p => p.defesa[type] > 0 && p.defesa[type] < 1).map(p => p.slot),
+      imunes: pokemon.filter(p => p.defesa[type] === 0).map(p => p.slot)
+    }]));
+    res.json({ time: team.nome, fonte: 'PokeAPI', escopo: 'Defesa por tipos da série principal; não considera habilidades, itens, modo Inverso ou alterações do Añil.', membros: pokemon, defesa });
+  } catch (error) { upstreamError(res, error, 'Pokémon do time não encontrado.'); }
 });
 
 // ─── POST /teams ──────────────────────────────────────────────────────────────
@@ -183,10 +188,10 @@ router.put("/:id", (req, res) => {
     UPDATE teams SET
       nome          = COALESCE(?, nome),
       modo_anil     = COALESCE(?, modo_anil),
-      descricao     = COALESCE(?, descricao),
+      descricao     = ?,
       atualizado_em = unixepoch()
     WHERE id = ?
-  `).run(nome || null, modo_anil || null, descricao !== undefined ? descricao : null, req.params.id);
+  `).run(nome || null, modo_anil || null, descricao !== undefined ? descricao : team.descricao, req.params.id);
 
   const members = db.prepare("SELECT * FROM team_members WHERE team_id = ? ORDER BY slot").all(req.params.id);
   const updated = db.prepare("SELECT * FROM teams WHERE id = ?").get(req.params.id);
@@ -217,11 +222,11 @@ router.post("/:id/members", async (req, res) => {
   // Valida Pokémon na PokeAPI
   let pokemonId, pokemonNome;
   try {
-    const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon/${String(pokemon).toLowerCase()}`);
+    const data = await pokeFetch(`pokemon/${String(pokemon).toLowerCase()}`);
     pokemonId   = data.id;
     pokemonNome = data.name;
-  } catch {
-    return res.status(404).json({ erro: `Pokémon '${pokemon}' não encontrado na PokeAPI.` });
+  } catch (error) {
+    return upstreamError(res, error, `Pokémon '${pokemon}' não encontrado na PokeAPI.`);
   }
 
   const evsJson  = JSON.stringify({ hp:0, atk:0, def:0, spa:0, spd:0, spe:0, ...evs });
@@ -270,19 +275,21 @@ router.post("/:id/clone", (req, res) => {
   if (!team) return res.status(404).json({ erro: "Time não encontrado." });
 
   const novoNome = req.body.nome || `${team.nome} (cópia)`;
-  const res2     = db.prepare("INSERT INTO teams (nome, modo_anil, descricao) VALUES (?, ?, ?)").run(novoNome, team.modo_anil, team.descricao);
 
   const members = db.prepare("SELECT * FROM team_members WHERE team_id = ?").all(team.id);
   const insertMember = db.prepare(`
     INSERT INTO team_members (team_id, slot, pokemon_id, pokemon_nome, apelido, nivel, natureza, habilidade, item, moves, evs, ivs)
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
-  const insertAll = db.transaction((mems, newId) => {
+  const insertAll = db.transaction((mems) => {
+    const result = db.prepare("INSERT INTO teams (nome, modo_anil, descricao) VALUES (?, ?, ?)").run(novoNome, team.modo_anil, team.descricao);
+    const newId = result.lastInsertRowid;
     for (const m of mems) insertMember.run(newId, m.slot, m.pokemon_id, m.pokemon_nome, m.apelido, m.nivel, m.natureza, m.habilidade, m.item, m.moves, m.evs, m.ivs);
+    return newId;
   });
-  insertAll(members, res2.lastInsertRowid);
+  const newId = insertAll(members);
 
-  const cloned      = db.prepare("SELECT * FROM teams WHERE id = ?").get(res2.lastInsertRowid);
+  const cloned      = db.prepare("SELECT * FROM teams WHERE id = ?").get(newId);
   const newMembers  = db.prepare("SELECT * FROM team_members WHERE team_id = ? ORDER BY slot").all(cloned.id);
   res.status(201).json({ mensagem: "Time clonado!", time: formatTeam(cloned, newMembers) });
 });

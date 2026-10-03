@@ -7,39 +7,14 @@
 
 const express = require("express");
 const router  = express.Router();
-const axios   = require("axios");
+const { pokeFetch } = require('../middleware/cache');
+const upstreamError = require('../middleware/upstream-error');
 const { getDb } = require("../database/db");
+const { NATUREZAS } = require('../lib/stats');
+router.use(require('../middleware/validation').pagination);
 
 // ─── Tabela de efetividade de tipos (Gen 6+) ─────────────────────────────────
-const TYPE_CHART = {
-  normal:   { rock:0.5, ghost:0, steel:0.5 },
-  fire:     { fire:0.5, water:0.5, grass:2, ice:2, bug:2, rock:0.5, dragon:0.5, steel:2 },
-  water:    { fire:2, water:0.5, grass:0.5, ground:2, rock:2, dragon:0.5 },
-  electric: { water:2, electric:0.5, grass:0.5, ground:0, flying:2, dragon:0.5 },
-  grass:    { fire:0.5, water:2, grass:0.5, poison:0.5, ground:2, flying:0.5, bug:0.5, rock:2, dragon:0.5, steel:0.5 },
-  ice:      { fire:0.5, water:0.5, grass:2, ice:0.5, ground:2, flying:2, dragon:2, steel:0.5 },
-  fighting: { normal:2, ice:2, poison:0.5, flying:0.5, psychic:0.5, bug:0.5, rock:2, ghost:0, dark:2, steel:2, fairy:0.5 },
-  poison:   { grass:2, poison:0.5, ground:0.5, rock:0.5, ghost:0.5, steel:0, fairy:2 },
-  ground:   { fire:2, electric:2, grass:0.5, poison:2, flying:0, bug:0.5, rock:2, steel:2 },
-  flying:   { electric:0.5, grass:2, fighting:2, bug:2, rock:0.5, steel:0.5 },
-  psychic:  { fighting:2, poison:2, psychic:0.5, dark:0, steel:0.5 },
-  bug:      { fire:0.5, grass:2, fighting:0.5, poison:0.5, flying:0.5, psychic:2, ghost:0.5, dark:2, steel:0.5, fairy:0.5 },
-  rock:     { fire:2, ice:2, fighting:0.5, ground:0.5, flying:2, bug:2, steel:0.5 },
-  ghost:    { normal:0, psychic:2, ghost:2, dark:0.5 },
-  dragon:   { dragon:2, steel:0.5, fairy:0 },
-  dark:     { fighting:0.5, psychic:2, ghost:2, dark:0.5, fairy:0.5 },
-  steel:    { fire:0.5, water:0.5, electric:0.5, ice:2, rock:2, steel:0.5, fairy:2 },
-  fairy:    { fire:0.5, fighting:2, poison:0.5, dragon:2, dark:2, steel:0.5 },
-};
-
-function getEffectiveness(moveType, defTypes) {
-  let mult = 1;
-  for (const defType of defTypes) {
-    const matchup = TYPE_CHART[moveType];
-    if (matchup && matchup[defType] !== undefined) mult *= matchup[defType];
-  }
-  return mult;
-}
+const { getEffectiveness } = require('../lib/types');
 
 function effectivenessLabel(mult) {
   if (mult === 0)    return "Não tem efeito (0×)";
@@ -56,17 +31,18 @@ function calcDamage({ nivel, poder, atk, def, stab, effectiveness, critico, burn
   if (!poder) return null;
 
   // Passo 1: base
-  const base = Math.floor(Math.floor((Math.floor(2 * nivel / 5 + 2) * poder * Math.floor(atk / def)) / 50) + 2);
+  const base = Math.floor(Math.floor(Math.floor(2 * nivel / 5 + 2) * poder * atk / def) / 50) + 2;
 
   // Passo 2: multiplicadores fixos
   const stabMult   = stab    ? 1.5  : 1;
   const critMult   = critico ? 1.5  : 1;
   const burnMult   = burn    ? 0.5  : 1;
-  const fixed = Math.floor(Math.floor(Math.floor(base * stabMult) * effectiveness) * critMult * burnMult * weather);
-
-  // Passo 3: variação aleatória (0.85 – 1.00)
-  const min = Math.floor(fixed * 0.85);
-  const max = fixed;
+  // Modelo simplificado: clima e crítico precedem a variação, STAB e tipos a seguem.
+  const fixed = Math.floor(Math.floor(base * weather) * critMult);
+  const roll = (random) => effectiveness === 0 ? 0 : Math.max(1,
+    Math.floor(Math.floor(Math.floor(Math.floor(fixed * random / 100) * stabMult) * effectiveness) * burnMult));
+  const min = roll(85);
+  const max = roll(100);
   const med = Math.round((min + max) / 2);
 
   return { min, max, med };
@@ -86,7 +62,17 @@ router.post("/", async (req, res) => {
     atk_override, def_override,
     natureza_atk = "hardy", natureza_def = "hardy",
     evs_atk = 0, evs_def = 0, ivs_atk = 31, ivs_def = 31,
-  } = req.body;
+  } = req.body || {};
+
+  const integerIn = (value, min, max) => Number.isInteger(value) && value >= min && value <= max;
+  if (!integerIn(nivel, 1, 100) || !integerIn(evs_atk, 0, 252) || !integerIn(evs_def, 0, 252)
+      || !integerIn(ivs_atk, 0, 31) || !integerIn(ivs_def, 0, 31)
+      || ![0.5, 1, 1.5].includes(weather) || typeof burn !== 'boolean' || typeof critico !== 'boolean'
+      || [atk_override, def_override].some(value => value !== undefined && (!Number.isFinite(value) || value <= 0))
+      || typeof natureza_atk !== 'string' || typeof natureza_def !== 'string'
+      || !NATUREZAS.includes(natureza_atk.toLowerCase()) || !NATUREZAS.includes(natureza_def.toLowerCase())) {
+    return res.status(400).json({ erro: 'Parâmetros de cálculo inválidos. Confira nível, IVs, EVs e modificadores.' });
+  }
 
   if (!atacante || !defensor || !move) {
     return res.status(400).json({
@@ -103,15 +89,11 @@ router.post("/", async (req, res) => {
 
   try {
     // Busca os 3 em paralelo na PokeAPI
-    const [atkRes, defRes, moveRes] = await Promise.all([
-      axios.get(`https://pokeapi.co/api/v2/pokemon/${String(atacante).toLowerCase()}`),
-      axios.get(`https://pokeapi.co/api/v2/pokemon/${String(defensor).toLowerCase()}`),
-      axios.get(`https://pokeapi.co/api/v2/move/${String(move).toLowerCase()}`),
+    const [atkData, defData, moveData] = await Promise.all([
+      pokeFetch(`pokemon/${String(atacante).toLowerCase()}`),
+      pokeFetch(`pokemon/${String(defensor).toLowerCase()}`),
+      pokeFetch(`move/${String(move).toLowerCase()}`),
     ]);
-
-    const atkData  = atkRes.data;
-    const defData  = defRes.data;
-    const moveData = moveRes.data;
 
     // Tipos
     const atkTypes  = atkData.types.map((t) => t.type.name);
@@ -130,11 +112,11 @@ router.post("/", async (req, res) => {
     const statsAtk = {};
     const statsDef = {};
     atkData.stats.forEach((s) => {
-      const k = s.stat.name.replace("special-attack","spa").replace("special-defense","spd");
+      const k = ({ attack: 'atk', defense: 'def', 'special-attack': 'spa', 'special-defense': 'spd', speed: 'spe' })[s.stat.name] || s.stat.name;
       statsAtk[k] = s.base_stat;
     });
     defData.stats.forEach((s) => {
-      const k = s.stat.name.replace("special-attack","spa").replace("special-defense","spd");
+      const k = ({ attack: 'atk', defense: 'def', 'special-attack': 'spa', 'special-defense': 'spd', speed: 'spe' })[s.stat.name] || s.stat.name;
       statsDef[k] = s.base_stat;
     });
 
@@ -170,13 +152,14 @@ router.post("/", async (req, res) => {
     // Calcula dano
     const dano = calcDamage({
       nivel, poder: moveData.power, atk: atkStatVal, def: defStatVal,
-      stab, effectiveness, critico, burn, weather,
+      stab, effectiveness, critico, burn: isPhysical && burn, weather,
     });
 
     // HP do defensor para % de dano
     const hpDef = Math.floor(((2 * (statsDef.hp || 45) + ivs_def + Math.floor(evs_def / 4)) * nivel) / 100) + nivel + 10;
 
     const resultado = {
+      modelo: 'Estimativa simplificada com dados da PokeAPI; não inclui habilidades, itens ou regras específicas do Añil.',
       atacante: { nome: atkData.name, id: atkData.id, tipos: atkTypes },
       defensor: { nome: defData.name, id: defData.id, tipos: defTypes, hp_estimado: hpDef },
       move: {
@@ -234,25 +217,23 @@ router.post("/", async (req, res) => {
 
     res.json(resultado);
   } catch (err) {
-    if (err.response?.status === 404) {
-      return res.status(404).json({ erro: "Pokémon ou move não encontrado na PokeAPI.", detalhe: err.config?.url });
-    }
-    res.status(500).json({ erro: "Erro no cálculo.", detalhe: err.message });
+    upstreamError(res, err, "Pokémon ou move não encontrado na PokeAPI.");
   }
 });
 
 // ─── GET /calculator/history ──────────────────────────────────────────────────
 router.get("/history", (req, res) => {
   const db = getDb();
-  const { limit = 20, atacante, defensor } = req.query;
+  const { limit = 20, offset = 0, atacante, defensor } = req.query;
+  if ([atacante, defensor].some(value => value !== undefined && typeof value !== 'string')) return res.status(400).json({ erro: 'Filtros devem ser texto.' });
 
   let sql = "SELECT id, atacante, defensor, move, poder, tipo_move, stab, efetividade, critico, dano_min, dano_max, dano_medio, porcentagem_min, porcentagem_max, criado_em FROM damage_log WHERE 1=1";
   const params = [];
 
   if (atacante) { sql += " AND atacante = ?"; params.push(atacante); }
   if (defensor) { sql += " AND defensor = ?"; params.push(defensor); }
-  sql += " ORDER BY criado_em DESC LIMIT ?";
-  params.push(Number(limit));
+  sql += " ORDER BY criado_em DESC, id DESC LIMIT ? OFFSET ?";
+  params.push(Number(limit), Number(offset));
 
   const rows = db.prepare(sql).all(...params).map((r) => ({
     ...r,
@@ -260,7 +241,7 @@ router.get("/history", (req, res) => {
     criado_em: new Date(r.criado_em * 1000).toISOString(),
   }));
 
-  res.json({ total: rows.length, historico: rows });
+  res.json({ total: rows.length, limit: Number(limit), offset: Number(offset), historico: rows });
 });
 
 // ─── GET /calculator/history/:id ─────────────────────────────────────────────

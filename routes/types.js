@@ -1,10 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const axios = require("axios");
+const axios = require("axios").create({ timeout: 15000 });
 const NodeCache = require("node-cache");
 
 const cache = new NodeCache({ stdTTL: 3600 });
 const POKEAPI = "https://pokeapi.co/api/v2";
+const upstreamError = require('../middleware/upstream-error');
 
 const TIPOS_PTBR = {
   normal: "Normal",
@@ -54,7 +55,7 @@ router.get("/", async (req, res) => {
     cache.set(cacheKey, result);
     res.json(result);
   } catch (err) {
-    res.status(500).json({ erro: "Erro ao consultar a PokeAPI.", detalhe: err.message });
+    upstreamError(res, err, "Recurso não encontrado na PokeAPI.");
   }
 });
 
@@ -107,7 +108,7 @@ router.get("/:name", async (req, res) => {
         tipos_validos: Object.keys(TIPOS_PTBR),
       });
     }
-    res.status(500).json({ erro: "Erro ao consultar a PokeAPI.", detalhe: err.message });
+    upstreamError(res, err, "Recurso não encontrado na PokeAPI.");
   }
 });
 
@@ -117,6 +118,9 @@ router.get("/:name", async (req, res) => {
  */
 router.get("/matchup/:atk/:def", async (req, res) => {
   const { atk, def } = req.params;
+  if (![atk, def].every(type => Object.hasOwn(TIPOS_PTBR, type.toLowerCase()) && type.toLowerCase() !== 'stellar')) {
+    return res.status(400).json({ erro: 'Use tipos válidos da tabela padrão. Estelar exige regras próprias.' });
+  }
   const cacheKey = `matchup_${atk}_${def}`;
 
   if (cache.has(cacheKey)) {
@@ -154,7 +158,7 @@ router.get("/matchup/:atk/:def", async (req, res) => {
     if (err.response?.status === 404) {
       return res.status(404).json({ erro: `Tipo '${atk}' não encontrado.` });
     }
-    res.status(500).json({ erro: "Erro ao consultar a PokeAPI.", detalhe: err.message });
+    upstreamError(res, err, "Recurso não encontrado na PokeAPI.");
   }
 });
 

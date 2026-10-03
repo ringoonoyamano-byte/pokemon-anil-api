@@ -298,4 +298,18 @@ router.get("/sources", (_req, res) => {
   res.json({ verificacao: anilData.verificacao, fontes: anilData.fontes });
 });
 
+router.get('/datasets', (req, res) => {
+  const { edition, version } = req.query;
+  if ([edition, version].some(v => v !== undefined && typeof v !== 'string')) return res.status(400).json({ erro: 'Filtros devem ser texto.' });
+  const datasets = require('../data/datasets.json').datasets.filter(d => (!edition || d.edicao === edition) && (!version || d.versao === version));
+  res.json({ total: datasets.length, datasets });
+});
+router.get('/datasets/:id', (req, res) => {
+  const dataset = require('../data/datasets.json').datasets.find(d => d.id === req.params.id);
+  if (!dataset) return res.status(404).json({ erro: 'Base não encontrada.' });
+  const dados = dataset.id === 'anil-3.06-historico'
+    ? Object.fromEntries(Object.entries(anilData).filter(([key]) => !['info','edicoes','online_ptbr','fontes','verificacao'].includes(key)))
+    : anilData.online_ptbr;
+  res.json({ dataset, dados });
+});
 module.exports = router;

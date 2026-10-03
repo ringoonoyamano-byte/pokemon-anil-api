@@ -21,3 +21,6 @@ Thumbs.db
 # arquivos auxiliares SQLite
 *.db-wal
 *.db-shm
+
+# relatório somente local
+/relatorio-local.txt

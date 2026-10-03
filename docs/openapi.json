@@ -1,0 +1,2209 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Pokemon Anil API",
+    "version": "2.0.1",
+    "description": "Local API. PokeAPI data does not confirm Anil rules. See docs/API.md for payloads and limitations."
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/pokemon/{id}": {
+      "get": {
+        "summary": "GET /pokemon/{id}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/pokemon/{id}/moves": {
+      "get": {
+        "summary": "GET /pokemon/{id}/moves",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/pokemon/{id}/evolution": {
+      "get": {
+        "summary": "GET /pokemon/{id}/evolution",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/pokemon/search/{name}": {
+      "get": {
+        "summary": "GET /pokemon/search/{name}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/pokemon": {
+      "get": {
+        "summary": "GET /pokemon",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ability",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "generation",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "min_bst",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/moves/{name}": {
+      "get": {
+        "summary": "GET /moves/{name}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/moves/type/{type}": {
+      "get": {
+        "summary": "GET /moves/type/{type}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "type",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/moves/category/{category}": {
+      "get": {
+        "summary": "GET /moves/category/{category}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "category",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/types": {
+      "get": {
+        "summary": "GET /types",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/types/{name}": {
+      "get": {
+        "summary": "GET /types/{name}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/types/matchup/{atk}/{def}": {
+      "get": {
+        "summary": "GET /types/matchup/{atk}/{def}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "atk",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "def",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/anil": {
+      "get": {
+        "summary": "GET /anil",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/anil/modes": {
+      "get": {
+        "summary": "GET /anil/modes",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/anil/modes/{id}": {
+      "get": {
+        "summary": "GET /anil/modes/{id}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/anil/starters": {
+      "get": {
+        "summary": "GET /anil/starters",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/anil/starters/{gen}": {
+      "get": {
+        "summary": "GET /anil/starters/{gen}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "gen",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/anil/mechanics": {
+      "get": {
+        "summary": "GET /anil/mechanics",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/anil/mechanics/{id}": {
+      "get": {
+        "summary": "GET /anil/mechanics/{id}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/anil/evolution-changes": {
+      "get": {
+        "summary": "GET /anil/evolution-changes",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/anil/evolution-changes/{pokemon}": {
+      "get": {
+        "summary": "GET /anil/evolution-changes/{pokemon}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "pokemon",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/anil/key-items": {
+      "get": {
+        "summary": "GET /anil/key-items",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/anil/characters": {
+      "get": {
+        "summary": "GET /anil/characters",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/anil/locations": {
+      "get": {
+        "summary": "GET /anil/locations",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/anil/gyms": {
+      "get": {
+        "summary": "GET /anil/gyms",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/anil/postgame": {
+      "get": {
+        "summary": "GET /anil/postgame",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/anil/rates": {
+      "get": {
+        "summary": "GET /anil/rates",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/anil/faq": {
+      "get": {
+        "summary": "GET /anil/faq",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/anil/faq/search": {
+      "get": {
+        "summary": "GET /anil/faq/search",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/anil/editions": {
+      "get": {
+        "summary": "GET /anil/editions",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/anil/online": {
+      "get": {
+        "summary": "GET /anil/online",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/anil/sources": {
+      "get": {
+        "summary": "GET /anil/sources",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/anil/datasets": {
+      "get": {
+        "summary": "GET /anil/datasets",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "edition",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/anil/datasets/{id}": {
+      "get": {
+        "summary": "GET /anil/datasets/{id}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/custom": {
+      "get": {
+        "summary": "GET /custom",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "categoria",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "post": {
+        "summary": "POST /custom",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          },
+          "201": {
+            "description": "Created, where applicable"
+          }
+        },
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "categoria",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "writeKey": []
+          }
+        ],
+        "description": "Remote writes require API_WRITE_KEY. Local writes are allowed without a configured key; once configured it is required locally too."
+      }
+    },
+    "/custom/categorias": {
+      "get": {
+        "summary": "GET /custom/categorias",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/custom/{chave}": {
+      "get": {
+        "summary": "GET /custom/{chave}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "chave",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "summary": "PUT /custom/{chave}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          },
+          "201": {
+            "description": "Created, where applicable"
+          }
+        },
+        "parameters": [
+          {
+            "name": "chave",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "writeKey": []
+          }
+        ],
+        "description": "Remote writes require API_WRITE_KEY. Local writes are allowed without a configured key; once configured it is required locally too."
+      },
+      "delete": {
+        "summary": "DELETE /custom/{chave}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "chave",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "writeKey": []
+          }
+        ],
+        "description": "Remote writes require API_WRITE_KEY. Local writes are allowed without a configured key; once configured it is required locally too."
+      }
+    },
+    "/teams": {
+      "get": {
+        "summary": "GET /teams",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "modo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        ]
+      },
+      "post": {
+        "summary": "POST /teams",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          },
+          "201": {
+            "description": "Created, where applicable"
+          }
+        },
+        "parameters": [
+          {
+            "name": "modo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "writeKey": []
+          }
+        ],
+        "description": "Remote writes require API_WRITE_KEY. Local writes are allowed without a configured key; once configured it is required locally too."
+      }
+    },
+    "/teams/{id}": {
+      "get": {
+        "summary": "GET /teams/{id}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "summary": "PUT /teams/{id}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          },
+          "201": {
+            "description": "Created, where applicable"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "writeKey": []
+          }
+        ],
+        "description": "Remote writes require API_WRITE_KEY. Local writes are allowed without a configured key; once configured it is required locally too."
+      },
+      "delete": {
+        "summary": "DELETE /teams/{id}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "writeKey": []
+          }
+        ],
+        "description": "Remote writes require API_WRITE_KEY. Local writes are allowed without a configured key; once configured it is required locally too."
+      }
+    },
+    "/teams/{id}/stats": {
+      "get": {
+        "summary": "GET /teams/{id}/stats",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/teams/{id}/analysis": {
+      "get": {
+        "summary": "GET /teams/{id}/analysis",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/teams/{id}/members": {
+      "post": {
+        "summary": "POST /teams/{id}/members",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          },
+          "201": {
+            "description": "Created, where applicable"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "writeKey": []
+          }
+        ],
+        "description": "Remote writes require API_WRITE_KEY. Local writes are allowed without a configured key; once configured it is required locally too."
+      }
+    },
+    "/teams/{id}/members/{slot}": {
+      "delete": {
+        "summary": "DELETE /teams/{id}/members/{slot}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "slot",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "writeKey": []
+          }
+        ],
+        "description": "Remote writes require API_WRITE_KEY. Local writes are allowed without a configured key; once configured it is required locally too."
+      }
+    },
+    "/teams/{id}/clone": {
+      "post": {
+        "summary": "POST /teams/{id}/clone",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          },
+          "201": {
+            "description": "Created, where applicable"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "writeKey": []
+          }
+        ],
+        "description": "Remote writes require API_WRITE_KEY. Local writes are allowed without a configured key; once configured it is required locally too."
+      }
+    },
+    "/teams/import": {
+      "post": {
+        "summary": "POST /teams/import",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          },
+          "201": {
+            "description": "Created, where applicable"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "writeKey": []
+          }
+        ],
+        "description": "Remote writes require API_WRITE_KEY. Local writes are allowed without a configured key; once configured it is required locally too."
+      }
+    },
+    "/teams/{id}/export": {
+      "get": {
+        "summary": "GET /teams/{id}/export",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/teams/{id}/validate": {
+      "post": {
+        "summary": "POST /teams/{id}/validate",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          },
+          "201": {
+            "description": "Created, where applicable"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "writeKey": []
+          }
+        ],
+        "description": "Remote writes require API_WRITE_KEY. Local writes are allowed without a configured key; once configured it is required locally too."
+      }
+    },
+    "/calculator": {
+      "post": {
+        "summary": "POST /calculator",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          },
+          "201": {
+            "description": "Created, where applicable"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "writeKey": []
+          }
+        ],
+        "description": "Remote writes require API_WRITE_KEY. Local writes are allowed without a configured key; once configured it is required locally too."
+      }
+    },
+    "/calculator/history": {
+      "get": {
+        "summary": "GET /calculator/history",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "atacante",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "defensor",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        ]
+      },
+      "delete": {
+        "summary": "DELETE /calculator/history",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "atacante",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "defensor",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "writeKey": []
+          }
+        ],
+        "description": "Remote writes require API_WRITE_KEY. Local writes are allowed without a configured key; once configured it is required locally too."
+      }
+    },
+    "/calculator/history/{id}": {
+      "get": {
+        "summary": "GET /calculator/history/{id}",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/stats/calculate": {
+      "post": {
+        "summary": "POST /stats/calculate",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          },
+          "201": {
+            "description": "Created, where applicable"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "summary": "GET /health",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/ready": {
+      "get": {
+        "summary": "GET /ready",
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "502": {
+            "description": "External service failure"
+          },
+          "504": {
+            "description": "External service timeout"
+          }
+        }
+      }
+    },
+    "/abilities": {
+      "get": {
+        "summary": "GET /abilities",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "PokeAPI data"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/abilities/{id}": {
+      "get": {
+        "summary": "GET /abilities/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "PokeAPI data"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/items": {
+      "get": {
+        "summary": "GET /items",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "PokeAPI data"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/items/{id}": {
+      "get": {
+        "summary": "GET /items/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "PokeAPI data"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "API index",
+        "responses": {
+          "200": {
+            "description": "Endpoint index"
+          }
+        }
+      }
+    },
+    "/docs": {
+      "get": {
+        "summary": "GET /docs",
+        "responses": {
+          "200": {
+            "description": "API documentation"
+          }
+        }
+      }
+    },
+    "/openapi.json": {
+      "get": {
+        "summary": "GET /openapi.json",
+        "responses": {
+          "200": {
+            "description": "API documentation"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "writeKey": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  }
+}

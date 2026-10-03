@@ -1,0 +1,6 @@
+{
+  "datasets": [
+    { "id": "anil-3.06-historico", "edicao": "anil_original", "versao": "3.06", "idioma": "indeterminado", "status": "historico_nao_validado", "arquivo": "anil.json", "escopo": "Base legada de regras; não aplicar a versões novas sem conferência." },
+    { "id": "azul-4.0.7c-metadados", "edicao": "azul_ptbr_online", "versao": "4.0.7c", "idioma": "pt-BR", "status": "anunciado", "escopo": "Somente metadados e recursos anunciados; sem tabelas de espécies ou encontros.", "fonte": "https://pokemonanilbr.netlify.app/" }
+  ]
+}
