@@ -1,0 +1,7684 @@
+{
+  "blaine": [
+    [
+      {
+        "species": "TORKOAL",
+        "item": "HEAT_ROCK",
+        "moves": [
+          "LAVA_PLUME",
+          "BODY_PRESS",
+          "STEALTH_ROCK",
+          "RAPID_SPIN"
+        ],
+        "evs": [
+          248,
+          0,
+          252,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DROUGHT",
+        "form": 0
+      },
+      {
+        "species": "CHARIZARD",
+        "item": "CHARIZARDITEY",
+        "moves": [
+          "FIRE_BLAST",
+          "SOLAR_BEAM",
+          "FOCUS_BLAST",
+          "ROOST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "BLAZE",
+        "form": 0
+      },
+      {
+        "species": "ROARING_MOON",
+        "item": "BOOSTER_ENERGY",
+        "moves": [
+          "DRAGON_DANCE",
+          "ACROBATICS",
+          "EARTHQUAKE",
+          "FIRE_FANG"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "PROTOSYNTHESIS",
+        "form": 0
+      },
+      {
+        "species": "GREAT_TUSK",
+        "item": "BOOSTER_ENERGY",
+        "moves": [
+          "CLOSE_COMBAT",
+          "EARTHQUAKE",
+          "RAPID_SPIN",
+          "ICE_SPINNER"
+        ],
+        "evs": [
+          0,
+          252,
+          4,
+          0,
+          0,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "PROTOSYNTHESIS",
+        "form": 0
+      },
+      {
+        "species": "CINDERACE",
+        "item": "LIFE_ORB",
+        "moves": [
+          "PYRO_BALL",
+          "HIGH_JUMP_KICK",
+          "GUNK_SHOT",
+          "U_TURN"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "LIBERO",
+        "form": 0
+      },
+      {
+        "species": "VOLCARONA",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "QUIVER_DANCE",
+          "FIERY_DANCE",
+          "BUG_BUZZ",
+          "GIGA_DRAIN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "FLAME_BODY",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "TORKOAL",
+        "item": "HEAT_ROCK",
+        "moves": [
+          "ERUPTION",
+          "SOLAR_BEAM",
+          "EARTH_POWER",
+          "YAWN"
+        ],
+        "evs": [
+          252,
+          0,
+          0,
+          252,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DROUGHT",
+        "form": 0
+      },
+      {
+        "species": "CAMERUPT",
+        "item": "CAMERUPTITE",
+        "moves": [
+          "EARTH_POWER",
+          "FIRE_BLAST",
+          "FLASH_CANNON",
+          "ROCK_SLIDE"
+        ],
+        "evs": [
+          252,
+          0,
+          0,
+          252,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SOLID_ROCK",
+        "form": 0
+      },
+      {
+        "species": "COALOSSAL",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "HEAT_WAVE",
+          "POWER_GEM",
+          "SPIKES",
+          "STEALTH_ROCK"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "FLAME_BODY",
+        "form": 0
+      },
+      {
+        "species": "TURTONATOR",
+        "item": "WHITE_HERB",
+        "moves": [
+          "SHELL_SMASH",
+          "FIRE_BLAST",
+          "DRAGON_PULSE",
+          "FLASH_CANNON"
+        ],
+        "evs": [
+          252,
+          0,
+          0,
+          252,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SHELL_ARMOR",
+        "form": 0
+      },
+      {
+        "species": "SKELEDIRGE",
+        "item": "LEFTOVERS",
+        "moves": [
+          "TORCH_SONG",
+          "SHADOW_BALL",
+          "SLACK_OFF",
+          "EARTH_POWER"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "UNAWARE",
+        "form": 0
+      },
+      {
+        "species": "ARMAROUGE",
+        "item": "LIFE_ORB",
+        "moves": [
+          "ARMOR_CANNON",
+          "EXPANDING_FORCE",
+          "TRICK_ROOM",
+          "ENERGY_BALL"
+        ],
+        "evs": [
+          252,
+          0,
+          0,
+          252,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "FLASH_FIRE",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "ROTOM",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "OVERHEAT",
+          "VOLT_SWITCH",
+          "SHADOW_BALL",
+          "TRICK"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "LEVITATE",
+        "form": 1
+      },
+      {
+        "species": "CINDERACE",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "PYRO_BALL",
+          "U_TURN",
+          "GUNK_SHOT",
+          "COURT_CHANGE"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "LIBERO",
+        "form": 0
+      },
+      {
+        "species": "TALONFLAME",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "BRAVE_BIRD",
+          "FLARE_BLITZ",
+          "WILL_O_WISP",
+          "ROOST"
+        ],
+        "evs": [
+          252,
+          0,
+          4,
+          0,
+          0,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "FLAME_BODY",
+        "form": 0
+      },
+      {
+        "species": "VOLCARONA",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "QUIVER_DANCE",
+          "FIERY_DANCE",
+          "BUG_BUZZ",
+          "ROOST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "FLAME_BODY",
+        "form": 0
+      },
+      {
+        "species": "ARCANINE",
+        "item": "LIFE_ORB",
+        "moves": [
+          "FLARE_BLITZ",
+          "EXTREME_SPEED",
+          "WILD_CHARGE",
+          "CLOSE_COMBAT"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "INTIMIDATE",
+        "form": 0
+      },
+      {
+        "species": "BLAZIKEN",
+        "item": "LIFE_ORB",
+        "moves": [
+          "FLARE_BLITZ",
+          "CLOSE_COMBAT",
+          "SWORDS_DANCE",
+          "PROTECT"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "SPEED_BOOST",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "TORKOAL",
+        "item": "HEAT_ROCK",
+        "moves": [
+          "LAVA_PLUME",
+          "SOLAR_BEAM",
+          "YAWN",
+          "RAPID_SPIN"
+        ],
+        "evs": [
+          248,
+          0,
+          252,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DROUGHT",
+        "form": 0
+      },
+      {
+        "species": "HELIOLISK",
+        "item": "LIFE_ORB",
+        "moves": [
+          "THUNDERBOLT",
+          "SOLAR_BEAM",
+          "FOCUS_BLAST",
+          "HYPER_VOICE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "SOLAR_POWER",
+        "form": 0
+      },
+      {
+        "species": "CHARIZARD",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "FIRE_BLAST",
+          "SOLAR_BEAM",
+          "FOCUS_BLAST",
+          "AIR_SLASH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "SOLAR_POWER",
+        "form": 0
+      },
+      {
+        "species": "TYPHLOSION",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "ERUPTION",
+          "FIRE_BLAST",
+          "FOCUS_BLAST",
+          "EXTRASENSORY"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "FLASH_FIRE",
+        "form": 0
+      },
+      {
+        "species": "VOLCARONA",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "QUIVER_DANCE",
+          "FIERY_DANCE",
+          "GIGA_DRAIN",
+          "BUG_BUZZ"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "SWARM",
+        "form": 0
+      },
+      {
+        "species": "ROTOM",
+        "item": "LEFTOVERS",
+        "moves": [
+          "OVERHEAT",
+          "VOLT_SWITCH",
+          "WILL_O_WISP",
+          "PAIN_SPLIT"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "LEVITATE",
+        "form": 1
+      }
+    ],
+    [
+      {
+        "species": "FLAREON",
+        "item": "TOXIC_ORB",
+        "moves": [
+          "FACADE",
+          "FLARE_BLITZ",
+          "QUICK_ATTACK",
+          "SUPERPOWER"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "GUTS",
+        "form": 0
+      },
+      {
+        "species": "DARMANITAN",
+        "item": "LIFE_ORB",
+        "moves": [
+          "FLARE_BLITZ",
+          "EARTHQUAKE",
+          "ROCK_SLIDE",
+          "U_TURN"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "SHEER_FORCE",
+        "form": 0
+      },
+      {
+        "species": "ARCANINE",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "FLARE_BLITZ",
+          "EXTREME_SPEED",
+          "WILD_CHARGE",
+          "CLOSE_COMBAT"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "INTIMIDATE",
+        "form": 0
+      },
+      {
+        "species": "BLAZIKEN",
+        "item": "LIFE_ORB",
+        "moves": [
+          "FLARE_BLITZ",
+          "CLOSE_COMBAT",
+          "EARTHQUAKE",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "SPEED_BOOST",
+        "form": 0
+      },
+      {
+        "species": "CERULEDGE",
+        "item": "FOCUS_SASH",
+        "moves": [
+          "BITTER_BLADE",
+          "SHADOW_CLAW",
+          "SHADOW_SNEAK",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "WEAK_ARMOR",
+        "form": 0
+      },
+      {
+        "species": "CINDERACE",
+        "item": "LIFE_ORB",
+        "moves": [
+          "PYRO_BALL",
+          "HIGH_JUMP_KICK",
+          "IRON_HEAD",
+          "SUCKER_PUNCH"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "LIBERO",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "SKELEDIRGE",
+        "item": "LEFTOVERS",
+        "moves": [
+          "TORCH_SONG",
+          "SLACK_OFF",
+          "WILL_O_WISP",
+          "HEX"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "UNAWARE",
+        "form": 0
+      },
+      {
+        "species": "ROTOM",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "OVERHEAT",
+          "VOLT_SWITCH",
+          "WILL_O_WISP",
+          "PAIN_SPLIT"
+        ],
+        "evs": [
+          252,
+          0,
+          0,
+          4,
+          252,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "LEVITATE",
+        "form": 1
+      },
+      {
+        "species": "COALOSSAL",
+        "item": "ROCKY_HELMET",
+        "moves": [
+          "LAVA_PLUME",
+          "STEALTH_ROCK",
+          "SPIKES",
+          "RAPID_SPIN"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "FLAME_BODY",
+        "form": 0
+      },
+      {
+        "species": "HEATRAN",
+        "item": "LEFTOVERS",
+        "moves": [
+          "MAGMA_STORM",
+          "EARTH_POWER",
+          "PROTECT",
+          "STEALTH_ROCK"
+        ],
+        "evs": [
+          252,
+          0,
+          0,
+          4,
+          252,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "FLASH_FIRE",
+        "form": 0
+      },
+      {
+        "species": "VOLCARONA",
+        "item": "LEFTOVERS",
+        "moves": [
+          "QUIVER_DANCE",
+          "ROOST",
+          "FIERY_DANCE",
+          "BUG_BUZZ"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "FLAME_BODY",
+        "form": 0
+      },
+      {
+        "species": "ARCANINE",
+        "item": "ROCKY_HELMET",
+        "moves": [
+          "WILL_O_WISP",
+          "MORNING_SUN",
+          "FLARE_BLITZ",
+          "EXTREME_SPEED"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "INTIMIDATE",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "NINETALES",
+        "item": "HEAT_ROCK",
+        "moves": [
+          "FIRE_BLAST",
+          "SOLAR_BEAM",
+          "NASTY_PLOT",
+          "EXTRASENSORY"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "DROUGHT",
+        "form": 0
+      },
+      {
+        "species": "ARCANINE",
+        "item": "LIFE_ORB",
+        "moves": [
+          "FLARE_BLITZ",
+          "EXTREME_SPEED",
+          "WILD_CHARGE",
+          "CLOSE_COMBAT"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "INTIMIDATE",
+        "form": 0
+      },
+      {
+        "species": "TYPHLOSION",
+        "item": "EJECT_PACK",
+        "moves": [
+          "ERUPTION",
+          "OVERHEAT",
+          "FOCUS_BLAST",
+          "EXTRASENSORY"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "FLASH_FIRE",
+        "form": 0
+      },
+      {
+        "species": "CHARIZARD",
+        "item": "CHARIZARDITEY",
+        "moves": [
+          "FIRE_BLAST",
+          "SOLAR_BEAM",
+          "FOCUS_BLAST",
+          "ROOST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "BLAZE",
+        "form": 0
+      },
+      {
+        "species": "HOUNDOOM",
+        "item": "HOUNDOOMINITE",
+        "moves": [
+          "NASTY_PLOT",
+          "DARK_PULSE",
+          "FIRE_BLAST",
+          "SLUDGE_BOMB"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "FLASH_FIRE",
+        "form": 0
+      },
+      {
+        "species": "FLAREON",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "FLARE_BLITZ",
+          "SUPERPOWER",
+          "QUICK_ATTACK",
+          "BITE"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "FLASH_FIRE",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "TORKOAL",
+        "item": "HEAT_ROCK",
+        "moves": [
+          "LAVA_PLUME",
+          "SOLAR_BEAM",
+          "YAWN",
+          "STEALTH_ROCK"
+        ],
+        "evs": [
+          248,
+          0,
+          252,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DROUGHT",
+        "form": 0
+      },
+      {
+        "species": "ROARING_MOON",
+        "item": "BOOSTER_ENERGY",
+        "moves": [
+          "DRAGON_DANCE",
+          "ACROBATICS",
+          "EARTHQUAKE",
+          "CRUNCH"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "PROTOSYNTHESIS",
+        "form": 0
+      },
+      {
+        "species": "GREAT_TUSK",
+        "item": "BOOSTER_ENERGY",
+        "moves": [
+          "CLOSE_COMBAT",
+          "EARTHQUAKE",
+          "RAPID_SPIN",
+          "ICE_SPINNER"
+        ],
+        "evs": [
+          0,
+          252,
+          4,
+          0,
+          0,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "PROTOSYNTHESIS",
+        "form": 0
+      },
+      {
+        "species": "FLUTTER_MANE",
+        "item": "LIFE_ORB",
+        "moves": [
+          "MOONBLAST",
+          "SHADOW_BALL",
+          "MYSTICAL_FIRE",
+          "PSYSHOCK"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "PROTOSYNTHESIS",
+        "form": 0
+      },
+      {
+        "species": "BRUTE_BONNET",
+        "item": "LOADED_DICE",
+        "moves": [
+          "BULLET_SEED",
+          "SUCKER_PUNCH",
+          "SPORE",
+          "CLOSE_COMBAT"
+        ],
+        "evs": [
+          252,
+          252,
+          0,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "PROTOSYNTHESIS",
+        "form": 0
+      },
+      {
+        "species": "VOLCARONA",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "QUIVER_DANCE",
+          "FIERY_DANCE",
+          "BUG_BUZZ",
+          "ROOST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "FLAME_BODY",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "VOLCANION",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "STEAM_ERUPTION",
+          "FLAMETHROWER",
+          "EARTH_POWER",
+          "SLUDGE_WAVE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "WATER_ABSORB",
+        "form": 0
+      },
+      {
+        "species": "TORKOAL",
+        "item": "HEAT_ROCK",
+        "moves": [
+          "LAVA_PLUME",
+          "RAPID_SPIN",
+          "YAWN",
+          "STEALTH_ROCK"
+        ],
+        "evs": [
+          248,
+          0,
+          252,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DROUGHT",
+        "form": 0
+      },
+      {
+        "species": "CHARIZARD",
+        "item": "CHARIZARDITEY",
+        "moves": [
+          "FIRE_BLAST",
+          "SOLAR_BEAM",
+          "FOCUS_BLAST",
+          "AIR_SLASH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "BLAZE",
+        "form": 0
+      },
+      {
+        "species": "NINETALES",
+        "item": "LEFTOVERS",
+        "moves": [
+          "FIRE_BLAST",
+          "SOLAR_BEAM",
+          "WILL_O_WISP",
+          "EXTRASENSORY"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "DROUGHT",
+        "form": 0
+      },
+      {
+        "species": "SCIZOR",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "BULLET_PUNCH",
+          "U_TURN",
+          "CLOSE_COMBAT",
+          "DUAL_WINGBEAT"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "TECHNICIAN",
+        "form": 0
+      },
+      {
+        "species": "LUDICOLO",
+        "item": "ASSAULT_VEST",
+        "moves": [
+          "GIGA_DRAIN",
+          "HYDRO_PUMP",
+          "ICE_BEAM",
+          "FOCUS_BLAST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "SWIFT_SWIM",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "BLAZIKEN",
+        "item": "LIFE_ORB",
+        "moves": [
+          "FLARE_BLITZ",
+          "CLOSE_COMBAT",
+          "STONE_EDGE",
+          "PROTECT"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "SPEED_BOOST",
+        "form": 0
+      },
+      {
+        "species": "CERULEDGE",
+        "item": "LEFTOVERS",
+        "moves": [
+          "BITTER_BLADE",
+          "SHADOW_SNEAK",
+          "SWORDS_DANCE",
+          "CLOSE_COMBAT"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "FLASH_FIRE",
+        "form": 0
+      },
+      {
+        "species": "SKELEDIRGE",
+        "item": "ROCKY_HELMET",
+        "moves": [
+          "TORCH_SONG",
+          "SHADOW_BALL",
+          "SLACK_OFF",
+          "EARTH_POWER"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "UNAWARE",
+        "form": 0
+      },
+      {
+        "species": "HEATRAN",
+        "item": "LEFTOVERS",
+        "moves": [
+          "MAGMA_STORM",
+          "EARTH_POWER",
+          "PROTECT",
+          "TAUNT"
+        ],
+        "evs": [
+          252,
+          0,
+          0,
+          4,
+          252,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "FLASH_FIRE",
+        "form": 0
+      },
+      {
+        "species": "ARCANINE",
+        "item": "LIFE_ORB",
+        "moves": [
+          "FLARE_BLITZ",
+          "EXTREME_SPEED",
+          "WILD_CHARGE",
+          "CLOSE_COMBAT"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "INTIMIDATE",
+        "form": 0
+      },
+      {
+        "species": "VOLCARONA",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "QUIVER_DANCE",
+          "FIERY_DANCE",
+          "BUG_BUZZ",
+          "GIGA_DRAIN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "FLAME_BODY",
+        "form": 0
+      }
+    ]
+  ],
+  "brock": [
+    [
+      {
+        "species": "TYRANITAR",
+        "item": "SMOOTH_ROCK",
+        "moves": [
+          "STEALTH_ROCK",
+          "STONE_EDGE",
+          "CRUNCH",
+          "FIRE_PUNCH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SAND_STREAM",
+        "form": 0
+      },
+      {
+        "species": "LYCANROC",
+        "item": "LIFE_ORB",
+        "moves": [
+          "SWORDS_DANCE",
+          "STONE_EDGE",
+          "CLOSE_COMBAT",
+          "ACCELEROCK"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SAND_RUSH",
+        "form": 0
+      },
+      {
+        "species": "GARGANACL",
+        "item": "LEFTOVERS",
+        "moves": [
+          "SALT_CURE",
+          "RECOVER",
+          "EARTHQUAKE",
+          "BODY_PRESS"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "PURIFYING_SALT",
+        "form": 0
+      },
+      {
+        "species": "AERODACTYL",
+        "item": "AERODACTYLITE",
+        "moves": [
+          "STONE_EDGE",
+          "DUAL_WINGBEAT",
+          "EARTHQUAKE",
+          "ROOST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "ROCK_HEAD",
+        "form": 0
+      },
+      {
+        "species": "TERRAKION",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "CLOSE_COMBAT",
+          "STONE_EDGE",
+          "EARTHQUAKE",
+          "IRON_HEAD"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "JUSTIFIED",
+        "form": 0
+      },
+      {
+        "species": "CRADILY",
+        "item": "LEFTOVERS",
+        "moves": [
+          "RECOVER",
+          "GIGA_DRAIN",
+          "POWER_GEM",
+          "TOXIC"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STORM_DRAIN",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "GIGALITH",
+        "item": "SMOOTH_ROCK",
+        "moves": [
+          "STEALTH_ROCK",
+          "STONE_EDGE",
+          "EARTHQUAKE",
+          "HEAVY_SLAM"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SAND_STREAM",
+        "form": 0
+      },
+      {
+        "species": "RHYPERIOR",
+        "item": "WEAKNESS_POLICY",
+        "moves": [
+          "ROCK_POLISH",
+          "EARTHQUAKE",
+          "STONE_EDGE",
+          "MEGAHORN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SOLID_ROCK",
+        "form": 0
+      },
+      {
+        "species": "COALOSSAL",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "HEAT_WAVE",
+          "POWER_GEM",
+          "RAPID_SPIN",
+          "SPIKES"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "FLAME_BODY",
+        "form": 0
+      },
+      {
+        "species": "AGGRON",
+        "item": "AGGRONITE",
+        "moves": [
+          "HEAVY_SLAM",
+          "EARTHQUAKE",
+          "FIRE_PUNCH",
+          "THUNDER_WAVE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STURDY",
+        "form": 0
+      },
+      {
+        "species": "TYRANTRUM",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "HEAD_SMASH",
+          "OUTRAGE",
+          "FIRE_FANG",
+          "EARTHQUAKE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STRONG_JAW",
+        "form": 0
+      },
+      {
+        "species": "CARRACOSTA",
+        "item": "LEFTOVERS",
+        "moves": [
+          "SHELL_SMASH",
+          "WATERFALL",
+          "STONE_EDGE",
+          "AQUA_JET"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SOLID_ROCK",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "GLIMMORA",
+        "item": "FOCUS_SASH",
+        "moves": [
+          "TOXIC_SPIKES",
+          "MORTAL_SPIN",
+          "POWER_GEM",
+          "EARTH_POWER"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TOXIC_DEBRIS",
+        "form": 0
+      },
+      {
+        "species": "SHUCKLE",
+        "item": "MENTAL_HERB",
+        "moves": [
+          "STICKY_WEB",
+          "STEALTH_ROCK",
+          "ENCORE",
+          "INFESTATION"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STURDY",
+        "form": 0
+      },
+      {
+        "species": "GARGANACL",
+        "item": "LEFTOVERS",
+        "moves": [
+          "SALT_CURE",
+          "RECOVER",
+          "STEALTH_ROCK",
+          "PROTECT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "PURIFYING_SALT",
+        "form": 0
+      },
+      {
+        "species": "CRADILY",
+        "item": "LEFTOVERS",
+        "moves": [
+          "GIGA_DRAIN",
+          "RECOVER",
+          "TOXIC",
+          "MIRROR_COAT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STORM_DRAIN",
+        "form": 0
+      },
+      {
+        "species": "TYRANITAR",
+        "item": "ASSAULT_VEST",
+        "moves": [
+          "STONE_EDGE",
+          "CRUNCH",
+          "EARTHQUAKE",
+          "ICE_PUNCH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SAND_STREAM",
+        "form": 0
+      },
+      {
+        "species": "LYCANROC",
+        "item": "FOCUS_SASH",
+        "moves": [
+          "ACCELEROCK",
+          "STONE_EDGE",
+          "CLOSE_COMBAT",
+          "COUNTER"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TOUGH_CLAWS",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "OMASTAR",
+        "item": "WHITE_HERB",
+        "moves": [
+          "SHELL_SMASH",
+          "HYDRO_PUMP",
+          "ICE_BEAM",
+          "EARTH_POWER"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "WEAK_ARMOR",
+        "form": 0
+      },
+      {
+        "species": "MINIOR",
+        "item": "WHITE_HERB",
+        "moves": [
+          "SHELL_SMASH",
+          "ACROBATICS",
+          "STONE_EDGE",
+          "EARTHQUAKE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SHIELDS_DOWN",
+        "form": 0
+      },
+      {
+        "species": "CARRACOSTA",
+        "item": "WHITE_HERB",
+        "moves": [
+          "SHELL_SMASH",
+          "WATERFALL",
+          "STONE_EDGE",
+          "AQUA_JET"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SOLID_ROCK",
+        "form": 0
+      },
+      {
+        "species": "TERRAKION",
+        "item": "CHOICE_SCARF",
+        "moves": [
+          "CLOSE_COMBAT",
+          "STONE_EDGE",
+          "EARTHQUAKE",
+          "ROCK_SLIDE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "JUSTIFIED",
+        "form": 0
+      },
+      {
+        "species": "KLEAVOR",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "STONE_AXE",
+          "X_SCISSOR",
+          "CLOSE_COMBAT",
+          "U_TURN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SHARPNESS",
+        "form": 0
+      },
+      {
+        "species": "PROBOPASS",
+        "item": "ROCKY_HELMET",
+        "moves": [
+          "STEALTH_ROCK",
+          "VOLT_SWITCH",
+          "EARTH_POWER",
+          "FLASH_CANNON"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "MAGNET_PULL",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "KLEAVOR",
+        "item": "LIFE_ORB",
+        "moves": [
+          "STONE_AXE",
+          "X_SCISSOR",
+          "NIGHT_SLASH",
+          "CLOSE_COMBAT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SHARPNESS",
+        "form": 0
+      },
+      {
+        "species": "AERODACTYL",
+        "item": "AERODACTYLITE",
+        "moves": [
+          "STONE_EDGE",
+          "DUAL_WINGBEAT",
+          "EARTHQUAKE",
+          "ROOST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "PRESSURE",
+        "form": 0
+      },
+      {
+        "species": "LYCANROC",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "ACCELEROCK",
+          "STONE_EDGE",
+          "CLOSE_COMBAT",
+          "DRILL_RUN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TOUGH_CLAWS",
+        "form": 0
+      },
+      {
+        "species": "TYRANTRUM",
+        "item": "LIFE_ORB",
+        "moves": [
+          "DRAGON_DANCE",
+          "HEAD_SMASH",
+          "OUTRAGE",
+          "EARTHQUAKE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "ROCK_HEAD",
+        "form": 0
+      },
+      {
+        "species": "KABUTOPS",
+        "item": "LIFE_ORB",
+        "moves": [
+          "SWORDS_DANCE",
+          "LIQUIDATION",
+          "STONE_EDGE",
+          "SUPERPOWER"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "WEAK_ARMOR",
+        "form": 0
+      },
+      {
+        "species": "ARMALDO",
+        "item": "LEFTOVERS",
+        "moves": [
+          "RAPID_SPIN",
+          "KNOCK_OFF",
+          "STONE_EDGE",
+          "EARTHQUAKE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "BATTLE_ARMOR",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "NIHILEGO",
+        "item": "POWER_HERB",
+        "moves": [
+          "METEOR_BEAM",
+          "SLUDGE_WAVE",
+          "THUNDERBOLT",
+          "GRASS_KNOT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "BEAST_BOOST",
+        "form": 0
+      },
+      {
+        "species": "DIANCIE",
+        "item": "DIANCITE",
+        "moves": [
+          "DIAMOND_STORM",
+          "MOONBLAST",
+          "EARTH_POWER",
+          "MYSTICAL_FIRE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "CLEAR_BODY",
+        "form": 0
+      },
+      {
+        "species": "OMASTAR",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "HYDRO_PUMP",
+          "ICE_BEAM",
+          "EARTH_POWER",
+          "ANCIENT_POWER"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SWIFT_SWIM",
+        "form": 0
+      },
+      {
+        "species": "GLIMMORA",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "POWER_GEM",
+          "SLUDGE_WAVE",
+          "EARTH_POWER",
+          "ENERGY_BALL"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TOXIC_DEBRIS",
+        "form": 0
+      },
+      {
+        "species": "AURORUS",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "HYPER_VOICE",
+          "FREEZE_DRY",
+          "EARTH_POWER",
+          "FLASH_CANNON"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "REFRIGERATE",
+        "form": 0
+      },
+      {
+        "species": "LUNATONE",
+        "item": "COLBUR_BERRY",
+        "moves": [
+          "NASTY_PLOT",
+          "PSYCHIC",
+          "POWER_GEM",
+          "EARTH_POWER"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "LEVITATE",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "RHYPERIOR",
+        "item": "WEAKNESS_POLICY",
+        "moves": [
+          "SWORDS_DANCE",
+          "EARTHQUAKE",
+          "STONE_EDGE",
+          "MEGAHORN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SOLID_ROCK",
+        "form": 0
+      },
+      {
+        "species": "COALOSSAL",
+        "item": "WEAKNESS_POLICY",
+        "moves": [
+          "ENDURE",
+          "FLAME_CHARGE",
+          "POWER_GEM",
+          "EARTH_POWER"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STEAM_ENGINE",
+        "form": 0
+      },
+      {
+        "species": "CARRACOSTA",
+        "item": "WEAKNESS_POLICY",
+        "moves": [
+          "SHELL_SMASH",
+          "WATERFALL",
+          "STONE_EDGE",
+          "AQUA_JET"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SOLID_ROCK",
+        "form": 0
+      },
+      {
+        "species": "AGGRON",
+        "item": "ROCKY_HELMET",
+        "moves": [
+          "METAL_BURST",
+          "STEALTH_ROCK",
+          "HEAVY_SLAM",
+          "EARTHQUAKE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STURDY",
+        "form": 0
+      },
+      {
+        "species": "SOLROCK",
+        "item": "LEFTOVERS",
+        "moves": [
+          "WILL_O_WISP",
+          "MORNING_SUN",
+          "ROCK_SLIDE",
+          "FLARE_BLITZ"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "LEVITATE",
+        "form": 0
+      },
+      {
+        "species": "SUDOWOODO",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "HEAD_SMASH",
+          "WOOD_HAMMER",
+          "SUCKER_PUNCH",
+          "EARTHQUAKE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "ROCK_HEAD",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "TERRAKION",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "CLOSE_COMBAT",
+          "STONE_EDGE",
+          "EARTHQUAKE",
+          "POISON_JAB"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "JUSTIFIED",
+        "form": 0
+      },
+      {
+        "species": "NIHILEGO",
+        "item": "CHOICE_SCARF",
+        "moves": [
+          "POWER_GEM",
+          "SLUDGE_WAVE",
+          "THUNDERBOLT",
+          "GRASS_KNOT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "BEAST_BOOST",
+        "form": 0
+      },
+      {
+        "species": "KLEAVOR",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "STONE_AXE",
+          "X_SCISSOR",
+          "U_TURN",
+          "CLOSE_COMBAT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SHARPNESS",
+        "form": 0
+      },
+      {
+        "species": "TYRANTRUM",
+        "item": "CHOICE_SCARF",
+        "moves": [
+          "HEAD_SMASH",
+          "OUTRAGE",
+          "ICE_FANG",
+          "FIRE_FANG"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STRONG_JAW",
+        "form": 0
+      },
+      {
+        "species": "ARCHEOPS",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "HEAD_SMASH",
+          "BRAVE_BIRD",
+          "EARTHQUAKE",
+          "U_TURN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DEFEATIST",
+        "form": 0
+      },
+      {
+        "species": "RHYPERIOR",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "EARTHQUAKE",
+          "STONE_EDGE",
+          "MEGAHORN",
+          "ICE_PUNCH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SOLID_ROCK",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "GARGANACL",
+        "item": "ROCKY_HELMET",
+        "moves": [
+          "SALT_CURE",
+          "RECOVER",
+          "STEALTH_ROCK",
+          "BODY_PRESS"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "PURIFYING_SALT",
+        "form": 0
+      },
+      {
+        "species": "BASTIODON",
+        "item": "LEFTOVERS",
+        "moves": [
+          "METAL_BURST",
+          "TOXIC",
+          "STEALTH_ROCK",
+          "INFESTATION"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STURDY",
+        "form": 0
+      },
+      {
+        "species": "PROBOPASS",
+        "item": "LEFTOVERS",
+        "moves": [
+          "THUNDER_WAVE",
+          "VOLT_SWITCH",
+          "EARTH_POWER",
+          "STEALTH_ROCK"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STURDY",
+        "form": 0
+      },
+      {
+        "species": "CRADILY",
+        "item": "LEFTOVERS",
+        "moves": [
+          "RECOVER",
+          "GIGA_DRAIN",
+          "TOXIC",
+          "INFESTATION"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STORM_DRAIN",
+        "form": 0
+      },
+      {
+        "species": "SHUCKLE",
+        "item": "LEFTOVERS",
+        "moves": [
+          "INFESTATION",
+          "TOXIC",
+          "REST",
+          "SLEEP_TALK"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STURDY",
+        "form": 0
+      },
+      {
+        "species": "REGIROCK",
+        "item": "LEFTOVERS",
+        "moves": [
+          "RECOVER",
+          "BODY_PRESS",
+          "IRON_DEFENSE",
+          "ROCK_SLIDE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "CLEAR_BODY",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "DIANCIE",
+        "item": "LEFTOVERS",
+        "moves": [
+          "DIAMOND_STORM",
+          "MOONBLAST",
+          "STEALTH_ROCK",
+          "TRICK_ROOM"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "CLEAR_BODY",
+        "form": 0
+      },
+      {
+        "species": "AERODACTYL",
+        "item": "FOCUS_SASH",
+        "moves": [
+          "STEALTH_ROCK",
+          "TAUNT",
+          "STONE_EDGE",
+          "TAILWIND"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "PRESSURE",
+        "form": 0
+      },
+      {
+        "species": "GARGANACL",
+        "item": "LEFTOVERS",
+        "moves": [
+          "SALT_CURE",
+          "RECOVER",
+          "EARTHQUAKE",
+          "BODY_PRESS"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "PURIFYING_SALT",
+        "form": 0
+      },
+      {
+        "species": "TERRAKION",
+        "item": "LIFE_ORB",
+        "moves": [
+          "SWORDS_DANCE",
+          "CLOSE_COMBAT",
+          "STONE_EDGE",
+          "EARTHQUAKE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "JUSTIFIED",
+        "form": 0
+      },
+      {
+        "species": "GLIMMORA",
+        "item": "BLACK_SLUDGE",
+        "moves": [
+          "TOXIC_SPIKES",
+          "MORTAL_SPIN",
+          "SLUDGE_WAVE",
+          "POWER_GEM"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TOXIC_DEBRIS",
+        "form": 0
+      },
+      {
+        "species": "LYCANROC",
+        "item": "LIFE_ORB",
+        "moves": [
+          "STONE_EDGE",
+          "PLAY_ROUGH",
+          "CLOSE_COMBAT",
+          "SUCKER_PUNCH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TOUGH_CLAWS",
+        "form": 0
+      }
+    ]
+  ],
+  "giovanni": [
+    [
+      {
+        "species": "ESTE_ARQUIVO_CONTÉM_10_TIMES_ALTAMENTE_COMPETITIVOS_DO_TIPO_TERRA_PARA_O_CHEFE",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "GIOVANNI_NO_MODO_DE_DIFICULDADE_DO_BILHETE_LARANJA_DE_GIOVANNI",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "CADA_TIME_FOCA_EM_UMA_SINERGIA_OU_ESTRATÉGIA_ESPECÍFICA",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "TRICK_ROOM,_UNAWARE_STALL,_PARADOX",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "E_EVS_OTIMIZADOS.",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "E_PRESSIONAR_O_OPONENTE_COM_ATACANTES_FÍSICOS_DEVASTADORES_SOB_O_CLIMA_FAVORÁVEL.",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "HIPPOWDON",
+        "item": "SMOOTH_ROCK",
+        "moves": [
+          "STEALTH_ROCK",
+          "SLACK_OFF",
+          "EARTHQUAKE",
+          "YAWN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SAND_STREAM",
+        "form": 0
+      },
+      {
+        "species": "EXCADRILL",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "EARTHQUAKE",
+          "IRON_HEAD",
+          "ROCK_SLIDE",
+          "RAPID_SPIN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SAND_RUSH",
+        "form": 0
+      },
+      {
+        "species": "GARCHOMP",
+        "item": "LIFE_ORB",
+        "moves": [
+          "SWORDS_DANCE",
+          "EARTHQUAKE",
+          "OUTRAGE",
+          "STONE_EDGE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "ROUGH_SKIN",
+        "form": 0
+      },
+      {
+        "species": "URSALUNA",
+        "item": "FLAME_ORB",
+        "moves": [
+          "FACADE",
+          "EARTHQUAKE",
+          "FIRE_PUNCH",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "GUTS",
+        "form": 0
+      },
+      {
+        "species": "DONPHAN",
+        "item": "ASSAULT_VEST",
+        "moves": [
+          "RAPID_SPIN",
+          "EARTHQUAKE",
+          "KNOCK_OFF",
+          "STONE_EDGE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STURDY",
+        "form": 0
+      },
+      {
+        "species": "RHYPERIOR",
+        "item": "LEFTOVERS",
+        "moves": [
+          "STEALTH_ROCK",
+          "EARTHQUAKE",
+          "ROCK_BLAST",
+          "ROAR"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SOLID_ROCK",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "E_ESPALHAR_STEALTH_ROCK._EXCADRILL_SOB_A_AREIA_GANHA_VELOCIDADE_DOBRADA_POR_SAND_RUSH,",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "PODENDO_VARRER_COM_CHOICE_BAND._GARCHOMP_E_URSALUNA_FORNECEM_PODER_DE_QUEBRA_BRUTO_IMENSO.",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "DONPHAN_LIMPA_HAZARDS_E_RHYPERIOR_REDUZ_O_DANO_ESPECIAL_RECEBIDO_PELO_TIME.",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "ESPECIAIS_GIGANTESCOS_SEM_RECEBER_DANO_DE_RECUO.",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "NIDOKING",
+        "item": "LIFE_ORB",
+        "moves": [
+          "EARTH_POWER",
+          "SLUDGE_WAVE",
+          "ICE_BEAM",
+          "FLAMETHROWER"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SHEER_FORCE",
+        "form": 0
+      },
+      {
+        "species": "NIDOQUEEN",
+        "item": "LIFE_ORB",
+        "moves": [
+          "EARTH_POWER",
+          "SLUDGE_WAVE",
+          "THUNDERBOLT",
+          "STEALTH_ROCK"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SHEER_FORCE",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "GASTRODON",
+        "item": "LEFTOVERS",
+        "moves": [
+          "RECOVER",
+          "EARTH_POWER",
+          "SCALD",
+          "ICE_BEAM"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STORM_DRAIN",
+        "form": 0
+      },
+      {
+        "species": "GLISCOR",
+        "item": "TOXIC_ORB",
+        "moves": [
+          "TOXIC",
+          "PROTECT",
+          "EARTHQUAKE",
+          "KNOCK_OFF"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "POISON_HEAL",
+        "form": 0
+      },
+      {
+        "species": "MAMOSWINE",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "ICICLE_CRASH",
+          "ICE_SHARD",
+          "EARTHQUAKE",
+          "KNOCK_OFF"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "THICK_FAT",
+        "form": 0
+      },
+      {
+        "species": "LANDORUS",
+        "item": "ROCKY_HELMET",
+        "moves": [
+          "U_TURN",
+          "EARTHQUAKE",
+          "STONE_EDGE",
+          "DEFOG"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "INTIMIDATE",
+        "form": 0
+      },
+      {
+        "species": "BUFADOS_POR_SHEER_FORCE._GASTRODON_ATUA_COMO_BARREIRA_CONTRA_GOLPES_DE_ÁGUA_COM_STORM_DRAIN.",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "GLISCOR_GARANTE_CURA_PASSIVA_CONTÍNUA_COM_POISON_HEAL,_ENQUANTO_MAMOSWINE_FORNECE_PRIORIDADE_DE_GELO.",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "DESTRUTIVOS_DO_JOGO_ATAQUEM_PRIMEIRO.",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "STEELIX",
+        "item": "LEFTOVERS",
+        "moves": [
+          "GYRO_BALL",
+          "EARTHQUAKE",
+          "CURSE",
+          "STEALTH_ROCK"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STURDY",
+        "form": 0
+      },
+      {
+        "species": "URSALUNA",
+        "item": "FLAME_ORB",
+        "moves": [
+          "FACADE",
+          "EARTHQUAKE",
+          "PLAY_ROUGH",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "GUTS",
+        "form": 0
+      },
+      {
+        "species": "RHYPERIOR",
+        "item": "WEAKNESS_POLICY",
+        "moves": [
+          "STONE_EDGE",
+          "EARTHQUAKE",
+          "MEGAHORN",
+          "ICE_PUNCH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SOLID_ROCK",
+        "form": 0
+      },
+      {
+        "species": "CAMERUPT",
+        "item": "LIFE_ORB",
+        "moves": [
+          "FIRE_BLAST",
+          "EARTH_POWER",
+          "FLASH_CANNON",
+          "ANCIENT_POWER"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SHEER_FORCE",
+        "form": 0
+      },
+      {
+        "species": "DONPHAN",
+        "item": "ASSAULT_VEST",
+        "moves": [
+          "RAPID_SPIN",
+          "EARTHQUAKE",
+          "KNOCK_OFF",
+          "ICE_SHARD"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STURDY",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "GASTRODON",
+        "item": "RINDO_BERRY",
+        "moves": [
+          "EARTH_POWER",
+          "ICE_BEAM",
+          "YAWN",
+          "RECOVER"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STORM_DRAIN",
+        "form": 0
+      },
+      {
+        "species": "WEAKNESS_POLICY_RECEBENDO_GOLPES_SUPER_EFETIVOS_ATENUADOS_POR_SOLID_ROCK._CAMERUPT_QUEBRA",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "NO_LADO_ESPECIAL.",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "ABSORÇÃO_E_CONTRAGOLPEAR_COM_GOLPES_SUPER_EFETIVOS.",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "GASTRODON",
+        "item": "LEFTOVERS",
+        "moves": [
+          "RECOVER",
+          "EARTH_POWER",
+          "SCALD",
+          "ICE_BEAM"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STORM_DRAIN",
+        "form": 0
+      },
+      {
+        "species": "SEISMITOAD",
+        "item": "LIFE_ORB",
+        "moves": [
+          "EARTHQUAKE",
+          "LIQUIDATION",
+          "ICE_PUNCH",
+          "POWER_WHIP"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "WATER_ABSORB",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "GLISCOR",
+        "item": "TOXIC_ORB",
+        "moves": [
+          "PROTECT",
+          "EARTHQUAKE",
+          "FACADE",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "POISON_HEAL",
+        "form": 0
+      },
+      {
+        "species": "QUAGSIRE",
+        "item": "LEFTOVERS",
+        "moves": [
+          "RECOVER",
+          "EARTHQUAKE",
+          "TOXIC",
+          "HAZE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "UNAWARE",
+        "form": 0
+      },
+      {
+        "species": "GARCHOMP",
+        "item": "LIFE_ORB",
+        "moves": [
+          "EARTHQUAKE",
+          "OUTRAGE",
+          "SWORDS_DANCE",
+          "FIRE_FANG"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "ROUGH_SKIN",
+        "form": 0
+      },
+      {
+        "species": "MAMOSWINE",
+        "item": "FOCUS_SASH",
+        "moves": [
+          "ICE_SHARD",
+          "ICICLE_CRASH",
+          "EARTHQUAKE",
+          "ENDEAVOR"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "THICK_FAT",
+        "form": 0
+      },
+      {
+        "species": "E_GANHAM_BUFFS",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "OPONENTE_COM_UNAWARE._MAMOSWINE_LIDA_COM_GRAMA_E_VOADORES_USANDO_GOLPES_DE_GELO_COM_THICK_FAT.",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "LANDORUS",
+        "item": "LEFTOVERS",
+        "moves": [
+          "EARTHQUAKE",
+          "U_TURN",
+          "STONE_EDGE",
+          "STEALTH_ROCK"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "INTIMIDATE",
+        "form": 0
+      },
+      {
+        "species": "KROOKODILE",
+        "item": "CHOICE_SCARF",
+        "moves": [
+          "EARTHQUAKE",
+          "KNOCK_OFF",
+          "SUPERPOWER",
+          "STONE_EDGE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "MOXIE",
+        "form": 0
+      },
+      {
+        "species": "GLISCOR",
+        "item": "TOXIC_ORB",
+        "moves": [
+          "ROOST",
+          "DEFOG",
+          "EARTHQUAKE",
+          "TOXIC"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "POISON_HEAL",
+        "form": 0
+      },
+      {
+        "species": "SWAMPERT",
+        "item": "LEFTOVERS",
+        "moves": [
+          "FLIP_TURN",
+          "EARTHQUAKE",
+          "STEALTH_ROCK",
+          "YAWN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TORRENT",
+        "form": 0
+      },
+      {
+        "species": "DONPHAN",
+        "item": "ASSAULT_VEST",
+        "moves": [
+          "EARTHQUAKE",
+          "SUPERPOWER",
+          "ICE_SHARD",
+          "RAPID_SPIN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STURDY",
+        "form": 0
+      },
+      {
+        "species": "NIDOKING",
+        "item": "LIFE_ORB",
+        "moves": [
+          "EARTH_POWER",
+          "SLUDGE_WAVE",
+          "ICE_BEAM",
+          "FLAMETHROWER"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SHEER_FORCE",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "KROOKODILE_CHOICE_SCARF_FUNCIONA_COMO_O_\"CLEANER\"_DE_FIM_DE_JOGO,_ACUMULANDO_BOOSTS",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "DE_ATAQUE_VIA_MOXIE_A_CADA_NOCAUTE_OBTIDO.",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "COM_MONSTROS_DE_ALTO_ATAQUE_FÍSICO_E_ESPECIAL.",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "AERODACTYL",
+        "item": "FOCUS_SASH",
+        "moves": [
+          "TAILWIND",
+          "STEALTH_ROCK",
+          "STONE_EDGE",
+          "EARTHQUAKE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "PRESSURE",
+        "form": 0
+      },
+      {
+        "species": "EXCADRILL",
+        "item": "LIFE_ORB",
+        "moves": [
+          "EARTHQUAKE",
+          "IRON_HEAD",
+          "ROCK_SLIDE",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "MOLD_BREAKER",
+        "form": 0
+      },
+      {
+        "species": "GARCHOMP",
+        "item": "LIFE_ORB",
+        "moves": [
+          "SCALE_SHOT",
+          "EARTHQUAKE",
+          "FIRE_FANG",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "ROUGH_SKIN",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "LANDORUS",
+        "item": "LIFE_ORB",
+        "moves": [
+          "EARTH_POWER",
+          "SLUDGE_BOMB",
+          "PSYCHIC",
+          "FOCUS_BLAST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SHEER_FORCE",
+        "form": 0
+      },
+      {
+        "species": "URSALUNA",
+        "item": "LEFTOVERS",
+        "moves": [
+          "BLOOD_MOON",
+          "EARTH_POWER",
+          "VACUUM_WAVE",
+          "CALM_MIND"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "MIND'S_EYE",
+        "form": 0
+      },
+      {
+        "species": "KROOKODILE",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "EARTHQUAKE",
+          "KNOCK_OFF",
+          "SUPERPOWER",
+          "GUNK_SHOT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "INTIMIDATE",
+        "form": 0
+      },
+      {
+        "species": "USA_MIND'S_EYE_PARA_IGNORAR_EVASÃO_E_ACERTAR_ALVOS_FANTASMAS_COM_BLOOD_MOON_DE_140_DE_DANO.",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "ALTÍSSIMA_DURABILIDADE_DEFENSIVA.",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "HIPPOWDON",
+        "item": "LEFTOVERS",
+        "moves": [
+          "STEALTH_ROCK",
+          "SLACK_OFF",
+          "EARTHQUAKE",
+          "WHIRLWIND"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SAND_STREAM",
+        "form": 0
+      }
+    ]
+  ],
+  "guzman": [
+    [
+      {
+        "species": "ESTE_ARQUIVO_CONTÉM_10_TIMES_ALTAMENTE_COMPETITIVOS_DO_TIPO_INSETO_PARA_O_CHEFE",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "GUZMAN_NO_MODO_DE_DIFICULDADE_DO_BILHETE_LARANJA",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "CADA_TIME_FOCA_EM_UMA_SINERGIA_OU_ESTRATÉGIA_ESPECÍFICA",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "TRICK_ROOM,_SUN,_ETC.)_COM_IVS_PERFEITOS",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "DANCE",
+        "item": null,
+        "moves": [],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": null,
+        "form": 0
+      },
+      {
+        "species": "RIBOMBEE",
+        "item": "FOCUS_SASH",
+        "moves": [
+          "STICKY_WEB",
+          "MOONBLAST",
+          "STUN_SPORE",
+          "U_TURN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SHIELD_DUST",
+        "form": 0
+      }
+    ]
+  ],
+  "misty": [
+    [
+      {
+        "species": "PELIPPER",
+        "item": "DAMP_ROCK",
+        "moves": [
+          "SCALD",
+          "U_TURN",
+          "HURRICANE",
+          "ROOST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DRIZZLE",
+        "form": 0
+      },
+      {
+        "species": "SWAMPERT",
+        "item": "SWAMPERTITE",
+        "moves": [
+          "WATERFALL",
+          "EARTHQUAKE",
+          "ICE_PUNCH",
+          "POWER_UP_PUNCH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DAMP",
+        "form": 0
+      },
+      {
+        "species": "KINGDRA",
+        "item": "LIFE_ORB",
+        "moves": [
+          "HYDRO_PUMP",
+          "DRACO_METEOR",
+          "SURF",
+          "ICE_BEAM"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SWIFT_SWIM",
+        "form": 0
+      },
+      {
+        "species": "LUDICOLO",
+        "item": "ASSAULT_VEST",
+        "moves": [
+          "GIGA_DRAIN",
+          "HYDRO_PUMP",
+          "ICE_BEAM",
+          "FOCUS_BLAST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SWIFT_SWIM",
+        "form": 0
+      },
+      {
+        "species": "GYARADOS",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "DRAGON_DANCE",
+          "WATERFALL",
+          "BOUNCE",
+          "EARTHQUAKE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "INTIMIDATE",
+        "form": 0
+      },
+      {
+        "species": "EMPOLEON",
+        "item": "LEFTOVERS",
+        "moves": [
+          "DEFOG",
+          "STEALTH_ROCK",
+          "SCALD",
+          "FLASH_CANNON"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TORRENT",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "TOXAPEX",
+        "item": "BLACK_SLUDGE",
+        "moves": [
+          "SCALD",
+          "RECOVER",
+          "TOXIC",
+          "HAZE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "REGENERATOR",
+        "form": 0
+      },
+      {
+        "species": "MILOTIC",
+        "item": "LEFTOVERS",
+        "moves": [
+          "SCALD",
+          "RECOVER",
+          "ICE_BEAM",
+          "TOXIC"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "MARVEL_SCALE",
+        "form": 0
+      },
+      {
+        "species": "SLOWBRO",
+        "item": "ROCKY_HELMET",
+        "moves": [
+          "SCALD",
+          "SLACK_OFF",
+          "PSYSHOCK",
+          "CALM_MIND"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "REGENERATOR",
+        "form": 0
+      },
+      {
+        "species": "TENTACRUEL",
+        "item": "BLACK_SLUDGE",
+        "moves": [
+          "RAPID_SPIN",
+          "TOXIC_SPIKES",
+          "KNOCK_OFF",
+          "ACID_SPRAY"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "RAIN_DISH",
+        "form": 0
+      },
+      {
+        "species": "GOLISOPOD",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "FIRST_IMPRESSION",
+          "LIQUIDATION",
+          "AQUA_JET",
+          "SPIKES"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "EMERGENCY_EXIT",
+        "form": 0
+      },
+      {
+        "species": "SUICUNE",
+        "item": "LEFTOVERS",
+        "moves": [
+          "CALM_MIND",
+          "SCALD",
+          "REST",
+          "SLEEP_TALK"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "PRESSURE",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "POLITOED",
+        "item": "DAMP_ROCK",
+        "moves": [
+          "SCALD",
+          "TOXIC",
+          "ENCORE",
+          "REST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DRIZZLE",
+        "form": 0
+      },
+      {
+        "species": "BARRASKEWDA",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "LIQUIDATION",
+          "CLOSE_COMBAT",
+          "ICE_FANG",
+          "FLIP_TURN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SWIFT_SWIM",
+        "form": 0
+      },
+      {
+        "species": "BASCULEGION",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "HYDRO_PUMP",
+          "SHADOW_BALL",
+          "ICE_BEAM",
+          "PSYCHIC"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SWIFT_SWIM",
+        "form": 0
+      },
+      {
+        "species": "CRAWDAUNT",
+        "item": "LIFE_ORB",
+        "moves": [
+          "DRAGON_DANCE",
+          "CRABHAMMER",
+          "KNOCK_OFF",
+          "AQUA_JET"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "ADAPTABILITY",
+        "form": 0
+      },
+      {
+        "species": "STARMIE",
+        "item": "LIFE_ORB",
+        "moves": [
+          "HYDRO_PUMP",
+          "PSYCHIC",
+          "ICE_BEAM",
+          "THUNDERBOLT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "NATURAL_CURE",
+        "form": 0
+      },
+      {
+        "species": "GYARADOS",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "DRAGON_DANCE",
+          "WATERFALL",
+          "BOUNCE",
+          "POWER_UP_PUNCH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "MOXIE",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "LANTURN",
+        "item": "LEFTOVERS",
+        "moves": [
+          "SCALD",
+          "DISCHARGE",
+          "HEAL_BELL",
+          "PROTECT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "VOLT_ABSORB",
+        "form": 0
+      },
+      {
+        "species": "AZUMARILL",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "PLAY_ROUGH",
+          "LIQUIDATION",
+          "AQUA_JET",
+          "SUPERPOWER"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "HUGE_POWER",
+        "form": 0
+      },
+      {
+        "species": "GASTRODON",
+        "item": "ROCKY_HELMET",
+        "moves": [
+          "RECOVER",
+          "SCALD",
+          "EARTH_POWER",
+          "TOXIC"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STORM_DRAIN",
+        "form": 0
+      },
+      {
+        "species": "GRENINJA",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "HYDRO_PUMP",
+          "DARK_PULSE",
+          "ICE_BEAM",
+          "EXTRASENSORY"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "PROTEAN",
+        "form": 0
+      },
+      {
+        "species": "CLOYSTER",
+        "item": "KING'S_ROCK",
+        "moves": [
+          "SHELL_SMASH",
+          "ICICLE_SPEAR",
+          "ROCK_BLAST",
+          "WATER_SHURIKEN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SKILL_LINK",
+        "form": 0
+      },
+      {
+        "species": "VOLCANION",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "STEAM_ERUPTION",
+          "FLAMETHROWER",
+          "EARTH_POWER",
+          "SLUDGE_WAVE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "WATER_ABSORB",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "PELIPPER",
+        "item": "DAMP_ROCK",
+        "moves": [
+          "SCALD",
+          "U_TURN",
+          "HURRICANE",
+          "ROOST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DRIZZLE",
+        "form": 0
+      },
+      {
+        "species": "SWAMPERT",
+        "item": "LEFTOVERS",
+        "moves": [
+          "STEALTH_ROCK",
+          "EARTHQUAKE",
+          "SCALD",
+          "TOXIC"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DAMP",
+        "form": 0
+      },
+      {
+        "species": "KINGDRA",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "DRACO_METEOR",
+          "HYDRO_PUMP",
+          "SURF",
+          "HURRICANE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SWIFT_SWIM",
+        "form": 0
+      },
+      {
+        "species": "TOXAPEX",
+        "item": "BLACK_SLUDGE",
+        "moves": [
+          "RECOVER",
+          "TOXIC_SPIKES",
+          "KNOCK_OFF",
+          "HAZE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "REGENERATOR",
+        "form": 0
+      },
+      {
+        "species": "GYARADOS",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "DRAGON_DANCE",
+          "WATERFALL",
+          "BOUNCE",
+          "SUBSTITUTE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "MOXIE",
+        "form": 0
+      },
+      {
+        "species": "LUDICOLO",
+        "item": "LIFE_ORB",
+        "moves": [
+          "HYDRO_PUMP",
+          "GIGA_DRAIN",
+          "ICE_BEAM",
+          "FOCUS_BLAST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SWIFT_SWIM",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "PRIMARINA",
+        "item": "ASSAULT_VEST",
+        "moves": [
+          "MOONBLAST",
+          "SPARKLING_ARIA",
+          "PSYCHIC",
+          "ENERGY_BALL"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TORRENT",
+        "form": 0
+      },
+      {
+        "species": "FERALIGATR",
+        "item": "LIFE_ORB",
+        "moves": [
+          "DRAGON_DANCE",
+          "LIQUIDATION",
+          "ICE_PUNCH",
+          "CRUNCH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "SHEER_FORCE",
+        "form": 0
+      },
+      {
+        "species": "CRAWDAUNT",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "CRABHAMMER",
+          "KNOCK_OFF",
+          "AQUA_JET",
+          "CLOSE_COMBAT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "ADAPTABILITY",
+        "form": 0
+      },
+      {
+        "species": "SLOWKING",
+        "item": "LEFTOVERS",
+        "moves": [
+          "FUTURE_SIGHT",
+          "SCALD",
+          "SLACK_OFF",
+          "PSYCHIC"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "REGENERATOR",
+        "form": 0
+      },
+      {
+        "species": "ARAQUANID",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "STICKY_WEB",
+          "LUNGE",
+          "LIQUIDATION",
+          "POISON_JAB"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "WATER_BUBBLE",
+        "form": 0
+      },
+      {
+        "species": "GRENINJA",
+        "item": "LIFE_ORB",
+        "moves": [
+          "WATER_SHURIKEN",
+          "SURF",
+          "DARK_PULSE",
+          "SPIKES"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "PROTEAN",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "SLOWKING",
+        "item": "LEFTOVERS",
+        "moves": [
+          "TRICK_ROOM",
+          "SCALD",
+          "PSYCHIC",
+          "SLACK_OFF"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "REGENERATOR",
+        "form": 0
+      },
+      {
+        "species": "CRAWDAUNT",
+        "item": "LIFE_ORB",
+        "moves": [
+          "SWORDS_DANCE",
+          "CRABHAMMER",
+          "KNOCK_OFF",
+          "CLOSE_COMBAT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "ADAPTABILITY",
+        "form": 0
+      },
+      {
+        "species": "ARAQUANID",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "LIQUIDATION",
+          "LEECH_LIFE",
+          "POISON_JAB",
+          "CRUNCH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "WATER_BUBBLE",
+        "form": 0
+      },
+      {
+        "species": "CLAWITZER",
+        "item": "LIFE_ORB",
+        "moves": [
+          "WATER_PULSE",
+          "AURA_SPHERE",
+          "DARK_PULSE",
+          "DRAGON_PULSE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "MEGA_LAUNCHER",
+        "form": 0
+      },
+      {
+        "species": "GASTRODON",
+        "item": "LEFTOVERS",
+        "moves": [
+          "EARTH_POWER",
+          "ICE_BEAM",
+          "RECOVER",
+          "SCALD"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STORM_DRAIN",
+        "form": 0
+      },
+      {
+        "species": "SLOWBRO",
+        "item": "ROCKY_HELMET",
+        "moves": [
+          "TRICK_ROOM",
+          "SCALD",
+          "PSYSHOCK",
+          "SLACK_OFF"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "REGENERATOR",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "GRENINJA",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "HYDRO_PUMP",
+          "DARK_PULSE",
+          "ICE_BEAM",
+          "EXTRASENSORY"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "PROTEAN",
+        "form": 0
+      },
+      {
+        "species": "DRACOVISH",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "FISHIOUS_REND",
+          "OUTRAGE",
+          "PSYCHIC_FANGS",
+          "EARTHQUAKE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STRONG_JAW",
+        "form": 0
+      },
+      {
+        "species": "BASCULEGION",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "WAVE_CRASH",
+          "AQUA_JET",
+          "HEAD_SMASH",
+          "DOUBLE_EDGE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "ADAPTABILITY",
+        "form": 0
+      },
+      {
+        "species": "AZUMARILL",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "PLAY_ROUGH",
+          "LIQUIDATION",
+          "AQUA_JET",
+          "SUPERPOWER"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "HUGE_POWER",
+        "form": 0
+      },
+      {
+        "species": "PELIPPER",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "HURRICANE",
+          "HYDRO_PUMP",
+          "SURF",
+          "U_TURN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DRIZZLE",
+        "form": 0
+      },
+      {
+        "species": "STARMIE",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "HYDRO_PUMP",
+          "PSYCHIC",
+          "ICE_BEAM",
+          "THUNDERBOLT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "NATURAL_CURE",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "TOXAPEX",
+        "item": "ROCKY_HELMET",
+        "moves": [
+          "SCALD",
+          "TOXIC",
+          "RECOVER",
+          "TOXIC_SPIKES"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "REGENERATOR",
+        "form": 0
+      },
+      {
+        "species": "TENTACRUEL",
+        "item": "BLACK_SLUDGE",
+        "moves": [
+          "RAPID_SPIN",
+          "KNOCK_OFF",
+          "SLUDGE_BOMB",
+          "HAZE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "RAIN_DISH",
+        "form": 0
+      },
+      {
+        "species": "EMPOLEON",
+        "item": "LEFTOVERS",
+        "moves": [
+          "STEALTH_ROCK",
+          "DEFOG",
+          "SCALD",
+          "ROAR"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TORRENT",
+        "form": 0
+      },
+      {
+        "species": "JELLICENT",
+        "item": "LEFTOVERS",
+        "moves": [
+          "WILL_O_WISP",
+          "HEX",
+          "RECOVER",
+          "TAUNT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "WATER_ABSORB",
+        "form": 0
+      },
+      {
+        "species": "GASTRODON",
+        "item": "LEFTOVERS",
+        "moves": [
+          "EARTH_POWER",
+          "RECOVER",
+          "TOXIC",
+          "SCALD"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STORM_DRAIN",
+        "form": 0
+      },
+      {
+        "species": "SUICUNE",
+        "item": "LEFTOVERS",
+        "moves": [
+          "CALM_MIND",
+          "SCALD",
+          "REST",
+          "SLEEP_TALK"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "PRESSURE",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "VOLCANION",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "STEAM_ERUPTION",
+          "FLAMETHROWER",
+          "EARTH_POWER",
+          "SLUDGE_WAVE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "WATER_ABSORB",
+        "form": 0
+      },
+      {
+        "species": "PRIMARINA",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "SPARKLING_ARIA",
+          "MOONBLAST",
+          "PSYCHIC",
+          "SHADOW_BALL"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TORRENT",
+        "form": 0
+      },
+      {
+        "species": "STARMIE",
+        "item": "LIFE_ORB",
+        "moves": [
+          "HYDRO_PUMP",
+          "PSYCHIC",
+          "THUNDERBOLT",
+          "ICE_BEAM"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "NATURAL_CURE",
+        "form": 0
+      },
+      {
+        "species": "MILOTIC",
+        "item": "LEFTOVERS",
+        "moves": [
+          "RECOVER",
+          "SCALD",
+          "DRAGON_PULSE",
+          "ICE_BEAM"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "MARVEL_SCALE",
+        "form": 0
+      },
+      {
+        "species": "GRENINJA",
+        "item": "LIFE_ORB",
+        "moves": [
+          "GUNK_SHOT",
+          "EXTRASENSORY",
+          "ICE_BEAM",
+          "HYDRO_PUMP"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "PROTEAN",
+        "form": 0
+      },
+      {
+        "species": "KELDEO",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "HYDRO_PUMP",
+          "SECRET_SWORD",
+          "AURA_SPHERE",
+          "ICY_WIND"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "JUSTIFIED",
+        "form": 0
+      }
+    ]
+  ],
+  "surge": [
+    [
+      {
+        "species": "PINCURCHIN",
+        "item": "TERRAIN_EXTENDER",
+        "moves": [
+          "SPIKES",
+          "VOLT_SWITCH",
+          "THUNDER_WAVE",
+          "RECOVER"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "ELECTRIC_SURGE",
+        "form": 0
+      },
+      {
+        "species": "IRON_HANDS",
+        "item": "BOOSTER_ENERGY",
+        "moves": [
+          "WILD_CHARGE",
+          "DRAIN_PUNCH",
+          "ICE_PUNCH",
+          "FAKE_OUT"
+        ],
+        "evs": [
+          0,
+          252,
+          120,
+          0,
+          136,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "QUARK_DRIVE",
+        "form": 0
+      },
+      {
+        "species": "RAICHU",
+        "item": "LIFE_ORB",
+        "moves": [
+          "RISING_VOLTAGE",
+          "PSYCHIC",
+          "FOCUS_BLAST",
+          "NASTY_PLOT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "SURGE_SURFER",
+        "form": 1
+      },
+      {
+        "species": "KILOWATTREL",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "HURRICANE",
+          "THUNDERBOLT",
+          "VOLT_SWITCH",
+          "ROOST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "WIND_POWER",
+        "form": 0
+      },
+      {
+        "species": "IRON_VALIANT",
+        "item": "BOOSTER_ENERGY",
+        "moves": [
+          "CLOSE_COMBAT",
+          "SPIRIT_BREAK",
+          "SWORDS_DANCE",
+          "THUNDER_PUNCH"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "QUARK_DRIVE",
+        "form": 0
+      },
+      {
+        "species": "PAWMOT",
+        "item": "LEPPA_BERRY",
+        "moves": [
+          "REVIVAL_BLESSING",
+          "DOUBLE_SHOCK",
+          "CLOSE_COMBAT",
+          "MACH_PUNCH"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "IRON_FIST",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "PELIPPER",
+        "item": "DAMP_ROCK",
+        "moves": [
+          "SCALD",
+          "U_TURN",
+          "HURRICANE",
+          "ROOST"
+        ],
+        "evs": [
+          248,
+          0,
+          252,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DRIZZLE",
+        "form": 0
+      },
+      {
+        "species": "ZAPDOS",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "THUNDER",
+          "HURRICANE",
+          "VOLT_SWITCH",
+          "ROOST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "STATIC",
+        "form": 0
+      },
+      {
+        "species": "ROTOM",
+        "item": "LEFTOVERS",
+        "moves": [
+          "HYDRO_PUMP",
+          "VOLT_SWITCH",
+          "WILL_O_WISP",
+          "PROTECT"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "LEVITATE",
+        "form": 2
+      },
+      {
+        "species": "RAIKOU",
+        "item": "ASSAULT_VEST",
+        "moves": [
+          "THUNDER",
+          "SHADOW_BALL",
+          "AURA_SPHERE",
+          "VOLT_SWITCH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "PRESSURE",
+        "form": 0
+      },
+      {
+        "species": "LANTURN",
+        "item": "LEFTOVERS",
+        "moves": [
+          "SCALD",
+          "DISCHARGE",
+          "PROTECT",
+          "TOXIC"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "VOLT_ABSORB",
+        "form": 0
+      },
+      {
+        "species": "REGIELEKI",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "THUNDER",
+          "VOLT_SWITCH",
+          "ANCIENT_POWER",
+          "SWIFT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "TRANSISTOR",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "ROTOM",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "OVERHEAT",
+          "VOLT_SWITCH",
+          "SHADOW_BALL",
+          "TRICK"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "LEVITATE",
+        "form": 1
+      },
+      {
+        "species": "ZAPDOS",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "HURRICANE",
+          "THUNDERBOLT",
+          "U_TURN",
+          "ROOST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "STATIC",
+        "form": 0
+      },
+      {
+        "species": "PAWMOT",
+        "item": "LIFE_ORB",
+        "moves": [
+          "DOUBLE_SHOCK",
+          "CLOSE_COMBAT",
+          "MACH_PUNCH",
+          "ICE_PUNCH"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "IRON_FIST",
+        "form": 0
+      },
+      {
+        "species": "MAGNEZONE",
+        "item": "AIR_BALLOON",
+        "moves": [
+          "THUNDERBOLT",
+          "FLASH_CANNON",
+          "VOLT_SWITCH",
+          "BODY_PRESS"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "MAGNET_PULL",
+        "form": 0
+      },
+      {
+        "species": "JOLTEON",
+        "item": "LIFE_ORB",
+        "moves": [
+          "THUNDERBOLT",
+          "SHADOW_BALL",
+          "HYPER_VOICE",
+          "VOLT_SWITCH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "VOLT_ABSORB",
+        "form": 0
+      },
+      {
+        "species": "ELECTIVIRE",
+        "item": "EXPERT_BELT",
+        "moves": [
+          "WILD_CHARGE",
+          "ICE_PUNCH",
+          "EARTHQUAKE",
+          "CROSS_CHOP"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "MOTOR_DRIVE",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "AMPHAROS",
+        "item": "AMPHAROSITE",
+        "moves": [
+          "DRAGON_PULSE",
+          "THUNDERBOLT",
+          "FOCUS_BLAST",
+          "POWER_GEM"
+        ],
+        "evs": [
+          252,
+          0,
+          0,
+          252,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STATIC",
+        "form": 0
+      },
+      {
+        "species": "VIKAVOLT",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "BUG_BUZZ",
+          "THUNDERBOLT",
+          "ENERGY_BALL",
+          "FLASH_CANNON"
+        ],
+        "evs": [
+          252,
+          0,
+          0,
+          252,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "LEVITATE",
+        "form": 0
+      },
+      {
+        "species": "IRON_HANDS",
+        "item": "BOOSTER_ENERGY",
+        "moves": [
+          "DRAIN_PUNCH",
+          "WILD_CHARGE",
+          "ICE_PUNCH",
+          "EARTHQUAKE"
+        ],
+        "evs": [
+          252,
+          252,
+          0,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "QUARK_DRIVE",
+        "form": 0
+      },
+      {
+        "species": "BELLIBOLT",
+        "item": "LEFTOVERS",
+        "moves": [
+          "DISCHARGE",
+          "PARABOLIC_CHARGE",
+          "MUDDY_WATER",
+          "SLACK_OFF"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "ELECTROMORPHOSIS",
+        "form": 0
+      },
+      {
+        "species": "PINCURCHIN",
+        "item": "LEFTOVERS",
+        "moves": [
+          "SPIKES",
+          "VOLT_SWITCH",
+          "LIQUIDATION",
+          "RECOVER"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "ELECTRIC_SURGE",
+        "form": 0
+      },
+      {
+        "species": "EELEKTROSS",
+        "item": "ASSAULT_VEST",
+        "moves": [
+          "GIGA_DRAIN",
+          "FLAMETHROWER",
+          "THUNDERBOLT",
+          "DRAGON_PULSE"
+        ],
+        "evs": [
+          252,
+          0,
+          0,
+          252,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "LEVITATE",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "TORKOAL",
+        "item": "HEAT_ROCK",
+        "moves": [
+          "LAVA_PLUME",
+          "SOLAR_BEAM",
+          "STEALTH_ROCK",
+          "RAPID_SPIN"
+        ],
+        "evs": [
+          248,
+          0,
+          252,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DROUGHT",
+        "form": 0
+      },
+      {
+        "species": "HELIOLISK",
+        "item": "LIFE_ORB",
+        "moves": [
+          "THUNDERBOLT",
+          "SOLAR_BEAM",
+          "FOCUS_BLAST",
+          "VOLT_SWITCH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "SOLAR_POWER",
+        "form": 0
+      },
+      {
+        "species": "ROTOM",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "OVERHEAT",
+          "THUNDERBOLT",
+          "SHADOW_BALL",
+          "WILL_O_WISP"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "LEVITATE",
+        "form": 1
+      },
+      {
+        "species": "CHARIZARD",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "FIRE_BLAST",
+          "SOLAR_BEAM",
+          "FOCUS_BLAST",
+          "AIR_SLASH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "SOLAR_POWER",
+        "form": 0
+      },
+      {
+        "species": "PAWMOT",
+        "item": "FOCUS_SASH",
+        "moves": [
+          "DOUBLE_SHOCK",
+          "CLOSE_COMBAT",
+          "REVIVAL_BLESSING",
+          "MACH_PUNCH"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "IRON_FIST",
+        "form": 0
+      },
+      {
+        "species": "MAGNEZONE",
+        "item": "LEFTOVERS",
+        "moves": [
+          "THUNDERBOLT",
+          "FLASH_CANNON",
+          "VOLT_SWITCH",
+          "PROTECT"
+        ],
+        "evs": [
+          252,
+          0,
+          0,
+          252,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STURDY",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "TOGEDEMARU",
+        "item": "ROCKY_HELMET",
+        "moves": [
+          "SPIKY_SHIELD",
+          "NUZZLE",
+          "U_TURN",
+          "IRON_HEAD"
+        ],
+        "evs": [
+          252,
+          0,
+          4,
+          0,
+          0,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "IRON_BARBS",
+        "form": 0
+      },
+      {
+        "species": "ZAPDOS",
+        "item": "ROCKY_HELMET",
+        "moves": [
+          "DISCHARGE",
+          "ROOST",
+          "HURRICANE",
+          "VOLT_SWITCH"
+        ],
+        "evs": [
+          248,
+          0,
+          252,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STATIC",
+        "form": 0
+      },
+      {
+        "species": "REGIELEKI",
+        "item": "FOCUS_SASH",
+        "moves": [
+          "DISCHARGE",
+          "ELECTROWEB",
+          "VOLT_SWITCH",
+          "SWIFT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "TRANSISTOR",
+        "form": 0
+      },
+      {
+        "species": "BELLIBOLT",
+        "item": "LEFTOVERS",
+        "moves": [
+          "DISCHARGE",
+          "SLACK_OFF",
+          "MUDDY_WATER",
+          "ACID_SPRAY"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "ELECTROMORPHOSIS",
+        "form": 0
+      },
+      {
+        "species": "ROTOM",
+        "item": "LEFTOVERS",
+        "moves": [
+          "HYDRO_PUMP",
+          "DISCHARGE",
+          "WILL_O_WISP",
+          "PROTECT"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "LEVITATE",
+        "form": 2
+      },
+      {
+        "species": "XURKITREE",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "THUNDERBOLT",
+          "ENERGY_BALL",
+          "DAZZLING_GLEAM",
+          "VOLT_SWITCH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "BEAST_BOOST",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "LUXRAY",
+        "item": "FLAME_ORB",
+        "moves": [
+          "FACADE",
+          "WILD_CHARGE",
+          "CRUNCH",
+          "ICE_FANG"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "GUTS",
+        "form": 0
+      },
+      {
+        "species": "IRON_HANDS",
+        "item": "ASSAULT_VEST",
+        "moves": [
+          "DRAIN_PUNCH",
+          "WILD_CHARGE",
+          "ICE_PUNCH",
+          "FIRE_PUNCH"
+        ],
+        "evs": [
+          0,
+          252,
+          120,
+          0,
+          136,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "QUARK_DRIVE",
+        "form": 0
+      },
+      {
+        "species": "ELECTIVIRE",
+        "item": "LIFE_ORB",
+        "moves": [
+          "WILD_CHARGE",
+          "ICE_PUNCH",
+          "EARTHQUAKE",
+          "CROSS_CHOP"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "MOTOR_DRIVE",
+        "form": 0
+      },
+      {
+        "species": "ZERAORA",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "PLASMA_FISTS",
+          "CLOSE_COMBAT",
+          "PLAY_ROUGH",
+          "BLAZE_KICK"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "VOLT_ABSORB",
+        "form": 0
+      },
+      {
+        "species": "TOGEDEMARU",
+        "item": "FOCUS_SASH",
+        "moves": [
+          "FAKE_OUT",
+          "ZING_ZAP",
+          "IRON_HEAD",
+          "SPIKY_SHIELD"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "STURDY",
+        "form": 0
+      },
+      {
+        "species": "PAWMOT",
+        "item": "LEPPA_BERRY",
+        "moves": [
+          "DOUBLE_SHOCK",
+          "CLOSE_COMBAT",
+          "REVIVAL_BLESSING",
+          "MACH_PUNCH"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "IRON_FIST",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "RAICHU",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "THUNDERBOLT",
+          "FOCUS_BLAST",
+          "SURF",
+          "NASTY_PLOT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "STATIC",
+        "form": 0
+      },
+      {
+        "species": "JOLTEON",
+        "item": "LIFE_ORB",
+        "moves": [
+          "THUNDERBOLT",
+          "SHADOW_BALL",
+          "VOLT_SWITCH",
+          "DOUBLE_KICK"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "VOLT_ABSORB",
+        "form": 0
+      },
+      {
+        "species": "AMPHAROS",
+        "item": "AMPHAROSITE",
+        "moves": [
+          "DRAGON_PULSE",
+          "THUNDERBOLT",
+          "FOCUS_BLAST",
+          "POWER_GEM"
+        ],
+        "evs": [
+          252,
+          0,
+          0,
+          252,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STATIC",
+        "form": 0
+      },
+      {
+        "species": "ELECTIVIRE",
+        "item": "EXPERT_BELT",
+        "moves": [
+          "WILD_CHARGE",
+          "ICE_PUNCH",
+          "EARTHQUAKE",
+          "FIRE_PUNCH"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "MOTOR_DRIVE",
+        "form": 0
+      },
+      {
+        "species": "MAGNEZONE",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "THUNDERBOLT",
+          "FLASH_CANNON",
+          "VOLT_SWITCH",
+          "TRI_ATTACK"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "MAGNET_PULL",
+        "form": 0
+      },
+      {
+        "species": "ZAPDOS",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "HURRICANE",
+          "THUNDERBOLT",
+          "VOLT_SWITCH",
+          "ROOST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "STATIC",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "IRON_HANDS",
+        "item": "BOOSTER_ENERGY",
+        "moves": [
+          "WILD_CHARGE",
+          "DRAIN_PUNCH",
+          "ICE_PUNCH",
+          "FAKE_OUT"
+        ],
+        "evs": [
+          0,
+          252,
+          120,
+          0,
+          136,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "QUARK_DRIVE",
+        "form": 0
+      },
+      {
+        "species": "IRON_THORNS",
+        "item": "LOADED_DICE",
+        "moves": [
+          "PIN_MISSILE",
+          "STONE_EDGE",
+          "EARTHQUAKE",
+          "DRAGON_DANCE"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "QUARK_DRIVE",
+        "form": 0
+      },
+      {
+        "species": "IRON_VALIANT",
+        "item": "LIFE_ORB",
+        "moves": [
+          "CLOSE_COMBAT",
+          "SPIRIT_BREAK",
+          "THUNDER_PUNCH",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "QUARK_DRIVE",
+        "form": 0
+      },
+      {
+        "species": "IRON_JUGULIS",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "DARK_PULSE",
+          "HURRICANE",
+          "FLASH_CANNON",
+          "AIR_SLASH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "QUARK_DRIVE",
+        "form": 0
+      },
+      {
+        "species": "IRON_MOTH",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "FIERY_DANCE",
+          "SLUDGE_WAVE",
+          "ENERGY_BALL",
+          "DISCHARGE"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "QUARK_DRIVE",
+        "form": 0
+      },
+      {
+        "species": "SANDY_SHOCKS",
+        "item": "CHOICE_SCARF",
+        "moves": [
+          "EARTH_POWER",
+          "THUNDERBOLT",
+          "POWER_GEM",
+          "VOLT_SWITCH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "PROTOSYNTHESIS",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "REGIELEKI",
+        "item": "FOCUS_SASH",
+        "moves": [
+          "THUNDERBOLT",
+          "VOLT_SWITCH",
+          "ANCIENT_POWER",
+          "RAPID_SPIN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "TRANSISTOR",
+        "form": 0
+      },
+      {
+        "species": "ZAPDOS",
+        "item": "ROCKY_HELMET",
+        "moves": [
+          "DEFOG",
+          "ROOST",
+          "DISCHARGE",
+          "HEAT_WAVE"
+        ],
+        "evs": [
+          248,
+          0,
+          252,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STATIC",
+        "form": 0
+      },
+      {
+        "species": "PAWMOT",
+        "item": "LEPPA_BERRY",
+        "moves": [
+          "DOUBLE_SHOCK",
+          "CLOSE_COMBAT",
+          "REVIVAL_BLESSING",
+          "MACH_PUNCH"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "IRON_FIST",
+        "form": 0
+      },
+      {
+        "species": "BELLIBOLT",
+        "item": "LEFTOVERS",
+        "moves": [
+          "DISCHARGE",
+          "SLACK_OFF",
+          "MUDDY_WATER",
+          "ACID_SPRAY"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "ELECTROMORPHOSIS",
+        "form": 0
+      },
+      {
+        "species": "SANDY_SHOCKS",
+        "item": "BOOSTER_ENERGY",
+        "moves": [
+          "EARTH_POWER",
+          "THUNDERBOLT",
+          "STEALTH_ROCK",
+          "VOLT_SWITCH"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "PROTOSYNTHESIS",
+        "form": 0
+      },
+      {
+        "species": "THUNDURUS",
+        "item": "LIFE_ORB",
+        "moves": [
+          "THUNDERBOLT",
+          "FOCUS_BLAST",
+          "NASTY_PLOT",
+          "PSYCHIC"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "PRANKSTER",
+        "form": 0
+      }
+    ]
+  ],
+  "urano": [
+    [
+      {
+        "species": "RIBOMBEE",
+        "item": "FOCUS_SASH",
+        "moves": [
+          "STICKY_WEB",
+          "MOONBLAST",
+          "STUN_SPORE",
+          "U_TURN"
+        ],
+        "evs": [
+          252,
+          0,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "SHIELD_DUST",
+        "form": 0
+      },
+      {
+        "species": "VOLCARONA",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "QUIVER_DANCE",
+          "FIERY_DANCE",
+          "BUG_BUZZ",
+          "GIGA_DRAIN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "FLAME_BODY",
+        "form": 0
+      },
+      {
+        "species": "SCIZOR",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "BULLET_PUNCH",
+          "U_TURN",
+          "CLOSE_COMBAT",
+          "DUAL_WINGBEAT"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "TECHNICIAN",
+        "form": 0
+      },
+      {
+        "species": "LOKIX",
+        "item": "LIFE_ORB",
+        "moves": [
+          "FIRST_IMPRESSION",
+          "SUCKER_PUNCH",
+          "U_TURN",
+          "THROAT_CHOP"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "TINTED_LENS",
+        "form": 0
+      },
+      {
+        "species": "GOLISOPOD",
+        "item": "ASSAULT_VEST",
+        "moves": [
+          "FIRST_IMPRESSION",
+          "LIQUIDATION",
+          "AQUA_JET",
+          "CLOSE_COMBAT"
+        ],
+        "evs": [
+          0,
+          252,
+          120,
+          0,
+          136,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "EMERGENCY_EXIT",
+        "form": 0
+      },
+      {
+        "species": "BUZZWOLE",
+        "item": "LEFTOVERS",
+        "moves": [
+          "BULK_UP",
+          "DRAIN_PUNCH",
+          "LEECH_LIFE",
+          "ICE_PUNCH"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "BEAST_BOOST",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "SHUCKLE",
+        "item": "MENTAL_HERB",
+        "moves": [
+          "TRICK_ROOM",
+          "STEALTH_ROCK",
+          "STICKY_WEB",
+          "INFESTATION"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STURDY",
+        "form": 0
+      },
+      {
+        "species": "VIKAVOLT",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "THUNDERBOLT",
+          "BUG_BUZZ",
+          "ENERGY_BALL",
+          "VOLT_SWITCH"
+        ],
+        "evs": [
+          252,
+          0,
+          0,
+          252,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "LEVITATE",
+        "form": 0
+      },
+      {
+        "species": "ARAQUANID",
+        "item": "MYSTIC_WATER",
+        "moves": [
+          "LIQUIDATION",
+          "LEECH_LIFE",
+          "MIRROR_COAT",
+          "AQUA_JET"
+        ],
+        "evs": [
+          252,
+          252,
+          0,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "WATER_BUBBLE",
+        "form": 0
+      },
+      {
+        "species": "ESCAVALIER",
+        "item": "ASSAULT_VEST",
+        "moves": [
+          "IRON_HEAD",
+          "MEGAHORN",
+          "CLOSE_COMBAT",
+          "DRILL_RUN"
+        ],
+        "evs": [
+          252,
+          252,
+          0,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "OVERCOAT",
+        "form": 0
+      },
+      {
+        "species": "PINSIR",
+        "item": "PINSIRITE",
+        "moves": [
+          "RETURN",
+          "EARTHQUAKE",
+          "CLOSE_COMBAT",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          252,
+          252,
+          4,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "MOXIE",
+        "form": 0
+      },
+      {
+        "species": "BUZZWOLE",
+        "item": "LEFTOVERS",
+        "moves": [
+          "BULK_UP",
+          "DRAIN_PUNCH",
+          "LEECH_LIFE",
+          "STONE_EDGE"
+        ],
+        "evs": [
+          252,
+          252,
+          4,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "BEAST_BOOST",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "LOKIX",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "FIRST_IMPRESSION",
+          "U_TURN",
+          "THROAT_CHOP",
+          "SUCKER_PUNCH"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "TINTED_LENS",
+        "form": 0
+      },
+      {
+        "species": "SCIZOR",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "U_TURN",
+          "BULLET_PUNCH",
+          "ROOST",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          248,
+          252,
+          0,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TECHNICIAN",
+        "form": 0
+      },
+      {
+        "species": "VIKAVOLT",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "VOLT_SWITCH",
+          "THUNDERBOLT",
+          "BUG_BUZZ",
+          "ROOST"
+        ],
+        "evs": [
+          252,
+          0,
+          0,
+          252,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "LEVITATE",
+        "form": 0
+      },
+      {
+        "species": "GOLISOPOD",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "FIRST_IMPRESSION",
+          "LIQUIDATION",
+          "AQUA_JET",
+          "SPIKES"
+        ],
+        "evs": [
+          0,
+          252,
+          120,
+          0,
+          136,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "EMERGENCY_EXIT",
+        "form": 0
+      },
+      {
+        "species": "FORRETRESS",
+        "item": "LEFTOVERS",
+        "moves": [
+          "VOLT_SWITCH",
+          "RAPID_SPIN",
+          "STEALTH_ROCK",
+          "GYROBALL"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STURDY",
+        "form": 0
+      },
+      {
+        "species": "VOLCARONA",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "QUIVER_DANCE",
+          "FIERY_DANCE",
+          "BUG_BUZZ",
+          "ROOST"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "FLAME_BODY",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "TORKOAL",
+        "item": "HEAT_ROCK",
+        "moves": [
+          "LAVA_PLUME",
+          "SOLAR_BEAM",
+          "RAPID_SPIN",
+          "YAWN"
+        ],
+        "evs": [
+          248,
+          0,
+          252,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DROUGHT",
+        "form": 0
+      },
+      {
+        "species": "VOLCARONA",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "QUIVER_DANCE",
+          "FIERY_DANCE",
+          "BUG_BUZZ",
+          "GIGA_DRAIN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "FLAME_BODY",
+        "form": 0
+      },
+      {
+        "species": "SLITHER_WING",
+        "item": "BOOSTER_ENERGY",
+        "moves": [
+          "CLOSE_COMBAT",
+          "FIRST_IMPRESSION",
+          "FLAME_CHARGE",
+          "EARTHQUAKE"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "PROTOSYNTHESIS",
+        "form": 0
+      },
+      {
+        "species": "SCIZOR",
+        "item": "LIFE_ORB",
+        "moves": [
+          "BULLET_PUNCH",
+          "DUAL_WINGBEAT",
+          "CLOSE_COMBAT",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "TECHNICIAN",
+        "form": 0
+      },
+      {
+        "species": "DURANT",
+        "item": "LIFE_ORB",
+        "moves": [
+          "HUSTLE",
+          "IRON_HEAD",
+          "SUPERPOWER",
+          "ROCK_SLIDE"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "HUSTLE",
+        "form": 0
+      },
+      {
+        "species": "LEAVANNY",
+        "item": "FOCUS_SASH",
+        "moves": [
+          "LEAF_BLADE",
+          "X_SCISSOR",
+          "SWORDS_DANCE",
+          "STICKY_WEB"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "CHLOROPHYLL",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "PELIPPER",
+        "item": "DAMP_ROCK",
+        "moves": [
+          "SCALD",
+          "U_TURN",
+          "HURRICANE",
+          "ROOST"
+        ],
+        "evs": [
+          248,
+          0,
+          252,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DRIZZLE",
+        "form": 0
+      },
+      {
+        "species": "ARAQUANID",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "LIQUIDATION",
+          "LEECH_LIFE",
+          "POISON_JAB",
+          "AQUA_JET"
+        ],
+        "evs": [
+          252,
+          252,
+          0,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "WATER_BUBBLE",
+        "form": 0
+      },
+      {
+        "species": "GOLISOPOD",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "FIRST_IMPRESSION",
+          "LIQUIDATION",
+          "AQUA_JET",
+          "CLOSE_COMBAT"
+        ],
+        "evs": [
+          0,
+          252,
+          120,
+          0,
+          136,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "EMERGENCY_EXIT",
+        "form": 0
+      },
+      {
+        "species": "SCIZOR",
+        "item": "LIFE_ORB",
+        "moves": [
+          "BULLET_PUNCH",
+          "SWORDS_DANCE",
+          "ROOST",
+          "U_TURN"
+        ],
+        "evs": [
+          248,
+          252,
+          0,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TECHNICIAN",
+        "form": 0
+      },
+      {
+        "species": "VOLCARONA",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "QUIVER_DANCE",
+          "FIERY_DANCE",
+          "HURRICANE",
+          "GIGA_DRAIN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "FLAME_BODY",
+        "form": 0
+      },
+      {
+        "species": "ARMALDO",
+        "item": "LIFE_ORB",
+        "moves": [
+          "STONE_EDGE",
+          "LIQUIDATION",
+          "EARTHQUAKE",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "SWIFT_SWIM",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "HERACROSS",
+        "item": "FLAME_ORB",
+        "moves": [
+          "CLOSE_COMBAT",
+          "MEGAHORN",
+          "FACADE",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "GUTS",
+        "form": 0
+      },
+      {
+        "species": "SCIZOR",
+        "item": "CHOICE_BAND",
+        "moves": [
+          "BULLET_PUNCH",
+          "U_TURN",
+          "CLOSE_COMBAT",
+          "DUAL_WINGBEAT"
+        ],
+        "evs": [
+          248,
+          252,
+          0,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TECHNICIAN",
+        "form": 0
+      },
+      {
+        "species": "LOKIX",
+        "item": "LIFE_ORB",
+        "moves": [
+          "FIRST_IMPRESSION",
+          "SUCKER_PUNCH",
+          "U_TURN",
+          "THROAT_CHOP"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "TINTED_LENS",
+        "form": 0
+      },
+      {
+        "species": "BUZZWOLE",
+        "item": "ROCKY_HELMET",
+        "moves": [
+          "DRAIN_PUNCH",
+          "LEECH_LIFE",
+          "ICE_PUNCH",
+          "BULK_UP"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "BEAST_BOOST",
+        "form": 0
+      },
+      {
+        "species": "PINSIR",
+        "item": "PINSIRITE",
+        "moves": [
+          "RETURN",
+          "QUICK_ATTACK",
+          "CLOSE_COMBAT",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "HYPER_CUTTER",
+        "form": 0
+      },
+      {
+        "species": "KLEAVOR",
+        "item": "CHOICE_SCARF",
+        "moves": [
+          "STONE_AXE",
+          "X_SCISSOR",
+          "CLOSE_COMBAT",
+          "U_TURN"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "SHARPNESS",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "SHUCKLE",
+        "item": "ROCKY_HELMET",
+        "moves": [
+          "SHELL_SMASH",
+          "TOXIC",
+          "INFESTATION",
+          "REST"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "CONTRARY",
+        "form": 0
+      },
+      {
+        "species": "FORRETRESS",
+        "item": "LEFTOVERS",
+        "moves": [
+          "SPIKES",
+          "TOXIC_SPIKES",
+          "RAPID_SPIN",
+          "VOLT_SWITCH"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "STURDY",
+        "form": 0
+      },
+      {
+        "species": "ARAQUANID",
+        "item": "LEFTOVERS",
+        "moves": [
+          "LIQUIDATION",
+          "LEECH_LIFE",
+          "MIRROR_COAT",
+          "TOXIC"
+        ],
+        "evs": [
+          252,
+          4,
+          0,
+          0,
+          252,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "WATER_BUBBLE",
+        "form": 0
+      },
+      {
+        "species": "BUZZWOLE",
+        "item": "LEFTOVERS",
+        "moves": [
+          "DRAIN_PUNCH",
+          "LEECH_LIFE",
+          "ROOST",
+          "TOXIC"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "BEAST_BOOST",
+        "form": 0
+      },
+      {
+        "species": "SCIZOR",
+        "item": "LEFTOVERS",
+        "moves": [
+          "DEFOG",
+          "BULLET_PUNCH",
+          "ROOST",
+          "U_TURN"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TECHNICIAN",
+        "form": 0
+      },
+      {
+        "species": "VOLCARONA",
+        "item": "LEFTOVERS",
+        "moves": [
+          "QUIVER_DANCE",
+          "ROOST",
+          "FIERY_DANCE",
+          "WILL_O_WISP"
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "FLAME_BODY",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "TORKOAL",
+        "item": "HEAT_ROCK",
+        "moves": [
+          "LAVA_PLUME",
+          "SOLAR_BEAM",
+          "RAPID_SPIN",
+          "STEALTH_ROCK"
+        ],
+        "evs": [
+          248,
+          0,
+          252,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "DROUGHT",
+        "form": 0
+      },
+      {
+        "species": "SLITHER_WING",
+        "item": "BOOSTER_ENERGY",
+        "moves": [
+          "FIRST_IMPRESSION",
+          "CLOSE_COMBAT",
+          "FLAME_CHARGE",
+          "EARTHQUAKE"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "PROTOSYNTHESIS",
+        "form": 0
+      },
+      {
+        "species": "ROARING_MOON",
+        "item": "LIFE_ORB",
+        "moves": [
+          "DRAGON_DANCE",
+          "ACROBATICS",
+          "EARTHQUAKE",
+          "CRUNCH"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "PROTOSYNTHESIS",
+        "form": 0
+      },
+      {
+        "species": "FLUTTER_MANE",
+        "item": "CHOICE_SPECS",
+        "moves": [
+          "MOONBLAST",
+          "SHADOW_BALL",
+          "MYSTICAL_FIRE",
+          "POWER_GEM"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "PROTOSYNTHESIS",
+        "form": 0
+      },
+      {
+        "species": "SCIZOR",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "BULLET_PUNCH",
+          "U_TURN",
+          "CLOSE_COMBAT",
+          "ROOST"
+        ],
+        "evs": [
+          248,
+          252,
+          0,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TECHNICIAN",
+        "form": 0
+      },
+      {
+        "species": "VOLCARONA",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "QUIVER_DANCE",
+          "FIERY_DANCE",
+          "BUG_BUZZ",
+          "GIGA_DRAIN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "FLAME_BODY",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "PINSIR",
+        "item": "PINSIRITE",
+        "moves": [
+          "RETURN",
+          "QUICK_ATTACK",
+          "CLOSE_COMBAT",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "MOXIE",
+        "form": 0
+      },
+      {
+        "species": "HERACROSS",
+        "item": "HERACRONITE",
+        "moves": [
+          "PIN_MISSILE",
+          "CLOSE_COMBAT",
+          "ROCK_BLAST",
+          "BULLET_SEED"
+        ],
+        "evs": [
+          252,
+          252,
+          0,
+          0,
+          4,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "GUTS",
+        "form": 0
+      },
+      {
+        "species": "SCIZOR",
+        "item": "SCIZORITE",
+        "moves": [
+          "BULLET_PUNCH",
+          "BUG_BITE",
+          "ROOST",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          248,
+          252,
+          0,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TECHNICIAN",
+        "form": 0
+      },
+      {
+        "species": "ARMALDO",
+        "item": "LEFTOVERS",
+        "moves": [
+          "STONE_EDGE",
+          "EARTHQUAKE",
+          "RAPID_SPIN",
+          "STEALTH_ROCK"
+        ],
+        "evs": [
+          252,
+          252,
+          4,
+          0,
+          0,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "BATTLE_ARMOR",
+        "form": 0
+      },
+      {
+        "species": "YANMEGA",
+        "item": "LIFE_ORB",
+        "moves": [
+          "BUG_BUZZ",
+          "AIR_SLASH",
+          "GIGA_DRAIN",
+          "PROTECT"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "TINTED_LENS",
+        "form": 0
+      },
+      {
+        "species": "NINJASK",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "DUAL_WINGBEAT",
+          "U_TURN",
+          "PROTECT",
+          "SWORDS_DANCE"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "SPEED_BOOST",
+        "form": 0
+      }
+    ],
+    [
+      {
+        "species": "VOLCARONA",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "QUIVER_DANCE",
+          "FIERY_DANCE",
+          "BUG_BUZZ",
+          "GIGA_DRAIN"
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          252,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "FLAME_BODY",
+        "form": 0
+      },
+      {
+        "species": "SCIZOR",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "BULLET_PUNCH",
+          "U_TURN",
+          "CLOSE_COMBAT",
+          "ROOST"
+        ],
+        "evs": [
+          248,
+          252,
+          0,
+          0,
+          8,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "TECHNICIAN",
+        "form": 0
+      },
+      {
+        "species": "LOKIX",
+        "item": "LIFE_ORB",
+        "moves": [
+          "FIRST_IMPRESSION",
+          "SUCKER_PUNCH",
+          "THROAT_CHOP",
+          "U_TURN"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "TINTED_LENS",
+        "form": 0
+      },
+      {
+        "species": "GOLISOPOD",
+        "item": "ASSAULT_VEST",
+        "moves": [
+          "FIRST_IMPRESSION",
+          "LIQUIDATION",
+          "AQUA_JET",
+          "CLOSE_COMBAT"
+        ],
+        "evs": [
+          0,
+          252,
+          120,
+          0,
+          136,
+          0
+        ],
+        "nature": "HARDY",
+        "ability": "EMERGENCY_EXIT",
+        "form": 0
+      },
+      {
+        "species": "SLITHER_WING",
+        "item": "LIFE_ORB",
+        "moves": [
+          "CLOSE_COMBAT",
+          "FIRST_IMPRESSION",
+          "FLAME_CHARGE",
+          "WILD_CHARGE"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "PROTOSYNTHESIS",
+        "form": 0
+      },
+      {
+        "species": "KLEAVOR",
+        "item": "HEAVY_DUTY_BOOTS",
+        "moves": [
+          "STONE_AXE",
+          "X_SCISSOR",
+          "CLOSE_COMBAT",
+          "U_TURN"
+        ],
+        "evs": [
+          0,
+          252,
+          0,
+          0,
+          4,
+          252
+        ],
+        "nature": "HARDY",
+        "ability": "SHARPNESS",
+        "form": 0
+      }
+    ]
+  ]
+}

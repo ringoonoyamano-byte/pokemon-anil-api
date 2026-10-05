@@ -159,7 +159,9 @@ router.post("/", async (req, res) => {
     const hpDef = Math.floor(((2 * (statsDef.hp || 45) + ivs_def + Math.floor(evs_def / 4)) * nivel) / 100) + nivel + 10;
 
     const resultado = {
-      modelo: 'Estimativa simplificada com dados da PokeAPI; não inclui habilidades, itens ou regras específicas do Añil.',
+      fonte: require('../lib/game-data').source,
+      dataset_id: require('../lib/game-data').datasetId,
+      modelo: 'Estimativa simplificada com stats, golpes e tipos do jogo; não inclui habilidades, itens ou todos os efeitos de scripts.',
       atacante: { nome: atkData.name, id: atkData.id, tipos: atkTypes },
       defensor: { nome: defData.name, id: defData.id, tipos: defTypes, hp_estimado: hpDef },
       move: {

@@ -1,10 +1,11 @@
+const { source, datasetId, version: gameVersion } = require('../lib/game-data');
 const router = require('express').Router();
 const { pokeFetch } = require('../middleware/cache');
 const { pagination } = require('../middleware/validation');
 const upstreamError = require('../middleware/upstream-error');
 router.get('/', pagination, async (req, res) => {
   const { q, type, ability, generation, min_bst } = req.query;
-  if ([q, type, ability, generation].some(v => v !== undefined && (typeof v !== 'string' || !/^[a-z0-9-]+$/i.test(v)))
+  if ([q, type, ability, generation].some(v => v !== undefined && (typeof v !== 'string' || !/^[a-z0-9_-]+$/i.test(v)))
       || (min_bst !== undefined && (typeof min_bst !== 'string' || !/^\d+$/.test(min_bst) || Number(min_bst) > 2000))) {
     return res.status(400).json({ erro: 'Filtros inválidos.' });
   }
@@ -30,7 +31,7 @@ router.get('/', pagination, async (req, res) => {
         }
       }
     }
-    res.json({ fonte: 'PokeAPI', escopo: 'Série principal; disponibilidade no Añil não verificada.', total: needsFullScan ? results.length : countBeforePaging, limit, offset, resultados: needsFullScan ? results.slice(offset, offset + limit) : results });
+    res.json({ fonte: source, dataset_id: datasetId, escopo: 'Dados extraídos da compilação local do jogo.', total: needsFullScan ? results.length : countBeforePaging, limit, offset, resultados: needsFullScan ? results.slice(offset, offset + limit) : results });
   } catch (error) { upstreamError(res, error, 'Filtro não encontrado.'); }
 });
 module.exports = router;

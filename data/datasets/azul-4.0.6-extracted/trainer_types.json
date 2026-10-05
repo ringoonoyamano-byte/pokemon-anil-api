@@ -1,0 +1,2253 @@
+[
+  {
+    "id": "POKEMONTRAINER_RojoNeutro",
+    "gender": 0,
+    "base_money": 60,
+    "skill_level": 60,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "POKEMONTRAINER_RojoNeutro",
+    "name_source_es": "Entrenador"
+  },
+  {
+    "id": "POKEMONTRAINER_HojaNeutra",
+    "gender": 1,
+    "base_money": 60,
+    "skill_level": 60,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "POKEMONTRAINER_HojaNeutra",
+    "name_source_es": "Entrenadora"
+  },
+  {
+    "id": "POKEMONTRAINER_RojoArio",
+    "gender": 0,
+    "base_money": 60,
+    "skill_level": 60,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "POKEMONTRAINER_RojoArio",
+    "name_source_es": "Entrenador"
+  },
+  {
+    "id": "POKEMONTRAINER_HojaAria",
+    "gender": 1,
+    "base_money": 60,
+    "skill_level": 60,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "POKEMONTRAINER_HojaAria",
+    "name_source_es": "Entrenadora"
+  },
+  {
+    "id": "POKEMONTRAINER_RojoNegro",
+    "gender": 0,
+    "base_money": 60,
+    "skill_level": 60,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "POKEMONTRAINER_RojoNegro",
+    "name_source_es": "Entrenador"
+  },
+  {
+    "id": "POKEMONTRAINER_HojaNegra",
+    "gender": 1,
+    "base_money": 60,
+    "skill_level": 60,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "POKEMONTRAINER_HojaNegra",
+    "name_source_es": "Entrenadora"
+  },
+  {
+    "id": "POKEMONTRAINER_Yellow",
+    "gender": 1,
+    "base_money": 60,
+    "skill_level": 60,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "POKEMONTRAINER_Yellow",
+    "name_source_es": "Entrenador"
+  },
+  {
+    "id": "AZUL1",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 150,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "AZUL1",
+    "name_source_es": "Rival"
+  },
+  {
+    "id": "ROJO1",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "ROJO1",
+    "name_source_es": "Rival"
+  },
+  {
+    "id": "HOJA1",
+    "gender": 1,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "HOJA1",
+    "name_source_es": "Rival"
+  },
+  {
+    "id": "AZUL2",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "AZUL2",
+    "name_source_es": "Rival"
+  },
+  {
+    "id": "CAZABICHOS",
+    "gender": 0,
+    "base_money": 50,
+    "skill_level": 80,
+    "flags": [],
+    "intro_BGM": "EncuentroJoven.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "CAZABICHOS",
+    "name_source_es": "Cazabichos"
+  },
+  {
+    "id": "CAZABICHAS",
+    "gender": 1,
+    "base_money": 50,
+    "skill_level": 80,
+    "flags": [],
+    "intro_BGM": "EncuentroJoven.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "CAZABICHAS",
+    "name_source_es": "Cazabichos"
+  },
+  {
+    "id": "CAMPISTO",
+    "gender": 0,
+    "base_money": 50,
+    "skill_level": 80,
+    "flags": [],
+    "intro_BGM": "EncuentroJoven.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "CAMPISTO",
+    "name_source_es": "Campista"
+  },
+  {
+    "id": "CAMPISTA",
+    "gender": 1,
+    "base_money": 50,
+    "skill_level": 80,
+    "flags": [],
+    "intro_BGM": "EncuentroJoven.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "CAMPISTA",
+    "name_source_es": "Campista"
+  },
+  {
+    "id": "LIDER1",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateLider.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER1",
+    "name_source_es": "Líder"
+  },
+  {
+    "id": "CHICO",
+    "gender": 0,
+    "base_money": 70,
+    "skill_level": 80,
+    "flags": [],
+    "intro_BGM": "EncuentroJoven.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "CHICO",
+    "name_source_es": "Chico"
+  },
+  {
+    "id": "CHICA",
+    "gender": 1,
+    "base_money": 70,
+    "skill_level": 80,
+    "flags": [],
+    "intro_BGM": "EncuentroFemenino.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "CHICA",
+    "name_source_es": "Chica"
+  },
+  {
+    "id": "CEREBRITO",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 180,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "CEREBRITO",
+    "name_source_es": "Cerebrito"
+  },
+  {
+    "id": "MONTANERO",
+    "gender": 0,
+    "base_money": 120,
+    "skill_level": 60,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "MONTANERO",
+    "name_source_es": "Montañero"
+  },
+  {
+    "id": "ROJO2",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "ROJO2",
+    "name_source_es": "Rival"
+  },
+  {
+    "id": "HOJA2",
+    "gender": 1,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "HOJA2",
+    "name_source_es": "Rival"
+  },
+  {
+    "id": "ROCKETO",
+    "gender": 0,
+    "base_money": 70,
+    "skill_level": 80,
+    "flags": [],
+    "intro_BGM": "EncuentroRocket.ogg",
+    "battle_BGM": "CombateComandante.ogg",
+    "victory_BGM": "VictoriaEntrenador.ogg",
+    "pbs_file_suffix": "",
+    "key": "ROCKETO",
+    "name_source_es": "Recluta Rocket"
+  },
+  {
+    "id": "ROCKETA",
+    "gender": 1,
+    "base_money": 70,
+    "skill_level": 80,
+    "flags": [],
+    "intro_BGM": "EncuentroRocket.ogg",
+    "battle_BGM": "CombateComandante.ogg",
+    "victory_BGM": "VictoriaEntrenador.ogg",
+    "pbs_file_suffix": "",
+    "key": "ROCKETA",
+    "name_source_es": "Recluta Rocket"
+  },
+  {
+    "id": "ATLAS1",
+    "gender": 0,
+    "base_money": 170,
+    "skill_level": 180,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateComandante.ogg",
+    "victory_BGM": "VictoriaEntrenador.ogg",
+    "pbs_file_suffix": "",
+    "key": "ATLAS1",
+    "name_source_es": "Comandante Rocket"
+  },
+  {
+    "id": "AZUL3",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "AZUL3",
+    "name_source_es": "Rival"
+  },
+  {
+    "id": "NADADOR",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 100,
+    "flags": [],
+    "intro_BGM": "EncuentroJoven.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "NADADOR",
+    "name_source_es": "Nadador"
+  },
+  {
+    "id": "NADADORA",
+    "gender": 1,
+    "base_money": 100,
+    "skill_level": 100,
+    "flags": [],
+    "intro_BGM": "EncuentroJoven.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "NADADORA",
+    "name_source_es": "Nadadora"
+  },
+  {
+    "id": "LIDER2",
+    "gender": 1,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateLider.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER2",
+    "name_source_es": "Líder"
+  },
+  {
+    "id": "FOTOGRAFA",
+    "gender": 1,
+    "base_money": 120,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroFemenino.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "FOTOGRAFA",
+    "name_source_es": "Fotógrafa"
+  },
+  {
+    "id": "DUOCAMPISTA",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 80,
+    "flags": [],
+    "intro_BGM": "EncuentroJoven.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "DUOCAMPISTA",
+    "name_source_es": "Campistas"
+  },
+  {
+    "id": "BRUJITA",
+    "gender": 1,
+    "base_money": 120,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "BRUJITA",
+    "name_source_es": "Brujita"
+  },
+  {
+    "id": "CABALLERO",
+    "gender": 0,
+    "base_money": 200,
+    "skill_level": 150,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "CABALLERO",
+    "name_source_es": "Caballero"
+  },
+  {
+    "id": "CABALLERA",
+    "gender": 1,
+    "base_money": 200,
+    "skill_level": 150,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "CABALLERA",
+    "name_source_es": "Dama"
+  },
+  {
+    "id": "MARINERO",
+    "gender": 0,
+    "base_money": 70,
+    "skill_level": 80,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "MARINERO",
+    "name_source_es": "Marinero"
+  },
+  {
+    "id": "AZUL4",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "AZUL4",
+    "name_source_es": "Rival"
+  },
+  {
+    "id": "MECANICO",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroJoven.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "MECANICO",
+    "name_source_es": "Mecánico"
+  },
+  {
+    "id": "MECANICA",
+    "gender": 1,
+    "base_money": 100,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroJoven.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "MECANICA",
+    "name_source_es": "Mecánica"
+  },
+  {
+    "id": "LIDER3",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateLider.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER3",
+    "name_source_es": "Líder"
+  },
+  {
+    "id": "ATENEA1",
+    "gender": 1,
+    "base_money": 170,
+    "skill_level": 180,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateComandante.ogg",
+    "victory_BGM": "VictoriaEntrenador.ogg",
+    "pbs_file_suffix": "",
+    "key": "ATENEA1",
+    "name_source_es": "Comandante Rocket"
+  },
+  {
+    "id": "ROJO3",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "ROJO3",
+    "name_source_es": "Rival"
+  },
+  {
+    "id": "HOJA3",
+    "gender": 1,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "HOJA3",
+    "name_source_es": "Rival"
+  },
+  {
+    "id": "PESCADORA",
+    "gender": 1,
+    "base_money": 90,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroFemenino.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "PESCADORA",
+    "name_source_es": "Pescadora"
+  },
+  {
+    "id": "EXORCISTA",
+    "gender": 1,
+    "base_money": 100,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "EXORCISTA",
+    "name_source_es": "Exorcista"
+  },
+  {
+    "id": "AZUL5",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "AZUL5",
+    "name_source_es": "Rival"
+  },
+  {
+    "id": "LIDER4",
+    "gender": 1,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateLider.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER4",
+    "name_source_es": "Líder"
+  },
+  {
+    "id": "URANO1",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateUrano.ogg",
+    "victory_BGM": "VictoriaEntrenador.ogg",
+    "pbs_file_suffix": "",
+    "key": "URANO1",
+    "name_source_es": "Comandante Rocket"
+  },
+  {
+    "id": "DAMISELA",
+    "gender": 1,
+    "base_money": 150,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": "EncuentroFemenino.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "DAMISELA",
+    "name_source_es": "Damisela"
+  },
+  {
+    "id": "GIOVANNI1",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateGiovanni.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "GIOVANNI1",
+    "name_source_es": "Jefe Rocket"
+  },
+  {
+    "id": "MOTORISTA",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "MOTORISTA",
+    "name_source_es": "Motorista"
+  },
+  {
+    "id": "DUOLUCHA",
+    "gender": 1,
+    "base_money": 100,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroJoven.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "DUOLUCHA",
+    "name_source_es": "Cuerpo y Mente"
+  },
+  {
+    "id": "DUOMOTORISTA",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "DUOMOTORISTA",
+    "name_source_es": "Motoristas"
+  },
+  {
+    "id": "AGATHA1",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "AGATHA1",
+    "name_source_es": "Maestra"
+  },
+  {
+    "id": "ORNITOLOGO",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroJoven.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "ORNITOLOGO",
+    "name_source_es": "Ornitólogo"
+  },
+  {
+    "id": "ROJO4",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "ROJO4",
+    "name_source_es": "Rival"
+  },
+  {
+    "id": "HOJA4",
+    "gender": 1,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "HOJA4",
+    "name_source_es": "Rival"
+  },
+  {
+    "id": "NINJA",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroJoven.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "NINJA",
+    "name_source_es": "Ninja"
+  },
+  {
+    "id": "NINJAA",
+    "gender": 1,
+    "base_money": 100,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroJoven.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "NINJAA",
+    "name_source_es": "Ninja"
+  },
+  {
+    "id": "LIDER5",
+    "gender": 1,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateLider.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER5",
+    "name_source_es": "Líderes"
+  },
+  {
+    "id": "KARATEKA",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "KARATEKA",
+    "name_source_es": "Karateka"
+  },
+  {
+    "id": "KARATEKAA",
+    "gender": 1,
+    "base_money": 150,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "KARATEKAA",
+    "name_source_es": "Karateka"
+  },
+  {
+    "id": "MEDIUM",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "MEDIUM",
+    "name_source_es": "Medium"
+  },
+  {
+    "id": "CIENTIFICO",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "CIENTIFICO",
+    "name_source_es": "Científico"
+  },
+  {
+    "id": "ATENEA2",
+    "gender": 1,
+    "base_money": 170,
+    "skill_level": 200,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateComandante.ogg",
+    "victory_BGM": "VictoriaEntrenador.ogg",
+    "pbs_file_suffix": "",
+    "key": "ATENEA2",
+    "name_source_es": "Comandante Rocket"
+  },
+  {
+    "id": "ATLAS2",
+    "gender": 0,
+    "base_money": 170,
+    "skill_level": 200,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateComandante.ogg",
+    "victory_BGM": "VictoriaEntrenador.ogg",
+    "pbs_file_suffix": "",
+    "key": "ATLAS2",
+    "name_source_es": "Comandante Rocket"
+  },
+  {
+    "id": "AZUL6",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateRival.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "AZUL6",
+    "name_source_es": "Rival"
+  },
+  {
+    "id": "GIOVANNI2",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateGiovanni.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "GIOVANNI2",
+    "name_source_es": "Jefe Rocket"
+  },
+  {
+    "id": "LIDER6",
+    "gender": 1,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateLider.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER6",
+    "name_source_es": "Líder"
+  },
+  {
+    "id": "PESCADOR",
+    "gender": 0,
+    "base_money": 90,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "PESCADOR",
+    "name_source_es": "Pescador"
+  },
+  {
+    "id": "LADRON",
+    "gender": 0,
+    "base_money": 90,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "LADRON",
+    "name_source_es": "Ladrón"
+  },
+  {
+    "id": "CIENTIFICA",
+    "gender": 1,
+    "base_money": 90,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "CIENTIFICA",
+    "name_source_es": "Científica"
+  },
+  {
+    "id": "SURYA",
+    "gender": 1,
+    "base_money": 170,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateSurya.ogg",
+    "victory_BGM": "VictoriaEntrenador.ogg",
+    "pbs_file_suffix": "",
+    "key": "SURYA",
+    "name_source_es": "Comandante Rocket"
+  },
+  {
+    "id": "LIDER7",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateLider.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER7",
+    "name_source_es": "Líder"
+  },
+  {
+    "id": "ELITEROCKET",
+    "gender": 0,
+    "base_money": 70,
+    "skill_level": 80,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": "EncuentroRocket.ogg",
+    "battle_BGM": "CombateComandante.ogg",
+    "victory_BGM": "VictoriaEntrenador.ogg",
+    "pbs_file_suffix": "",
+    "key": "ELITEROCKET",
+    "name_source_es": "Élite Rocket"
+  },
+  {
+    "id": "SURYA2",
+    "gender": 1,
+    "base_money": 170,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateSurya.ogg",
+    "victory_BGM": "VictoriaEntrenador.ogg",
+    "pbs_file_suffix": "",
+    "key": "SURYA2",
+    "name_source_es": "Comandante Rocket"
+  },
+  {
+    "id": "GIOVANNI3",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateGiovanniFinal.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "GIOVANNI3",
+    "name_source_es": "Entrenador"
+  },
+  {
+    "id": "AZULALIADO0",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "AZULALIADO0",
+    "name_source_es": "Entrenador"
+  },
+  {
+    "id": "VETERANO",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 150,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "VETERANO",
+    "name_source_es": "Veterano"
+  },
+  {
+    "id": "VETERANA",
+    "gender": 1,
+    "base_money": 90,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "VETERANA",
+    "name_source_es": "Veterana"
+  },
+  {
+    "id": "LIDER8",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateUrano.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER8",
+    "name_source_es": "Líder"
+  },
+  {
+    "id": "ROJO5",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateContraFinal.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "ROJO5",
+    "name_source_es": "Rival"
+  },
+  {
+    "id": "HOJA5",
+    "gender": 1,
+    "base_money": 100,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateContraFinal.ogg",
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "HOJA5",
+    "name_source_es": "Rival"
+  },
+  {
+    "id": "ALTOMANDO1",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "Elite Four.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "ALTOMANDO1",
+    "name_source_es": "Alto Mando"
+  },
+  {
+    "id": "ALTOMANDO2",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "Elite Four.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "ALTOMANDO2",
+    "name_source_es": "Alto Mando"
+  },
+  {
+    "id": "ALTOMANDO3",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "Elite Four.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "ALTOMANDO3",
+    "name_source_es": "Alto Mando"
+  },
+  {
+    "id": "ALTOMANDO4",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "Elite Four.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "ALTOMANDO4",
+    "name_source_es": "Alto Mando"
+  },
+  {
+    "id": "CAMPEON",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "Campeon Azul.ogg",
+    "victory_BGM": "VictoriaLiga.ogg",
+    "pbs_file_suffix": "",
+    "key": "CAMPEON",
+    "name_source_es": "Campeón"
+  },
+  {
+    "id": "ASH",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateContraFinal.ogg",
+    "victory_BGM": "VictoriaLiga.ogg",
+    "pbs_file_suffix": "",
+    "key": "ASH",
+    "name_source_es": "Maestro Pokémon"
+  },
+  {
+    "id": "OAK",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateContraFinal.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "OAK",
+    "name_source_es": "Profesor"
+  },
+  {
+    "id": "GUAY",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 150,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "GUAY",
+    "name_source_es": "Aspirante"
+  },
+  {
+    "id": "GUAYA",
+    "gender": 1,
+    "base_money": 90,
+    "skill_level": 150,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "GUAYA",
+    "name_source_es": "Aspirante"
+  },
+  {
+    "id": "AZULALIADO1",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "AZULALIADO1",
+    "name_source_es": "Entrenador"
+  },
+  {
+    "id": "AZULALIADO2",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "AZULALIADO2",
+    "name_source_es": "Entrenador"
+  },
+  {
+    "id": "LIDER1HOENN",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateHoenn.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER1HOENN",
+    "name_source_es": "Líder Exótico"
+  },
+  {
+    "id": "LIDER2HOENN",
+    "gender": 1,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateHoenn.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER2HOENN",
+    "name_source_es": "Líder Exótica"
+  },
+  {
+    "id": "LIDER3HOENN",
+    "gender": 1,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateHoenn.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER3HOENN",
+    "name_source_es": "Líder Exótica"
+  },
+  {
+    "id": "LIDER4HOENN",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateHoenn.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER4HOENN",
+    "name_source_es": "Líder Exótico"
+  },
+  {
+    "id": "LIDER5HOENN",
+    "gender": 1,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateHoenn.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER5HOENN",
+    "name_source_es": "Líder Exótica"
+  },
+  {
+    "id": "LIDER6HOENN",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateHoenn.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER6HOENN",
+    "name_source_es": "Líder Exótico"
+  },
+  {
+    "id": "LIDER7HOENN",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateHoenn.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER7HOENN",
+    "name_source_es": "Líder Exótico"
+  },
+  {
+    "id": "LIDER8HOENN",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateHoenn.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER8HOENN",
+    "name_source_es": "Líderes Exóticos"
+  },
+  {
+    "id": "PRISMM",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 150,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "PRISMM",
+    "name_source_es": "Guardián Prisma"
+  },
+  {
+    "id": "PRISMF",
+    "gender": 1,
+    "base_money": 90,
+    "skill_level": 150,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "PRISMF",
+    "name_source_es": "Guardiana Prisma"
+  },
+  {
+    "id": "MAXIMO",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateMaximo.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "MAXIMO",
+    "name_source_es": "Entrenador"
+  },
+  {
+    "id": "CINTIA",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateCintia.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "CINTIA",
+    "name_source_es": "Entrenador"
+  },
+  {
+    "id": "MIRTO",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateMirto.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "MIRTO",
+    "name_source_es": "Entrenador"
+  },
+  {
+    "id": "DUOPRISMA",
+    "gender": 1,
+    "base_money": 90,
+    "skill_level": 150,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "DUOPRISMA",
+    "name_source_es": "Guardianes Prisma"
+  },
+  {
+    "id": "BILL",
+    "gender": 0,
+    "base_money": 90,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "BILL",
+    "name_source_es": "Pokémaniaco"
+  },
+  {
+    "id": "PRISMA",
+    "gender": 1,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "PrismaBossFinal.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "PRISMA",
+    "name_source_es": "Cazalegendarios"
+  },
+  {
+    "id": "LIDER1REVANCHA",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateLider.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER1REVANCHA",
+    "name_source_es": "Líder"
+  },
+  {
+    "id": "LIDER2REVANCHA",
+    "gender": 1,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateLider.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER2REVANCHA",
+    "name_source_es": "Líder"
+  },
+  {
+    "id": "LIDER3REVANCHA",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateLider.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER3REVANCHA",
+    "name_source_es": "Líder"
+  },
+  {
+    "id": "LIDER4REVANCHA",
+    "gender": 1,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateLider.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER4REVANCHA",
+    "name_source_es": "Líder"
+  },
+  {
+    "id": "LIDER5REVANCHA",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateLider.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER5REVANCHA",
+    "name_source_es": "Líder"
+  },
+  {
+    "id": "LIDER6REVANCHA",
+    "gender": 1,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateLider.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER6REVANCHA",
+    "name_source_es": "Líder"
+  },
+  {
+    "id": "LIDER7REVANCHA",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateLider.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER7REVANCHA",
+    "name_source_es": "Líder"
+  },
+  {
+    "id": "LIDER8REVANCHA",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 250,
+    "flags": [
+      "ReserveLastPokemon"
+    ],
+    "intro_BGM": null,
+    "battle_BGM": "CombateUrano.ogg",
+    "victory_BGM": "Victoria Importante.ogg",
+    "pbs_file_suffix": "",
+    "key": "LIDER8REVANCHA",
+    "name_source_es": "Líder"
+  },
+  {
+    "id": "TB1",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB1",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB2",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB2",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB3",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB3",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB4",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB4",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB5",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB5",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB6",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB6",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB7",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB7",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB8",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB8",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB9",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB9",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB10",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB10",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB11",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB11",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB12",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB12",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB13",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB13",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB14",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB14",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB15",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB15",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB16",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB16",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB17",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB17",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB18",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB18",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB19",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB19",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB20",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB20",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB21",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB21",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB22",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB22",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB23",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB23",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB24",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB24",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB25",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB25",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB26",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB26",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB27",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB27",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB28",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB28",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB29",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB29",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB30",
+    "gender": 1,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB30",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB31",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB31",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB32",
+    "gender": 1,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB32",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB33",
+    "gender": 1,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB33",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB34",
+    "gender": 1,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB34",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB35",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB35",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "TB36",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TB36",
+    "name_source_es": "Contendiente"
+  },
+  {
+    "id": "DONPRODIGIO",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "DONPRODIGIO",
+    "name_source_es": "Don Prodigio"
+  },
+  {
+    "id": "MODELO",
+    "gender": 1,
+    "base_money": 150,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": "EncuentroFemenino.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "MODELO",
+    "name_source_es": "Modelo"
+  },
+  {
+    "id": "JUGON",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "JUGON",
+    "name_source_es": "Jugón"
+  },
+  {
+    "id": "MALABARISTA",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": null,
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "MALABARISTA",
+    "name_source_es": "Jugón"
+  },
+  {
+    "id": "JOVENRICA",
+    "gender": 1,
+    "base_money": 150,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": "EncuentroFemenino.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "JOVENRICA",
+    "name_source_es": "Modelo"
+  },
+  {
+    "id": "ESTUDIANTA",
+    "gender": 1,
+    "base_money": 70,
+    "skill_level": 80,
+    "flags": [],
+    "intro_BGM": "EncuentroFemenino.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "ESTUDIANTA",
+    "name_source_es": "Modelo"
+  },
+  {
+    "id": "MACARRA",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "MACARRA",
+    "name_source_es": "Chico Malo"
+  },
+  {
+    "id": "MATON",
+    "gender": 0,
+    "base_money": 150,
+    "skill_level": 200,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "MATON",
+    "name_source_es": "Calvo"
+  },
+  {
+    "id": "TECNICO",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 120,
+    "flags": [],
+    "intro_BGM": "EncuentroJoven.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "TECNICO",
+    "name_source_es": "Técnico"
+  },
+  {
+    "id": "POKEMANIACO",
+    "gender": 0,
+    "base_money": 100,
+    "skill_level": 180,
+    "flags": [],
+    "intro_BGM": "EncuentroDuro.ogg",
+    "battle_BGM": null,
+    "victory_BGM": null,
+    "pbs_file_suffix": "",
+    "key": "POKEMANIACO",
+    "name_source_es": "Pokémaníaco"
+  }
+]

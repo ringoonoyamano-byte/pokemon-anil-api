@@ -1,6 +1,6 @@
 # API: endpoint reference
 
-All routes are listed below. PokeAPI records describe the main series. Anil datasets are historical rules or announced metadata, not validated game extracts.
+As rotas principais usam os dados locais extraídos do Pokémon Añil/PT-BR, compilação Azul 4.0.6 (interna 4.0.3). Não há consulta à PokéAPI. Consulte README.md para identificadores, origem e limitações.
 
 | Method | Endpoint |
 |---|---|
@@ -21,6 +21,9 @@ All routes are listed below. PokeAPI records describe the main series. Anil data
 | GET | `/anil/gyms` |
 | GET | `/anil/key-items` |
 | GET | `/anil/locations` |
+| GET | `/anil/encounters` |
+| GET | `/anil/trainers` |
+| GET | `/anil/raids` |
 | GET | `/anil/mechanics` |
 | GET | `/anil/mechanics/{id}` |
 | GET | `/anil/modes` |
@@ -46,6 +49,7 @@ All routes are listed below. PokeAPI records describe the main series. Anil data
 | GET | `/items/{id}` |
 | GET | `/moves/category/{category}` |
 | GET | `/moves/type/{type}` |
+| GET | `/moves` |
 | GET | `/moves/{name}` |
 | GET | `/pokemon` |
 | GET | `/pokemon/search/{name}` |
@@ -92,10 +96,10 @@ Text import uses `{"nome":"Example","texto":"..."}`. Supported lines: species @ 
 
 ### Validation
 ```json
-{"version":"red-blue"}
+{"version":"azul-4-0-6"}
 ```
 
-Validation reports `valido_base` and `validacao_anil: pendente`. It is not a full competitive legality checker: breeding/event combinations, items and plugin rules are not proven.
+Validation reports `valido_base` and `validacao_anil: basica_dados_do_jogo`. It is not a full competitive legality checker: breeding/event combinations, items and plugin rules are not proven.
 
 ### Existing writes
 
@@ -106,9 +110,9 @@ Validation reports `valido_base` and `validacao_anil: pendente`. It is not a ful
 
 ## Filters and errors
 
-Search: q, type, ability, generation, min_bst, limit, offset. Generation and BST filters can require many upstream requests on a cold cache. The catalog scan is limited to 2000 records.
+Search: q, type, ability, generation, min_bst, limit, offset. Filtros são aplicados aos 1519 registros locais, sem consultas externas.
 
-Catalog/custom pagination: limit 1?100, offset >= 0. Team list uses modo, limit and offset, with total and total_pagina. Moves use version (PokeAPI version group). Datasets use edition and version. FAQ search uses q. History uses limit, offset, atacante and defensor.
+Catalog/custom pagination: limit 1–100, offset >= 0. Team list uses modo, limit and offset, with total and total_pagina. Moves use version=azul-4-0-6 (compilação ativa). Datasets use edition and version. FAQ search uses q. History uses limit, offset, atacante and defensor.
 
 400 invalid input; 401 missing/wrong write key; 403 remote writes disabled; 404 missing record; 409 duplicate custom key; 413 oversized body; 429 rate limit; 500 internal failure; 502 upstream failure; 503 database not ready; 504 upstream timeout.
 
@@ -116,4 +120,12 @@ Configure API_WRITE_KEY and send Authorization: Bearer <key> for remote writes. 
 
 ## Local verification
 
-Run npm.cmd test on PowerShell. Tests use fixtures and a temporary in-memory SQLite database. Real PokeAPI smoke checks are separate. No deployment or Git push is part of local tests.
+Run npm.cmd test on PowerShell. Tests use fixtures and a temporary in-memory SQLite database. Os testes tamb?m verificam as rotas principais com os JSONs reais do jogo. No deployment or Git push is part of local tests.
+
+## Dados extraídos do Azul/PT-BR 4.0.6
+
+A base `azul-4.0.6-extracted-game-data` disponibiliza os dados do jogo em
+`/anil/datasets/:id/:resource`, com paginação e busca em listas, e consultas
+por identificador em `/anil/datasets/:id/:resource/:record`.
+Consulte [comparação e exemplos](COMPARACAO-AZUL-4.0.6.md) para recursos,
+diferenças de regras e limites de integração.

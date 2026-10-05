@@ -11,7 +11,7 @@ before(async () => {
   require.cache[dbPath] = { exports: { getDb: () => db }, loaded: true };
   require.cache[cachePath] = { exports: { pokeFetch: async path => {
     if (path.includes('missing')) throw { response: { status:404 } };
-    return { id:25, name:'pikachu', types:[{ type:{name:'electric'} }], abilities:[{ability:{name:'static'}}], moves:[{move:{name:'tackle'},version_group_details:[{version_group:{name:'red-blue'},move_learn_method:{name:'level-up'},level_learned_at:5}]}] };
+    return { id:25, name:'pikachu', types:[{ type:{name:'electric'} }], abilities:[{ability:{name:'static'}}], moves:[{move:{name:'tackle'},version_group_details:[{version_group:{name:'azul-4-0-6'},move_learn_method:{name:'level-up'},level_learned_at:5}]}] };
   } }, loaded: true };
   const app = express(); app.use(express.json()); app.use('/teams', require('../routes/team-tools')); app.use('/teams', require('../routes/teams')); app.use('/anil',require('../routes/anil')); app.use('/custom',require('../routes/custom'));
   app.use((_error, _req, res, _next) => res.status(500).json({ erro:'test database failure' }));
@@ -23,7 +23,7 @@ test('JSON import, export and validation round trip on a temporary database', as
   const imported=await post('/teams/import',{nome:'Example',membros:[{pokemon:'pikachu',moves:['tackle'],habilidade:'static',ivs:{hp:0}}]}); assert.equal(imported.status,201);
   const id=imported.data.id;
   const exported=await (await fetch(base+`/teams/${id}/export`)).json(); assert.equal(exported.membros[0].ivs.hp,0);
-  assert.equal((await post(`/teams/${id}/validate`,{version:'red-blue'})).data.valido_base,true);
+  assert.equal((await post(`/teams/${id}/validate`,{version:'azul-4-0-6'})).data.valido_base,true);
   const text=await (await fetch(base+`/teams/${id}/export?format=text`)).text();
   assert.equal((await post('/teams/import',{nome:'Text',texto:text})).status,201);
 });
@@ -35,11 +35,12 @@ test('failed imports leave no partial teams', async () => {
 });
 test('invalid learnsets and incomplete Anil verification are explicit', async () => {
   const imported=await post('/teams/import',{nome:'Invalid move',membros:[{pokemon:'pikachu',moves:['surf']}]});
-  const result=await post(`/teams/${imported.data.id}/validate`,{version:'red-blue'});
-  assert.equal(result.data.valido_base,false); assert.equal(result.data.validacao_anil,'pendente');
+  const result=await post(`/teams/${imported.data.id}/validate`,{version:'azul-4-0-6'});
+  assert.equal(result.data.valido_base,false); assert.equal(result.data.validacao_anil,'basica_dados_do_jogo');
 });
 test('dataset filters isolate historical rules and metadata', async () => {
-  const list=await (await fetch(base+'/anil/datasets?edition=azul_ptbr_online')).json(); assert.equal(list.total,1);
+  const list=await (await fetch(base+'/anil/datasets?edition=azul_ptbr_online')).json(); assert.equal(list.total,2);
+  assert.deepEqual(list.datasets.map(d=>d.versao).sort(), ['4.0.6','4.0.7c']);
   const legacy=await (await fetch(base+'/anil/datasets/anil-3.06-historico')).json(); assert.equal(legacy.dataset.status,'historico_nao_validado'); assert.equal(legacy.dados.online_ptbr,undefined);
 });
 test('database failure during import rolls back the team and members', async () => {

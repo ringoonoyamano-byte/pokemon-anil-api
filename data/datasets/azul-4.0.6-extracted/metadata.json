@@ -1,0 +1,41 @@
+{
+  "dataset_id": "azul-4.0.6-extracted-game-data",
+  "edition": "azul_ptbr_online",
+  "display_title": "Pokemon Azul 4.0.6",
+  "internal_game_version": "4.0.3",
+  "pokemon_essentials_version": "21.1",
+  "mechanics_generation": 9,
+  "language": "pt-BR overlay over es source data",
+  "status": "extracted_from_user_supplied_game_files",
+  "not_official_anil_4_1_1": true,
+  "contains_personal_or_authentication_data": false,
+  "excluded": [
+    "saves",
+    "multiplayer credentials",
+    "authentication logs",
+    "network logs",
+    "executables",
+    "sprites",
+    "audio"
+  ],
+  "archive_sha256": "2868b451bc0931da13d0a1c69d8d73a60887992b2728d61ace311e493b50637c",
+  "counts": {
+    "species_and_forms": 1519,
+    "unique_species": 1027,
+    "alternate_form_records": 492,
+    "moves": 851,
+    "moves_with_pt_br_and_en_names": 850,
+    "abilities": 328,
+    "abilities_with_pt_br_and_en_names": 326,
+    "items": 933,
+    "types": 19,
+    "encounter_tables": 103,
+    "trainers": 685,
+    "trainer_pokemon_slots": 1841,
+    "trainer_types": 163,
+    "maps_with_metadata": 225,
+    "regions": 2,
+    "raid_sets": 7,
+    "wild_encounter_slots": 2026
+  }
+}

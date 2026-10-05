@@ -1,0 +1,3954 @@
+[
+  {
+    "id": "STENCH",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "STENCH",
+    "names": {
+      "source_es": "Hedor",
+      "pt_br": "Fedor",
+      "en": "Stench"
+    },
+    "description_source_es": "El Pokémon tiene un 10% de probabilidad de amedrentar al rival al usar un mov. de daño directo. No se acumula con Colmillo agudo o Roca del rey."
+  },
+  {
+    "id": "DRIZZLE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "DRIZZLE",
+    "names": {
+      "source_es": "Llovizna",
+      "pt_br": "Chuvisco",
+      "en": "Drizzle"
+    },
+    "description_source_es": "Cuando entra en combate invoca una lluvia que dura 5 turnos. Si el Pokémon lleva equipada Roca lluvia durará 8 turnos."
+  },
+  {
+    "id": "SPEEDBOOST",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SPEEDBOOST",
+    "names": {
+      "source_es": "Impulso",
+      "pt_br": "Impulso",
+      "en": "Speed Boost"
+    },
+    "description_source_es": "Aumenta en un nivel la Velocidad  del usuario al final de cada turno."
+  },
+  {
+    "id": "BATTLEARMOR",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "BATTLEARMOR",
+    "names": {
+      "source_es": "Armadura Batalla",
+      "pt_br": "Armadura de Batalha",
+      "en": "Battle Armor"
+    },
+    "description_source_es": "La robusta coraza que lo protege bloquea los golpes críticos."
+  },
+  {
+    "id": "STURDY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "STURDY",
+    "names": {
+      "source_es": "Robustez",
+      "pt_br": "Robustez",
+      "en": "Sturdy"
+    },
+    "description_source_es": "Evita que el rival pueda debilitarlo de un solo golpe cuando tiene los PS al máximo."
+  },
+  {
+    "id": "DAMP",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "DAMP",
+    "names": {
+      "source_es": "Humedad",
+      "pt_br": "Umidade",
+      "en": "Damp"
+    },
+    "description_source_es": "Aumenta la humedad del entorno y evita que se puedan utilizar movimientos explosivos. También impide que la habilidad Detonación se active."
+  },
+  {
+    "id": "LIMBER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "LIMBER",
+    "names": {
+      "source_es": "Flexibilidad",
+      "pt_br": "Flexibilidade",
+      "en": "Limber"
+    },
+    "description_source_es": "Evita ser paralizado gracias a la flexibilidad de su cuerpo."
+  },
+  {
+    "id": "SANDVEIL",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SANDVEIL",
+    "names": {
+      "source_es": "Velo arena",
+      "pt_br": "Véu de Areia",
+      "en": "Sand Veil"
+    },
+    "description_source_es": "Aumenta la Evasión durante las tormentas de arena en un 20%, y evita que el poseedor reciba daño de Tormenta de arena."
+  },
+  {
+    "id": "STATIC",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "STATIC",
+    "names": {
+      "source_es": "Elec. Estática",
+      "pt_br": "Estática",
+      "en": "Static"
+    },
+    "description_source_es": "Si un Pokémon lo ataca con un ataque de contacto, tiene un 30% de probabilidad de resultar paralizado. También afecta a Pokémon tipo tierra."
+  },
+  {
+    "id": "VOLTABSORB",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "VOLTABSORB",
+    "names": {
+      "source_es": "Absorbe Elec.",
+      "pt_br": "Absorção de Eletricidade",
+      "en": "Absorção de Eletricidade"
+    },
+    "description_source_es": "Si le alcanza un movimiento de tipo Eléctrico, éste no le afecta y recupera 1/4 de sus PS máximos. También funciona con movs. de estado."
+  },
+  {
+    "id": "WATERABSORB",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "WATERABSORB",
+    "names": {
+      "source_es": "Absorbe Agua",
+      "pt_br": "Absorção de Água",
+      "en": "Water Absorb"
+    },
+    "description_source_es": "Si le alcanza un movimiento de tipo Agua, éste no le afecta y recupera 1/4 de sus PS máximos. También funciona con movs. de estado."
+  },
+  {
+    "id": "OBLIVIOUS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "OBLIVIOUS",
+    "names": {
+      "source_es": "Despiste",
+      "pt_br": "Alheio",
+      "en": "Oblivious"
+    },
+    "description_source_es": "La indiferencia del Pokémon evita que caiga presa del enamoramiento o sea provocado. También evita que sea afectado por Mofa o Intimidación."
+  },
+  {
+    "id": "CLOUDNINE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "CLOUDNINE",
+    "names": {
+      "source_es": "Aclimatación",
+      "pt_br": "Sem Tempo Ruim",
+      "en": "Cloud Nine"
+    },
+    "description_source_es": "Anula todos los efectos del tiempo atmosférico, aunque no hace que éste desaparezca del campo."
+  },
+  {
+    "id": "COMPOUNDEYES",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "COMPOUNDEYES",
+    "names": {
+      "source_es": "Ojo Compuesto",
+      "pt_br": "Olhos Compostos",
+      "en": "Compound Eyes"
+    },
+    "description_source_es": "Aumenta la precisión de sus movimientos en un 30%. También aumenta la probabilidad de que los Pokémon salvajes lleven un objeto equipado."
+  },
+  {
+    "id": "INSOMNIA",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "INSOMNIA",
+    "names": {
+      "source_es": "Insomnio",
+      "pt_br": "Insônia",
+      "en": "Insomnia"
+    },
+    "description_source_es": "Su resistencia al sueño le impide quedarse dormido. También le impide el uso de Descanso. Si un Pokémon dormido adquiere esta habilidad, se despertará."
+  },
+  {
+    "id": "COLORCHANGE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "COLORCHANGE",
+    "names": {
+      "source_es": "Cambio Color",
+      "pt_br": "Mudança de Cor",
+      "en": "Color Change"
+    },
+    "description_source_es": "Adopta el tipo del último movimiento del que se es blanco. Si recibe un movimiento multigolpe, lo adoptará al recibir el último golpe."
+  },
+  {
+    "id": "IMMUNITY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "IMMUNITY",
+    "names": {
+      "source_es": "Inmunidad",
+      "pt_br": "Imunidade",
+      "en": "Immunity"
+    },
+    "description_source_es": "Su sistema inmunitario evita el envenenamiento. Si un Pokémon con esta habilidad es envenenado, la baya se activa antes que la habilidad."
+  },
+  {
+    "id": "FLASHFIRE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "FLASHFIRE",
+    "names": {
+      "source_es": "Absorbe Fuego",
+      "pt_br": "Absorção de Fogo",
+      "en": "Flash Fire"
+    },
+    "description_source_es": "Si le alcanza un movimiento de tipo Fuego, éste no le afecta y potencia en un 50% sus ataques de fuego. También funciona con movs. de estado."
+  },
+  {
+    "id": "SHIELDDUST",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SHIELDDUST",
+    "names": {
+      "source_es": "Polvo Escudo",
+      "pt_br": "Pó Escudo",
+      "en": "Shield Dust"
+    },
+    "description_source_es": "El polvo de escamas que lo envuelve protege al Pokémon de los efectos secundarios de los ataques recibidos."
+  },
+  {
+    "id": "OWNTEMPO",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "OWNTEMPO",
+    "names": {
+      "source_es": "Ritmo Propio",
+      "pt_br": "Ritmo Próprio",
+      "en": "Own Tempo"
+    },
+    "description_source_es": "Evita que el Pokémon sea confundido, incluso cuando es causado por sus propios movimientos. También evita ser afectado por intimidación."
+  },
+  {
+    "id": "SUCTIONCUPS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SUCTIONCUPS",
+    "names": {
+      "source_es": "Ventosas",
+      "pt_br": "Ventosas",
+      "en": "Suction Cups"
+    },
+    "description_source_es": "Sus ventosas se aferran al suelo, con lo cual anula movimientos y objetos que fuerzan el relevo."
+  },
+  {
+    "id": "INTIMIDATE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "INTIMIDATE",
+    "names": {
+      "source_es": "Intimidación",
+      "pt_br": "Intimidação",
+      "en": "Intimidate"
+    },
+    "description_source_es": "Al entrar en combate amilana al rival de tal manera que su Ataque disminuye un nivel."
+  },
+  {
+    "id": "SHADOWTAG",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SHADOWTAG",
+    "names": {
+      "source_es": "Sombra Trampa",
+      "pt_br": "Marca Sombria",
+      "en": "Shadow Tag"
+    },
+    "description_source_es": "Evita que el enemigo huya o sea cambiado por otro, salvo que sea de tipo Fantasma, lleve equipado Muda concha o use un movimiento de cambio."
+  },
+  {
+    "id": "ROUGHSKIN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ROUGHSKIN",
+    "names": {
+      "source_es": "Piel Tosca",
+      "pt_br": "Pele Áspera",
+      "en": "Rough Skin"
+    },
+    "description_source_es": "Hiere con su piel áspera al rival que lo ataque con un movimiento de contacto, restándole 1/16 de sus PS máximos."
+  },
+  {
+    "id": "WONDERGUARD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "WONDERGUARD",
+    "names": {
+      "source_es": "Superguarda",
+      "pt_br": "Guarda-Maravilha",
+      "en": "Wonder Guard"
+    },
+    "description_source_es": "Gracias a un poder misterioso, solo le hacen daño los movimientos supereficaces."
+  },
+  {
+    "id": "LEVITATE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "LEVITATE",
+    "names": {
+      "source_es": "Levitación",
+      "pt_br": "Levitação",
+      "en": "Levitate"
+    },
+    "description_source_es": "Su capacidad de flotar sobre el suelo le proporciona inmunidad frente a los movimientos de tipo Tierra."
+  },
+  {
+    "id": "EFFECTSPORE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "EFFECTSPORE",
+    "names": {
+      "source_es": "Efecto Espora",
+      "pt_br": "Efeito de Esporos",
+      "en": "Effect Spore"
+    },
+    "description_source_es": "Hay un 30% de probabilidad de dormir, envenenar o paralizar al Pokémon rival con el que entre en contacto al recibir un ataque."
+  },
+  {
+    "id": "SYNCHRONIZE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SYNCHRONIZE",
+    "names": {
+      "source_es": "Sincronía",
+      "pt_br": "Sincronia",
+      "en": "Synchronize"
+    },
+    "description_source_es": "Contagia el envenenamiento, las quemaduras o la parálisis al Pokémon que le cause ese estado, aunque se encuentre tras un sustituto."
+  },
+  {
+    "id": "CLEARBODY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "CLEARBODY",
+    "names": {
+      "source_es": "Cuerpo Puro",
+      "pt_br": "Corpo Transparente",
+      "en": "Clear Body"
+    },
+    "description_source_es": "Evita que bajen sus características a causa de movimientos o habilidades de otros Pokémon, pero no de los suyos."
+  },
+  {
+    "id": "NATURALCURE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "NATURALCURE",
+    "names": {
+      "source_es": "Cura Natural",
+      "pt_br": "Cura Natural",
+      "en": "Natural Cure"
+    },
+    "description_source_es": "Cura problemas de estado al cambiar de Pokémon. También ocurre al finalizar el combate."
+  },
+  {
+    "id": "LIGHTNINGROD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "LIGHTNINGROD",
+    "names": {
+      "source_es": "Pararrayos",
+      "pt_br": "Para-Raios",
+      "en": "Lightning Rod"
+    },
+    "description_source_es": "Además de atraer y neutralizar los movimientos de tipo Eléctrico, se sube un nivel el Ataque Especial, incluso aunque el Pokémon sea tipo Tierra."
+  },
+  {
+    "id": "SERENEGRACE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SERENEGRACE",
+    "names": {
+      "source_es": "Dicha",
+      "pt_br": "Graça Serena",
+      "en": "Serene Grace"
+    },
+    "description_source_es": "Duplica la probabilidad de que los movimientos causen efectos secundarios. También se aplica a los objetos Roca del rey y Colmillo agudo."
+  },
+  {
+    "id": "SWIFTSWIM",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SWIFTSWIM",
+    "names": {
+      "source_es": "Nado Rápido",
+      "pt_br": "Nado Rápido",
+      "en": "Swift Swim"
+    },
+    "description_source_es": "Mientras haya lluvia en el combate el Pokémon duplica su estadística de Velocidad."
+  },
+  {
+    "id": "CHLOROPHYLL",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "CHLOROPHYLL",
+    "names": {
+      "source_es": "Clorofila",
+      "pt_br": "Clorofila",
+      "en": "Chlorophyll"
+    },
+    "description_source_es": "Mientras haya clima soleado en el combate el Pokémon duplica su estadística de Velocidad."
+  },
+  {
+    "id": "ILLUMINATE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ILLUMINATE",
+    "names": {
+      "source_es": "Iluminación",
+      "pt_br": "Iluminação",
+      "en": "Illuminate"
+    },
+    "description_source_es": "Al entrar en combate baja la precisión de los rivales en un nivel. Fuera de combate aumenta la probabilidad de encontrar Pokémon salvajes."
+  },
+  {
+    "id": "TRACE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TRACE",
+    "names": {
+      "source_es": "Calco",
+      "pt_br": "Rastrear",
+      "en": "Trace"
+    },
+    "description_source_es": "Al entrar en combate copia la habilidad de uno de los rivales adyacentes al azar."
+  },
+  {
+    "id": "HUGEPOWER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "HUGEPOWER",
+    "names": {
+      "source_es": "Potencia",
+      "pt_br": "Poder Colossal",
+      "en": "Huge Power"
+    },
+    "description_source_es": "Duplica la estadística de Ataque del Pokémon, por lo que sólo afecta a ataques físicos."
+  },
+  {
+    "id": "POISONPOINT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "POISONPOINT",
+    "names": {
+      "source_es": "Punto Tóxico",
+      "pt_br": "Ponto Venenoso",
+      "en": "Poison Point"
+    },
+    "description_source_es": "Si un Pokémon lo ataca con un ataque de contacto, tiene un 30% de probabilidad de resultar envenenado."
+  },
+  {
+    "id": "INNERFOCUS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "INNERFOCUS",
+    "names": {
+      "source_es": "Fuerza Mental",
+      "pt_br": "Foco Interno",
+      "en": "Inner Focus"
+    },
+    "description_source_es": "Gracias a su profunda concentración, no puede ser amedrentado por los ataques del rival. También evita ser intimidado."
+  },
+  {
+    "id": "MAGMAARMOR",
+    "flags": [
+      "FasterEggHatching"
+    ],
+    "pbs_file_suffix": "",
+    "key": "MAGMAARMOR",
+    "names": {
+      "source_es": "Escudo Magma",
+      "pt_br": "Armadura de Magma",
+      "en": "Magma Armor"
+    },
+    "description_source_es": "Gracias al magma candente que lo envuelve, evita la congelación. Fuera de combate reduce a la mitad los pasos para eclosionar huevos."
+  },
+  {
+    "id": "WATERVEIL",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "WATERVEIL",
+    "names": {
+      "source_es": "Velo Agua",
+      "pt_br": "Véu de Água",
+      "en": "Water Veil"
+    },
+    "description_source_es": "Evita las quemaduras gracias a la capa de agua que lo envuelve. Si un Pokémon quemado adquiere esta habilidad se curará de las quemaduras."
+  },
+  {
+    "id": "MAGNETPULL",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MAGNETPULL",
+    "names": {
+      "source_es": "Imán",
+      "pt_br": "Puxão Magnético",
+      "en": "Magnet Pull"
+    },
+    "description_source_es": "Evita que el enemigo huya o sea cambiado por otro si es de tipo Acero, salvo que lleve equipado Muda concha o use un movimiento de cambio."
+  },
+  {
+    "id": "SOUNDPROOF",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SOUNDPROOF",
+    "names": {
+      "source_es": "Insonorizar",
+      "pt_br": "À Prova de Som",
+      "en": "Soundproof"
+    },
+    "description_source_es": "Su aislamiento acústico lo protege de movimientos que usan sonido, salvo los que use el propio Pokémon."
+  },
+  {
+    "id": "RAINDISH",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "RAINDISH",
+    "names": {
+      "source_es": "Cura Lluvia",
+      "pt_br": "Cura Chuva",
+      "en": "Rain Dish"
+    },
+    "description_source_es": "Recupera 1/16 de sus PS al final de cada turno cuando llueve en el combate."
+  },
+  {
+    "id": "SANDSTREAM",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SANDSTREAM",
+    "names": {
+      "source_es": "Chorro Arena",
+      "pt_br": "Jorro de Areia",
+      "en": "Sand Stream"
+    },
+    "description_source_es": "Cuando entra en combate invoca una tormenta de arena que dura 5 turnos. Si el Pokémon lleva equipada Roca suave durará 8 turnos."
+  },
+  {
+    "id": "PRESSURE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PRESSURE",
+    "names": {
+      "source_es": "Presión",
+      "pt_br": "Pressão",
+      "en": "Pressure"
+    },
+    "description_source_es": "Presiona al rival para que sus PP se acaben antes, gastando 2 PP por cada movimiento que use contra este Pokémon."
+  },
+  {
+    "id": "THICKFAT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "THICKFAT",
+    "names": {
+      "source_es": "Sebo",
+      "pt_br": "Gordura Espessa",
+      "en": "Thick Fat"
+    },
+    "description_source_es": "Gracias a la gruesa capa de grasa que lo protege, reduce a la mitad el daño recibido por ataques de tipo Fuego y Hielo."
+  },
+  {
+    "id": "EARLYBIRD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "EARLYBIRD",
+    "names": {
+      "source_es": "Madrugar",
+      "pt_br": "Madrugador",
+      "en": "Early Bird"
+    },
+    "description_source_es": "Si el Pokémon se duerme, tardará la mitad de turnos en despertarse. En caso de ser un número impar de turnos, se redondea a la baja."
+  },
+  {
+    "id": "FLAMEBODY",
+    "flags": [
+      "FasterEggHatching"
+    ],
+    "pbs_file_suffix": "",
+    "key": "FLAMEBODY",
+    "names": {
+      "source_es": "Cuerpo Llama",
+      "pt_br": "Corpo de Chamas",
+      "en": "Flame Body"
+    },
+    "description_source_es": "Si un Pokémon lo ataca con un ataque de contacto, tiene un 30% de probabilidad de resultar quemado."
+  },
+  {
+    "id": "RUNAWAY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "RUNAWAY",
+    "names": {
+      "source_es": "Fuga",
+      "pt_br": "Fuga",
+      "en": "Run Away"
+    },
+    "description_source_es": "Permite escapar de combate contra todos los Pokémon salvajes, ignorando la habilidad del rival. No tiene efecto al cambiar de Pokémon."
+  },
+  {
+    "id": "KEENEYE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "KEENEYE",
+    "names": {
+      "source_es": "Vista Lince",
+      "pt_br": "Olhar Aguçado",
+      "en": "Keen Eye"
+    },
+    "description_source_es": "La aguda vista de este Pokémon evita que disminuya su Precisión. También ignora aumentos de evasión del Pokémon rival."
+  },
+  {
+    "id": "HYPERCUTTER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "HYPERCUTTER",
+    "names": {
+      "source_es": "Corte Fuerte",
+      "pt_br": "Hipercorte",
+      "en": "Hyper Cutter"
+    },
+    "description_source_es": "Evita que el rival le baje el Ataque. Reduciones por ataques propios o por los movimientos Cambia fuerza, Cambia almas e Isofuerta sí tienen efecto."
+  },
+  {
+    "id": "PICKUP",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PICKUP",
+    "names": {
+      "source_es": "Recogida",
+      "pt_br": "Coleta",
+      "en": "Pickup"
+    },
+    "description_source_es": "Tras un combate tiene un 10% de probabilidad de encontrar un objeto. Si un Pokémon aliado o enemigo pierde un objeto en combate, también lo recogerá."
+  },
+  {
+    "id": "TRUANT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TRUANT",
+    "names": {
+      "source_es": "Pereza",
+      "pt_br": "Preguiça",
+      "en": "Truant"
+    },
+    "description_source_es": "Cada dos turnos el Pokémon estará ausente y no realizará ninguna acción."
+  },
+  {
+    "id": "HUSTLE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "HUSTLE",
+    "names": {
+      "source_es": "Entusiasmo",
+      "pt_br": "Agitação",
+      "en": "Hustle"
+    },
+    "description_source_es": "Aumenta el Ataque o Ataque Especial del usuario en un 50%, pero reduce la Precisión de los movimientos ofensivos en un 20%. Los movs. de estado no se ven afectados."
+  },
+  {
+    "id": "CUTECHARM",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "CUTECHARM",
+    "names": {
+      "source_es": "Gran Encanto",
+      "pt_br": "Charme Gracioso",
+      "en": "Cute Charm"
+    },
+    "description_source_es": "Si el rival golpea con un movimiento de contacto al usuario y es del género opuesto, tiene una probabilidad del 30% de quedarse enamorado."
+  },
+  {
+    "id": "PLUS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PLUS",
+    "names": {
+      "source_es": "Más",
+      "pt_br": "Mais",
+      "en": "Plus"
+    },
+    "description_source_es": "Potencia el Ataque Especial un 50% si un Pokémon aliado tiene la habilidad Más o Menos."
+  },
+  {
+    "id": "MINUS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MINUS",
+    "names": {
+      "source_es": "Menos",
+      "pt_br": "Menos",
+      "en": "Minus"
+    },
+    "description_source_es": "Potencia el Ataque Especial un 50% si un Pokémon aliado tiene la habilidad Más o Menos."
+  },
+  {
+    "id": "FORECAST",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "FORECAST",
+    "names": {
+      "source_es": "Predicción",
+      "pt_br": "Previsão",
+      "en": "Forecast"
+    },
+    "description_source_es": "Cambia a tipo Agua, Fuego o Hielo en función del tiempo atmosférico. Si éste deja de ejercer efecto cambia a tipo Normal."
+  },
+  {
+    "id": "STICKYHOLD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "STICKYHOLD",
+    "names": {
+      "source_es": "Viscosidad",
+      "pt_br": "Viscosidade",
+      "en": "Sticky Hold"
+    },
+    "description_source_es": "Protege al Pokémon del robo de objetos ante cualquier ataque del Pokémon rival, al quedarse pegados a su cuerpo."
+  },
+  {
+    "id": "SHEDSKIN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SHEDSKIN",
+    "names": {
+      "source_es": "Mudar",
+      "pt_br": "Troca de Pele",
+      "en": "Shed Skin"
+    },
+    "description_source_es": "El Pokémon tiene una probabilidad del 30% de curar sus problemas de estado al final de cada turno, al mudar la piel."
+  },
+  {
+    "id": "GUTS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "GUTS",
+    "names": {
+      "source_es": "Agallas",
+      "pt_br": "Determinação",
+      "en": "Guts"
+    },
+    "description_source_es": "Si sufre un problema de estado, aumenta su Ataque en un 50%, ignorando la reducción de Ataque en caso de estar quemado."
+  },
+  {
+    "id": "MARVELSCALE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MARVELSCALE",
+    "names": {
+      "source_es": "Escama Especial",
+      "pt_br": "Escama Fabulosa",
+      "en": "Marvel Scale"
+    },
+    "description_source_es": "Sube la Defensa del poseedor en un 50% si este sufre un problema de estado."
+  },
+  {
+    "id": "LIQUIDOOZE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "LIQUIDOOZE",
+    "names": {
+      "source_es": "Viscosecreción",
+      "pt_br": "Herbívoro",
+      "en": "Sap Sipper"
+    },
+    "description_source_es": "Hiere a los Pokémon que intentan drenarle los PS. Estos pierden tantos PS como los que hubiesen absorbido. No afecta a Comesueños."
+  },
+  {
+    "id": "OVERGROW",
+    "flags": [
+      "GRASS"
+    ],
+    "pbs_file_suffix": "",
+    "key": "OVERGROW",
+    "names": {
+      "source_es": "Espesura",
+      "pt_br": "Crescimento",
+      "en": "Overgrow"
+    },
+    "description_source_es": "Potencia los movimientos de tipo Planta del Pokémon en un 50% cuando tenga 1/3 o menos de sus PS máximos."
+  },
+  {
+    "id": "BLAZE",
+    "flags": [
+      "FIRE"
+    ],
+    "pbs_file_suffix": "",
+    "key": "BLAZE",
+    "names": {
+      "source_es": "Mar Llamas",
+      "pt_br": "Chama",
+      "en": "Blaze"
+    },
+    "description_source_es": "Potencia los movimientos de tipo Fuego del Pokémon en un 50% cuando tenga 1/3 o menos de sus PS máximos."
+  },
+  {
+    "id": "TORRENT",
+    "flags": [
+      "WATER"
+    ],
+    "pbs_file_suffix": "",
+    "key": "TORRENT",
+    "names": {
+      "source_es": "Torrente",
+      "pt_br": "Torrente",
+      "en": "Torrent"
+    },
+    "description_source_es": "Potencia los movimientos de tipo Agua del Pokémon en un 50% cuando tenga 1/3 o menos de sus PS máximos."
+  },
+  {
+    "id": "SWARM",
+    "flags": [
+      "BUG"
+    ],
+    "pbs_file_suffix": "",
+    "key": "SWARM",
+    "names": {
+      "source_es": "Enjambre",
+      "pt_br": "Enxame",
+      "en": "Swarm"
+    },
+    "description_source_es": "Potencia los movimientos de tipo Bicho del Pokémon en un 50% cuando tenga 1/3 o menos de sus PS máximos."
+  },
+  {
+    "id": "ROCKHEAD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ROCKHEAD",
+    "names": {
+      "source_es": "Cabeza Roca",
+      "pt_br": "Cabeça de Pedra",
+      "en": "Rock Head"
+    },
+    "description_source_es": "Impide que el Pokémon se dañe con sus propios movimientos, salvo en caso de usar Forcejeo."
+  },
+  {
+    "id": "DROUGHT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "DROUGHT",
+    "names": {
+      "source_es": "Sequía",
+      "pt_br": "Seca",
+      "en": "Drought"
+    },
+    "description_source_es": "Cuando entra en combate induce clima soleado, que dura 5 turnos. Si el Pokémon lleva equipada Roca calor durará 8 turnos."
+  },
+  {
+    "id": "ARENATRAP",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ARENATRAP",
+    "names": {
+      "source_es": "Trampa Arena",
+      "pt_br": "Armadilha de Arena",
+      "en": "Arena Trap"
+    },
+    "description_source_es": "Evita que el enemigo huya o sea cambiado, salvo que sea tipo Fantasma o Volador, levite, lleve equipado Muda concha o use un movimiento de cambio."
+  },
+  {
+    "id": "VITALSPIRIT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "VITALSPIRIT",
+    "names": {
+      "source_es": "Espíritu Vital",
+      "pt_br": "Espírito Vital",
+      "en": "Vital Spirit"
+    },
+    "description_source_es": "Su determinación le impide quedarse dormido. Si utiliza el movimiento Descanso, este fallará."
+  },
+  {
+    "id": "WHITESMOKE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "WHITESMOKE",
+    "names": {
+      "source_es": "Humo Blanco",
+      "pt_br": "Fumaça Branca",
+      "en": "White Smoke"
+    },
+    "description_source_es": "El humo blanco que lo protege evita que otro Pokémon le baje las características, pero no evita que bajen por movimientos propios."
+  },
+  {
+    "id": "PUREPOWER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PUREPOWER",
+    "names": {
+      "source_es": "Energía Pura",
+      "pt_br": "Poder Puro",
+      "en": "Pure Power"
+    },
+    "description_source_es": "Duplica el Ataque del poseedor de la habilidad."
+  },
+  {
+    "id": "SHELLARMOR",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SHELLARMOR",
+    "names": {
+      "source_es": "Caparazón",
+      "pt_br": "Armadura de Concha",
+      "en": "Shell Armor"
+    },
+    "description_source_es": "La robusta coraza que lo protege bloquea los golpes críticos."
+  },
+  {
+    "id": "AIRLOCK",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "AIRLOCK",
+    "names": {
+      "source_es": "Esclusa de Aire",
+      "pt_br": "Eclusa de Ar",
+      "en": "Eclusa de Ar"
+    },
+    "description_source_es": "Neutraliza todos los efectos del tiempo atmosférico, salvo la capacidad de negar el cambio de clima de Sol abrasador, Diluvio y Turbulencias."
+  },
+  {
+    "id": "TANGLEDFEET",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TANGLEDFEET",
+    "names": {
+      "source_es": "Tumbos",
+      "pt_br": "Pés Confusos",
+      "en": "Tangled Feet"
+    },
+    "description_source_es": "Disminuye la Precisión de los movimientos del rival usados contra el poseedor de la habilidad a la mitad si este está confuso."
+  },
+  {
+    "id": "MOTORDRIVE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MOTORDRIVE",
+    "names": {
+      "source_es": "Electromotor",
+      "pt_br": "Eletromotor",
+      "en": "Motor Drive"
+    },
+    "description_source_es": "Si le alcanza un movimiento tipo Eléctrico, aumenta un nivel la Velocidad y no sufre daño. No afecta a Poder oculto, Don natural y Sentencia."
+  },
+  {
+    "id": "RIVALRY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "RIVALRY",
+    "names": {
+      "source_es": "Rivalidad",
+      "pt_br": "Rivalidade",
+      "en": "Rivalry"
+    },
+    "description_source_es": "Aumenta la potencia de sus movimientos en un 25% si el objetivo es del mismo sexo. Ya no disminuye un 25% si es del sexo contrario."
+  },
+  {
+    "id": "STEADFAST",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "STEADFAST",
+    "names": {
+      "source_es": "Impasible",
+      "pt_br": "Firmeza",
+      "en": "Steadfast"
+    },
+    "description_source_es": "Cada vez que se amedrenta sube un nivel su Velocidad, debido a su voluntad inquebrantable."
+  },
+  {
+    "id": "SNOWCLOAK",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SNOWCLOAK",
+    "names": {
+      "source_es": "Manto Níveo",
+      "pt_br": "Manto de Neve",
+      "en": "Snow Cloak"
+    },
+    "description_source_es": "Disminuye en un 20% la Precisión de los movimientos usados contra él cuando hay clima de Granizo."
+  },
+  {
+    "id": "GLUTTONY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "GLUTTONY",
+    "names": {
+      "source_es": "Gula",
+      "pt_br": "Gula",
+      "en": "Gluttony"
+    },
+    "description_source_es": "El Pokémon utilizará las bayas que se consumen con un 25% o menos de sus PS máximos cuando le queden un 50% o menos de sus PS máximos."
+  },
+  {
+    "id": "ANGERPOINT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ANGERPOINT",
+    "names": {
+      "source_es": "Irascible",
+      "pt_br": "Ponto de Ira",
+      "en": "Anger Point"
+    },
+    "description_source_es": "Si recibe un golpe crítico, monta en cólera y sube su Ataque hasta el máximo."
+  },
+  {
+    "id": "UNBURDEN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "UNBURDEN",
+    "names": {
+      "source_es": "Liviano",
+      "pt_br": "Alívio",
+      "en": "Unburden"
+    },
+    "description_source_es": "El Pokémon duplica la Velocidad si usa o pierde el objeto que lleva. El efecto desaparece al ser cambiado. No se activa con Truco o Trapicheo."
+  },
+  {
+    "id": "HEATPROOF",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "HEATPROOF",
+    "names": {
+      "source_es": "Ignífugo",
+      "pt_br": "À Prova de Fogo",
+      "en": "Heatproof"
+    },
+    "description_source_es": "Reduce a la mitad el daño recibido por movimientos de tipo Fuego. Si está quemado perderá cada turno 1/32 de sus PS máximos en lugar de 1/16."
+  },
+  {
+    "id": "SIMPLE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SIMPLE",
+    "names": {
+      "source_es": "Simple",
+      "pt_br": "Simples",
+      "en": "Simple"
+    },
+    "description_source_es": "Duplica los cambios en las características, tanto positivos como negativos."
+  },
+  {
+    "id": "DRYSKIN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "DRYSKIN",
+    "names": {
+      "source_es": "Piel Seca",
+      "pt_br": "Pele Seca",
+      "en": "Dry Skin"
+    },
+    "description_source_es": "Cada turno pierde 1/8 de sus PS si hace sol, y los gana si llueve. Los mov. tipo Fuego le hacen un 25% más de daño, y los de agua le recuperan un 25% de sus PS."
+  },
+  {
+    "id": "DOWNLOAD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "DOWNLOAD",
+    "names": {
+      "source_es": "Descarga",
+      "pt_br": "Download",
+      "en": "Download"
+    },
+    "description_source_es": "Compara la Defensa y la Defensa Especial del rival para ver cuál es inferior y aumenta su propio Ataque o Ataque Especial, según corresponda."
+  },
+  {
+    "id": "IRONFIST",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "IRONFIST",
+    "names": {
+      "source_es": "Puño Férreo",
+      "pt_br": "Punho de Ferro",
+      "en": "Iron Fist"
+    },
+    "description_source_es": "Aumenta la potencia de los movimientos basados en puños en un 20%."
+  },
+  {
+    "id": "POISONHEAL",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "POISONHEAL",
+    "names": {
+      "source_es": "Antídoto",
+      "pt_br": "Cura Venenosa",
+      "en": "Poison Heal"
+    },
+    "description_source_es": "Si el Pokémon resulta envenenado, recupera 1/8 de sus PS máximos cada turno."
+  },
+  {
+    "id": "ADAPTABILITY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ADAPTABILITY",
+    "names": {
+      "source_es": "Adaptable",
+      "pt_br": "Adaptabilidade",
+      "en": "Adaptability"
+    },
+    "description_source_es": "Aumenta la bonificación de usar movimientos del mismo tipo del Pokémon x2 en lugar de x1,5."
+  },
+  {
+    "id": "SKILLLINK",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SKILLLINK",
+    "names": {
+      "source_es": "Encadenado",
+      "pt_br": "Elo de Habilidade",
+      "en": "Skill Link"
+    },
+    "description_source_es": "Los movimientos múltiples se ejecutarán siempre con el número máximo de golpes."
+  },
+  {
+    "id": "HYDRATION",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "HYDRATION",
+    "names": {
+      "source_es": "Hidratación",
+      "pt_br": "Hidratação",
+      "en": "Hydration"
+    },
+    "description_source_es": "Al final de cada turno cura los problemas de estado del Pokémon si está lloviendo."
+  },
+  {
+    "id": "SOLARPOWER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SOLARPOWER",
+    "names": {
+      "source_es": "Poder Solar",
+      "pt_br": "Poder Solar",
+      "en": "Solar Power"
+    },
+    "description_source_es": "Si hace sol, aumenta su Ataque Especial en un 50%, pero pierde 1/8 de sus PS máximos al final de cada turno."
+  },
+  {
+    "id": "QUICKFEET",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "QUICKFEET",
+    "names": {
+      "source_es": "Pies Rápidos",
+      "pt_br": "Pés Rápidos",
+      "en": "Quick Feet"
+    },
+    "description_source_es": "Aumenta la Velocidad en un 50% si sufre problemas de estado. En caso de estar paralizado, no se aplica la reducción de velocidad."
+  },
+  {
+    "id": "NORMALIZE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "NORMALIZE",
+    "names": {
+      "source_es": "Normalidad",
+      "pt_br": "Normalização",
+      "en": "Normalize"
+    },
+    "description_source_es": "Todos sus movs. son tipo Normal y aumentan su potencia en un 20%. No afecta a Pod. oculto, Metereobola, Don natural, Sentencia, Tecno shock y Multiat."
+  },
+  {
+    "id": "SNIPER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SNIPER",
+    "names": {
+      "source_es": "Francotirador",
+      "pt_br": "Franco-Atirador",
+      "en": "Sniper"
+    },
+    "description_source_es": "La potencia de los golpes críticos se ve aumenta de x1,5 a x2,25."
+  },
+  {
+    "id": "MAGICGUARD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MAGICGUARD",
+    "names": {
+      "source_es": "Muro Mágico",
+      "pt_br": "Guarda Mágica",
+      "en": "Magic Guard"
+    },
+    "description_source_es": "El Pokémon solo recibe daño de ataques directos. No recibe daño indirecto de ataques, habilidades u objetos, ni puede ser atrapado por movimientos."
+  },
+  {
+    "id": "NOGUARD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "NOGUARD",
+    "names": {
+      "source_es": "Indefenso",
+      "pt_br": "Sem Guarda",
+      "en": "No Guard"
+    },
+    "description_source_es": "Todos los movimientos acertarán siempre, tanto del Pokémon como del rival."
+  },
+  {
+    "id": "STALL",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "STALL",
+    "names": {
+      "source_es": "Rezagado",
+      "pt_br": "Atraso",
+      "en": "Stall"
+    },
+    "description_source_es": "El Pokémon se mueve el último, siempre que los movimientos tengan la misma prioridad, salvo que algún otro tenga equipado Cola plúmbea o Incienso lento."
+  },
+  {
+    "id": "TECHNICIAN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TECHNICIAN",
+    "names": {
+      "source_es": "Experto",
+      "pt_br": "Técnico",
+      "en": "Technician"
+    },
+    "description_source_es": "Potencia los movimientos que tengan una Potencia de 60 o menos x1,5."
+  },
+  {
+    "id": "LEAFGUARD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "LEAFGUARD",
+    "names": {
+      "source_es": "Defensa Hoja",
+      "pt_br": null,
+      "en": null
+    },
+    "description_source_es": "Evita los problemas de estado si hace sol, al igual que no puede usar descanso o no se activan los objetos llamasfera y toxisfera."
+  },
+  {
+    "id": "KLUTZ",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "KLUTZ",
+    "names": {
+      "source_es": "Zoquete",
+      "pt_br": "Desajeitado",
+      "en": "Klutz"
+    },
+    "description_source_es": "El Pokémon no puede usar objetos equipados, y anula su efecto. También afecta al uso de lanzamiento. Los objetos que afectan exp. y dinero funcionan."
+  },
+  {
+    "id": "MOLDBREAKER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MOLDBREAKER",
+    "names": {
+      "source_es": "Rompemoldes",
+      "pt_br": "Quebra-Molde",
+      "en": "Mold Breaker"
+    },
+    "description_source_es": "Las habilidades del objetivo no afectan al daño o efectos de los movimientos empleados."
+  },
+  {
+    "id": "SUPERLUCK",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SUPERLUCK",
+    "names": {
+      "source_es": "Afortunado",
+      "pt_br": "Super Sorte",
+      "en": "Super Luck"
+    },
+    "description_source_es": "Su buena suerte aumenta la probabilidad de asestar golpes críticos en uno."
+  },
+  {
+    "id": "AFTERMATH",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "AFTERMATH",
+    "names": {
+      "source_es": "Detonación",
+      "pt_br": "Consequência",
+      "en": "Aftermath"
+    },
+    "description_source_es": "Daña al agresor que le ha dado el golpe de gracia con un movimiento de contacto en un 25% de sus PS máximos, salvo que el agresor tenga Humedad."
+  },
+  {
+    "id": "ANTICIPATION",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ANTICIPATION",
+    "names": {
+      "source_es": "Anticipación",
+      "pt_br": "Antecipação",
+      "en": "Anticipation"
+    },
+    "description_source_es": "Si el rival tiene un movimiento que resulte eficaz contra él, el Pokémon se estremecerá."
+  },
+  {
+    "id": "FOREWARN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "FOREWARN",
+    "names": {
+      "source_es": "Alerta",
+      "pt_br": "Premonição",
+      "en": "Forewarn"
+    },
+    "description_source_es": "Determina el movimiento más potente del rival al entrar en combate."
+  },
+  {
+    "id": "UNAWARE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "UNAWARE",
+    "names": {
+      "source_es": "Ignorante",
+      "pt_br": "Inconsciente",
+      "en": "Unaware"
+    },
+    "description_source_es": "Ignora los cambios tanto positivos como negativos en las características del rival al atacar, salvo la Velocidad."
+  },
+  {
+    "id": "TINTEDLENS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TINTEDLENS",
+    "names": {
+      "source_es": "Cromolente",
+      "pt_br": "Lentes Coloridas",
+      "en": "Tinted Lens"
+    },
+    "description_source_es": "Potencia los movimientos poco eficaces, haciendo estos el doble de daño."
+  },
+  {
+    "id": "FILTER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "FILTER",
+    "names": {
+      "source_es": "Filtro",
+      "pt_br": "Filtro",
+      "en": "Filter"
+    },
+    "description_source_es": "Mitiga el daño que le infligen los movimientos supereficaces, reduciéndolos a 3/4 del daño inicial."
+  },
+  {
+    "id": "SLOWSTART",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SLOWSTART",
+    "names": {
+      "source_es": "Inicio Lento",
+      "pt_br": "Início Lento",
+      "en": "Slow Start"
+    },
+    "description_source_es": "Baja a la mitad el Ataque y la Velocidad durante cinco turnos. Al cambiar de Pokémon se reinicia la cuenta."
+  },
+  {
+    "id": "SCRAPPY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SCRAPPY",
+    "names": {
+      "source_es": "Intrépido",
+      "pt_br": "Intrépido",
+      "en": "Scrappy"
+    },
+    "description_source_es": "Los movimientos de tipo Normal o Lucha alcanzan a los Pokémon de tipo Fantasma. Además es inmune a la Intimidación."
+  },
+  {
+    "id": "STORMDRAIN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "STORMDRAIN",
+    "names": {
+      "source_es": "Colector",
+      "pt_br": "Dreno de Tempestade",
+      "en": "Storm Drain"
+    },
+    "description_source_es": "Atrae los movimientos de tipo Agua, aumenta un nivel el Ataque Especial y no sufre daño. No afecta a Poder oculto, Don natural y Sentencia."
+  },
+  {
+    "id": "ICEBODY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ICEBODY",
+    "names": {
+      "source_es": "Gélido",
+      "pt_br": "Corpo de Gelo",
+      "en": "Ice Body"
+    },
+    "description_source_es": "Recupera 1/16 de sus PS máximos al final de cada turno cuando hay tormentas de granizo."
+  },
+  {
+    "id": "SOLIDROCK",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SOLIDROCK",
+    "names": {
+      "source_es": "Roca Solida",
+      "pt_br": "Rocha Sólida",
+      "en": "Solid Rock"
+    },
+    "description_source_es": "Mitiga el daño que le infligen los movimientos supereficaces, reduciéndolos a 3/4 del daño inicial."
+  },
+  {
+    "id": "SNOWWARNING",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SNOWWARNING",
+    "names": {
+      "source_es": "Nevada",
+      "pt_br": "Alerta de Neve",
+      "en": "Snow Warning"
+    },
+    "description_source_es": "Cuando entra en combate invoca una nevada que dura 5 turnos. Si el Pokémon lleva equipada Roca helada durará 8 turnos."
+  },
+  {
+    "id": "HONEYGATHER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "HONEYGATHER",
+    "names": {
+      "source_es": "Recogemiel",
+      "pt_br": "Coleta de Mel",
+      "en": "Honey Gather"
+    },
+    "description_source_es": "Es posible que el Pokémon encuentre Miel una vez concluido el combate. La probabilidad aumenta según aumenta el nivel del Pokémon."
+  },
+  {
+    "id": "FRISK",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "FRISK",
+    "names": {
+      "source_es": "Cacheo",
+      "pt_br": "Revista",
+      "en": "Frisk"
+    },
+    "description_source_es": "El Pokémon puede ver el objeto que lleva el rival al entrar en combate."
+  },
+  {
+    "id": "RECKLESS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "RECKLESS",
+    "names": {
+      "source_es": "Audaz",
+      "pt_br": "Temerário",
+      "en": "Reckless"
+    },
+    "description_source_es": "Potencia la potencia de los movimientos que también dañan al usuario en un 20%."
+  },
+  {
+    "id": "MULTITYPE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MULTITYPE",
+    "names": {
+      "source_es": "Multitipo",
+      "pt_br": "Multitipo",
+      "en": "Multitype"
+    },
+    "description_source_es": "Cambia el tipo del Pokémon al de la tabla o cristal Z que lleve equipado."
+  },
+  {
+    "id": "FLOWERGIFT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "FLOWERGIFT",
+    "names": {
+      "source_es": "Don Floral",
+      "pt_br": "Presente Floral",
+      "en": "Flower Gift"
+    },
+    "description_source_es": "Aumenta el Ataque y la Defensa Especial de todos los Pokémon del equipo en combate si hace sol."
+  },
+  {
+    "id": "BADDREAMS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "BADDREAMS",
+    "names": {
+      "source_es": "Mal Sueño",
+      "pt_br": "Pesadelos",
+      "en": "Bad Dreams"
+    },
+    "description_source_es": "Inflige 1/8 de sus PS máximos de daño a cualquier rival que esté dormido en combate al final de cada turno."
+  },
+  {
+    "id": "PICKPOCKET",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PICKPOCKET",
+    "names": {
+      "source_es": "Hurto",
+      "pt_br": "Batedor de Carteira",
+      "en": "Pickpocket"
+    },
+    "description_source_es": "Si el rival usa un movimiento de contacto al atacar, le roba el objeto si no lleva ya uno equipado. No afecta con ciertos objetos o habilidades."
+  },
+  {
+    "id": "SHEERFORCE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SHEERFORCE",
+    "names": {
+      "source_es": "Potencia Bruta",
+      "pt_br": "Força Bruta",
+      "en": "Sheer Force"
+    },
+    "description_source_es": "Sube la potencia en un 30% de los movimientos con efectos secundarios, pero anula el efecto."
+  },
+  {
+    "id": "CONTRARY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "CONTRARY",
+    "names": {
+      "source_es": "Respondón",
+      "pt_br": "Do Contra",
+      "en": "Contrary"
+    },
+    "description_source_es": "Invierte los cambios en las características: bajan cuando les toca subir y suben cuando les toca bajar."
+  },
+  {
+    "id": "UNNERVE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "UNNERVE",
+    "names": {
+      "source_es": "Nerviosismo",
+      "pt_br": "Tensão",
+      "en": "Unnerve"
+    },
+    "description_source_es": "Pone nervioso al rival y le impide usar bayas. No impide su uso si es a través de movimientos como Lanzamiento, Picadura o Picoteo."
+  },
+  {
+    "id": "DEFIANT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "DEFIANT",
+    "names": {
+      "source_es": "Competitivo",
+      "pt_br": "Competitivo",
+      "en": "Defiant"
+    },
+    "description_source_es": "Sube dos niveles el Ataque del usuario cuando el rival le baja una de sus características. Se activa tantas veces como reducciones ocurran."
+  },
+  {
+    "id": "DEFEATIST",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "DEFEATIST",
+    "names": {
+      "source_es": "Flaqueza",
+      "pt_br": "Derrotista",
+      "en": "Defeatist"
+    },
+    "description_source_es": "Se debilita tanto cuando sus PS se ven reducidos por debajo del 50% de sus PS máximos que su Ataque y su Ataque Especial bajan a la mitad."
+  },
+  {
+    "id": "CURSEDBODY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "CURSEDBODY",
+    "names": {
+      "source_es": "Cuerpo Maldito",
+      "pt_br": "Corpo Amaldiçoado",
+      "en": "Cursed Body"
+    },
+    "description_source_es": "Tiene una probabilidad del 30% de anular el movimiento usado en su contra durante 4 turnos."
+  },
+  {
+    "id": "HEALER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "HEALER",
+    "names": {
+      "source_es": "Alma Cura",
+      "pt_br": "Curandeiro",
+      "en": "Healer"
+    },
+    "description_source_es": "Al final de cada turno tiene una probabilidad del 30% de curar los problemas de estado de un compañero Pokémon en combate."
+  },
+  {
+    "id": "FRIENDGUARD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "FRIENDGUARD",
+    "names": {
+      "source_es": "Compiescolta",
+      "pt_br": "Guarda Amiga",
+      "en": "Friend Guard"
+    },
+    "description_source_es": "Reduce el daño que sufren los aliados en combate en un 25%, pero no el propio."
+  },
+  {
+    "id": "WEAKARMOR",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "WEAKARMOR",
+    "names": {
+      "source_es": "Armadura Frágil",
+      "pt_br": "Armadura Fraca",
+      "en": "Weak Armor"
+    },
+    "description_source_es": "Al recibir daño por un ataque físico, baja un nivel la Defensa, pero sube dos niveles la Velocidad del Pokémon."
+  },
+  {
+    "id": "HEAVYMETAL",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "HEAVYMETAL",
+    "names": {
+      "source_es": "Metal Pesado",
+      "pt_br": "Metal Pesado",
+      "en": "Heavy Metal"
+    },
+    "description_source_es": "Duplica el peso del Pokémon, lo cual afecta a los movimientos tanto propios como del rival que se basan en el peso."
+  },
+  {
+    "id": "LIGHTMETAL",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "LIGHTMETAL",
+    "names": {
+      "source_es": "Metal Liviano",
+      "pt_br": "Metal Leve",
+      "en": "Light Metal"
+    },
+    "description_source_es": "Reduce a la mitad el peso del Pokémon, lo cual afecta a los movimientos tanto propios como del rival que se basan en el peso."
+  },
+  {
+    "id": "MULTISCALE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MULTISCALE",
+    "names": {
+      "source_es": "Compensación",
+      "pt_br": "Multiescama",
+      "en": "Multiscale"
+    },
+    "description_source_es": "Reduce el daño sufrido a la mitad si los PS están al máximo. No afecta a movimientos de daño fijo como por ejemplo Furia Dragón o Contraataque."
+  },
+  {
+    "id": "TOXICBOOST",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TOXICBOOST",
+    "names": {
+      "source_es": "Ímpetu Tóxico",
+      "pt_br": "Impulso Tóxico",
+      "en": "Toxic Boost"
+    },
+    "description_source_es": "Aumenta la potencia de los ataques físicos en un 50% cuando el Pokémon está envenenado."
+  },
+  {
+    "id": "FLAREBOOST",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "FLAREBOOST",
+    "names": {
+      "source_es": "Ímpetu Ardiente",
+      "pt_br": "Impulso de Chama",
+      "en": "Flare Boost"
+    },
+    "description_source_es": "Aumenta la potencia de los ataques especiales en un 50% cuando el Pokémon sufre quemaduras."
+  },
+  {
+    "id": "HARVEST",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "HARVEST",
+    "names": {
+      "source_es": "Cosecha",
+      "pt_br": "Colheita",
+      "en": "Harvest"
+    },
+    "description_source_es": "El Pokémon tiene un 50% de probabilidad de recuperar la baya usada en combate al final de cada turno. Con clima soleado la recupera siempre."
+  },
+  {
+    "id": "TELEPATHY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TELEPATHY",
+    "names": {
+      "source_es": "Telepatía",
+      "pt_br": "Telepatia",
+      "en": "Telepathy"
+    },
+    "description_source_es": "Elude los ataques de los aliados durante el combate."
+  },
+  {
+    "id": "MOODY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MOODY",
+    "names": {
+      "source_es": "Veleta",
+      "pt_br": "Inconstante",
+      "en": "Moody"
+    },
+    "description_source_es": "Cada turno sube dos niveles una característica del Pokémon al azar, pero a costa de bajar un nivel otra también al azar."
+  },
+  {
+    "id": "OVERCOAT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "OVERCOAT",
+    "names": {
+      "source_es": "Funda",
+      "pt_br": "Sobretudo",
+      "en": "Overcoat"
+    },
+    "description_source_es": "Protege al Pokémon de las tormentas de arena, el granizo y los movimientos basados en polvos y esporas."
+  },
+  {
+    "id": "POISONTOUCH",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "POISONTOUCH",
+    "names": {
+      "source_es": "Toque Tóxico",
+      "pt_br": "Toque Venenoso",
+      "en": "Poison Touch"
+    },
+    "description_source_es": "Puede envenenar al objetivo con solo tocarlo un 30% de las veces."
+  },
+  {
+    "id": "REGENERATOR",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "REGENERATOR",
+    "names": {
+      "source_es": "Regeneración",
+      "pt_br": "Regenerador",
+      "en": "Regenerator"
+    },
+    "description_source_es": "Recupera 1/3 de sus PS máximos cuando el Pokémon vuelve a su Pokéball en combate, tanto si es un cambio manual como causado por un mov. del rival."
+  },
+  {
+    "id": "BIGPECKS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "BIGPECKS",
+    "names": {
+      "source_es": "Sacapecho",
+      "pt_br": "Peito Estufado",
+      "en": "Big Pecks"
+    },
+    "description_source_es": "Impide que el rival baje la Defensa del Pokémon, pero no que baje por usar movimientos propios."
+  },
+  {
+    "id": "SANDRUSH",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SANDRUSH",
+    "names": {
+      "source_es": "Ímpetu Arena",
+      "pt_br": "Ímpeto de Areia",
+      "en": "Sand Rush"
+    },
+    "description_source_es": "Aumenta x2 la Velocidad del Pokémon durante las tormentas de arena, y evita que sufra daño de esta."
+  },
+  {
+    "id": "WONDERSKIN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "WONDERSKIN",
+    "names": {
+      "source_es": "Piel Milagro",
+      "pt_br": "Pele Maravilha",
+      "en": "Wonder Skin"
+    },
+    "description_source_es": "Reduce la precisión de los movs. de estado dirigidos contra el poseedor de la habilidad al 50%. No baja por debajo del 50%."
+  },
+  {
+    "id": "ANALYTIC",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ANALYTIC",
+    "names": {
+      "source_es": "Cálculo Final",
+      "pt_br": "Analítico",
+      "en": "Analytic"
+    },
+    "description_source_es": "Aumenta la potencia del movimiento en un 30% si es el último en atacar."
+  },
+  {
+    "id": "ILLUSION",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ILLUSION",
+    "names": {
+      "source_es": "Ilusión",
+      "pt_br": "Ilusão",
+      "en": "Illusion"
+    },
+    "description_source_es": "Adopta el aspecto del último Pokémon del equipo al entrar en combate para desconcertar al rival."
+  },
+  {
+    "id": "IMPOSTER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "IMPOSTER",
+    "names": {
+      "source_es": "Impostor",
+      "pt_br": "Impostor",
+      "en": "Imposter"
+    },
+    "description_source_es": "El Pokémon se transforma en el que tiene enfrente, copiando todos sus stats a excepción de los PS."
+  },
+  {
+    "id": "INFILTRATOR",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "INFILTRATOR",
+    "names": {
+      "source_es": "Allanamiento",
+      "pt_br": "Infiltrador",
+      "en": "Infiltrator"
+    },
+    "description_source_es": "Ataca rodeando la barrera o el sustituto del rival."
+  },
+  {
+    "id": "MUMMY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MUMMY",
+    "names": {
+      "source_es": "Momia",
+      "pt_br": "Múmia",
+      "en": "Mummy"
+    },
+    "description_source_es": "Contagia la habilidad Momia al rival que entre en contacto con él."
+  },
+  {
+    "id": "MOXIE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MOXIE",
+    "names": {
+      "source_es": "Autoestima",
+      "pt_br": "Arrogância",
+      "en": "Moxie"
+    },
+    "description_source_es": "Al debilitar a un objetivo, su confianza se refuerza de tal manera que aumenta en un nivel el Ataque."
+  },
+  {
+    "id": "JUSTIFIED",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "JUSTIFIED",
+    "names": {
+      "source_es": "Justiciero",
+      "pt_br": "Justiceiro",
+      "en": "Justified"
+    },
+    "description_source_es": "Si le alcanza un movimiento de tipo Siniestro, aumenta en un nivel el Ataque debido a su integridad."
+  },
+  {
+    "id": "RATTLED",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "RATTLED",
+    "names": {
+      "source_es": "Cobardía",
+      "pt_br": "Amedrontado",
+      "en": "Rattled"
+    },
+    "description_source_es": "Si le alcanza un movimiento de tipo Siniestro, Bicho o Fantasma, sube un nivel la Velocidad. También lo hace al recibir Intimidación."
+  },
+  {
+    "id": "MAGICBOUNCE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MAGICBOUNCE",
+    "names": {
+      "source_es": "Espejo Mágico",
+      "pt_br": "Reflexo Mágico",
+      "en": "Magic Bounce"
+    },
+    "description_source_es": "Permite devolver los ataques de estado lanzados por el rival, sin verse afectado por ellos."
+  },
+  {
+    "id": "SAPSIPPER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SAPSIPPER",
+    "names": {
+      "source_es": "Herbívoro",
+      "pt_br": "Herbívoro",
+      "en": "Sap Sipper"
+    },
+    "description_source_es": "Neutraliza los movimientos de tipo Planta y sube el Ataque en un nivel, incluídos movimientos de estado."
+  },
+  {
+    "id": "PRANKSTER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PRANKSTER",
+    "names": {
+      "source_es": "Bromista",
+      "pt_br": "Brincalhão",
+      "en": "Prankster"
+    },
+    "description_source_es": "Permite lanzar ataques de estado en primer lugar. Los Pokémon tipo Siniestro son inmunes a movimientos usados con esta habilidad."
+  },
+  {
+    "id": "SANDFORCE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SANDFORCE",
+    "names": {
+      "source_es": "Poder Arena",
+      "pt_br": "Força de Areia",
+      "en": "Sand Force"
+    },
+    "description_source_es": "Potencia los movimientos de tipo Tierra, Acero y Roca durante las tormentas de arena en un 30%."
+  },
+  {
+    "id": "IRONBARBS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "IRONBARBS",
+    "names": {
+      "source_es": "Punta Acero",
+      "pt_br": "Farpas de Ferro",
+      "en": "Iron Barbs"
+    },
+    "description_source_es": "Inflige al rival 1/8 de sus PS máximos de daño si este golpea al Pokémon con un movimiento de contacto."
+  },
+  {
+    "id": "ZENMODE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ZENMODE",
+    "names": {
+      "source_es": "Modo Daruma",
+      "pt_br": "Modo Zen",
+      "en": "Zen Mode"
+    },
+    "description_source_es": "Cambia de forma si sus PS se ven reducidos a la mitad."
+  },
+  {
+    "id": "VICTORYSTAR",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "VICTORYSTAR",
+    "names": {
+      "source_es": "Tinovictoria",
+      "pt_br": "Estrela da Vitória",
+      "en": "Victory Star"
+    },
+    "description_source_es": "Sube la Precisión del poseedor y sus aliados en combate en un 10%."
+  },
+  {
+    "id": "TURBOBLAZE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TURBOBLAZE",
+    "names": {
+      "source_es": "Turbollama",
+      "pt_br": "Turbochama",
+      "en": "Turboblaze"
+    },
+    "description_source_es": "Las habilidades del objetivo no afectan a los movimientos empleados."
+  },
+  {
+    "id": "TERAVOLT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TERAVOLT",
+    "names": {
+      "source_es": "Terravoltaje",
+      "pt_br": "Teravolt",
+      "en": "Teravolt"
+    },
+    "description_source_es": "Las habilidades del objetivo no afectan a los movimientos empleados."
+  },
+  {
+    "id": "AROMAVEIL",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "AROMAVEIL",
+    "names": {
+      "source_es": "Velo Aroma",
+      "pt_br": "Véu de Aroma",
+      "en": "Aroma Veil"
+    },
+    "description_source_es": "Protege al poseedor y sus aliados de ataques que impiden elegir movimientos, como anticura, mofa, anulación o la habilidad cuerpo maldito."
+  },
+  {
+    "id": "FLOWERVEIL",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "FLOWERVEIL",
+    "names": {
+      "source_es": "Velo Flor",
+      "pt_br": "Véu de Flor",
+      "en": "Flower Veil"
+    },
+    "description_source_es": "Evita que los Pokémon de tipo Planta aliados sufran problemas de estado o que bajen sus características."
+  },
+  {
+    "id": "CHEEKPOUCH",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "CHEEKPOUCH",
+    "names": {
+      "source_es": "Carrillo",
+      "pt_br": "Bolsa nas Bochechas",
+      "en": "Cheek Pouch"
+    },
+    "description_source_es": "Recupera 1/3 de sus PS máximos al comer cualquier baya, después de aplicar los efectos de esta."
+  },
+  {
+    "id": "PROTEAN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PROTEAN",
+    "names": {
+      "source_es": "Mutatipo",
+      "pt_br": "Mutatipo",
+      "en": "Protean"
+    },
+    "description_source_es": "Cambia su tipo al del movimiento que va a usar, antes de usarlo. Aunque el ataque falle cambiará su tipo igualmente."
+  },
+  {
+    "id": "FURCOAT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "FURCOAT",
+    "names": {
+      "source_es": "Pelaje Recio",
+      "pt_br": "Casaco de Pele",
+      "en": "Fur Coat"
+    },
+    "description_source_es": "Reduce a la mitad el daño recibido por ataques físicos del rival o que actúen sobre la defensa del usuario."
+  },
+  {
+    "id": "MAGICIAN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MAGICIAN",
+    "names": {
+      "source_es": "Prestidigitador",
+      "pt_br": "Mágico",
+      "en": "Magician"
+    },
+    "description_source_es": "Roba el objeto del Pokémon al que alcance con un movimiento de daño directo. No lo hace con ciertos objetos o habilidades."
+  },
+  {
+    "id": "BULLETPROOF",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "BULLETPROOF",
+    "names": {
+      "source_es": "Antibalas",
+      "pt_br": "À Prova de Balas",
+      "en": "Bulletproof"
+    },
+    "description_source_es": "EL poseedor es inmune a todos los movimientos basados en balas, cañones, bombas y bolas."
+  },
+  {
+    "id": "COMPETITIVE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "COMPETITIVE",
+    "names": {
+      "source_es": "Tenacidad",
+      "pt_br": "Competitividade",
+      "en": "Competitive"
+    },
+    "description_source_es": "Sube dos niveles el At. Especial del usuario cuando el rival le baja una de sus caract. Se activa tantas veces como reducciones ocurran."
+  },
+  {
+    "id": "STRONGJAW",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "STRONGJAW",
+    "names": {
+      "source_es": "Mandíbula Fuerte",
+      "pt_br": "Mandíbula Forte",
+      "en": "Strong Jaw"
+    },
+    "description_source_es": "Aumenta la potencia de los movimientos basados en mordiscos en un 50%."
+  },
+  {
+    "id": "REFRIGERATE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "REFRIGERATE",
+    "names": {
+      "source_es": "Piel Helada",
+      "pt_br": "Refrigeração",
+      "en": "Refrigerate"
+    },
+    "description_source_es": "Convierte los movimientos de tipo Normal en tipo Hielo y aumenta su potencia en un 20%."
+  },
+  {
+    "id": "SWEETVEIL",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SWEETVEIL",
+    "names": {
+      "source_es": "Velo Dulce",
+      "pt_br": "Véu Doce",
+      "en": "Sweet Veil"
+    },
+    "description_source_es": "Evita que el Pokémon o sus aliados en combate se duerman. También impide el uso de Descanso."
+  },
+  {
+    "id": "STANCECHANGE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "STANCECHANGE",
+    "names": {
+      "source_es": "Cambio Táctico",
+      "pt_br": "Mudança de Postura",
+      "en": "Stance Change"
+    },
+    "description_source_es": "Adopta la Forma Filo al lanzar un ataque de daño directo, o bien la Forma Escudo si usa el movimiento Escudo Real."
+  },
+  {
+    "id": "GALEWINGS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "GALEWINGS",
+    "names": {
+      "source_es": "Alas Vendaval",
+      "pt_br": "Asas de Vendaval",
+      "en": "Gale Wings"
+    },
+    "description_source_es": "Da prioridad a los movimientos de tipo Volador si los PS del usuario están al máximo."
+  },
+  {
+    "id": "MEGALAUNCHER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MEGALAUNCHER",
+    "names": {
+      "source_es": "Megadisparador",
+      "pt_br": "Megalançador",
+      "en": "Mega Launcher"
+    },
+    "description_source_es": "Aumenta la potencia de los movimientos de pulsos y auras en un 50%."
+  },
+  {
+    "id": "GRASSPELT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "GRASSPELT",
+    "names": {
+      "source_es": "Manto Frondoso",
+      "pt_br": "Pelagem de Grama",
+      "en": "Grass Pelt"
+    },
+    "description_source_es": "Aumenta la Defensa en un 50% si hay un campo de hierba en el terreno de combate."
+  },
+  {
+    "id": "SYMBIOSIS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SYMBIOSIS",
+    "names": {
+      "source_es": "Simbiosis",
+      "pt_br": "Simbiose",
+      "en": "Symbiosis"
+    },
+    "description_source_es": "El Pokémon pasa su objeto a su aliado cuando el aliado utiliza el suyo."
+  },
+  {
+    "id": "TOUGHCLAWS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TOUGHCLAWS",
+    "names": {
+      "source_es": "Garra Dura",
+      "pt_br": "Garras Duras",
+      "en": "Tough Claws"
+    },
+    "description_source_es": "Aumenta la potencia de los movimientos de contacto en 1/3."
+  },
+  {
+    "id": "PIXILATE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PIXILATE",
+    "names": {
+      "source_es": "Piel Feérica",
+      "pt_br": "Pixelar",
+      "en": "Pixilate"
+    },
+    "description_source_es": "Convierte los movimientos de tipo Normal en tipo Hada y aumenta su potencia en un 20%."
+  },
+  {
+    "id": "GOOEY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "GOOEY",
+    "names": {
+      "source_es": "Baba",
+      "pt_br": "Gosmento",
+      "en": "Gooey"
+    },
+    "description_source_es": "Baja la Velocidad del rival en un nivel cuando este ataca al Pokémon con un movimiento de contacto."
+  },
+  {
+    "id": "AERILATE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "AERILATE",
+    "names": {
+      "source_es": "Piel Celeste",
+      "pt_br": "Aerilizar",
+      "en": "Aerilate"
+    },
+    "description_source_es": "Convierte los movimientos de tipo Normal en tipo Volador y aumenta su potencia en un 20%."
+  },
+  {
+    "id": "PARENTALBOND",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PARENTALBOND",
+    "names": {
+      "source_es": "Amor Filial",
+      "pt_br": "Laço Parental",
+      "en": "Parental Bond"
+    },
+    "description_source_es": "El Pokémon ataca dos veces por turno si usa movimientos de daño, siendo la potencia del segundo un 25% de la del primero."
+  },
+  {
+    "id": "DARKAURA",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "DARKAURA",
+    "names": {
+      "source_es": "Aura Oscura",
+      "pt_br": "Aura Sombria",
+      "en": "Dark Aura"
+    },
+    "description_source_es": "Aumenta la potencia de todos los movimientos de tipo Siniestro en 1/3."
+  },
+  {
+    "id": "FAIRYAURA",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "FAIRYAURA",
+    "names": {
+      "source_es": "Aura Feérica",
+      "pt_br": "Aura de Fada",
+      "en": "Fairy Aura"
+    },
+    "description_source_es": "Aumenta la potencia de todos los movimientos de tipo Hada en 1/3."
+  },
+  {
+    "id": "AURABREAK",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "AURABREAK",
+    "names": {
+      "source_es": "Rompeaura",
+      "pt_br": "Quebra-Aura",
+      "en": "Aura Break"
+    },
+    "description_source_es": "Invierte los efectos de las auras, por lo que bajan la potencia de los movs. hada y siniestro en 1/3 en vez de subirlos."
+  },
+  {
+    "id": "PRIMORDIALSEA",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PRIMORDIALSEA",
+    "names": {
+      "source_es": "Mar del Albor",
+      "pt_br": "Mar Primordial",
+      "en": "Primordial Sea"
+    },
+    "description_source_es": "Altera el clima con una poderosa lluvia para anular los ataques de tipo Fuego. Los climas básicos no eliminan este clima."
+  },
+  {
+    "id": "DESOLATELAND",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "DESOLATELAND",
+    "names": {
+      "source_es": "Tierra del Ocaso",
+      "pt_br": "Terra Desolada",
+      "en": "Desolate Land"
+    },
+    "description_source_es": "Altera el clima con un abrasador sol para anular los ataques de tipo Agua. Los climas básicos no eliminan este clima."
+  },
+  {
+    "id": "DELTASTREAM",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "DELTASTREAM",
+    "names": {
+      "source_es": "Ráfaga Delta",
+      "pt_br": "Corrente Delta",
+      "en": "Delta Stream"
+    },
+    "description_source_es": "Altera el clima para anular las vulnerabilidades del tipo Volador. Los climas básicos no eliminan este clima."
+  },
+  {
+    "id": "STAMINA",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "STAMINA",
+    "names": {
+      "source_es": "Firmeza",
+      "pt_br": "Vigor",
+      "en": "Stamina"
+    },
+    "description_source_es": "Aumenta la Defensa en un nivel al recibir un ataque de daño directo en combate."
+  },
+  {
+    "id": "WIMPOUT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "WIMPOUT",
+    "names": {
+      "source_es": "Huida",
+      "pt_br": "Fuga Covarde",
+      "en": "Wimp Out"
+    },
+    "description_source_es": "Se asusta y abandona el terreno de combate cuando sus PS se ven reducidos por debajo del 50%, tanto por daño directo como indirecto."
+  },
+  {
+    "id": "EMERGENCYEXIT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "EMERGENCYEXIT",
+    "names": {
+      "source_es": "Retirada",
+      "pt_br": "Saída de Emergência",
+      "en": "Emergency Exit"
+    },
+    "description_source_es": "Abandona el terreno de combate luego de usar un movimiento de tipo Bicho."
+  },
+  {
+    "id": "WATERCOMPACTION",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "WATERCOMPACTION",
+    "names": {
+      "source_es": "Hidrorrefuerzo",
+      "pt_br": "Compactação de Água",
+      "en": "Water Compaction"
+    },
+    "description_source_es": "Aumenta en dos niveles la Defensa si le alcanza un movimiento de tipo Agua, pero no le hace inmune al ataque."
+  },
+  {
+    "id": "MERCILESS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MERCILESS",
+    "names": {
+      "source_es": "Ensañamiento",
+      "pt_br": "Impiedoso",
+      "en": "Merciless"
+    },
+    "description_source_es": "Hace que los movimientos asesten siempre un golpe crítico si el rival está envenenado."
+  },
+  {
+    "id": "SHIELDSDOWN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SHIELDSDOWN",
+    "names": {
+      "source_es": "Escudo Limitado",
+      "pt_br": "Sem Escudos",
+      "en": "Shields Down"
+    },
+    "description_source_es": "Rompe su coraza cuando sus PS se ven reducidos a la mitad y adopta una forma ofensiva."
+  },
+  {
+    "id": "STAKEOUT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "STAKEOUT",
+    "names": {
+      "source_es": "Vigilante",
+      "pt_br": "Tocaia",
+      "en": "Stakeout"
+    },
+    "description_source_es": "Duplica el daño infligido a un Pokémon que se haya incorporado al combate en ese turno mediante un cambio."
+  },
+  {
+    "id": "WATERBUBBLE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "WATERBUBBLE",
+    "names": {
+      "source_es": "Pompa",
+      "pt_br": "Bolha de Água",
+      "en": "Water Bubble"
+    },
+    "description_source_es": "Hace unas cuantas cosas."
+  },
+  {
+    "id": "STEELWORKER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "STEELWORKER",
+    "names": {
+      "source_es": "Acero Templado",
+      "pt_br": "Metalúrgico",
+      "en": "Steelworker"
+    },
+    "description_source_es": "Potencia los movimientos de tipo Acero del usuario en un 50%."
+  },
+  {
+    "id": "BERSERK",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "BERSERK",
+    "names": {
+      "source_es": "Cólera",
+      "pt_br": "Frenesi",
+      "en": "Berserk"
+    },
+    "description_source_es": "Aumenta el At. Especial en un nivel cada vez que los ataques del oponente le reduzcan los PS por debajo del 50%, pudiéndose activar más de una vez."
+  },
+  {
+    "id": "SLUSHRUSH",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SLUSHRUSH",
+    "names": {
+      "source_es": "Quitanieves",
+      "pt_br": "Ímpeto de Neve",
+      "en": "Slush Rush"
+    },
+    "description_source_es": "Duplica la Velocidad del usuario si está granizando, y lo hace inmune al granizo."
+  },
+  {
+    "id": "LONGREACH",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "LONGREACH",
+    "names": {
+      "source_es": "Remoto",
+      "pt_br": "Longo Alcance",
+      "en": "Long Reach"
+    },
+    "description_source_es": "Permite usar cualquier movimiento sin entrar en contacto con el rival."
+  },
+  {
+    "id": "LIQUIDVOICE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "LIQUIDVOICE",
+    "names": {
+      "source_es": "Voz Fluida",
+      "pt_br": "Voz Líquida",
+      "en": "Liquid Voice"
+    },
+    "description_source_es": "Hace que todos los movimientos del Pokémon basados en sonido pasen a ser de tipo Agua y los potencia en un 20%. Los movimientos de estado también se activan."
+  },
+  {
+    "id": "TRIAGE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TRIAGE",
+    "names": {
+      "source_es": "Primer Auxilio",
+      "pt_br": "Triagem",
+      "en": "Triage"
+    },
+    "description_source_es": "Aumenta en 3 la prioridad de los movimientos que curan PS directamente al usuario u otros Pokémon."
+  },
+  {
+    "id": "GALVANIZE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "GALVANIZE",
+    "names": {
+      "source_es": "Piel Eléctrica",
+      "pt_br": "Galvanização",
+      "en": "Galvanize"
+    },
+    "description_source_es": "Convierte los movimientos de tipo Normal en tipo Eléctrico y aumenta su potencia en un 20%."
+  },
+  {
+    "id": "SURGESURFER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SURGESURFER",
+    "names": {
+      "source_es": "Cola Surf",
+      "pt_br": "Surfista de Onda",
+      "en": "Surge Surfer"
+    },
+    "description_source_es": "Duplica la Velocidad si hay un campo eléctrico en el terreno de combate."
+  },
+  {
+    "id": "SCHOOLING",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SCHOOLING",
+    "names": {
+      "source_es": "Banco",
+      "pt_br": "Cardume",
+      "en": "Schooling"
+    },
+    "description_source_es": "A partir del nivel 20, Wishiwashi se transforma a su forma banco si sus PS están por encima del 25%. Vuelve a su forma individual si bajan del 25%."
+  },
+  {
+    "id": "DISGUISE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "DISGUISE",
+    "names": {
+      "source_es": "Disfraz",
+      "pt_br": "Disfarce",
+      "en": "Disguise"
+    },
+    "description_source_es": "El Pokémon perderá sólo 1/8 de sus PS máximos del primer ataque que reciba del rival, independientemente del daño que reciba."
+  },
+  {
+    "id": "BATTLEBOND",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "BATTLEBOND",
+    "names": {
+      "source_es": "Fuerte Afecto",
+      "pt_br": "Laço de Batalha",
+      "en": "Battle Bond"
+    },
+    "description_source_es": "Al derrotar a un rival, los vínculos con su entrenador se refuerzan y se convierte en Greninja Ash."
+  },
+  {
+    "id": "POWERCONSTRUCT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "POWERCONSTRUCT",
+    "names": {
+      "source_es": "Agrupamiento",
+      "pt_br": "Construto de Poder",
+      "en": "Power Construct"
+    },
+    "description_source_es": "Cuando sus PS se ven reducidos a la mitad, las células se reagrupan y adopta su Forma Completa."
+  },
+  {
+    "id": "CORROSION",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "CORROSION",
+    "names": {
+      "source_es": "Corrosión",
+      "pt_br": "Corrosão",
+      "en": "Corrosion"
+    },
+    "description_source_es": "Permite envenenar incluso a rivales de tipo Acero o Veneno. No permite atacar a Pokémon tipo Acero con movs. tipo Veneno de daño directo."
+  },
+  {
+    "id": "COMATOSE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "COMATOSE",
+    "names": {
+      "source_es": "Letargo Perenne",
+      "pt_br": "Comatoso",
+      "en": "Comatose"
+    },
+    "description_source_es": "No despierta jamás de su profundo letargo e incluso ataca dormido."
+  },
+  {
+    "id": "QUEENLYMAJESTY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "QUEENLYMAJESTY",
+    "names": {
+      "source_es": "Regia Presencia",
+      "pt_br": "Majestade Régia",
+      "en": "Queenly Majesty"
+    },
+    "description_source_es": "Impide al rival usar movimientos con prioridad dirigidos al Pokémon, haciéndoles consumir PP como si el mov. hubiese fallado."
+  },
+  {
+    "id": "INNARDSOUT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "INNARDSOUT",
+    "names": {
+      "source_es": "Revés",
+      "pt_br": "Entranhas Expostas",
+      "en": "Innards Out"
+    },
+    "description_source_es": "Al caer debilitado, inflige al rival un daño equivalente a los PS que le quedaban. No se activa cuando es debilitado por daño indirecto."
+  },
+  {
+    "id": "DANCER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "DANCER",
+    "names": {
+      "source_es": "Pareja de Baile",
+      "pt_br": "Dançarino",
+      "en": "Dancer"
+    },
+    "description_source_es": "Permite copiar cualquier movimiento de baile que haya usado otro Pokémon presente en el combate."
+  },
+  {
+    "id": "BATTERY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "BATTERY",
+    "names": {
+      "source_es": "Batería",
+      "pt_br": "Bateria",
+      "en": "Battery"
+    },
+    "description_source_es": "Potencia los movimientos especiales de los aliados en un 30%."
+  },
+  {
+    "id": "FLUFFY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "FLUFFY",
+    "names": {
+      "source_es": "Peluche",
+      "pt_br": "Felpudo",
+      "en": "Fluffy"
+    },
+    "description_source_es": "Reduce a la mitad el daño provocado por los movimientos de contacto, pero duplica el infligido por los de tipo Fuego."
+  },
+  {
+    "id": "DAZZLING",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "DAZZLING",
+    "names": {
+      "source_es": "Cuerpo Vívido",
+      "pt_br": "Deslumbrante",
+      "en": "Dazzling"
+    },
+    "description_source_es": "Desconcierta al rival y le impide utilizar movimientos con prioridad contra el usuario o sus aliados."
+  },
+  {
+    "id": "SOULHEART",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SOULHEART",
+    "names": {
+      "source_es": "Coránima",
+      "pt_br": "Alma-Coração",
+      "en": "Soul-Heart"
+    },
+    "description_source_es": "Aumenta el Ataque Especial cada vez que un Pokémon cae debilitado, sea aliado o rival."
+  },
+  {
+    "id": "TANGLINGHAIR",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TANGLINGHAIR",
+    "names": {
+      "source_es": "Rizos Rebeldes",
+      "pt_br": "Cabelos Emaranhados",
+      "en": "Tangling Hair"
+    },
+    "description_source_es": "Baja un nivel la Velocidad del rival cuando este ataca al Pokémon con un movimiento de contacto."
+  },
+  {
+    "id": "RECEIVER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "RECEIVER",
+    "names": {
+      "source_es": "Receptor",
+      "pt_br": "Receptor",
+      "en": "Receiver"
+    },
+    "description_source_es": "Adquiere la habilidad de un aliado cuando el aliado cae debilitado."
+  },
+  {
+    "id": "POWEROFALCHEMY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "POWEROFALCHEMY",
+    "names": {
+      "source_es": "Reacción Química",
+      "pt_br": "Poder da Alquimia",
+      "en": "Power of Alchemy"
+    },
+    "description_source_es": "Reacciona copiando la habilidad de un aliado cuando este aliado cae debilitado."
+  },
+  {
+    "id": "BEASTBOOST",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "BEASTBOOST",
+    "names": {
+      "source_es": "Ultraimpulso",
+      "pt_br": "Ultraimpulso",
+      "en": "Beast Boost"
+    },
+    "description_source_es": "Si el Pokémon derrota a un rival en ese turno, aumenta su característica más elevada en un nivel."
+  },
+  {
+    "id": "RKSSYSTEM",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "RKSSYSTEM",
+    "names": {
+      "source_es": "Sistema Alfa",
+      "pt_br": "Sistema RKS",
+      "en": "RKS System"
+    },
+    "description_source_es": "Cambia su tipo según el disco que lleve instalado, cambiando también el tipo del ataque Multiataque."
+  },
+  {
+    "id": "ELECTRICSURGE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ELECTRICSURGE",
+    "names": {
+      "source_es": "Electrogénesis",
+      "pt_br": "Terreno Elétrico",
+      "en": "Electric Surge"
+    },
+    "description_source_es": "Crea un campo eléctrico al entrar en combate."
+  },
+  {
+    "id": "PSYCHICSURGE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PSYCHICSURGE",
+    "names": {
+      "source_es": "Psicogénesis",
+      "pt_br": "Terreno Psíquico",
+      "en": "Psychic Surge"
+    },
+    "description_source_es": "Crea un campo psíquico al entrar en combate."
+  },
+  {
+    "id": "MISTYSURGE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MISTYSURGE",
+    "names": {
+      "source_es": "Nebulogénesis",
+      "pt_br": "Terreno Nevoado",
+      "en": "Misty Surge"
+    },
+    "description_source_es": "Crea un campo de niebla al entrar en combate."
+  },
+  {
+    "id": "GRASSYSURGE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "GRASSYSURGE",
+    "names": {
+      "source_es": "Herbogénesis",
+      "pt_br": "Terreno de Grama",
+      "en": "Grassy Surge"
+    },
+    "description_source_es": "Crea un campo de hierba al entrar en combate."
+  },
+  {
+    "id": "FULLMETALBODY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "FULLMETALBODY",
+    "names": {
+      "source_es": "Guardia Metálica",
+      "pt_br": "Corpo Metálico",
+      "en": "Full Metal Body"
+    },
+    "description_source_es": "Evita que bajen sus características a causa de movimientos o habilidades de otros Pokémon."
+  },
+  {
+    "id": "SHADOWSHIELD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SHADOWSHIELD",
+    "names": {
+      "source_es": "Guardia Espectro",
+      "pt_br": "Escudo Sombrio",
+      "en": "Shadow Shield"
+    },
+    "description_source_es": "Reduce el daño sufrido a la mitad si los PS están al máximo."
+  },
+  {
+    "id": "PRISMARMOR",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PRISMARMOR",
+    "names": {
+      "source_es": "Armadura Prisma",
+      "pt_br": "Armadura de Prisma",
+      "en": "Prism Armor"
+    },
+    "description_source_es": "Mitiga el daño que le infligen los movimientos supereficaces en 1/4."
+  },
+  {
+    "id": "NEUROFORCE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "NEUROFORCE",
+    "names": {
+      "source_es": "Fuerza Cerebral",
+      "pt_br": "Força Neural",
+      "en": "Neuroforce"
+    },
+    "description_source_es": "Potencia los ataques supereficaces en un 25%."
+  },
+  {
+    "id": "INTREPIDSWORD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "INTREPIDSWORD",
+    "names": {
+      "source_es": "Espada Indómita",
+      "pt_br": "Espada Intrépida",
+      "en": "Intrepid Sword"
+    },
+    "description_source_es": "Aumenta el Ataque del usuario en un nivel la primera vez que entra en combate."
+  },
+  {
+    "id": "DAUNTLESSSHIELD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "DAUNTLESSSHIELD",
+    "names": {
+      "source_es": "Escudo Recio",
+      "pt_br": "Escudo Destemido",
+      "en": "Dauntless Shield"
+    },
+    "description_source_es": "Aumenta la Defensa del usuario en un nivel la primera vez que entra en combate."
+  },
+  {
+    "id": "LIBERO",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "LIBERO",
+    "names": {
+      "source_es": "Líbero",
+      "pt_br": "Líbero",
+      "en": "Libero"
+    },
+    "description_source_es": "Cambia el tipo del poseedor al del movimiento a usar antes de ejecutarlo, incluso aunque el movimiento falle."
+  },
+  {
+    "id": "BALLFETCH",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "BALLFETCH",
+    "names": {
+      "source_es": "Recogebolas",
+      "pt_br": "Busca-Bola",
+      "en": "Ball Fetch"
+    },
+    "description_source_es": "Si no lleva equipado ningún objeto, recupera la Poké Ball del primer intento de captura fallido."
+  },
+  {
+    "id": "COTTONDOWN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "COTTONDOWN",
+    "names": {
+      "source_es": "Pelusa",
+      "pt_br": "Penugem de Algodão",
+      "en": "Cotton Down"
+    },
+    "description_source_es": "Cuando es afectado por un ataque, con su pelusa reduce la Velocidad en un nivel de los demás Pokémon en combate."
+  },
+  {
+    "id": "PROPELLERTAIL",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PROPELLERTAIL",
+    "names": {
+      "source_es": "Hélice Caudal",
+      "pt_br": "Cauda de Hélice",
+      "en": "Propeller Tail"
+    },
+    "description_source_es": "Los movimientos del usuario ignoran ser atraídos por los movimientos o habilidades del adversario que los atraen."
+  },
+  {
+    "id": "MIRRORARMOR",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MIRRORARMOR",
+    "names": {
+      "source_es": "Coraza Reflejo",
+      "pt_br": "Armadura de Espelho",
+      "en": "Mirror Armor"
+    },
+    "description_source_es": "Devuelve los efectos de habilidades o movimientos que reducen las características al Pokémon que los provoque."
+  },
+  {
+    "id": "GULPMISSILE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "GULPMISSILE",
+    "names": {
+      "source_es": "Tragamisil",
+      "pt_br": "Míssil de Engolir",
+      "en": "Gulp Missile"
+    },
+    "description_source_es": "Tras usar Surf o Buceo, si tiene más del 50% de sus PS máximos pasa a su forma tragatodo, mientras que si tiene menos pasa a su forma engulletodo."
+  },
+  {
+    "id": "STALWART",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "STALWART",
+    "names": {
+      "source_es": "Acérrimo",
+      "pt_br": "Robusto",
+      "en": "Stalwart"
+    },
+    "description_source_es": "Los movimientos del usuario ignoran ser atraídos por los movimientos o habilidades del adversario que los atraen."
+  },
+  {
+    "id": "STEAMENGINE",
+    "flags": [
+      "FasterEggHatching"
+    ],
+    "pbs_file_suffix": "",
+    "key": "STEAMENGINE",
+    "names": {
+      "source_es": "Combustible",
+      "pt_br": "Motor a Vapor",
+      "en": "Steam Engine"
+    },
+    "description_source_es": "Si le alcanza un movimiento de tipo Fuego o Agua, le sube la Velocidad en seis niveles."
+  },
+  {
+    "id": "PUNKROCK",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PUNKROCK",
+    "names": {
+      "source_es": "Punk Rock",
+      "pt_br": "Punk Rock",
+      "en": "Punk Rock"
+    },
+    "description_source_es": "Potencia los ataques de sonido en un 30% y, si el poseedor es atacado por uno, el daño recibido será la mitad."
+  },
+  {
+    "id": "SANDSPIT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SANDSPIT",
+    "names": {
+      "source_es": "Expulsarena",
+      "pt_br": "Cuspe de Areia",
+      "en": "Sand Spit"
+    },
+    "description_source_es": "Provoca una Tormenta de Arena al recibir un ataque. Si lleva equipada Roca suave, la tormenta durará 8 turnos."
+  },
+  {
+    "id": "ICESCALES",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ICESCALES",
+    "names": {
+      "source_es": "Escama de Hielo",
+      "pt_br": "Escamas de Gelo",
+      "en": "Ice Scales"
+    },
+    "description_source_es": "Las gélidas escamas que protegen su cuerpo reducen a la mitad el daño que le infligen los ataques especiales."
+  },
+  {
+    "id": "RIPEN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "RIPEN",
+    "names": {
+      "source_es": "Maduración",
+      "pt_br": "Amadurecimento",
+      "en": "Ripen"
+    },
+    "description_source_es": "Hace madurar las bayas, por lo que duplica sus efectos al consumirlas."
+  },
+  {
+    "id": "ICEFACE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ICEFACE",
+    "names": {
+      "source_es": "Cara de Hielo",
+      "pt_br": "Rosto de Gelo",
+      "en": "Ice Face"
+    },
+    "description_source_es": "Si recibe un ataque físico del rival o suyo por confusión cambiará a su forma cara deshielo. Recupera su anterior forma una vez si graniza."
+  },
+  {
+    "id": "POWERSPOT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "POWERSPOT",
+    "names": {
+      "source_es": "Fuente Energía",
+      "pt_br": "Ponto de Poder",
+      "en": "Power Spot"
+    },
+    "description_source_es": "Potencia los movimientos de los Pokémon adyacentes en combate en un 30%."
+  },
+  {
+    "id": "MIMICRY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MIMICRY",
+    "names": {
+      "source_es": "Mimetismo",
+      "pt_br": "Mimetismo",
+      "en": "Mimicry"
+    },
+    "description_source_es": "Cambia el tipo del Pokémon según el campo que haya en el terreno de combate. Si se acaba el campo recupera su anterior tipo."
+  },
+  {
+    "id": "SCREENCLEANER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SCREENCLEANER",
+    "names": {
+      "source_es": "Antibarrera",
+      "pt_br": "Limpa-Telas",
+      "en": "Screen Cleaner"
+    },
+    "description_source_es": "Anula los efectos de Pantalla de Luz, Reflejo y Velo Aurora tanto de rivales como de aliados al entrar en combate."
+  },
+  {
+    "id": "STEELYSPIRIT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "STEELYSPIRIT",
+    "names": {
+      "source_es": "Alma Acerada",
+      "pt_br": "Espírito de Aço",
+      "en": "Steely Spirit"
+    },
+    "description_source_es": "Aumenta el poder de los ataques de tipo Acero tanto del usuario como de sus aliados en un 50%."
+  },
+  {
+    "id": "PERISHBODY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PERISHBODY",
+    "names": {
+      "source_es": "Cuerpo Mortal",
+      "pt_br": "Corpo Perecível",
+      "en": "Perish Body"
+    },
+    "description_source_es": "Al ser alcanzado por un movimiento de contacto, tanto el atacante como el Pokémon usuario de la habilidad caerán debilitados tras haber pasado 3 turnos."
+  },
+  {
+    "id": "WANDERINGSPIRIT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "WANDERINGSPIRIT",
+    "names": {
+      "source_es": "Alma Errante",
+      "pt_br": "Espírito Errante",
+      "en": "Wandering Spirit"
+    },
+    "description_source_es": "Si le alcanza un movimiento de contacto, intercambia su habilidad con la del agresor, salvo algunas excepciones."
+  },
+  {
+    "id": "GORILLATACTICS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "GORILLATACTICS",
+    "names": {
+      "source_es": "Monotema",
+      "pt_br": "Táticas de Gorila",
+      "en": "Gorilla Tactics"
+    },
+    "description_source_es": "Potencia su Ataque en un 50%, pero solo puede usar el primer movimiento escogido."
+  },
+  {
+    "id": "NEUTRALIZINGGAS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "NEUTRALIZINGGAS",
+    "names": {
+      "source_es": "Gas Reactivo",
+      "pt_br": "Gás Neutralizante",
+      "en": "Neutralizing Gas"
+    },
+    "description_source_es": "Anula las habilidades de los Pokémon en el campo de batalla. Al cambiar o caer debilitado se activan todas de nuevo."
+  },
+  {
+    "id": "PASTELVEIL",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PASTELVEIL",
+    "names": {
+      "source_es": "Velo Pastel",
+      "pt_br": "Véu Pastel",
+      "en": "Pastel Veil"
+    },
+    "description_source_es": "Se protege a sí mismo y a sus aliados del envenenamiento. Al entrar en combate cura del veneno a los aliados."
+  },
+  {
+    "id": "HUNGERSWITCH",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "HUNGERSWITCH",
+    "names": {
+      "source_es": "Mutapetito",
+      "pt_br": "Troca de Fome",
+      "en": "Hunger Switch"
+    },
+    "description_source_es": "Alterna entre su Forma Saciada y Forma Voraz al final de cada turno, cambiando el tipo del movimiento Rueda aural."
+  },
+  {
+    "id": "QUICKDRAW",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "QUICKDRAW",
+    "names": {
+      "source_es": "Mano Rápida",
+      "pt_br": "Saque Rápido",
+      "en": "Quick Draw"
+    },
+    "description_source_es": "Si usa un movimiento especial o físico tiene un 30% de probabilidad de atacar primero si se usan movimientos con la misma prioridad."
+  },
+  {
+    "id": "UNSEENFIST",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "UNSEENFIST",
+    "names": {
+      "source_es": "Puño Invisible",
+      "pt_br": "Punho Invisível",
+      "en": "Unseen Fist"
+    },
+    "description_source_es": "Si usa un movimiento de contacto, puede infligir daño al objetivo aunque este se proteja."
+  },
+  {
+    "id": "CURIOUSMEDICINE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "CURIOUSMEDICINE",
+    "names": {
+      "source_es": "Medicina Extraña",
+      "pt_br": "Remédio Curioso",
+      "en": "Curious Medicine"
+    },
+    "description_source_es": "Cuando entra en combate elimina los cambios de características de los aliados, tanto positivos como negativos."
+  },
+  {
+    "id": "TRANSISTOR",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TRANSISTOR",
+    "names": {
+      "source_es": "Transistor",
+      "pt_br": "Transistor",
+      "en": "Transistor"
+    },
+    "description_source_es": "Potencia los movimientos tipo Eléctrico un 30%."
+  },
+  {
+    "id": "DRAGONSMAW",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "DRAGONSMAW",
+    "names": {
+      "source_es": "Mandíbula dragón",
+      "pt_br": "Mandíbula de Dragão",
+      "en": "Dragon’s Maw"
+    },
+    "description_source_es": "Potencia los movimientos tipo Dragón un 50%."
+  },
+  {
+    "id": "CHILLINGNEIGH",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "CHILLINGNEIGH",
+    "names": {
+      "source_es": "Relincho Blanco",
+      "pt_br": "Relincho Arrepiante",
+      "en": "Chilling Neigh"
+    },
+    "description_source_es": "Sube un nivel su Ataque al derrotar a un Pokémon."
+  },
+  {
+    "id": "GRIMNEIGH",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "GRIMNEIGH",
+    "names": {
+      "source_es": "Relincho Negro",
+      "pt_br": "Relincho Sinistro",
+      "en": "Grim Neigh"
+    },
+    "description_source_es": "Sube un nivel su Ataque Especial al derrotar a un Pokémon."
+  },
+  {
+    "id": "ASONECHILLINGNEIGH",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ASONECHILLINGNEIGH",
+    "names": {
+      "source_es": "Unidad Ecuestre",
+      "pt_br": "Em Uníssono",
+      "en": "As One"
+    },
+    "description_source_es": "Combina las habilidades Nerviosismo (impide al rival usar bayas) y Relincho Blanco (al derrotar a un objetivo aumenta su Ataque)."
+  },
+  {
+    "id": "ASONEGRIMNEIGH",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ASONEGRIMNEIGH",
+    "names": {
+      "source_es": "Unidad Ecuestre",
+      "pt_br": "Em Uníssono",
+      "en": "As One"
+    },
+    "description_source_es": "Combina las habilidades Nerviosismo (impide al rival usar bayas) y Relincho Negro (al derrotar a un objetivo aumenta su At. Especial)."
+  },
+  {
+    "id": "ANGERSHELL",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ANGERSHELL",
+    "names": {
+      "source_es": "Coraza Ira",
+      "pt_br": "Casca de Ira",
+      "en": "Anger Shell"
+    },
+    "description_source_es": "Cuando un ataque reduce sus PS a la mitad, un arrebato de cólera reduce su Defensa y su Defensa Especial, pero aumenta su Ataque, su Ataque Especial y su Velocidad."
+  },
+  {
+    "id": "ARMORTAIL",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ARMORTAIL",
+    "names": {
+      "source_es": "Cola Armadura",
+      "pt_br": "Cauda Armadura",
+      "en": "Armor Tail"
+    },
+    "description_source_es": "La extraña cola que le envuelve la cabeza impide al rival usar movimientos con prioridad contra él y sus aliados."
+  },
+  {
+    "id": "BEADSOFRUIN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "BEADSOFRUIN",
+    "names": {
+      "source_es": "Abalorio Debacle",
+      "pt_br": "Contas da Ruína",
+      "en": "Beads of Ruin"
+    },
+    "description_source_es": "Reduce la Defensa Especial de todos los demás Pokémon con el poder de sus abalorios malditos."
+  },
+  {
+    "id": "COMMANDER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "COMMANDER",
+    "names": {
+      "source_es": "Comandar",
+      "pt_br": "Comandante",
+      "en": "Commander"
+    },
+    "description_source_es": "Si al entrar en combate coincide con un Dondozo aliado, se cuela en el interior de su boca para tomar el control."
+  },
+  {
+    "id": "COSTAR",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "COSTAR",
+    "names": {
+      "source_es": "Unísono",
+      "pt_br": "Coadjuvante",
+      "en": "Costar"
+    },
+    "description_source_es": "Al entrar en combate, copia los cambios en las características de su aliado."
+  },
+  {
+    "id": "CUDCHEW",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "CUDCHEW",
+    "names": {
+      "source_es": "Rumia",
+      "pt_br": "Ruminação",
+      "en": "Cud Chew"
+    },
+    "description_source_es": "Cuando ingiere una baya, la regurgita al final del siguiente turno y se la come por segunda vez."
+  },
+  {
+    "id": "EARTHEATER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "EARTHEATER",
+    "names": {
+      "source_es": "Geofagia",
+      "pt_br": "Comedor de Terra",
+      "en": "Earth Eater"
+    },
+    "description_source_es": "Si lo alcanza un movimiento de tipo Tierra, recupera PS en vez de sufrir daño."
+  },
+  {
+    "id": "ELECTROMORPHOSIS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ELECTROMORPHOSIS",
+    "names": {
+      "source_es": "Dinamo",
+      "pt_br": "Eletromorfose",
+      "en": "Electromorphosis"
+    },
+    "description_source_es": "Su cuerpo se carga de electricidad al recibir daño, lo que potencia su siguiente movimiento de tipo Eléctrico."
+  },
+  {
+    "id": "GOODASGOLD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "GOODASGOLD",
+    "names": {
+      "source_es": "Cuerpo Áureo",
+      "pt_br": "Bom como Ouro",
+      "en": "Good as Gold"
+    },
+    "description_source_es": "Su robusto cuerpo de oro inoxidable lo hace inmune frente a movimientos de estado de otros Pokémon."
+  },
+  {
+    "id": "GUARDDOG",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "GUARDDOG",
+    "names": {
+      "source_es": "Perro Guardián",
+      "pt_br": null,
+      "en": null
+    },
+    "description_source_es": "Aumenta su Ataque si sufre los efectos de Intimidación. También anula movimientos y objetos que fuercen el cambio de Pokémon."
+  },
+  {
+    "id": "HADRONENGINE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "HADRONENGINE",
+    "names": {
+      "source_es": "Motor Hadrónico",
+      "pt_br": "Motor Hadrônico",
+      "en": "Hadron Engine"
+    },
+    "description_source_es": "Crea un campo eléctrico al entrar en combate. Si hay un campo eléctrico, su Ataque Especial aumenta gracias a su motor futurista."
+  },
+  {
+    "id": "LINGERINGAROMA",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "LINGERINGAROMA",
+    "names": {
+      "source_es": "Olor Persistente",
+      "pt_br": "Aroma Persistente",
+      "en": "Lingering Aroma"
+    },
+    "description_source_es": "Contagia la habilidad Olor Persistente al Pokémon que lo ataque con un movimiento de contacto."
+  },
+  {
+    "id": "MYCELIUMMIGHT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MYCELIUMMIGHT",
+    "names": {
+      "source_es": "Poder Fúngico",
+      "pt_br": "Poder Micelial",
+      "en": "Mycelium Might"
+    },
+    "description_source_es": "El Pokémon siempre actúa con lentitud cuando usa movimientos de estado, pero estos no se ven afectados por la habilidad del objetivo."
+  },
+  {
+    "id": "OPPORTUNIST",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "OPPORTUNIST",
+    "names": {
+      "source_es": "Oportunista",
+      "pt_br": "Oportunista",
+      "en": "Opportunist"
+    },
+    "description_source_es": "Copia las mejoras en las características del rival, aprovechándose de la situación."
+  },
+  {
+    "id": "ORICHALCUMPULSE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ORICHALCUMPULSE",
+    "names": {
+      "source_es": "Latido Oricalco",
+      "pt_br": "Pulso de Oricalco",
+      "en": "Orichalcum Pulse"
+    },
+    "description_source_es": "El tiempo pasa a ser soleado cuando entra en combate. Si hace mucho sol, su Ataque aumenta gracias a su pulso primigenio."
+  },
+  {
+    "id": "PROTOSYNTHESIS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PROTOSYNTHESIS",
+    "names": {
+      "source_es": "Paleosíntesis",
+      "pt_br": "Fotossíntese",
+      "en": "Protosynthesis"
+    },
+    "description_source_es": "Si hace sol o lleva un tanque de Energía Potenciadora, aumenta su característica más alta."
+  },
+  {
+    "id": "PURIFYINGSALT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PURIFYINGSALT",
+    "names": {
+      "source_es": "Sal Purificadora",
+      "pt_br": "Sal Purificador",
+      "en": "Purifying Salt"
+    },
+    "description_source_es": "Su sal pura lo protege de los problemas de estado y reduce a la mitad el daño que recibe de ataques de tipo Fantasma."
+  },
+  {
+    "id": "QUARKDRIVE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "QUARKDRIVE",
+    "names": {
+      "source_es": "Carga Cuark",
+      "pt_br": "Carga Quasar",
+      "en": "Quark Drive"
+    },
+    "description_source_es": "Si hay un campo eléctrico en el terreno de combate o lleva un tanque de Energía Potenciadora, aumenta su característica más alta."
+  },
+  {
+    "id": "ROCKYPAYLOAD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ROCKYPAYLOAD",
+    "names": {
+      "source_es": "Transportarrocas",
+      "pt_br": "Carga Rochosa",
+      "en": "Rocky Payload"
+    },
+    "description_source_es": "Potencia los movimientos de tipo Roca del usuario en un 50%."
+  },
+  {
+    "id": "SEEDSOWER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SEEDSOWER",
+    "names": {
+      "source_es": "Disemillar",
+      "pt_br": "Semeador",
+      "en": "Seed Sower"
+    },
+    "description_source_es": "Crea un campo de hierba al recibir un ataque."
+  },
+  {
+    "id": "SHARPNESS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SHARPNESS",
+    "names": {
+      "source_es": "Cortante",
+      "pt_br": "Afiação",
+      "en": "Sharpness"
+    },
+    "description_source_es": "Aumenta la potencia de los movimientos cortantes en un 50%."
+  },
+  {
+    "id": "SUPREMEOVERLORD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SUPREMEOVERLORD",
+    "names": {
+      "source_es": "General Supremo",
+      "pt_br": "Suserano Supremo",
+      "en": "Supreme Overlord"
+    },
+    "description_source_es": "Al entrar en combate, su Ataque y su Ataque Especial aumentan un poco por cada miembro del equipo que haya sido derrotado hasta el momento."
+  },
+  {
+    "id": "SWORDOFRUIN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SWORDOFRUIN",
+    "names": {
+      "source_es": "Espada Debacle",
+      "pt_br": "Espada da Ruína",
+      "en": "Sword of Ruin"
+    },
+    "description_source_es": "Reduce la Defensa de todos los demás Pokémon con el poder de su espada maldita."
+  },
+  {
+    "id": "TABLETSOFRUIN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TABLETSOFRUIN",
+    "names": {
+      "source_es": "Tablilla Debacle",
+      "pt_br": "Tábuas da Ruína",
+      "en": "Tablets of Ruin"
+    },
+    "description_source_es": "Reduce el Ataque de todos los demás Pokémon con el poder de sus tablillas malditas."
+  },
+  {
+    "id": "THERMALEXCHANGE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "THERMALEXCHANGE",
+    "names": {
+      "source_es": "Termoconversión",
+      "pt_br": "Troca Térmica",
+      "en": "Thermal Exchange"
+    },
+    "description_source_es": "Evita las quemaduras y, si lo alcanza un movimiento de tipo Fuego, aumenta su Ataque."
+  },
+  {
+    "id": "TOXICDEBRIS",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TOXICDEBRIS",
+    "names": {
+      "source_es": "Capa Tóxica",
+      "pt_br": "Detritos Tóxicos",
+      "en": "Toxic Debris"
+    },
+    "description_source_es": "Al recibir daño de un ataque físico, lanza una trampa de púas tóxicas a los pies del rival."
+  },
+  {
+    "id": "VESSELOFRUIN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "VESSELOFRUIN",
+    "names": {
+      "source_es": "Caldero Debacle",
+      "pt_br": "Cálice da Ruína",
+      "en": "Vessel of Ruin"
+    },
+    "description_source_es": "Reduce el Ataque Especial de todos los demás Pokémon con el poder de su caldero maldito."
+  },
+  {
+    "id": "WELLBAKEDBODY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "WELLBAKEDBODY",
+    "names": {
+      "source_es": "Cuerpo Horneado",
+      "pt_br": "Corpo Assado",
+      "en": "Well-Baked Body"
+    },
+    "description_source_es": "Si lo alcanza un movimiento de tipo Fuego, aumenta mucho su Defensa en vez de sufrir daño."
+  },
+  {
+    "id": "WINDPOWER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "WINDPOWER",
+    "names": {
+      "source_es": "Energía Eólica",
+      "pt_br": "Força do Vento",
+      "en": "Wind Power"
+    },
+    "description_source_es": "Se carga de electricidad si lo alcanza un movimiento de viento, lo que potencia su siguiente mov. Eléctrico."
+  },
+  {
+    "id": "WINDRIDER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "WINDRIDER",
+    "names": {
+      "source_es": "Surcavientos",
+      "pt_br": "Cavaleiro do Vento",
+      "en": "Wind Rider"
+    },
+    "description_source_es": "Si sopla un Viento Afín o lo alcanza un movimiento que usa viento, aumenta su Ataque. Tampoco recibe daño de este."
+  },
+  {
+    "id": "ZEROTOHERO",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ZEROTOHERO",
+    "names": {
+      "source_es": "Cambio Heroico",
+      "pt_br": "Do Zero a Herói",
+      "en": "Zero to Hero"
+    },
+    "description_source_es": "Adopta la Forma Heroica cuando se retira del combate."
+  },
+  {
+    "id": "SUPERSWEETSYRUP",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SUPERSWEETSYRUP",
+    "names": {
+      "source_es": "Néctar dulce",
+      "pt_br": "Xarope Superdoce",
+      "en": "Supersweet Syrup"
+    },
+    "description_source_es": "Al entrar en combate por primera vez, esparce un aroma dulzón a néctar que reduce la Evasión del rival."
+  },
+  {
+    "id": "HOSPITALITY",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "HOSPITALITY",
+    "names": {
+      "source_es": "Hospitalidad",
+      "pt_br": "Hospitalidade",
+      "en": "Hospitality"
+    },
+    "description_source_es": "Al entrar en combate, restaura algunos PS de su aliado como muestra de hospitalidad."
+  },
+  {
+    "id": "TOXICCHAIN",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TOXICCHAIN",
+    "names": {
+      "source_es": "Cadena Tóxica",
+      "pt_br": "Corrente Tóxica",
+      "en": "Toxic Chain"
+    },
+    "description_source_es": "Gracias al poder de su cadena impregnada de toxinas, puede envenenar gravemente al Pokémon al que ataque."
+  },
+  {
+    "id": "MINDSEYE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "MINDSEYE",
+    "names": {
+      "source_es": "Ojo Mental",
+      "pt_br": "Olhar da Mente",
+      "en": "Olhar da Mente"
+    },
+    "description_source_es": "Alcanza a Pokémon de tipo Fantasma con movimientos de tipo Normal o Lucha. Su Precisión no se puede reducir e ignora los cambios en la Evasión del objetivo."
+  },
+  {
+    "id": "EMBODYASPECT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "EMBODYASPECT",
+    "names": {
+      "source_es": "Evocarrecuerdos",
+      "pt_br": "Aspecto Incorporado",
+      "en": "Embody Aspect"
+    },
+    "description_source_es": "Al evocar viejos recuerdos, el Pokémon hace brillar la Máscara Turquesa y aumenta su Velocidad."
+  },
+  {
+    "id": "EMBODYASPECT_1",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "EMBODYASPECT_1",
+    "names": {
+      "source_es": "Evocarrecuerdos",
+      "pt_br": "Aspecto Incorporado",
+      "en": "Embody Aspect"
+    },
+    "description_source_es": "Al evocar viejos recuerdos, el Pokémon hace brillar la Máscara Horno y aumenta su Ataque."
+  },
+  {
+    "id": "EMBODYASPECT_2",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "EMBODYASPECT_2",
+    "names": {
+      "source_es": "Evocarrecuerdos",
+      "pt_br": "Aspecto Incorporado",
+      "en": "Embody Aspect"
+    },
+    "description_source_es": "Al evocar viejos recuerdos, el Pokémon hace brillar la Máscara Fuente y aumenta su Defensa Especial."
+  },
+  {
+    "id": "EMBODYASPECT_3",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "EMBODYASPECT_3",
+    "names": {
+      "source_es": "Evocarrecuerdos",
+      "pt_br": "Aspecto Incorporado",
+      "en": "Embody Aspect"
+    },
+    "description_source_es": "Al evocar viejos recuerdos, el Pokémon hace brillar la Máscara Cimiento y aumenta su Defensa."
+  },
+  {
+    "id": "POISONPUPPETEER",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "POISONPUPPETEER",
+    "names": {
+      "source_es": "Títere Tóxico",
+      "pt_br": "Marionetista Venenoso",
+      "en": "Poison Puppeteer"
+    },
+    "description_source_es": "Los rivales que Pecharunt envenene con sus movimientos también sufrirán confusión."
+  },
+  {
+    "id": "TERASHIFT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TERASHIFT",
+    "names": {
+      "source_es": "Teracambio",
+      "pt_br": "Mudança Tera",
+      "en": "Tera Shift"
+    },
+    "description_source_es": "Al entrar en combate, adopta la Forma Teracristal tras absorber la energía de su alrededor."
+  },
+  {
+    "id": "TERASHELL",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TERASHELL",
+    "names": {
+      "source_es": "Teracaparazón",
+      "pt_br": "Casco Tera",
+      "en": "Tera Shell"
+    },
+    "description_source_es": "Su caparazón encierra energía de todos los tipos. Gracias a ello, si sus PS están al máximo, el movimiento que lo alcance no será muy eficaz."
+  },
+  {
+    "id": "TERAFORMZERO",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TERAFORMZERO",
+    "names": {
+      "source_es": "Teracaparazón",
+      "pt_br": "Casco Tera",
+      "en": "Tera Shell"
+    },
+    "description_source_es": "Cuando Terapagos adopta la Forma Astral, anula todos los efectos del tiempo atmosférico y de los campos que haya en el terreno gracias a su poder oculto."
+  },
+  {
+    "id": "SOBRECARGA",
+    "flags": [
+      "ELECTRIC"
+    ],
+    "pbs_file_suffix": "",
+    "key": "SOBRECARGA",
+    "names": {
+      "source_es": "Sobrecarga",
+      "pt_br": "Sobrecarga",
+      "en": "Overcharge"
+    },
+    "description_source_es": "Potencia los movimientos de tipo Eléctrico del Pokémon en un 50% cuando tenga 1/3 o menos de sus PS máximos."
+  },
+  {
+    "id": "PODERSABIO",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PODERSABIO",
+    "names": {
+      "source_es": "Poder Sabio",
+      "pt_br": "Poder Sábio",
+      "en": "Sage Power"
+    },
+    "description_source_es": "Potencia su Ataque Especial en un 50%, pero solo puede usar el primer movimiento escogido."
+  },
+  {
+    "id": "COLEOPTERO",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "COLEOPTERO",
+    "names": {
+      "source_es": "Coleóptero",
+      "pt_br": "Coleóptero",
+      "en": "Coleoptera"
+    },
+    "description_source_es": "Convierte los movimientos de tipo Normal en Bicho."
+  },
+  {
+    "id": "PIELMALDITA",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PIELMALDITA",
+    "names": {
+      "source_es": "Piel Tétrica",
+      "pt_br": "Pele Macabra",
+      "en": "Macabre Skin"
+    },
+    "description_source_es": "Convierte los movimientos de tipo Normal en Fantasma y los potencia."
+  },
+  {
+    "id": "ESPANTO",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ESPANTO",
+    "names": {
+      "source_es": "Espanto",
+      "pt_br": "Espanto",
+      "en": "Fright"
+    },
+    "description_source_es": "Espanta al rival y reduce su Atq. Especial."
+  },
+  {
+    "id": "ICEHEAD",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ICEHEAD",
+    "names": {
+      "source_es": "Iceberg",
+      "pt_br": "Iceberg",
+      "en": "Iceberg"
+    },
+    "description_source_es": "No recibe daño de retroceso."
+  },
+  {
+    "id": "INFLAMABLE",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "INFLAMABLE",
+    "names": {
+      "source_es": "Inflamable",
+      "pt_br": "Inflamável",
+      "en": "Inflamável"
+    },
+    "description_source_es": "Aumenta el daño de los ataques de tipo Fuego."
+  },
+  {
+    "id": "ALBINISMO",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ALBINISMO",
+    "names": {
+      "source_es": "Albino",
+      "pt_br": "Albino",
+      "en": "Albino"
+    },
+    "description_source_es": "Aumenta el daño de los ataques de tipo Hielo."
+  },
+  {
+    "id": "PIELHERBACEA",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PIELHERBACEA",
+    "names": {
+      "source_es": "Piel Herbácea",
+      "pt_br": "Pele de Grama",
+      "en": "Grassy Skin"
+    },
+    "description_source_es": "Convierte los movimientos de tipo Normal en Planta y los potencia."
+  },
+  {
+    "id": "FLORACION",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "FLORACION",
+    "names": {
+      "source_es": "Floración",
+      "pt_br": "Floração",
+      "en": "Blooming"
+    },
+    "description_source_es": "Aumenta el daño de los ataques de tipo Planta."
+  },
+  {
+    "id": "REALEZA",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "REALEZA",
+    "names": {
+      "source_es": "Realeza",
+      "pt_br": "Realeza",
+      "en": "Royalty"
+    },
+    "description_source_es": "Recibe bonus de daño del 50% atacando con todos los tipos."
+  },
+  {
+    "id": "ACOMETIDA",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "ACOMETIDA",
+    "names": {
+      "source_es": "Acometida",
+      "pt_br": "Investida Brutal",
+      "en": "Onslaught"
+    },
+    "description_source_es": "En el 1ºturno que salga a combatir, tendrá un 50% extra de Velocidad y un 20% extra de Ataque."
+  },
+  {
+    "id": "PODERGELIDO",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "PODERGELIDO",
+    "names": {
+      "source_es": "Poder Gélido",
+      "pt_br": "Poder Gélido",
+      "en": "Frost Power"
+    },
+    "description_source_es": "Aumenta el poder de hielo y la velocidad un 50% en clima nevado."
+  },
+  {
+    "id": "SILVANO",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "SILVANO",
+    "names": {
+      "source_es": "Silvano",
+      "pt_br": "Silvestre",
+      "en": "Silvestre"
+    },
+    "description_source_es": "Aumenta el daño de cualquier tipo un 30% en Campo de Hierba."
+  },
+  {
+    "id": "CAMORRISTA",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "CAMORRISTA",
+    "names": {
+      "source_es": "Camorrista",
+      "pt_br": "Brigão",
+      "en": "Brawler"
+    },
+    "description_source_es": "Sube el poder de las patadas un 20%."
+  },
+  {
+    "id": "TINTINEO",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "TINTINEO",
+    "names": {
+      "source_es": "Tintineo",
+      "pt_br": "Tilintar",
+      "en": "Tilintar"
+    },
+    "description_source_es": "Repica una campana para curar los estados del equipo cuando sale a combatir. Además, los movs. de sonido pasan a ser psíquicos y aumentan un 20% su potencia."
+  },
+  {
+    "id": "STURDYROOT",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "STURDYROOT",
+    "names": {
+      "source_es": "Raíz robusta",
+      "pt_br": "Raiz Robusta",
+      "en": "Sturdy Root"
+    },
+    "description_source_es": "Los ataques que drenan PS recuperan más PS."
+  },
+  {
+    "id": "BURNTOUCH",
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": "BURNTOUCH",
+    "names": {
+      "source_es": "Toque Ardiente",
+      "pt_br": "Toque Ardente",
+      "en": "Toque Ardente"
+    },
+    "description_source_es": "Puede quemar al objetivo con solo tocarlo un 30% de las veces."
+  }
+]

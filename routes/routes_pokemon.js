@@ -1,55 +1,13 @@
+const { source, datasetId, version: gameVersion } = require('../lib/game-data');
 /* ==========================================================================
    Pokémon Anil API — routes/pokemon.js
-   Dados da PokeAPI + overlay das notas do Anil.
+   Dados locais extraídos do jogo.
    ========================================================================== */
 const express = require("express");
 const router  = express.Router();
 const { pokeFetch } = require("../middleware/cache");
-const ANIL = require("../data/anil.json");
+
 const upstreamError = require('../middleware/upstream-error');
-
-/* evolution_changes é um OBJETO { descricao, nota, lista:[...] },
-   e cada item tem { pokemon, evolui_para } — nao um array de strings.
-   Esta funcao extrai a lista com seguranca, aceitando os dois formatos. */
-function listaEvoAlterada(){
-  var ec = ANIL.evolution_changes;
-  if(Array.isArray(ec)) return ec;
-  if(ec && Array.isArray(ec.lista)) return ec.lista;
-  return [];
-}
-
-/* notas do Anil por nome de Pokémon */
-function notasAnil(nome){
-  const n = String(nome || "").toLowerCase();
-  const lista = listaEvoAlterada();
-
-  /* nomes envolvidos nas evolucoes alteradas (o proprio e o alvo) */
-  const nomes = [];
-  lista.forEach(function(x){
-    if(!x) return;
-    if(x.pokemon)     nomes.push(String(x.pokemon).toLowerCase());
-    if(x.evolui_para) nomes.push(String(x.evolui_para).toLowerCase());
-  });
-
-  const nota = {};
-  if(nomes.indexOf(n) >= 0){
-    var par = lista.filter(function(x){
-      if(!x) return false;
-      return String(x.pokemon||"").toLowerCase() === n
-          || String(x.evolui_para||"").toLowerCase() === n;
-    })[0];
-    nota.evolucao_alterada = true;
-    if(par){
-      nota.observacao = "No Anil, " + par.pokemon + " evolui para " + par.evolui_para
-        + " por level up (originalmente exigia troca).";
-    } else {
-      nota.observacao = "Evolui por level up no Anil (originalmente exigia troca).";
-    }
-  }
-  var rates = ANIL.rates || (ANIL.info && ANIL.info.rates);
-  if(rates && rates.shiny) nota.taxa_shiny = rates.shiny;
-  return nota;
-}
 
 /* GET /pokemon/:id — dados + notas do Anil */
 router.get("/:id", async (req, res) => {
@@ -67,6 +25,8 @@ router.get("/:id", async (req, res) => {
     }catch(e){}
 
     res.json({
+      fonte: source, dataset_id: datasetId,
+      game_id: p.game_id, form: p.form, dados_jogo: p.dados_jogo,
       id: p.id,
       name: p.name,
       nome_pt: null,
@@ -86,7 +46,7 @@ router.get("/:id", async (req, res) => {
       moves: (p.moves || []).map(function(m){
         return {
           name: m.move.name,
-          url:  m.move.url,
+          url:  `/moves/${m.move.name}`,
           metodos: (m.version_group_details || []).map(function(d){
             return { metodo: d.move_learn_method.name, nivel: d.level_learned_at, jogo: d.version_group.name };
           })
@@ -96,9 +56,9 @@ router.get("/:id", async (req, res) => {
       abilities: (p.abilities || []).map(function(a){
         return { name: a.ability.name, oculta: !!a.is_hidden };
       }),
-      eggGroups, genderRate, hatchCounter: hatch,
+      eggGroups, genderRate, hatchCounter: hatch, hatchSteps: p.dados_jogo?.hatch_steps ?? null,
       sprite: (p.sprites && (p.sprites.front_default || (p.sprites.other && p.sprites.other["official-artwork"] && p.sprites.other["official-artwork"].front_default))) || null,
-      anil: notasAnil(p.name)
+      anil: { dataset_id: datasetId, evolucoes: p.dados_jogo?.evolutions || [] }
     });
   }catch(err){
     upstreamError(res, err, "Pokémon não encontrado.");
@@ -109,20 +69,20 @@ router.get("/:id", async (req, res) => {
 router.get("/:id/moves", async (req, res) => {
   const version = req.query.version;
   if (version !== undefined && (typeof version !== 'string' || !/^[a-z0-9-]+$/.test(version))) {
-    return res.status(400).json({ erro: 'version deve ser um identificador de versão da PokeAPI.' });
+    return res.status(400).json({ erro: 'version deve ser um identificador do jogo, como azul-4-0-6.' });
   }
   try{
     const p = await pokeFetch("pokemon/" + req.params.id);
     const moves = (p.moves || []).map(m => ({
       name: m.move.name,
-      url: m.move.url,
+      url: `/moves/${m.move.name}`,
       metodos: (m.version_group_details || [])
         .filter(d => !version || d.version_group.name === version)
         .map(d => ({ metodo: d.move_learn_method.name, nivel: d.level_learned_at, jogo: d.version_group.name }))
     })).filter(m => m.metodos.length > 0);
     res.json({
       id: p.id, name: p.name,
-      fonte: 'PokeAPI', versao: version || null,
+      fonte: source, dataset_id: datasetId, versao: version || null,
       total: moves.length,
       moves
     });
@@ -158,16 +118,13 @@ router.get("/:id/evolution", async (req, res) => {
             nivel_minimo: d.min_level || null,
             item: d.item ? d.item.name : null,
             condicoes: ev.evolution_details || [],
-            troca_alterada: listaEvoAlterada().some(function(x){
-              if(!x) return false;
-              return String(x.evolui_para||"").toLowerCase() === String(ev.species.name).toLowerCase();
-            }),
+            troca_alterada: false,
             proximo: monta(ev)
           };
         })
       };
     }
-    res.json({ cadeia: monta(chain.chain), fonte: 'PokeAPI', anil_note: "Condições da série principal. Marcações de troca alterada vêm da base histórica do Añil e precisam de conferência por edição." });
+    res.json({ cadeia: monta(chain.chain), fonte: source, dataset_id: datasetId, anil_note: "Condições extraídas do jogo; metodo_jogo e parametro_jogo preservam as regras originais." });
   }catch(err){
     upstreamError(res, err, "Cadeia evolutiva não encontrada.");
   }

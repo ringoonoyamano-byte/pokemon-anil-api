@@ -1,0 +1,39 @@
+{
+  "edition": "pokemon_azul_ptbr_online",
+  "mode_forced": "complete",
+  "mechanics_generation": 9,
+  "maximum_level": 100,
+  "party_size": 6,
+  "challenge_modes_enabled_in_this_build": false,
+  "randomizer_enabled_in_this_build": false,
+  "mega_evolution": true,
+  "z_moves": false,
+  "dynamax": false,
+  "terastallization": false,
+  "shiny_base_numerator": 6,
+  "shiny_base_denominator": 65536,
+  "shiny_approximate_rate": "1/10923",
+  "shiny_server_override_possible": true,
+  "custom_features": [
+    "online_multiplayer",
+    "lan_multiplayer",
+    "coop",
+    "ranked",
+    "tournaments",
+    "cloud_saves",
+    "elite_raids",
+    "raid_cave",
+    "mounts",
+    "hordes",
+    "shiny_chains",
+    "super_shiny",
+    "touch_controls",
+    "arena"
+  ],
+  "evidence": {
+    "settings": "Data/Scripts.rxdata -> 0002_Settings",
+    "forced_mode": "Data/Scripts.rxdata -> MOD 101_Force_Complete_Mode",
+    "disabled_challenges": "Data/Scripts.rxdata -> MOD 000c_Disable_Challenge_Modes",
+    "source_type": "direct_game_files"
+  }
+}

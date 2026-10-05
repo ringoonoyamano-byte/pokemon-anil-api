@@ -1,3 +1,4 @@
+const { source, datasetId, normalize, version: gameVersion } = require('../lib/game-data');
 const router = require('express').Router();
 const { getDb } = require('../database/db');
 const { pokeFetch } = require('../middleware/cache');
@@ -38,28 +39,29 @@ router.post('/:id/validate', async (req, res) => {
   const db = getDb(), team = db.prepare('SELECT * FROM teams WHERE id = ?').get(req.params.id);
   if (!team) return res.status(404).json({ erro: 'Time não encontrado.' });
   const rows = db.prepare('SELECT * FROM team_members WHERE team_id = ? ORDER BY slot').all(team.id);
-  const errors = [], warnings = ['Disponibilidade e regras exclusivas do Añil não verificadas.'];
+  const errors = [], warnings = ['Validação básica nos dados do jogo; não cobre eventos, criação ou todos os efeitos de scripts.'];
   let commonTypes;
-  if (!version) warnings.push('Golpes comparados com todas as versões da PokeAPI; informe version para restringir.');
+  if (version && version !== gameVersion) errors.push('Versão não disponível na base ativa.');
+  if (team.modo_anil !== 'complete') warnings.push('A compilação ativa força modo Completo; perfil de time mantido como filtro do usuário.');
   try {
     if (!rows.length) errors.push('Time sem membros.');
     else try { normalizeMembers(rows.map(m => ({ ...m, pokemon:m.pokemon_nome, moves:JSON.parse(m.moves), evs:JSON.parse(m.evs), ivs:JSON.parse(m.ivs) }))); } catch (error) { errors.push(error.message); }
     for (const m of rows) {
-      const p = await pokeFetch('pokemon/' + m.pokemon_id);
+      const p = await pokeFetch('pokemon/' + (m.pokemon_nome || m.pokemon_id));
       const types = p.types.map(t => t.type.name);
       commonTypes = commonTypes === undefined ? types : commonTypes.filter(t => types.includes(t));
       if (team.modo_anil === 'classic') {
         const species = await pokeFetch(p.species.url);
         if (!['generation-i','generation-ii'].includes(species.generation.name)) errors.push(`Slot ${m.slot}: espécie fora das gerações 1 e 2 do perfil clássico histórico.`);
       }
-      if (m.habilidade && !p.abilities.some(a => a.ability.name === m.habilidade)) errors.push(`Slot ${m.slot}: habilidade incompatível na PokeAPI.`);
+      if (m.habilidade && !p.abilities.some(a => normalize(a.ability.name) === normalize(m.habilidade))) errors.push(`Slot ${m.slot}: habilidade incompatível nos dados do jogo.`);
       for (const move of JSON.parse(m.moves)) {
-        const entry = p.moves.find(e => e.move.name === move);
+        const entry = p.moves.find(e => normalize(e.move.name) === normalize(move));
         if (!entry || !entry.version_group_details.some(d => (!version || d.version_group.name === version) && (d.move_learn_method.name !== 'level-up' || d.level_learned_at <= m.nivel))) errors.push(`Slot ${m.slot}: golpe ${move} incompatível com os filtros.`);
       }
     }
     if (team.modo_anil === 'monotype' && rows.length && !commonTypes.length) errors.push('Time Monotype sem um tipo comum entre os membros.');
-    res.json({ valido_base: errors.length === 0, validacao_anil: 'pendente', fonte:'PokeAPI', version:version ?? null, erros:errors, avisos:warnings });
+    res.json({ valido_base: errors.length === 0, validacao_anil: 'basica_dados_do_jogo', fonte:source, dataset_id:datasetId, version:version ?? gameVersion, erros:errors, avisos:warnings });
   } catch (error) { upstreamError(res, error, 'Pokémon não encontrado.'); }
 });
 module.exports = router;

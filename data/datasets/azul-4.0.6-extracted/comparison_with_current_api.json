@@ -1,0 +1,30 @@
+{
+  "dataset": "azul-4.0.6-extracted-game-data",
+  "important_conflicts_with_current_api_metadata": [
+    {
+      "field": "shiny_rate",
+      "api_current_claim": "1/1000",
+      "game_files": "base local 6/65536 (~1/10923), with possible server override",
+      "recommendation": "Version the rate by edition/build and mark server-controlled values as dynamic."
+    },
+    {
+      "field": "challenge_modes",
+      "api_current_claim": "Classic, Complete, Radical, Nuzlocke, Randomizer and Monotype are listed",
+      "game_files": "This build forces Complete and disables challenge modes/randomizer",
+      "recommendation": "Keep original capabilities separate from effective capabilities of this build."
+    },
+    {
+      "field": "tms_reusable",
+      "api_current_claim": "TMs de uso infinito",
+      "game_files": "A custom module named TMs_Consumiveis_Vendaveis is present",
+      "recommendation": "Mark this as edition-specific and verify runtime behavior before replacing the original rule."
+    },
+    {
+      "field": "version",
+      "api_current_claim": "Historical 3.06 plus announced Azul 4.0.7c metadata",
+      "game_files": "Title 4.0.6; internal GAME_VERSION 4.0.3",
+      "recommendation": "Register this extracted build as a separate dataset instead of overwriting other editions."
+    }
+  ],
+  "record_level_comparison": "The current API delegates Pokemon/move catalogs to PokeAPI. Import the extracted datasets before doing field-by-field diffs."
+}

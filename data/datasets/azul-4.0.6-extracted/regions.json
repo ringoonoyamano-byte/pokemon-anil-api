@@ -1,0 +1,1622 @@
+[
+  {
+    "id": 0,
+    "filename": "mapRegion0.png",
+    "point": [
+      [
+        7,
+        14,
+        "Pueblo Paleta",
+        "Laboratorio Pokémon",
+        2,
+        14,
+        16,
+        null
+      ],
+      [
+        7,
+        13,
+        "Ruta 1",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        7,
+        12,
+        "Ruta 1",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        7,
+        11,
+        "Ruta 1",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        7,
+        10,
+        "Ciudad Verde",
+        "Escuela Pokémon",
+        4,
+        53,
+        37,
+        null
+      ],
+      [
+        7,
+        9,
+        "Ruta 2 (Sur)",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        7,
+        8,
+        "Ruta 2 (Sur)",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        7,
+        7,
+        "Bosque Verde",
+        null,
+        8,
+        35,
+        65,
+        null
+      ],
+      [
+        7,
+        6,
+        "Ruta 2 (Norte)",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        7,
+        5,
+        "Ruta 2 (Norte)",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        7,
+        4,
+        "Ciudad Plateada",
+        "Museo Pokémon",
+        9,
+        24,
+        45,
+        null
+      ],
+      [
+        8,
+        4,
+        "Ruta 3",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        9,
+        4,
+        "Ruta 3",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        10,
+        4,
+        "Ruta 3",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        11,
+        4,
+        "Ruta 3",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        12,
+        4,
+        "Ruta 3",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        13,
+        4,
+        "Ruta 3",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        13,
+        3,
+        "Monte Moon",
+        null,
+        107,
+        22,
+        13,
+        null
+      ],
+      [
+        13,
+        2,
+        "Monte Moon Exterior",
+        null,
+        12,
+        33,
+        20,
+        121
+      ],
+      [
+        14,
+        2,
+        "Ruta 4",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        15,
+        2,
+        "Ruta 4",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        16,
+        2,
+        "Ruta 4",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        17,
+        2,
+        "Ciudad Celeste",
+        "Tienda de Bicicletas",
+        15,
+        40,
+        51,
+        null
+      ],
+      [
+        17,
+        1,
+        "Ruta 20",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        17,
+        0,
+        "Ruta 20",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        18,
+        0,
+        "Ruta 21",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        19,
+        0,
+        "Ruta 21",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        20,
+        0,
+        "Ruta 21",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        21,
+        0,
+        "Ruta 21",
+        "Casa de Bill",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        16,
+        1,
+        "Cueva Celeste",
+        "Bosque Celeste",
+        174,
+        14,
+        69,
+        237
+      ],
+      [
+        18,
+        2,
+        "Ruta 9",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        19,
+        2,
+        "Ruta 9",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        20,
+        2,
+        "Ruta 9",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        21,
+        2,
+        "Ruta 9",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        22,
+        2,
+        "Ruta 9",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        23,
+        3,
+        "Túnel Roca",
+        null,
+        23,
+        16,
+        45,
+        301
+      ],
+      [
+        23,
+        2,
+        "Ruta 10 (Norte)",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        23,
+        4,
+        "Ruta 10 (Sur)",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        23,
+        5,
+        "Ruta 10 (Sur)",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        24,
+        4,
+        "Central Energía",
+        null,
+        23,
+        12,
+        73,
+        126
+      ],
+      [
+        17,
+        3,
+        "Ruta 5",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        17,
+        4,
+        "Ruta 5",
+        "Guardería",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        17,
+        5,
+        "Ruta 5",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        17,
+        7,
+        "Ruta 6",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        17,
+        8,
+        "Ruta 6",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        17,
+        9,
+        "Ruta 6",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        17,
+        10,
+        "Ruta 6",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        17,
+        11,
+        "Ruta 6",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        17,
+        12,
+        "Ciudad Carmín",
+        "Puerto",
+        19,
+        29,
+        12,
+        null
+      ],
+      [
+        18,
+        12,
+        "Ruta 15",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        19,
+        12,
+        "Ruta 15",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        20,
+        12,
+        "Ruta 15",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        21,
+        12,
+        "Ruta 15",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        22,
+        12,
+        "Ruta 15",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        19,
+        11,
+        "Túnel Diglett",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        8,
+        6,
+        "Túnel Diglett",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        23,
+        6,
+        "Pueblo Lavanda",
+        "Torre Pokémon",
+        27,
+        18,
+        18,
+        null
+      ],
+      [
+        18,
+        6,
+        "Ruta 8",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        19,
+        6,
+        "Ruta 8",
+        "Cementerio",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        20,
+        6,
+        "Ruta 8",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        21,
+        6,
+        "Ruta 8",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        22,
+        6,
+        "Ruta 8",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        16,
+        6,
+        "Ruta 7",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        15,
+        6,
+        "Ruta 7",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        14,
+        6,
+        "Ruta 7",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        13,
+        6,
+        "Ciudad Azulona",
+        "Centro Comercial",
+        76,
+        57,
+        23,
+        null
+      ],
+      [
+        12,
+        6,
+        "Ruta 11",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        11,
+        6,
+        "Ruta 11",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        23,
+        7,
+        "Ruta 12",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        23,
+        8,
+        "Ruta 12",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        23,
+        9,
+        "Ruta 12",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        23,
+        10,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        23,
+        11,
+        "Ruta 12",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        23,
+        12,
+        "Ruta 12",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        23,
+        13,
+        "Ruta 12",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        23,
+        14,
+        "Pueblo Marengo",
+        "Granja Pokémon",
+        91,
+        53,
+        15,
+        null
+      ],
+      [
+        23,
+        15,
+        "Ruta 13",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        23,
+        16,
+        "Ruta 13",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        16,
+        16,
+        "Ruta 14",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        17,
+        16,
+        "Ruta 14",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        18,
+        16,
+        "Ruta 14",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        19,
+        16,
+        "Ruta 14",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        20,
+        16,
+        "Ruta 14",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        21,
+        16,
+        "Ruta 14",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        22,
+        16,
+        "Ruta 14",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        15,
+        16,
+        "Ciudad Fucsia",
+        null,
+        94,
+        39,
+        45,
+        null
+      ],
+      [
+        16,
+        15,
+        "Zona Safari",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        14,
+        16,
+        "Ruta 16",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        13,
+        16,
+        "Ruta 16",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        12,
+        16,
+        "Ruta 16",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        15,
+        17,
+        "Ruta 17",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        15,
+        18,
+        "Ruta 17",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        17,
+        6,
+        "Ciudad Azafrán",
+        "Silph S.A.",
+        99,
+        24,
+        52,
+        null
+      ],
+      [
+        7,
+        15,
+        "Ruta 19",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        7,
+        16,
+        "Ruta 19",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        7,
+        17,
+        "Ruta 19",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        8,
+        18,
+        "Ruta 18",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        9,
+        18,
+        "Ruta 18",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        10,
+        18,
+        "Ruta 18",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        11,
+        18,
+        "Ruta 18",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        12,
+        18,
+        "Ruta 18",
+        "Islas Espuma",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        13,
+        18,
+        "Ruta 18",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        14,
+        18,
+        "Ruta 18",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        11,
+        7,
+        "Camino de Bicis",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        11,
+        8,
+        "Camino de Bicis",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        11,
+        9,
+        "Camino de Bicis",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        11,
+        10,
+        "Camino de Bicis",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        11,
+        11,
+        "Camino de Bicis",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        11,
+        12,
+        "Camino de Bicis",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        11,
+        13,
+        "Camino de Bicis",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        11,
+        14,
+        "Camino de Bicis",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        11,
+        15,
+        "Camino de Bicis",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        11,
+        16,
+        "Camino de Bicis",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        7,
+        18,
+        "Isla Canela",
+        "Laboratorio Pokémon",
+        116,
+        61,
+        35,
+        null
+      ],
+      [
+        6,
+        18,
+        "Volcán Canela",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        6,
+        10,
+        "Ruta 22",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        5,
+        10,
+        "Ruta 22",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        4,
+        10,
+        "Ruta 22",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        3,
+        10,
+        "Ruta 23",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        3,
+        9,
+        "Ruta 23",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        3,
+        11,
+        "Ruta 23",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        3,
+        12,
+        "Ruta 23",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        3,
+        13,
+        "Ruta 23",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        3,
+        14,
+        "Ruta 23",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        2,
+        14,
+        "Ruta 24",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        1,
+        14,
+        "Ruta 24",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        0,
+        14,
+        "Ruta 24",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        0,
+        13,
+        "Cataratas Tohjo",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        2,
+        9,
+        "Ruta 25 (Sur)",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        1,
+        9,
+        "Ruta 25 (Sur)",
+        null,
+        158,
+        24,
+        17,
+        128
+      ],
+      [
+        1,
+        8,
+        "Monte Plateado",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        1,
+        7,
+        "Monte Plateado",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        1,
+        6,
+        "Monte Plateado",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        1,
+        5,
+        "Monte Plateado",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        2,
+        5,
+        "Monte Plateado",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        3,
+        5,
+        "Ruta 25 (Norte)",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        3,
+        4,
+        "Ruta 25 (Norte)",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        3,
+        3,
+        "Ruta 25 (Norte)",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        3,
+        2,
+        "Ciudad Añil",
+        "Liga Pokémon",
+        167,
+        27,
+        8,
+        null
+      ],
+      [
+        26,
+        12,
+        "Ruta 26",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        27,
+        12,
+        "Ruta 26",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        28,
+        12,
+        "Villa Azabache",
+        null,
+        185,
+        22,
+        13,
+        null
+      ],
+      [
+        29,
+        11,
+        "Cabo Azabache",
+        "Altar de Ave Guardiana",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        28,
+        13,
+        "Ruta 27",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        28,
+        14,
+        "Ruta 27",
+        "Cueva Perdida",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        28,
+        15,
+        "Ruta 27",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        27,
+        15,
+        "Islote Recuerdo",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        26,
+        15,
+        "Islote Recuerdo",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        25,
+        12,
+        "Villa Ámbar",
+        null,
+        183,
+        22,
+        14,
+        null
+      ],
+      [
+        29,
+        14,
+        "Almacén Secreto",
+        null,
+        213,
+        31,
+        29,
+        130
+      ],
+      [
+        27,
+        11,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        27,
+        10,
+        "Ruta 28",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        27,
+        9,
+        "Villa Magenta",
+        "Dojo Magenta",
+        192,
+        31,
+        35,
+        null
+      ],
+      [
+        28,
+        9,
+        "Cabo Magenta",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        29,
+        9,
+        "Cabo Magenta",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        26,
+        9,
+        "Ruta 29",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        25,
+        9,
+        "Ruta 29",
+        "Cueva Glaciada",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        25,
+        8,
+        "Ruta 30",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        25,
+        7,
+        "Bosque Arcoíris",
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    ],
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": 0,
+    "name_source_es": "Kanto"
+  },
+  {
+    "id": 1,
+    "filename": "mapRegion1.png",
+    "point": [
+      [
+        13,
+        16,
+        "Aquí",
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    ],
+    "flags": [],
+    "pbs_file_suffix": "",
+    "key": 1,
+    "name_source_es": "Tiall"
+  }
+]

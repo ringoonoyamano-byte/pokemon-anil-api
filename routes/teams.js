@@ -97,7 +97,7 @@ router.get("/:id/stats", async (req, res) => {
 
   const statsPromises = members.map(async (m) => {
     try {
-      const data = await pokeFetch(`pokemon/${m.pokemon_id}`);
+      const data = await pokeFetch(`pokemon/${m.pokemon_nome || m.pokemon_id}`);
       const baseStats = {};
       data.stats.forEach((s) => { baseStats[({ attack: 'atk', defense: 'def', 'special-attack': 'spa', 'special-defense': 'spd', speed: 'spe' })[s.stat.name] || s.stat.name] = s.base_stat; });
 
@@ -142,7 +142,7 @@ router.get('/:id/analysis', async (req, res) => {
   const { TYPE_CHART, getEffectiveness } = require('../lib/types');
   try {
     const pokemon = await Promise.all(members.map(async member => {
-      const data = await pokeFetch(`pokemon/${member.pokemon_id}`);
+      const data = await pokeFetch(`pokemon/${member.pokemon_nome || member.pokemon_id}`);
       const tipos = data.types.map(t => t.type.name);
       return { slot: member.slot, pokemon: data.name, tipos, defesa: Object.fromEntries(Object.keys(TYPE_CHART).map(type => [type, getEffectiveness(type, tipos)])) };
     }));
@@ -151,7 +151,7 @@ router.get('/:id/analysis', async (req, res) => {
       resistentes: pokemon.filter(p => p.defesa[type] > 0 && p.defesa[type] < 1).map(p => p.slot),
       imunes: pokemon.filter(p => p.defesa[type] === 0).map(p => p.slot)
     }]));
-    res.json({ time: team.nome, fonte: 'PokeAPI', escopo: 'Defesa por tipos da série principal; não considera habilidades, itens, modo Inverso ou alterações do Añil.', membros: pokemon, defesa });
+    res.json({ time: team.nome, fonte: require('../lib/game-data').source, dataset_id: require('../lib/game-data').datasetId, escopo: 'Defesa por tipos do jogo; não considera habilidades ou itens.', membros: pokemon, defesa });
   } catch (error) { upstreamError(res, error, 'Pokémon do time não encontrado.'); }
 });
 

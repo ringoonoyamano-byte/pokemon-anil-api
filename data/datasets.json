@@ -1,6 +1,33 @@
 {
   "datasets": [
-    { "id": "anil-3.06-historico", "edicao": "anil_original", "versao": "3.06", "idioma": "indeterminado", "status": "historico_nao_validado", "arquivo": "anil.json", "escopo": "Base legada de regras; não aplicar a versões novas sem conferência." },
-    { "id": "azul-4.0.7c-metadados", "edicao": "azul_ptbr_online", "versao": "4.0.7c", "idioma": "pt-BR", "status": "anunciado", "escopo": "Somente metadados e recursos anunciados; sem tabelas de espécies ou encontros.", "fonte": "https://pokemonanilbr.netlify.app/" }
+    {
+      "id": "anil-3.06-historico",
+      "edicao": "anil_original",
+      "versao": "3.06",
+      "idioma": "indeterminado",
+      "status": "historico_nao_validado",
+      "arquivo": "anil.json",
+      "escopo": "Base legada de regras; não aplicar a versões novas sem conferência."
+    },
+    {
+      "id": "azul-4.0.7c-metadados",
+      "edicao": "azul_ptbr_online",
+      "versao": "4.0.7c",
+      "idioma": "pt-BR",
+      "status": "anunciado",
+      "escopo": "Somente metadados e recursos anunciados; sem tabelas de espécies ou encontros.",
+      "fonte": "https://pokemonanilbr.netlify.app/"
+    },
+    {
+      "id": "azul-4.0.6-extracted-game-data",
+      "edicao": "azul_ptbr_online",
+      "versao": "4.0.6",
+      "versao_interna": "4.0.3",
+      "idioma": "pt-BR/es",
+      "status": "extraido_dos_arquivos_do_jogo",
+      "diretorio": "data/datasets/azul-4.0.6-extracted",
+      "escopo": "Especies, formas, golpes, habilidades, itens, encontros, treinadores, mapas, raids e mecanicas desta compilacao modificada.",
+      "aviso": "Nao tratar como Pokemon Anil original 4.1.1. Build modificada Pokemon Azul/PT-BR online."
+    }
   ]
 }

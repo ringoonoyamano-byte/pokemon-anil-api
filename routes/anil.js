@@ -1,6 +1,17 @@
 const express = require("express");
 const router = express.Router();
 const anilData = require("../data/anil.json");
+const extracted = require('../lib/dataset-resources');
+router.use(require('./anil-current'));
+// Remaining reference endpoints are historical, not current-build rules.
+router.use((req, res, next) => {
+  if (!req.path.startsWith('/datasets')) {
+    const json = res.json.bind(res);
+    res.json = body => json({ ...body, referencia_historica: true,
+      dataset_id: 'anil-3.06-historico', aviso_edicao: 'Referência legada; conteúdo não validado para a compilação ativa 4.0.6.' });
+  }
+  next();
+});
 
 /**
  * GET /anil
@@ -38,6 +49,8 @@ router.get("/", (req, res) => {
       pos_jogo: "GET /anil/postgame",
       faq: "GET /anil/faq",
       taxas: "GET /anil/rates",
+      bases: "GET /anil/datasets",
+      recursos_da_base: "GET /anil/datasets/:id/:resource",
     },
   });
 });
@@ -307,9 +320,40 @@ router.get('/datasets', (req, res) => {
 router.get('/datasets/:id', (req, res) => {
   const dataset = require('../data/datasets.json').datasets.find(d => d.id === req.params.id);
   if (!dataset) return res.status(404).json({ erro: 'Base não encontrada.' });
+  if (dataset.id === extracted.datasetId) {
+    return res.json({ dataset, dados: extracted.loadResource('metadata'), recursos: extracted.catalog() });
+  }
   const dados = dataset.id === 'anil-3.06-historico'
     ? Object.fromEntries(Object.entries(anilData).filter(([key]) => !['info','edicoes','online_ptbr','fontes','verificacao'].includes(key)))
     : anilData.online_ptbr;
   res.json({ dataset, dados });
+});
+
+router.get('/datasets/:id/:resource', (req, res) => {
+  if (req.params.id !== extracted.datasetId) return res.status(404).json({ erro: 'Base sem recurso extraído.' });
+  const data = extracted.loadResource(req.params.resource);
+  if (!data) return res.status(404).json({ erro: 'Recurso não encontrado.', recursos: extracted.resources });
+  const { limit = '50', offset = '0', q } = req.query;
+  if (typeof limit !== 'string' || !/^\d+$/.test(limit) || Number(limit) < 1 || Number(limit) > 200 ||
+      typeof offset !== 'string' || !/^\d+$/.test(offset) || !Number.isSafeInteger(Number(offset)) ||
+      (q !== undefined && typeof q !== 'string')) {
+    return res.status(400).json({ erro: 'Use limit de 1 a 200, offset inteiro não negativo e q em texto.' });
+  }
+  if (!Array.isArray(data)) return res.json({ dataset_id: extracted.datasetId, recurso: req.params.resource, dados: data });
+  const rows = q ? data.filter(record => JSON.stringify(record).toLowerCase().includes(q.toLowerCase())) : data;
+  res.json({ dataset_id: extracted.datasetId, recurso: req.params.resource, total: rows.length,
+    limit: Number(limit), offset: Number(offset), dados: rows.slice(Number(offset), Number(offset) + Number(limit)) });
+});
+
+router.get('/datasets/:id/:resource/:record', (req, res) => {
+  if (req.params.id !== extracted.datasetId) return res.status(404).json({ erro: 'Base sem recurso extraído.' });
+  const data = extracted.loadResource(req.params.resource);
+  if (!data) return res.status(404).json({ erro: 'Recurso não encontrado.' });
+  const key = req.params.record.toLowerCase();
+  const record = Array.isArray(data)
+    ? data.find(row => row.id !== undefined && String(row.id).toLowerCase() === key)
+    : Object.entries(data).find(([id]) => id.toLowerCase() === key)?.[1];
+  if (record === undefined) return res.status(404).json({ erro: 'Registro não encontrado.' });
+  res.json({ dataset_id: extracted.datasetId, recurso: req.params.resource, dados: record });
 });
 module.exports = router;

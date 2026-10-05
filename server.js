@@ -64,11 +64,13 @@ app.get("/", (_req, res) => {
   res.json({
     nome: "🎮 Pokémon Anil API",
     versao: require('./package.json').version,
-    descricao: "API REST + banco SQLite para Pokémon Anil (PT-BR).",
+    descricao: "API própria do Pokémon Añil/PT-BR, com dados locais do jogo.",
+    dataset_ativo: require('./lib/game-data').datasetId,
+    compilacao: require('./lib/dataset-resources').loadResource('metadata'),
     base_url: `http://localhost:${PORT}`,
     endpoints: {
       "📘 Pokémon": {
-        "GET /pokemon/:id":           "Dados com notas do Anil",
+        "GET /pokemon/:id":           "Dados extra?dos do jogo",
         "GET /pokemon/:id/moves":     "Todos os moves aprendíveis",
         "GET /pokemon/:id/evolution": "Cadeia evolutiva com mudanças do Anil",
         "GET /pokemon/search/:name":  "Busca por nome",
@@ -123,7 +125,7 @@ app.get("/", (_req, res) => {
     banco_de_dados: "SQLite — pokemon_anil.db (criado automaticamente na pasta /database)",
     seed: "Execute 'node database/seed.js' para popular o banco com dados do anil.json",
     fontes: {
-      pokeapi:      "https://pokeapi.co",
+      dados_jogo: "Compilação fornecida pelo usuário: Azul/PT-BR 4.0.6 (interna 4.0.3)",
       pokemon_anil: "https://lostiefangames.blogspot.com/",
     },
   });

@@ -143,9 +143,9 @@ test('health and readiness respond without querying external services', async ()
 test('catalogs identify the source and validate pagination', async () => {
   for (const path of ['/abilities', '/items']) {
     const list = await (await fetch(base + path + '?limit=1')).json();
-    assert.equal(list.fonte, 'PokeAPI'); assert.equal(list.limit, 1);
+    assert.equal(list.fonte, require('../lib/game-data').source); assert.equal(list.limit, 1);
     const detail = await (await fetch(base + path + '/1')).json();
-    assert.equal(detail.dados.id, 1); assert.equal(detail.fonte, 'PokeAPI');
+    assert.equal(detail.dados.id, 1); assert.equal(detail.fonte, require('../lib/game-data').source);
     assert.equal((await fetch(base + path + '?limit=-1')).status, 400);
   }
 });

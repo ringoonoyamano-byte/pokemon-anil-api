@@ -1,0 +1,127 @@
+{
+  "Fuerte": {
+    "source": "Fuerte",
+    "pt": "Resistente",
+    "en": "Hardy"
+  },
+  "Huraña": {
+    "source": "Huraña",
+    "pt": "Solitário",
+    "en": "Lonely"
+  },
+  "Audaz": {
+    "source": "Audaz",
+    "pt": "Valente",
+    "en": "Brave"
+  },
+  "Firme": {
+    "source": "Firme",
+    "pt": "Firme",
+    "en": "Adamant"
+  },
+  "Pícara": {
+    "source": "Pícara",
+    "pt": "Travesso",
+    "en": "Naughty"
+  },
+  "Osada": {
+    "source": "Osada",
+    "pt": "Ousado",
+    "en": "Bold"
+  },
+  "Dócil": {
+    "source": "Dócil",
+    "pt": "Dócil",
+    "en": "Docile"
+  },
+  "Plácida": {
+    "source": "Plácida",
+    "pt": "Relaxado",
+    "en": "Relaxed"
+  },
+  "Agitada": {
+    "source": "Agitada",
+    "pt": "Agitado",
+    "en": "Impish"
+  },
+  "Floja": {
+    "source": "Floja",
+    "pt": "Frouxo",
+    "en": "Lax"
+  },
+  "Miedosa": {
+    "source": "Miedosa",
+    "pt": "Medroso",
+    "en": "Timid"
+  },
+  "Activa": {
+    "source": "Activa",
+    "pt": "Apressado",
+    "en": "Hasty"
+  },
+  "Seria": {
+    "source": "Seria",
+    "pt": "Sério",
+    "en": "Serious"
+  },
+  "Alegre": {
+    "source": "Alegre",
+    "pt": "Alegre",
+    "en": "Jolly"
+  },
+  "Ingenua": {
+    "source": "Ingenua",
+    "pt": "Ingênuo",
+    "en": "Naive"
+  },
+  "Modesta": {
+    "source": "Modesta",
+    "pt": "Modesto",
+    "en": "Modest"
+  },
+  "Afable": {
+    "source": "Afable",
+    "pt": "Afável",
+    "en": "Mild"
+  },
+  "Mansa": {
+    "source": "Mansa",
+    "pt": "Manso",
+    "en": "Quiet"
+  },
+  "Tímida": {
+    "source": "Tímida",
+    "pt": "Tímido",
+    "en": "Bashful"
+  },
+  "Alocada": {
+    "source": "Alocada",
+    "pt": "Precipitado",
+    "en": "Rash"
+  },
+  "Serena": {
+    "source": "Serena",
+    "pt": "Calmo",
+    "en": "Calm"
+  },
+  "Amable": {
+    "source": "Amable",
+    "pt": "Gentil",
+    "en": "Gentle"
+  },
+  "Grosera": {
+    "source": "Grosera",
+    "pt": "Atrevido",
+    "en": "Sassy"
+  },
+  "Cauta": {
+    "source": "Cauta",
+    "pt": "Cuidadoso",
+    "en": "Careful"
+  },
+  "Rara": {
+    "source": "Rara",
+    "pt": "Peculiar",
+    "en": "Quirky"
+  }
+}

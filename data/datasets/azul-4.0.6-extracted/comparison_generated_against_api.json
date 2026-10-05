@@ -1,0 +1,88 @@
+{
+  "dataset": {
+    "dataset_id": "azul-4.0.6-extracted-game-data",
+    "edition": "azul_ptbr_online",
+    "display_title": "Pokemon Azul 4.0.6",
+    "internal_game_version": "4.0.3",
+    "pokemon_essentials_version": "21.1",
+    "mechanics_generation": 9,
+    "language": "pt-BR overlay over es source data",
+    "status": "extracted_from_user_supplied_game_files",
+    "not_official_anil_4_1_1": true,
+    "contains_personal_or_authentication_data": false,
+    "excluded": [
+      "saves",
+      "multiplayer credentials",
+      "authentication logs",
+      "network logs",
+      "executables",
+      "sprites",
+      "audio"
+    ],
+    "archive_sha256": "2868b451bc0931da13d0a1c69d8d73a60887992b2728d61ace311e493b50637c",
+    "counts": {
+      "species_and_forms": 1519,
+      "unique_species": 1027,
+      "alternate_form_records": 492,
+      "moves": 851,
+      "moves_with_pt_br_and_en_names": 850,
+      "abilities": 328,
+      "abilities_with_pt_br_and_en_names": 326,
+      "items": 933,
+      "types": 19,
+      "encounter_tables": 103,
+      "trainers": 685,
+      "trainer_pokemon_slots": 1841,
+      "trainer_types": 163,
+      "maps_with_metadata": 225,
+      "regions": 2,
+      "raid_sets": 7,
+      "wild_encounter_slots": 2026
+    }
+  },
+  "api_path": "analysis/api_repo/pokemon-anil-api-main",
+  "findings": [
+    {
+      "severity": "required",
+      "kind": "missing_dataset_registration",
+      "dataset_entry": {
+        "id": "azul-4.0.6-extracted-game-data",
+        "edicao": "azul_ptbr_online",
+        "versao": "4.0.6",
+        "versao_interna": "4.0.3",
+        "idioma": "pt-BR/es",
+        "status": "extraido_dos_arquivos_do_jogo",
+        "diretorio": "data/datasets/azul-4.0.6-extracted",
+        "escopo": "Especies, formas, golpes, habilidades, itens, encontros, treinadores, mapas, raids e mecanicas desta compilacao modificada.",
+        "aviso": "Nao tratar como Pokemon Anil original 4.1.1. Build modificada Pokemon Azul/PT-BR online."
+      }
+    },
+    {
+      "severity": "conflict",
+      "kind": "shiny_rate",
+      "api": {
+        "id": "shiny_rate",
+        "nome": "Taxa de Shiny",
+        "descricao": "A chance de encontrar um Pokémon Shiny é de 0.1% (1 em 1.000).",
+        "taxa": "0.001",
+        "fracao": "1/1000"
+      },
+      "extracted": "6/65536 (~1/10923), subject to multiplayer server override"
+    },
+    {
+      "severity": "needs_runtime_verification",
+      "kind": "tm_behavior",
+      "api": {
+        "id": "tms_reutilizaveis",
+        "nome": "TMs Reutilizáveis",
+        "descricao": "Todas as TMs podem ser usadas infinitas vezes, como nas gerações modernas.",
+        "detalhes": "Não há mais TMs de uso único."
+      },
+      "extracted": "Custom module TMs_Consumiveis_Vendaveis exists in this build"
+    }
+  ],
+  "summary": {
+    "finding_count": 3,
+    "safe_strategy": "Register as a separate versioned dataset; do not overwrite Anil original metadata."
+  }
+}

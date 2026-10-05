@@ -1,10 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const axios = require("axios").create({ timeout: 15000 });
+const { pokeFetch } = require('../middleware/cache');
+const { source, datasetId } = require('../lib/game-data');
 const NodeCache = require("node-cache");
 
 const cache = new NodeCache({ stdTTL: 3600 });
-const POKEAPI = "https://pokeapi.co/api/v2";
+
 const upstreamError = require('../middleware/upstream-error');
 
 const TIPOS_PTBR = {
@@ -41,21 +42,22 @@ router.get("/", async (req, res) => {
   }
 
   try {
-    const { data } = await axios.get(`${POKEAPI}/type?limit=30`);
+    const data = await pokeFetch(`type?limit=30`);
 
     const result = {
+      fonte: source, dataset_id: datasetId,
       total: data.count,
       tipos: data.results.map((t) => ({
         nome: t.name,
         nome_ptbr: TIPOS_PTBR[t.name] || t.name,
-        url: t.url,
+        url: `/types/${t.name}`,
       })),
     };
 
     cache.set(cacheKey, result);
     res.json(result);
   } catch (err) {
-    upstreamError(res, err, "Recurso não encontrado na PokeAPI.");
+    upstreamError(res, err, "Recurso não encontrado nos dados do jogo.");
   }
 });
 
@@ -72,7 +74,7 @@ router.get("/:name", async (req, res) => {
   }
 
   try {
-    const { data } = await axios.get(`${POKEAPI}/type/${name.toLowerCase()}`);
+    const data = await pokeFetch(`type/${name.toLowerCase()}`);
 
     const dr = data.damage_relations;
 
@@ -83,6 +85,7 @@ router.get("/:name", async (req, res) => {
       }));
 
     const result = {
+      fonte: source, dataset_id: datasetId,
       id: data.id,
       nome: data.name,
       nome_ptbr: TIPOS_PTBR[data.name] || data.name,
@@ -108,7 +111,7 @@ router.get("/:name", async (req, res) => {
         tipos_validos: Object.keys(TIPOS_PTBR),
       });
     }
-    upstreamError(res, err, "Recurso não encontrado na PokeAPI.");
+    upstreamError(res, err, "Recurso não encontrado nos dados do jogo.");
   }
 });
 
@@ -128,7 +131,7 @@ router.get("/matchup/:atk/:def", async (req, res) => {
   }
 
   try {
-    const { data } = await axios.get(`${POKEAPI}/type/${atk.toLowerCase()}`);
+    const data = await pokeFetch(`type/${atk.toLowerCase()}`);
     const dr = data.damage_relations;
 
     let multiplicador = 1;
@@ -146,6 +149,7 @@ router.get("/matchup/:atk/:def", async (req, res) => {
     }
 
     const result = {
+      fonte: source, dataset_id: datasetId,
       atacante: { nome: atk, nome_ptbr: TIPOS_PTBR[atk] || atk },
       defensor: { nome: def, nome_ptbr: TIPOS_PTBR[def] || def },
       multiplicador,
@@ -158,7 +162,7 @@ router.get("/matchup/:atk/:def", async (req, res) => {
     if (err.response?.status === 404) {
       return res.status(404).json({ erro: `Tipo '${atk}' não encontrado.` });
     }
-    upstreamError(res, err, "Recurso não encontrado na PokeAPI.");
+    upstreamError(res, err, "Recurso não encontrado nos dados do jogo.");
   }
 });
 
