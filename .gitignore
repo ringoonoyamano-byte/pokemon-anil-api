@@ -24,3 +24,6 @@ Thumbs.db
 
 # relatório somente local
 /relatorio-local.txt
+
+# generated static export
+/public-data/
