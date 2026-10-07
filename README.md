@@ -75,3 +75,9 @@ dos catálogos de jogo usam os JSONs locais. Nenhum time foi convertido ou apaga
 Configure `API_WRITE_KEY` e envie `Authorization: Bearer <chave>` para escritas
 remotas em times, dados customizados e histórico. Sem chave, somente conexões
 locais podem escrever. `POST /stats/calculate` não grava dados.
+
+## Fusão com a PokeAPI
+Consulte `/fusion/pokemon/bulbasaur` para reunir dados locais do jogo com
+imagens e sons da PokeAPI. Também aceita `move`, `ability`, `item` e `type`.
+A resposta preserva as regras do jogo e mostra a referência externa e a
+origem dos complementos. Consulte docs/API.md para limites e exemplos.

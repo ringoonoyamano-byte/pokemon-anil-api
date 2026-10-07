@@ -52,6 +52,7 @@ app.use("/types",      typesRoutes);
 app.use('/abilities', require('./routes/catalog')('ability'));
 app.use('/items', require('./routes/catalog')('item'));
 app.use('/stats', require('./routes/stats'));
+app.use('/fusion', require('./routes/fusion'));
 app.use("/anil",       anilRoutes);
 const writeAccess = require('./middleware/write-access');
 app.use("/custom",     writeAccess, customRoutes);

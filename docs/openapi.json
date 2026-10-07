@@ -2383,6 +2383,47 @@
           }
         }
       }
+    },
+    "/fusion/{resource}/{id}": {
+      "get": {
+        "summary": "Dados do jogo enriquecidos com referência PokeAPI",
+        "parameters": [
+          {
+            "name": "resource",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "pokemon",
+                "move",
+                "ability",
+                "item",
+                "type"
+              ]
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Dados locais, complementos e origem; falhas externas indicadas no status"
+          },
+          "400": {
+            "description": "Recurso inválido"
+          },
+          "404": {
+            "description": "Registro ausente no jogo"
+          }
+        }
+      }
     }
   },
   "components": {

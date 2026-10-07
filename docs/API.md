@@ -129,3 +129,19 @@ A base `azul-4.0.6-extracted-game-data` disponibiliza os dados do jogo em
 por identificador em `/anil/datasets/:id/:resource/:record`.
 Consulte [comparação e exemplos](COMPARACAO-AZUL-4.0.6.md) para recursos,
 diferenças de regras e limites de integração.
+
+FUSÃO COM A POKEAPI
+GET /fusion/pokemon/bulbasaur
+GET /fusion/move/vine-whip
+GET /fusion/ability/overgrow
+GET /fusion/item/potion
+GET /fusion/type/fire
+
+A resposta inclui dados (prioridade do jogo), referencia_pokeapi, fontes,
+complementos_pokeapi e status_pokeapi. Imagens/sons de Pokémon e textos
+externos complementam a base local; stats, golpes, tipos, habilidades e
+regras permanecem os extraídos do jogo. Referências externas não confirmam
+mecânicas do Añil. Formas locais não são associadas automaticamente a formas
+oficiais. Falhas externas retornam os dados locais com status indisponivel.
+Cache externo SQLite: 24 horas; timeout: 10 segundos; chamadas simultâneas
+iguais compartilham a consulta. Nenhuma consulta modifica times ou datasets.
